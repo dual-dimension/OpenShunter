@@ -1153,7 +1153,9 @@ STR_GAME_OPTIONS_GUI_SCALE_BEVELS                               :Szegélyek mér
 STR_GAME_OPTIONS_GUI_SCALE_BEVELS_TOOLTIP                       :Kapcsold be a szegélyek a felület méretéhez való igazításához
 
 STR_GAME_OPTIONS_GUI_FONT_SPRITE                                :Hagyományos sprite betűk használata
-STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Kapcsold be, ha a hagyományos fix méretű sprite betűket akarod használni.
+STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Jelöld be, ha a hagyományos sprite betűket akarod használni.
+STR_GAME_OPTIONS_GUI_FONT_DEFAULT                               :Alapértelmezett betűkészlet preferálása
+STR_GAME_OPTIONS_GUI_FONT_DEFAULT_TOOLTIP                       :Jelöld be, ha az alapértelmezett betűkészlet használatát preferálod a megtalált tartalék betűkészletek helyett
 STR_GAME_OPTIONS_GUI_FONT_AA                                    :Betűk élsimítása
 STR_GAME_OPTIONS_GUI_FONT_AA_TOOLTIP                            :Kapcsold be a betűk élsimításához
 

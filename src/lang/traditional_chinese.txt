@@ -1089,7 +1089,9 @@ STR_GAME_OPTIONS_GUI_SCALE_BEVELS                               :縮放邊框
 STR_GAME_OPTIONS_GUI_SCALE_BEVELS_TOOLTIP                       :啟用以使邊框隨界面大小而縮放
 
 STR_GAME_OPTIONS_GUI_FONT_SPRITE                                :使用傳統點陣式字體
-STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :啟用以使用固定大小的傳統點陣式字體
+STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :啟用後，使用固定大小的傳統點陣式字體
+STR_GAME_OPTIONS_GUI_FONT_DEFAULT                               :使用預設字體
+STR_GAME_OPTIONS_GUI_FONT_DEFAULT_TOOLTIP                       :啟用後，使用預設字體而非已發現的備用字體
 STR_GAME_OPTIONS_GUI_FONT_AA                                    :反鋸齒字體
 STR_GAME_OPTIONS_GUI_FONT_AA_TOOLTIP                            :啟用以使用反鋸齒字體
 
@@ -2878,11 +2880,11 @@ STR_HOUSE_PICKER_CLASS_ZONE3                                    :遠郊
 STR_HOUSE_PICKER_CLASS_ZONE4                                    :近郊
 STR_HOUSE_PICKER_CLASS_ZONE5                                    :市鎮中心
 
-STR_HOUSE_PICKER_PROTECT                                        :防止覆蓋建築物
+STR_HOUSE_PICKER_PROTECT                                        :防止升級
 STR_HOUSE_PICKER_PROTECT_TOOLTIP                                :選擇是否保護房屋以免房屋隨著市鎮發展而被替換
 
-STR_HOUSE_PICKER_REPLACE                                        :替換現有建築物
-STR_HOUSE_PICKER_REPLACE_TOOLTIP                                :選擇是否自動移除所選該格上現存的房屋
+STR_HOUSE_PICKER_REPLACE                                        :替換現有
+STR_HOUSE_PICKER_REPLACE_TOOLTIP                                :選擇是否自動移除該房屋所在地上的現有房屋
 
 STR_STATION_CLASS_DFLT                                          :預設
 STR_STATION_CLASS_DFLT_STATION                                  :預設車站

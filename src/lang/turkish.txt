@@ -640,8 +640,8 @@ STR_GRAPH_CARGO_PAYMENT_RATES_SECONDS                           :{TINY_FONT}{BLA
 STR_GRAPH_CARGO_PAYMENT_RATES_TITLE                             :{TINY_FONT}{BLACK}20 karelik yolda 10 birim (ya da 10,000 litre) için ödeme
 STR_GRAPH_CARGO_ENABLE_ALL                                      :{TINY_FONT}{BLACK}Tümü
 STR_GRAPH_CARGO_DISABLE_ALL                                     :{TINY_FONT}{BLACK}Hiçbiri
-STR_GRAPH_CARGO_TOOLTIP_ENABLE_ALL                              :{BLACK}Grafikte bütün kargoları göster
-STR_GRAPH_CARGO_TOOLTIP_DISABLE_ALL                             :{BLACK}Grafikte hiçbir kargoyu gösterme
+STR_GRAPH_CARGO_TOOLTIP_ENABLE_ALL                              :{BLACK}Kargo ödeme tablosunda tüm kargo türlerini göster
+STR_GRAPH_CARGO_TOOLTIP_DISABLE_ALL                             :{BLACK}Kargo ödeme tablosunda hiçbir kargo türünü gösterme
 STR_GRAPH_CARGO_PAYMENT_TOGGLE_CARGO                            :{BLACK}Bu kargo türünün grafiğini aç
 STR_GRAPH_CARGO_PAYMENT_CARGO                                   :{TINY_FONT}{BLACK}{STRING}
 
@@ -1063,7 +1063,7 @@ STR_GAME_OPTIONS_LANGUAGE_TOOLTIP                               :Görünen dili 
 STR_GAME_OPTIONS_LANGUAGE_PERCENTAGE                            :{STRING} (%{NUM} tamamlandı)
 
 STR_GAME_OPTIONS_FULLSCREEN                                     :Tam ekran
-STR_GAME_OPTIONS_FULLSCREEN_TOOLTIP                             :OpenTTD'yi tam ekran oynamak için bunu açın
+STR_GAME_OPTIONS_FULLSCREEN_TOOLTIP                             :OpenTTD'yi tam ekran oynamak için bu kutucuğu işaretleyin
 
 STR_GAME_OPTIONS_RESOLUTION                                     :Ekran Çözünürlüğü
 STR_GAME_OPTIONS_RESOLUTION_TOOLTIP                             :Kullanılacak ekran çözünürlüğünü seçin
@@ -1090,9 +1090,11 @@ STR_GAME_OPTIONS_GUI_SCALE_BEVELS                               :Eğimi ayarla
 STR_GAME_OPTIONS_GUI_SCALE_BEVELS_TOOLTIP                       :Eğimi arayüz boyutuna göre ayarlamak için bunu açın
 
 STR_GAME_OPTIONS_GUI_FONT_SPRITE                                : Geleneksel yazı tipini kullan
-STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Yazı tipini geleneksel sabit boyutlu haline döndürmek için açın
+STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Yazı tipini geleneksel sabit boyutlu haline döndürmek için bu kutucuğu işaretleyin
+STR_GAME_OPTIONS_GUI_FONT_DEFAULT                               :Öntanımlı yazıtipini tercih et
+STR_GAME_OPTIONS_GUI_FONT_DEFAULT_TOOLTIP                       :Bulunan yedek yazı tipleri yerine öntanımlı yazı tipini kullanmak için bu kutucuğu işaretleyin
 STR_GAME_OPTIONS_GUI_FONT_AA                                    :Yazı tipi kenarlarını yumuşatma
-STR_GAME_OPTIONS_GUI_FONT_AA_TOOLTIP                            :Yeniden boyutlandırılabilir yazı tiplerinin kenarlarını yumuşatmak için açın
+STR_GAME_OPTIONS_GUI_FONT_AA_TOOLTIP                            :Yeniden boyutlandırılabilir yazı tiplerinin kenarlarını yumuşatmak için bu kutucuğu işaretleyin
 
 STR_GAME_OPTIONS_GUI_SCALE_MARK                                 :{DECIMAL}x
 
@@ -1126,7 +1128,7 @@ STR_GAME_OPTIONS_BASE_MUSIC_DESCRIPTION_TOOLTIP                 :Temel müzik ha
 STR_GAME_OPTIONS_ONLINE_CONTENT                                 :İçerik Al
 STR_GAME_OPTIONS_ONLINE_CONTENT_TOOLTIP                         :İndirilecek yeni ve güncellenmiş içeriği kontrol et
 
-STR_GAME_OPTIONS_SOCIAL_PLUGINS_NONE                            :(hiçbir sosyal medya entegrasyonu eklentisi yüklenmemiş)
+STR_GAME_OPTIONS_SOCIAL_PLUGINS_NONE                            :(yüklü sosyal platformlarla entegre edilecek eklenti yok)
 
 STR_GAME_OPTIONS_SOCIAL_PLUGIN_TITLE                            :{STRING} ({STRING})
 STR_GAME_OPTIONS_SOCIAL_PLUGIN_PLATFORM                         :Platform:
@@ -2852,7 +2854,6 @@ STR_PICKER_PREVIEW_EXPAND_TOOLTIP                               :Önizleme resim
 STR_PICKER_STATION_CLASS_TOOLTIP                                :Görüntülenecek istasyon sınıfını seçin
 STR_PICKER_STATION_TYPE_TOOLTIP                                 :İnşa edilecek istasyon türünü seçin. Kayıtlı öğelerde ekleme çıkarma için Ctrl+Tıklayabilirsiniz
 STR_PICKER_WAYPOINT_CLASS_TOOLTIP                               :Görüntülenecek bir yol noktası türünü seçin
-STR_PICKER_WAYPOINT_TYPE_TOOLTIP                                :İnşa edilecek yerimini seçin. Kayıtlı öğelerde ekleme çıkarma için Ctrl+Tıklayabilirsiniz
 STR_PICKER_ROADSTOP_BUS_CLASS_TOOLTIP                           :Görüntülenecek otobüs istasyonunu seçin
 STR_PICKER_ROADSTOP_BUS_TYPE_TOOLTIP                            :İnşa edilecek otobüs istasyonunu seçin. Kayıtlı öğelerde ekleme çıkarma için Ctrl+Tıklayabilirsiniz
 STR_PICKER_ROADSTOP_TRUCK_CLASS_TOOLTIP                         :Görüntülenecek bir kamyon istasyonu türünü seçin
@@ -2870,7 +2871,7 @@ STR_HOUSE_PICKER_YEARS_ANY                                      :{BLACK}Yıl: {G
 STR_HOUSE_PICKER_YEARS_FROM                                     :{BLACK}Yıl: {GOLD}{NUM} yılından itibaren
 STR_HOUSE_PICKER_YEARS_UNTIL                                    :{BLACK}Yıl: {GOLD}{NUM} yılına kadar
 STR_HOUSE_PICKER_SIZE                                           :{BLACK}Boyut: {GOLD}{NUM}x{NUM} kare
-STR_HOUSE_PICKER_CARGO_ACCEPTED                                 :{BLACK}Kabul edilen kargo: {GOLD}{STRING}
+STR_HOUSE_PICKER_CARGO_ACCEPTED                                 :{BLACK}Kabul edilen kargo: {GOLD}
 STR_HOUSE_PICKER_CARGO_PRODUCED                                 :{BLACK}Üretilen kargo: {GOLD}{CARGO_LIST}
 
 STR_HOUSE_PICKER_CLASS_ZONE1                                    :Kenar
@@ -2938,7 +2939,6 @@ STR_ROAD_TOOLBAR_TOOLTIP_BUILD_AUTOTRAM                         :{BLACK}Otomatik
 STR_ROAD_TOOLBAR_TOOLTIP_BUILD_ROAD_VEHICLE_DEPOT               :{BLACK}Garaj inşa et (araç alımı ve bakımı için). Shift'e basılı tutarak tıklarsanız sadece maliyetini gösterir.
 STR_ROAD_TOOLBAR_TOOLTIP_BUILD_TRAM_VEHICLE_DEPOT               :{BLACK}Tramvay garı inşa et (araç alımı ve bakımı için). Ayrıca maliyetini görmek için Shift tuşuna basabilirsiniz.
 STR_ROAD_TOOLBAR_TOOLTIP_CONVERT_ROAD_TO_WAYPOINT               :{BLACK}Yola yerimi inşa et. Ctrl + Sol Tık birleştirmek için başka yerimi seçtirir. Ayrıca maliyetini görmek için Shift'e basabilirsiniz
-STR_ROAD_TOOLBAR_TOOLTIP_CONVERT_TRAM_TO_WAYPOINT               :{BLACK}Tramvaya yerimi inşa et. Ctrl + Sol Tık birleştirmek için başka yerimi seçtirir. Ayrıca maliyetini görmek için Shift'e basabilirsiniz
 STR_ROAD_TOOLBAR_TOOLTIP_BUILD_BUS_STATION                      :{BLACK}Otobüs durağı inşa et. Ctrl + Sol Tık istasyonları birleştirmeyi aktif eder. Ayrıca maliyetini görmek için Shift'e basabilirsiniz
 STR_ROAD_TOOLBAR_TOOLTIP_BUILD_PASSENGER_TRAM_STATION           :{BLACK}Yolcu tramvayı istasyonu inşa et. Ctrl + Sol Tık birleştirmeyi mümkün kılar. Shift'e basılı tutarak tıklarsanız sadece maliyetini gösterir.
 STR_ROAD_TOOLBAR_TOOLTIP_BUILD_TRUCK_LOADING_BAY                :{BLACK}Kamyon yükleme bölgesi inşa et. Ctrl + Sol Tık istasyonları birleştirmeyi mümkün kılar. Shift'e basılı tutarak tıklarsanız sadece maliyetini gösterir.
@@ -3481,7 +3481,6 @@ STR_GENERATION_RIVER_GENERATION                                 :{BLACK}Nehir ol
 STR_GENERATION_CLEARING_TILES                                   :{BLACK}Engebeli ve kayalık alan oluştur
 STR_GENERATION_TOWN_GENERATION                                  :{BLACK}Kasaba Oluşumu
 STR_GENERATION_LAND_INDUSTRY_GENERATION                         :{BLACK}Kara endüstrisi oluşturma
-STR_GENERATION_WATER_INDUSTRY_GENERATION                        :{BLACK}Su endüstrisi oluşturma
 STR_GENERATION_OBJECT_GENERATION                                :{BLACK}Nesne oluşturma
 STR_GENERATION_TREE_GENERATION                                  :{BLACK}Ağaç üretimi
 STR_GENERATION_SETTINGUP_GAME                                   :{BLACK}Oyun ayarlanıyor
@@ -3489,10 +3488,7 @@ STR_GENERATION_PREPARING_TILELOOP                               :{BLACK}tile-loo
 STR_GENERATION_PREPARING_SCRIPT                                 :{BLACK}Betik çalıştırılıyor
 STR_GENERATION_PREPARING_GAME                                   :{BLACK}Oyun hazırlanıyor
 
-STR_TOWN_DATA_ERROR_LOAD_FAILED                                 :{WHITE}Şehir verisi yükleme başarısız oldu
-STR_TOWN_DATA_ERROR_JSON_FORMATTED_INCORRECTLY                  :{WHITE}JSON dosyası hatalı şekilde biçimlendirilmiş
 STR_TOWN_DATA_ERROR_TOWN_FORMATTED_INCORRECTLY                  :{WHITE}{STRING} veri hatalı şekilde biçimlendirilmiş
-STR_TOWN_DATA_ERROR_BAD_COORDINATE                              :{WHITE}{STRING} koordinatlar hatalı şekilde biçimlendirilmiş, toplam yükseklik haritası boyutunun 0'a 1 oranında olmalıdır.
 
 STR_TOWN_DATA_ERROR_FAILED_TO_FOUND_TOWN                        :{WHITE}{NUM} şehri kurmak için uygun yer bulunamadı. Kurulmak istenen yere tabela konuldu
 
