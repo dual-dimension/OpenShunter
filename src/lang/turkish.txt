@@ -2939,6 +2939,7 @@ STR_ROAD_TOOLBAR_TOOLTIP_BUILD_AUTOTRAM                         :{BLACK}Otomatik
 STR_ROAD_TOOLBAR_TOOLTIP_BUILD_ROAD_VEHICLE_DEPOT               :{BLACK}Garaj inşa et (araç alımı ve bakımı için). Shift'e basılı tutarak tıklarsanız sadece maliyetini gösterir.
 STR_ROAD_TOOLBAR_TOOLTIP_BUILD_TRAM_VEHICLE_DEPOT               :{BLACK}Tramvay garı inşa et (araç alımı ve bakımı için). Ayrıca maliyetini görmek için Shift tuşuna basabilirsiniz.
 STR_ROAD_TOOLBAR_TOOLTIP_CONVERT_ROAD_TO_WAYPOINT               :{BLACK}Yola yerimi inşa et. Ctrl + Sol Tık birleştirmek için başka yerimi seçtirir. Ayrıca maliyetini görmek için Shift'e basabilirsiniz
+STR_ROAD_TOOLBAR_TOOLTIP_CONVERT_TRAM_TO_WAYPOINT               :{BLACK}Tramvaya yerimi inşa et. Ctrl + Sol Tık birleştirmek için başka yerimi seçtirir. Ayrıca maliyetini görmek için Shift'e basabilirsiniz
 STR_ROAD_TOOLBAR_TOOLTIP_BUILD_BUS_STATION                      :{BLACK}Otobüs durağı inşa et. Ctrl + Sol Tık istasyonları birleştirmeyi aktif eder. Ayrıca maliyetini görmek için Shift'e basabilirsiniz
 STR_ROAD_TOOLBAR_TOOLTIP_BUILD_PASSENGER_TRAM_STATION           :{BLACK}Yolcu tramvayı istasyonu inşa et. Ctrl + Sol Tık birleştirmeyi mümkün kılar. Shift'e basılı tutarak tıklarsanız sadece maliyetini gösterir.
 STR_ROAD_TOOLBAR_TOOLTIP_BUILD_TRUCK_LOADING_BAY                :{BLACK}Kamyon yükleme bölgesi inşa et. Ctrl + Sol Tık istasyonları birleştirmeyi mümkün kılar. Shift'e basılı tutarak tıklarsanız sadece maliyetini gösterir.
@@ -3481,6 +3482,7 @@ STR_GENERATION_RIVER_GENERATION                                 :{BLACK}Nehir ol
 STR_GENERATION_CLEARING_TILES                                   :{BLACK}Engebeli ve kayalık alan oluştur
 STR_GENERATION_TOWN_GENERATION                                  :{BLACK}Kasaba Oluşumu
 STR_GENERATION_LAND_INDUSTRY_GENERATION                         :{BLACK}Kara endüstrisi oluşturma
+STR_GENERATION_WATER_INDUSTRY_GENERATION                        :{BLACK}Su endüstrisi oluşturma
 STR_GENERATION_OBJECT_GENERATION                                :{BLACK}Nesne oluşturma
 STR_GENERATION_TREE_GENERATION                                  :{BLACK}Ağaç üretimi
 STR_GENERATION_SETTINGUP_GAME                                   :{BLACK}Oyun ayarlanıyor
@@ -3690,6 +3692,7 @@ STR_EDIT_SIGN_CAPTION                                           :{WHITE}Tabelay�
 STR_EDIT_SIGN_LOCATION_TOOLTIP                                  :{BLACK}Ana görünümü tabelanın konumuna ortalar. Ctrl + Sol Tıklama tabelanın olduğu yere ait bir görünüm penceresi açar.
 STR_EDIT_SIGN_NEXT_SIGN_TOOLTIP                                 :{BLACK}Sonraki tabelaya git
 STR_EDIT_SIGN_PREVIOUS_SIGN_TOOLTIP                             :{BLACK}Önceki tabelaya git
+STR_EDIT_SIGN_TEXT_COLOUR_TOOLTIP                               :{BLACK}Tabela yazısının rengi
 
 STR_EDIT_SIGN_SIGN_OSKTITLE                                     :{BLACK}Tabela için bir isim girin
 
@@ -4802,9 +4805,9 @@ STR_TIMETABLE_TRAVEL_FOR                                        :{STRING} boyunc
 STR_TIMETABLE_TRAVEL_FOR_SPEED                                  :{STRING} boyunca en çok {VELOCITY} hız ile git
 STR_TIMETABLE_TRAVEL_FOR_ESTIMATED                              :Seyahat et ({STRING} için, hareket planı yok)
 STR_TIMETABLE_TRAVEL_FOR_SPEED_ESTIMATED                        :Seyahat et ({STRING} için, hareket planı yok) en fazla {VELOCITY} hızı ile
-STR_TIMETABLE_STAY_FOR_ESTIMATED                                :{SPACE}({STRING} kal, hareket saati yok)
+STR_TIMETABLE_STAY_FOR_ESTIMATED                                :({STRING} kalma, hareket saati yok)
 STR_TIMETABLE_AND_TRAVEL_FOR_ESTIMATED                          :{SPACE}({STRING} için seyahat, hareket saati yok)
-STR_TIMETABLE_STAY_FOR                                          :{SPACE}ve bekle {STRING}
+STR_TIMETABLE_STAY_FOR                                          :{STRING} bekle
 STR_TIMETABLE_AND_TRAVEL_FOR                                    :{SPACE}ve şuraya sefer yap: {STRING}
 
 STR_TIMETABLE_APPROX_TIME                                       :{BLACK}Bu zaman çizelgesinin tamamlanması yaklaşık {STRING} sürecek

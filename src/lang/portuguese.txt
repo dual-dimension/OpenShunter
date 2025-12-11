@@ -878,7 +878,7 @@ STR_NEWS_DISASTER_SMALL_UFO                                     :{BIG_FONT}{BLAC
 STR_NEWS_DISASTER_AIRPLANE_OIL_REFINERY                         :{BIG_FONT}{BLACK}Explosão em refinaria de petróleo perto de {TOWN}!
 STR_NEWS_DISASTER_HELICOPTER_FACTORY                            :{BIG_FONT}{BLACK}Fábrica perto de {TOWN} foi destruída em circunstâncias suspeitas!
 STR_NEWS_DISASTER_BIG_UFO                                       :{BIG_FONT}{BLACK}OVNI pousa em {TOWN}!
-STR_NEWS_DISASTER_COAL_MINE_SUBSIDENCE                          :{BIG_FONT}{BLACK}Afundamento em mina de carvão perto de {TOWN} deixa rasto de destruição!
+STR_NEWS_DISASTER_COAL_MINE_SUBSIDENCE                          :{BIG_FONT}{BLACK}Afundamento em mina de carvão perto de {TOWN} causa rasto de destruição!
 STR_NEWS_DISASTER_FLOOD_VEHICLE                                 :{BIG_FONT}{BLACK}Inundações!{}Pelo menos {COMMA} pessoa{P 0 "" s} desaparecida{P 0 "" s}, presumivelmente morta{P 0 "" s} após terrível desastre!
 
 STR_NEWS_COMPANY_IN_TROUBLE_TITLE                               :{BIG_FONT}{BLACK}Empresa de transportes em dificuldades!
@@ -2882,7 +2882,7 @@ STR_HOUSE_PICKER_CLASS_ZONE4                                    :Subúrbios Cent
 STR_HOUSE_PICKER_CLASS_ZONE5                                    :Centro da localidade
 
 STR_HOUSE_PICKER_PROTECT                                        :Impedir atualizações
-STR_HOUSE_PICKER_PROTECT_TOOLTIP                                :Escolha se esta casa será protegida contra a substituição à medida que localidade cresce
+STR_HOUSE_PICKER_PROTECT_TOOLTIP                                :Escolha se esta casa será protegida contra a substituição à medida que a localidade cresce
 
 STR_HOUSE_PICKER_REPLACE                                        :Substituir existentes
 STR_HOUSE_PICKER_REPLACE_TOOLTIP                                :Escolha se deseja remover automaticamente a casa existente no mosaico onde esta nova casa será colocada.
@@ -3696,6 +3696,7 @@ STR_EDIT_SIGN_CAPTION                                           :{WHITE}Editar l
 STR_EDIT_SIGN_LOCATION_TOOLTIP                                  :{BLACK}Centrar a vista principal na localização do letreiro. Ctrl+Clique para abrir um novo visualizador na localização do letreiro
 STR_EDIT_SIGN_NEXT_SIGN_TOOLTIP                                 :{BLACK}Ir para o próximo letreiro
 STR_EDIT_SIGN_PREVIOUS_SIGN_TOOLTIP                             :{BLACK}Ir para o letreiro anterior
+STR_EDIT_SIGN_TEXT_COLOUR_TOOLTIP                               :{BLACK}A cor do texto do letreiro
 
 STR_EDIT_SIGN_SIGN_OSKTITLE                                     :{BLACK}Introduza um nome para o letreiro
 
