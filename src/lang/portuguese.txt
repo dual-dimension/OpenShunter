@@ -225,14 +225,14 @@ STR_UNITS_POWER_SI                                              :{DECIMAL}kW
 STR_UNITS_POWER_IMPERIAL_TO_WEIGHT_IMPERIAL                     :{DECIMAL}{NBSP}hp/tn
 STR_UNITS_POWER_IMPERIAL_TO_WEIGHT_METRIC                       :{DECIMAL}{NBSP}hp/t
 STR_UNITS_POWER_IMPERIAL_TO_WEIGHT_SI                           :{DECIMAL}{NBSP}hp/Mg
-STR_UNITS_POWER_METRIC_TO_WEIGHT_IMPERIAL                       :{DECIMAL}{NBSP}cv/t
+STR_UNITS_POWER_METRIC_TO_WEIGHT_IMPERIAL                       :{DECIMAL}{NBSP}cv/tn
 STR_UNITS_POWER_METRIC_TO_WEIGHT_METRIC                         :{DECIMAL}{NBSP}cv/t
 STR_UNITS_POWER_METRIC_TO_WEIGHT_SI                             :{DECIMAL}{NBSP}cv/Mg
-STR_UNITS_POWER_SI_TO_WEIGHT_IMPERIAL                           :{DECIMAL}{NBSP}kW/t
+STR_UNITS_POWER_SI_TO_WEIGHT_IMPERIAL                           :{DECIMAL}{NBSP}kW/tn
 STR_UNITS_POWER_SI_TO_WEIGHT_METRIC                             :{DECIMAL}{NBSP}kW/t
 STR_UNITS_POWER_SI_TO_WEIGHT_SI                                 :{DECIMAL}{NBSP}W/kg
 
-STR_UNITS_WEIGHT_SHORT_IMPERIAL                                 :{DECIMAL}{NBSP}t
+STR_UNITS_WEIGHT_SHORT_IMPERIAL                                 :{DECIMAL}{NBSP}tn
 STR_UNITS_WEIGHT_SHORT_METRIC                                   :{DECIMAL}{NBSP}t
 STR_UNITS_WEIGHT_SHORT_SI                                       :{DECIMAL}{NBSP}kg
 
@@ -2093,6 +2093,8 @@ STR_CONFIG_SETTING_LARGER_TOWNS_VALUE                           :1 em cada {COMM
 STR_CONFIG_SETTING_LARGER_TOWNS_DISABLED                        :Nenhum
 STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER                         :Multiplicador inicial para a dimensão das metrópoles: {STRING}
 STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER_HELPTEXT                :Tamanho relativo das cidades em relação ao tamanho normal das localidades aquando o início do jogo
+STR_CONFIG_SETTING_TOWN_MIN_DISTANCE                            :Distância mínima entre localidades: {STRING}
+STR_CONFIG_SETTING_TOWN_MIN_DISTANCE_HELPTEXT                   :Defina a distância mínima em mosaicos entre localidades durante a geração dos mapas e quando se cria uma nova de forma aleatória
 
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL                    :Atualizar o gráfico de distribuição a cada {STRING}
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL_HELPTEXT           :Tempo de intervalo entre recalculos subsequentes do gráfico de ligações. Cada recalculo calcula os planos para um componente do gráfico. Isso significa que um valor X para esta configuração não significa que todo o gráfico será atualizado a cada X segundos. Apenas algum componente será. Quanto mais curto escolher, mais tempo de CPU será necessário para calcular. Quanto mais tempo for definido, mais tempo levará até que a distribuição de carga inicie nas novas rotas
@@ -2143,14 +2145,14 @@ STR_CONFIG_SETTING_LOCALISATION_UNITS_POWER_SI                  :SI (kW)
 STR_CONFIG_SETTING_LOCALISATION_UNITS_WEIGHT                    :Unidades de peso: {STRING}
 STR_CONFIG_SETTING_LOCALISATION_UNITS_WEIGHT_HELPTEXT           :Quando um peso é mostrado na interface de utilizador, mostrar na unidade selecionada
 ###length 3
-STR_CONFIG_SETTING_LOCALISATION_UNITS_WEIGHT_IMPERIAL           :Imperial (t/ton curta)
+STR_CONFIG_SETTING_LOCALISATION_UNITS_WEIGHT_IMPERIAL           :Imperial (tn/ton curta)
 STR_CONFIG_SETTING_LOCALISATION_UNITS_WEIGHT_METRIC             :Métrico (t/tonelada)
 STR_CONFIG_SETTING_LOCALISATION_UNITS_WEIGHT_SI                 :SI (kg)
 
 STR_CONFIG_SETTING_LOCALISATION_UNITS_VOLUME                    :Unidades de volume: {STRING}
 STR_CONFIG_SETTING_LOCALISATION_UNITS_VOLUME_HELPTEXT           :Quando uma quantidade de volume é mostrada na interface de utilizador, mostrar na unidade selecionada
 ###length 3
-STR_CONFIG_SETTING_LOCALISATION_UNITS_VOLUME_IMPERIAL           :Imperial (galões)
+STR_CONFIG_SETTING_LOCALISATION_UNITS_VOLUME_IMPERIAL           :Imperial (gal)
 STR_CONFIG_SETTING_LOCALISATION_UNITS_VOLUME_METRIC             :Métrico (L)
 STR_CONFIG_SETTING_LOCALISATION_UNITS_VOLUME_SI                 :SI (m³)
 
@@ -4362,7 +4364,7 @@ STR_DEPOT_SELL_CONFIRMATION_TEXT                                :{YELLOW}Está p
 
 # Engine preview window
 STR_ENGINE_PREVIEW_CAPTION                                      :{WHITE}Mensagem de um fabricante de veículos
-STR_ENGINE_PREVIEW_MESSAGE                                      :{GOLD}Desenvolvemos u{G 0 m m ma ns mas} nov{G 0 "o modelo de" o a os as} {STRING} - estaria interessado em ter um ano de uso exclusivo deste{G 0 "" "" "" s s} veículo{G 0 "" "" "" s s}, de modo a que possamos avaliar o {G 0 "seu " "seu " "seu " "" ""}desempenho antes de o{G 0 "" "" "" s s} disponibilizar globalmente?
+STR_ENGINE_PREVIEW_MESSAGE                                      :{GOLD}Desenvolvemos u{G 0 m m ma ns mas} nov{G 0 "o modelo de" o a os as} {STRING} - estaria interessado num ano de uso exclusivo deste{G 0 "" "" "" s s} veículo{G 0 "" "" "" s s}, de modo a que possamos avaliar o {G 0 "seu " "seu " "seu " "" ""}desempenho antes de o{G 0 "" "" "" s s} disponibilizar globalmente?
 
 STR_ENGINE_PREVIEW_RAILROAD_LOCOMOTIVE                          :{G=f}locomotiva ferroviária
 STR_ENGINE_PREVIEW_ELRAIL_LOCOMOTIVE                            :{G=f}locomotiva elétrica ferroviária
