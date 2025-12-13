@@ -1182,7 +1182,7 @@ STR_GAME_OPTIONS_GUI_SCALE_BEVELS                               :Κλίση κλ
 STR_GAME_OPTIONS_GUI_SCALE_BEVELS_TOOLTIP                       :Τσεκάρετέ το για να αλλάζει μέγεθος το περίγραμμα με βάση το μέγεθος της διεπαφής
 
 STR_GAME_OPTIONS_GUI_FONT_SPRITE                                :Χρήση παραδοσιακής γραμματοσειράς
-STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Τσεκάρετέ το αν προτιμάτε να χρησιμοποιήσετε την παραδοσιακή γραμματοσειρά σταθερού μεγέθους
+STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Τσεκάρετε αυτό το κουτάκι εάν προτιμάτε να χρησιμοποιήσετε την παραδοσιακή γραμματοσειρά σταθερού μεγέθους
 STR_GAME_OPTIONS_GUI_FONT_AA                                    :Εξομάλυνση εμφάνισης γραμματοσειράς
 STR_GAME_OPTIONS_GUI_FONT_AA_TOOLTIP                            :Τσεκάρετέ το για εξομάλυνση εμφάνισης γραμματοσειράς μεταβλητού μεγέθους
 

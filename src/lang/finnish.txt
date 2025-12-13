@@ -1089,7 +1089,7 @@ STR_GAME_OPTIONS_GUI_SCALE_BEVELS                               :Skaalaa viistee
 STR_GAME_OPTIONS_GUI_SCALE_BEVELS_TOOLTIP                       :Valitse viisteiden skaalaamiseksi käyttöliittymän koon mukaan
 
 STR_GAME_OPTIONS_GUI_FONT_SPRITE                                :Käytä perinteistä sprite-fonttia
-STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Valitse käyttääksesi perinteistä kiinteäkokoista sprite-kirjasintyyppiä
+STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Valitse tämä ruutu käyttääksesi perinteistä kiinteäkokoista sprite-kirjasintyyppiä
 STR_GAME_OPTIONS_GUI_FONT_AA                                    :Pehmennä kirjasinten reunoja
 STR_GAME_OPTIONS_GUI_FONT_AA_TOOLTIP                            :Valitse muuttuvan kokoisten fonttien reunojen pehmentämiseksi
 

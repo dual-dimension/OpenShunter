@@ -1090,7 +1090,7 @@ STR_GAME_OPTIONS_GUI_SCALE_BEVELS                               :Escalar bordas
 STR_GAME_OPTIONS_GUI_SCALE_BEVELS_TOOLTIP                       :Marque esta opção para dimensionar as bordas das janelas em relação ao tamanho de interface
 
 STR_GAME_OPTIONS_GUI_FONT_SPRITE                                :Usar a fonte fixa tradicional
-STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Marque esta opção se prefere usar a letra tradicional de tamanho fixo
+STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Marque esta caixa se preferir usar o tipo de fonte tradicional de tamanho fixo
 STR_GAME_OPTIONS_GUI_FONT_AA                                    :Fontes com contornos suaves
 STR_GAME_OPTIONS_GUI_FONT_AA_TOOLTIP                            :Marque esta opção para usar letras redimensionáveis com contornos suaves
 
