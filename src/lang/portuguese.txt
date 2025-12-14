@@ -2143,7 +2143,7 @@ STR_CONFIG_SETTING_LOCALISATION_UNITS_POWER_SI                  :SI (kW)
 STR_CONFIG_SETTING_LOCALISATION_UNITS_WEIGHT                    :Unidades de peso: {STRING}
 STR_CONFIG_SETTING_LOCALISATION_UNITS_WEIGHT_HELPTEXT           :Quando um peso é mostrado na interface de utilizador, mostrar na unidade selecionada
 ###length 3
-STR_CONFIG_SETTING_LOCALISATION_UNITS_WEIGHT_IMPERIAL           :Imperial (tn/ton curta)
+STR_CONFIG_SETTING_LOCALISATION_UNITS_WEIGHT_IMPERIAL           :Imperial (tn/ton. curta)
 STR_CONFIG_SETTING_LOCALISATION_UNITS_WEIGHT_METRIC             :Métrico (t/tonelada)
 STR_CONFIG_SETTING_LOCALISATION_UNITS_WEIGHT_SI                 :SI (kg)
 
@@ -2700,7 +2700,7 @@ STR_CONTENT_DETAIL_SUBTITLE_AUTOSELECTED                        :{SILVER}Esta de
 STR_CONTENT_DETAIL_SUBTITLE_ALREADY_HERE                        :{SILVER}Já tem este conteúdo
 STR_CONTENT_DETAIL_SUBTITLE_DOES_NOT_EXIST                      :{SILVER}Este conteúdo é desconhecido e não pode ser descarregado no OpenTTD
 
-STR_CONTENT_DETAIL_UPDATE                                       :{SILVER}Este conteúdo é uma atualização para u{G 0 m m ma ns mas} {STRING} já existente{G 0 "" "" "" s s} no seu sistema
+STR_CONTENT_DETAIL_UPDATE                                       :{SILVER}Isto é uma atualização para u{G 0 m m ma ns mas} {STRING} existente{G 0 "" "" "" s s}
 STR_CONTENT_DETAIL_NAME                                         :{SILVER}Nome: {WHITE}{STRING}
 STR_CONTENT_DETAIL_VERSION                                      :{SILVER}Versão: {WHITE}{STRING}
 STR_CONTENT_DETAIL_DESCRIPTION                                  :{SILVER}Descrição: {WHITE}{STRING}
@@ -2719,7 +2719,7 @@ STR_CONTENT_TYPE_NEWGRF                                         :{G=m}NewGRF
 STR_CONTENT_TYPE_AI                                             :{G=f}IA
 STR_CONTENT_TYPE_AI_LIBRARY                                     :{G=f}Biblioteca de IA
 STR_CONTENT_TYPE_SCENARIO                                       :{G=m}Cenário
-STR_CONTENT_TYPE_HEIGHTMAP                                      :{G=m}Mapa de altura
+STR_CONTENT_TYPE_HEIGHTMAP                                      :{G=m}Mapa de alturas
 STR_CONTENT_TYPE_BASE_SOUNDS                                    :{G=mp}Sons base
 STR_CONTENT_TYPE_BASE_MUSIC                                     :{G=fp}Músicas base
 STR_CONTENT_TYPE_GAME_SCRIPT                                    :{G=m}Script de jogo
@@ -2882,7 +2882,7 @@ STR_HOUSE_PICKER_CLASS_ZONE4                                    :Subúrbios Cent
 STR_HOUSE_PICKER_CLASS_ZONE5                                    :Centro da localidade
 
 STR_HOUSE_PICKER_PROTECT                                        :Impedir atualizações
-STR_HOUSE_PICKER_PROTECT_TOOLTIP                                :Escolha se esta casa será protegida contra a substituição à medida que a localidade cresce
+STR_HOUSE_PICKER_PROTECT_TOOLTIP                                :Escolha se esta casa será protegida contra substituições à medida que a localidade cresce
 
 STR_HOUSE_PICKER_REPLACE                                        :Substituir existentes
 STR_HOUSE_PICKER_REPLACE_TOOLTIP                                :Escolha se deseja remover automaticamente a casa existente no mosaico onde esta nova casa será colocada.
