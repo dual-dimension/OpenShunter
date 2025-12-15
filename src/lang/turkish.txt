@@ -640,8 +640,8 @@ STR_GRAPH_CARGO_PAYMENT_RATES_SECONDS                           :{TINY_FONT}{BLA
 STR_GRAPH_CARGO_PAYMENT_RATES_TITLE                             :{TINY_FONT}{BLACK}20 karelik yolda 10 birim (ya da 10,000 litre) için ödeme
 STR_GRAPH_CARGO_ENABLE_ALL                                      :{TINY_FONT}{BLACK}Tümü
 STR_GRAPH_CARGO_DISABLE_ALL                                     :{TINY_FONT}{BLACK}Hiçbiri
-STR_GRAPH_CARGO_TOOLTIP_ENABLE_ALL                              :{BLACK}Kargo ödeme tablosunda tüm kargo türlerini göster
-STR_GRAPH_CARGO_TOOLTIP_DISABLE_ALL                             :{BLACK}Kargo ödeme tablosunda hiçbir kargo türünü gösterme
+STR_GRAPH_CARGO_TOOLTIP_ENABLE_ALL                              :{BLACK}Grafikte bütün kargoları göster
+STR_GRAPH_CARGO_TOOLTIP_DISABLE_ALL                             :{BLACK}Grafikte hiçbir kargoyu gösterme
 STR_GRAPH_CARGO_PAYMENT_TOGGLE_CARGO                            :{BLACK}Bu kargo türünün grafiğini aç
 STR_GRAPH_CARGO_PAYMENT_CARGO                                   :{TINY_FONT}{BLACK}{STRING}
 
@@ -1964,8 +1964,8 @@ STR_CONFIG_SETTING_ENDING_YEAR_ZERO                             :Asla
 
 STR_CONFIG_SETTING_ECONOMY_TYPE                                 :Ekonomi türü: {STRING}
 ###length 2
-STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT                        :Sorunsuz ekonomi, üretim değişikliklerini daha sık ve daha küçük adımlarla yapar. Donuk ekonomi, üretim değişikliklerini ve fabrika kapanışlarını durdurur. Sektör türleri bir NewGRF tarafından sağlanırsa bu ayarın hiçbir etkisi olmayabilir.{}{}Ekonomi Donuk ise aylık Fabrika üretimi yine de değişken görünebilir, çünkü üretim belli aralıklarla tetiklenir ve ay başına denk gelmeyebilir
-STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT_PERIOD                 :Sorunsuz ekonomi, üretim değişikliklerini daha sık ve daha küçük adımlarla yapar. Donuk ekonomi, üretim değişikliklerini ve fabrika kapanışlarını durdurur. Sektör türleri bir NewGRF tarafından sağlanırsa bu ayarın hiçbir etkisi olmayabilir.{}{}Ekonomi Donuk ise dakikalık Fabrika üretimi yine de değişken görünebilir, çünkü üretim belli aralıklarla tetiklenir ve dakika başına denk gelmeyebilir
+STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT                        :Sorunsuz ekonomi, üretim değişikliklerini daha sık ve daha küçük adımlarla yapar. Donuk ekonomi, üretim değişikliklerini ve fabrika kapanışlarını durdurur. Sektör türleri bir NewGRF tarafından sağlanırsa bu ayarın hiçbir etkisi olmayabilir.{}{}Ekonomi Donmuş ise aylık Fabrika üretimi yine de değişken görünebilir, çünkü üretim belli aralıklarla tetiklenir ve ay başına denk gelmeyebilir
+STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT_PERIOD                 :Sorunsuz ekonomi, üretim değişikliklerini daha sık ve daha küçük adımlarla yapar. Donuk ekonomi, üretim değişikliklerini ve fabrika kapanışlarını durdurur. Sektör türleri bir NewGRF tarafından sağlanırsa bu ayarın hiçbir etkisi olmayabilir.{}{}Ekonomi Donmuş ise dakikalık Fabrika üretimi yine de değişken görünebilir, çünkü üretim belli aralıklarla tetiklenir ve dakika başına denk gelmeyebilir
 
 ###length 3
 STR_CONFIG_SETTING_ECONOMY_TYPE_ORIGINAL                        :Orijinal
@@ -2069,7 +2069,7 @@ STR_CONFIG_SETTING_ZOOM_LVL_OUT_4X                              :4x
 STR_CONFIG_SETTING_ZOOM_LVL_OUT_8X                              :8x
 
 STR_CONFIG_SETTING_SPRITE_ZOOM_MIN                              :Kullanılacak en yüksek çözünürlüklü sprite'lar: {STRING}
-STR_CONFIG_SETTING_SPRITE_ZOOM_MIN_HELPTEXT                     :Sprite'lar için kullanılacak maksimum çözünürlüğü sınırlar. Sprite çözünürlüğünü sınırlamak, mevcut olunca bile yüksek çözünürlüklü grafikleri kullanmaktan kaçınacaktır. Bu, yüksek çözünürlüklü grafikleri içeren ve içermeyen NewGRF dosyalarının bir karşımı kullanılırken oyun görünümünü bir arada tutmaya yardımcı olabilir
+STR_CONFIG_SETTING_SPRITE_ZOOM_MIN_HELPTEXT                     :Sprite'lar için kullanılacak maksimum çözünürlüğü sınırlar. Sprite çözünürlüğünü sınırlamak, mevcut olunca bile yüksek çözünürlüklü grafikleri kullanmaktan kaçınacaktır. Bu, yüksek çözünürlüklü grafikleri içeren ve içermeyen GRF dosyalarının bir karşımı kullanılırken oyun görünümünü bir arada tutmaya yardımcı olabilir
 ###length 3
 STR_CONFIG_SETTING_SPRITE_ZOOM_LVL_MIN                          :4x
 STR_CONFIG_SETTING_SPRITE_ZOOM_LVL_IN_2X                        :2x
@@ -2091,6 +2091,8 @@ STR_CONFIG_SETTING_LARGER_TOWNS_VALUE                           :{COMMA}'de 1
 STR_CONFIG_SETTING_LARGER_TOWNS_DISABLED                        :Hiçbiri
 STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER                         :Birincil şehir büyüklüğü çarpanı: {STRING}
 STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER_HELPTEXT                :Oyun başlangıcında şehirlerin normal kasabalara kıyasla ortalama büyüklüğü
+STR_CONFIG_SETTING_TOWN_MIN_DISTANCE                            :Şehirler arası asgari uzaklık: {STRING}
+STR_CONFIG_SETTING_TOWN_MIN_DISTANCE_HELPTEXT                   :Harita oluştururken ve rastgele kurulurken şehirlerin arasındaki asgari uzaklığı kare cinsinden belirleyin
 
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL                    :Dağıtım grafiğini her {STRING}
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL_HELPTEXT           :Bağlantı grafiğinin sonraki yeniden hesaplamaları arasındaki süre. Her yeniden hesaplama, grafiğin bir bileşeni için planları hesaplar. Bu, bu ayar için bir X değerinin tüm grafiğin her X saniyede bir güncelleneceği anlamına gelmediği anlamına gelir. Sadece bazı bileşenler olacaktır. Ne kadar kısa ayarlarsanız, hesaplamak için o kadar fazla CPU süresi gerekir. Ne kadar uzun ayarlarsanız, kargo dağıtımının yeni rotalarda başlaması o kadar uzun sürer
@@ -2852,6 +2854,7 @@ STR_PICKER_PREVIEW_EXPAND_TOOLTIP                               :Önizleme resim
 STR_PICKER_STATION_CLASS_TOOLTIP                                :Görüntülenecek istasyon sınıfını seçin
 STR_PICKER_STATION_TYPE_TOOLTIP                                 :İnşa edilecek istasyon türünü seçin. Kayıtlı öğelerde ekleme çıkarma için Ctrl+Tıklayabilirsiniz
 STR_PICKER_WAYPOINT_CLASS_TOOLTIP                               :Görüntülenecek bir yol noktası türünü seçin
+STR_PICKER_WAYPOINT_TYPE_TOOLTIP                                :İnşa edilecek yerimini seçin. Kayıtlı öğelerde ekleme çıkarma için Ctrl+Tıklayabilirsiniz
 STR_PICKER_ROADSTOP_BUS_CLASS_TOOLTIP                           :Görüntülenecek otobüs istasyonunu seçin
 STR_PICKER_ROADSTOP_BUS_TYPE_TOOLTIP                            :İnşa edilecek otobüs istasyonunu seçin. Kayıtlı öğelerde ekleme çıkarma için Ctrl+Tıklayabilirsiniz
 STR_PICKER_ROADSTOP_TRUCK_CLASS_TOOLTIP                         :Görüntülenecek bir kamyon istasyonu türünü seçin
@@ -3488,7 +3491,10 @@ STR_GENERATION_PREPARING_TILELOOP                               :{BLACK}tile-loo
 STR_GENERATION_PREPARING_SCRIPT                                 :{BLACK}Betik çalıştırılıyor
 STR_GENERATION_PREPARING_GAME                                   :{BLACK}Oyun hazırlanıyor
 
+STR_TOWN_DATA_ERROR_LOAD_FAILED                                 :{WHITE}Şehir verisi yükleme başarısız oldu
+STR_TOWN_DATA_ERROR_JSON_FORMATTED_INCORRECTLY                  :{WHITE}JSON dosyası hatalı şekilde biçimlendirilmiş
 STR_TOWN_DATA_ERROR_TOWN_FORMATTED_INCORRECTLY                  :{WHITE}{STRING} veri hatalı şekilde biçimlendirilmiş
+STR_TOWN_DATA_ERROR_BAD_COORDINATE                              :{WHITE}{STRING} koordinatlar hatalı şekilde biçimlendirilmiş, toplam yükseklik haritası boyutunun 0'a 1 oranında olmalıdır.
 
 STR_TOWN_DATA_ERROR_FAILED_TO_FOUND_TOWN                        :{WHITE}{NUM} şehri kurmak için uygun yer bulunamadı. Kurulmak istenen yere tabela konuldu
 
@@ -3653,17 +3659,17 @@ STR_NEWGRF_LIST_COMPATIBLE                                      :{YELLOW}Uyumlu 
 STR_NEWGRF_LIST_MISSING                                         :{RED}Eksik dosyalar
 
 # NewGRF 'it's broken' warnings
-STR_NEWGRF_BROKEN                                               :{WHITE}NewGRF '{0:STRING}' davranışı senkron kaybına ve/veya çökmelere sebep olabilir
-STR_NEWGRF_BROKEN_POWERED_WAGON                                 :{WHITE}'{1:ENGINE}' için enerjilendirilmiş wagon durumunu garaj içinde değilken değiştirdi
-STR_NEWGRF_BROKEN_VEHICLE_LENGTH                                :{WHITE}'{1:ENGINE}' için araç uzunluğunu garaj içinde değilken değiştirdi
-STR_NEWGRF_BROKEN_CAPACITY                                      :{WHITE}'{1:ENGINE}' için araç kapasitesini bir garajda veya tamirde değilken değiştirdi
+STR_NEWGRF_BROKEN                                               :{WHITE}NewGRF '{PUSH_COLOUR}{0:STRING}{POP_COLOUR}' davranışı senkron kaybına ve/veya çökmelere sebep olabilir
+STR_NEWGRF_BROKEN_POWERED_WAGON                                 :{WHITE}'{PUSH_COLOUR}{1:ENGINE}{POP_COLOUR}' için enerjilendirilmiş wagon durumunu depo dışındayken değiştirdi
+STR_NEWGRF_BROKEN_VEHICLE_LENGTH                                :{WHITE}'{PUSH_COLOUR}{1:ENGINE}{POP_COLOUR}' hangar içinde değilken araç uzunluğunu değiştirdi
+STR_NEWGRF_BROKEN_CAPACITY                                      :{WHITE}Bir garajda veya tamirde değilken araç kapasitesini '{PUSH_COLOUR}{1:ENGINE}{POP_COLOUR}' için değiştirdi
 STR_BROKEN_VEHICLE_LENGTH                                       :{WHITE}'{VEHICLE}' adlı tren '{COMPANY}' şirketine ait olup uzunluğu geçersizdir. Muhtemelen NewGRF'lerle ilgili bir problemden kaynaklanıyor. Oyun senkron kaybına uğrayabilir ya da çakılabilir
 
-STR_NEWGRF_BUGGY                                                :{WHITE}'{0:STRING}' NewGRF'si geçersiz bilgi vermektedir
-STR_NEWGRF_BUGGY_ARTICULATED_CARGO                              :{WHITE}'{1:ENGINE}' için kargo tür değişim bilgisi yapımdan sonraki alım listesinden farklı. Bu otomatik yenileme-değiştirmenin kargo türünü düzgün değiştirememesine sebep olabilir
-STR_NEWGRF_BUGGY_ENDLESS_PRODUCTION_CALLBACK                    :{WHITE}'{1:STRING}' üretim yordamında sonsuz döngüye sebep oldu
+STR_NEWGRF_BUGGY                                                :{WHITE}NewGRF '{PUSH_COLOUR}{0:STRING}{POP_COLOUR}' geçersiz bilgi vermektedir
+STR_NEWGRF_BUGGY_ARTICULATED_CARGO                              :{WHITE}'{PUSH_COLOUR}{1:ENGINE}{POP_COLOUR}' için kargo tür değişim bilgisi yapımdan sonraki alım listesinden farklı. Bu otomatik yenileme-değiştirmenin kargo türünü doğru şekilde değiştirmesine engel olabilir
+STR_NEWGRF_BUGGY_ENDLESS_PRODUCTION_CALLBACK                    :{WHITE}'{PUSH_COLOUR}{1:STRING}{POP_COLOUR}' üretim yordamında sonsuz döngüye neden oldu
 STR_NEWGRF_BUGGY_UNKNOWN_CALLBACK_RESULT                        :{WHITE}{1:HEX} adlı callback hata ya da geçersiz sonuç döndü {2:HEX}
-STR_NEWGRF_BUGGY_INVALID_CARGO_PRODUCTION_CALLBACK              :{WHITE}'{1:STRING}' üretim geri çağırımında, geçerli olmayan kargo türü geri döndürdü {2:HEX}
+STR_NEWGRF_BUGGY_INVALID_CARGO_PRODUCTION_CALLBACK              :{WHITE}'{PUSH_COLOUR}{1:STRING}{POP_COLOUR}' üretim geri çağırımında, geçerli olmayan kargo türü geri döndü {2:HEX}
 
 # 'User removed essential NewGRFs'-placeholders for stuff without specs
 STR_NEWGRF_INVALID_CARGO                                        :<geçersiz kargo>
@@ -4083,7 +4089,7 @@ STR_VEHICLE_LIST_AIRCRAFT_CAPTION                               :{WHITE}{STRING}
 
 ###length VEHICLE_TYPES
 STR_VEHICLE_LIST_TRAIN_LIST_TOOLTIP                             :{BLACK}Trenler - daha fazla bilgi için trene tıklayın. Kargo türünü görmek için Ctrl+Shift basılı tutun
-STR_VEHICLE_LIST_ROAD_VEHICLE_TOOLTIP                           :{BLACK}Karayolu taşıtları - bilgi için taşıta tıklayın. Kargo türünü görmek için Ctrl+Shift basılı tutun
+STR_VEHICLE_LIST_ROAD_VEHICLE_TOOLTIP                           :{BLACK}Karayolu araçları - bilgi için araca tıklayın. Kargo türünü görmek için Ctrl+Shift basılı tutun
 STR_VEHICLE_LIST_SHIP_TOOLTIP                                   :{BLACK}Gemiler - bilgi için gemiye tıkla. Kargo türünü görmek için Ctrl+Shift basılı tutun
 STR_VEHICLE_LIST_AIRCRAFT_TOOLTIP                               :{BLACK}Uçak - ayrıntılı bilgi için uçağı tıkla. Kargo türünü görmek için Ctrl+Shift basılı tutun
 
@@ -4472,7 +4478,7 @@ STR_VEHICLE_VIEW_AIRCRAFT_ORDERS_TOOLTIP                        :{BLACK}Uçağı
 
 ###length VEHICLE_TYPES
 STR_VEHICLE_VIEW_TRAIN_SHOW_DETAILS_TOOLTIP                     :{BLACK}Tren ayrıntılarını göster. Tren grubunu görmek için Ctrl+Tık
-STR_VEHICLE_VIEW_ROAD_VEHICLE_SHOW_DETAILS_TOOLTIP              :{BLACK}Karayolu taşıtı ayrıntılarını göster. Taşıtın grubunu göstermek için Ctrl+Tık
+STR_VEHICLE_VIEW_ROAD_VEHICLE_SHOW_DETAILS_TOOLTIP              :{BLACK}Karayolu aracı ayrıntılarını göster. Aracın grubunu göstermek için Ctrl+Tık
 STR_VEHICLE_VIEW_SHIP_SHOW_DETAILS_TOOLTIP                      :{BLACK}Gemi ayrıntılarını göster. Geminin grubunu görmek için Ctrl+Tık
 STR_VEHICLE_VIEW_AIRCRAFT_SHOW_DETAILS_TOOLTIP                  :{BLACK}Uçak ayrıntılarını göster. Uçak grubunu göstermek için Ctrl+Tık
 
@@ -4803,9 +4809,9 @@ STR_TIMETABLE_TRAVEL_FOR                                        :{STRING} boyunc
 STR_TIMETABLE_TRAVEL_FOR_SPEED                                  :{STRING} boyunca en çok {VELOCITY} hız ile git
 STR_TIMETABLE_TRAVEL_FOR_ESTIMATED                              :Seyahat et ({STRING} için, hareket planı yok)
 STR_TIMETABLE_TRAVEL_FOR_SPEED_ESTIMATED                        :Seyahat et ({STRING} için, hareket planı yok) en fazla {VELOCITY} hızı ile
-STR_TIMETABLE_STAY_FOR_ESTIMATED                                :({STRING} kalma, hareket saati yok)
+STR_TIMETABLE_STAY_FOR_ESTIMATED                                :{SPACE}({STRING} kal, hareket saati yok)
 STR_TIMETABLE_AND_TRAVEL_FOR_ESTIMATED                          :{SPACE}({STRING} için seyahat, hareket saati yok)
-STR_TIMETABLE_STAY_FOR                                          :{STRING} bekle
+STR_TIMETABLE_STAY_FOR                                          :{SPACE}ve bekle {STRING}
 STR_TIMETABLE_AND_TRAVEL_FOR                                    :{SPACE}ve şuraya sefer yap: {STRING}
 
 STR_TIMETABLE_APPROX_TIME                                       :{BLACK}Bu zaman çizelgesinin tamamlanması yaklaşık {STRING} sürecek

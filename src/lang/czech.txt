@@ -723,11 +723,11 @@ STR_GRAPH_SELECT_SCALE                                          :Změnit vodorov
 STR_GRAPH_CARGO_PAYMENT_RATES_CAPTION                           :{WHITE}Ceny za přepravu nákladu
 STR_GRAPH_CARGO_PAYMENT_RATES_DAYS                              :{TINY_FONT}{BLACK}Dnů v přepravě
 STR_GRAPH_CARGO_PAYMENT_RATES_SECONDS                           :{TINY_FONT}{BLACK}Sekund v přepravě
-STR_GRAPH_CARGO_PAYMENT_RATES_TITLE                             :{TINY_FONT}{BLACK}Platba za doručení 10 jednotek (nebo 10 000 litrů) nákladu do vzdálenosti 20 čtverečků
+STR_GRAPH_CARGO_PAYMENT_RATES_TITLE                             :{TINY_FONT}{BLACK}Platba za doručeni 10 jednotek (nebo 10 000 litru) nákladu do vzdálenosti 20 čtverecků
 STR_GRAPH_CARGO_ENABLE_ALL                                      :{TINY_FONT}{BLACK}Vše
 STR_GRAPH_CARGO_DISABLE_ALL                                     :{TINY_FONT}{BLACK}Nic
-STR_GRAPH_CARGO_TOOLTIP_ENABLE_ALL                              :{BLACK}V grafu zobrazit všechny náklady
-STR_GRAPH_CARGO_TOOLTIP_DISABLE_ALL                             :{BLACK}V grafu nezobrazovat žádné náklady
+STR_GRAPH_CARGO_TOOLTIP_ENABLE_ALL                              :{BLACK}Zobraz všechny druhy nákladu na grafu přepravních sazeb
+STR_GRAPH_CARGO_TOOLTIP_DISABLE_ALL                             :{BLACK}Skryje všechny položky na grafu přepravních sazeb
 STR_GRAPH_CARGO_PAYMENT_TOGGLE_CARGO                            :{BLACK}Zobrazit nebo skrýt graf pro tento druh nákladu
 STR_GRAPH_CARGO_PAYMENT_CARGO                                   :{TINY_FONT}{BLACK}{STRING}
 
@@ -738,7 +738,7 @@ STR_GRAPH_INDUSTRY_RANGE_DELIVERED                              :Doručeno
 STR_GRAPH_INDUSTRY_RANGE_WAITING                                :Čeká
 
 STR_GRAPH_TOWN_CARGO_CAPTION                                    :{WHITE}{TOWN} - historie nákladu
-STR_GRAPH_TOWN_RANGE_PRODUCED                                   :Vyprodukováno
+STR_GRAPH_TOWN_RANGE_PRODUCED                                   :Dodávka
 STR_GRAPH_TOWN_RANGE_TRANSPORTED                                :Přepraveno
 
 STR_GRAPH_PERFORMANCE_DETAIL_TOOLTIP                            :{BLACK}Zobrazit podrobné hodnocení výkonu
@@ -2177,6 +2177,8 @@ STR_CONFIG_SETTING_LARGER_TOWNS_VALUE                           :1 z {COMMA}
 STR_CONFIG_SETTING_LARGER_TOWNS_DISABLED                        :Žádné
 STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER                         :Činitel základní velikosti města: {STRING}
 STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER_HELPTEXT                :Průměrná velikost větších měst v porovnání s ostatními městy na začátku hry
+STR_CONFIG_SETTING_TOWN_MIN_DISTANCE                            :Minimální vzdálenost mezi městy: {STRING}
+STR_CONFIG_SETTING_TOWN_MIN_DISTANCE_HELPTEXT                   :Nastav minimální vzdálenost mezi městy pro generování mapy a náhodné zakládání
 
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL                    :Aktualizovat graf spojení každých: {STRING}
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL_HELPTEXT           :{BLACK}Doba mezi následnými přepočty grafu spojení. Každý přepočet počítá plány pro jednu komponentu grafu. To znamená, že hodnota X v tomto nastavení neznamená, že se celý graf aktualizuje každých X sekund. Aktualizuje se pouze jedna část. Čím kratší dobu nastavíte, tím více procesorového času bude potřeba k výpočtu. Čím delší dobu nastavíte, tím déle bude trvat, než začne distribuce nákladu na nových trasách.
@@ -2956,7 +2958,7 @@ STR_HOUSE_PICKER_YEARS_ANY                                      :{BLACK}Roky: {G
 STR_HOUSE_PICKER_YEARS_FROM                                     :{BLACK}Roky: {GOLD}Od {NUM}
 STR_HOUSE_PICKER_YEARS_UNTIL                                    :{BLACK}Roky: {GOLD}Do {NUM}
 STR_HOUSE_PICKER_SIZE                                           :{BLACK}Velikost: {GOLD}{NUM}x{NUM} polí
-STR_HOUSE_PICKER_CARGO_ACCEPTED                                 :{BLACK}Přijímaný náklad: {GOLD}{STRING}
+STR_HOUSE_PICKER_CARGO_ACCEPTED                                 :{BLACK}Přijímaný náklad: {GOLD}
 STR_HOUSE_PICKER_CARGO_PRODUCED                                 :{BLACK}Vyprodukováno nákladu: {GOLD}{CARGO_LIST}
 
 STR_HOUSE_PICKER_CLASS_ZONE1                                    :Okraj
@@ -4015,7 +4017,7 @@ STR_STATION_VIEW_CLOSE_AIRPORT_TOOLTIP                          :{BLACK}Zabráni
 STR_WAYPOINT_VIEW_CAPTION                                       :{WHITE}{WAYPOINT}
 STR_WAYPOINT_VIEW_CENTER_TOOLTIP                                :{BLACK}Zaměřit hlavní pohled na umístění bodu na trase. Při stisknutí Ctrl+Klik otevřete nové okno na umístění bodu na trase
 STR_WAYPOINT_VIEW_EDIT_TOOLTIP                                  :{BLACK}Přejmenovat směřování nebo přesunout značku
-STR_BUOY_VIEW_CENTER_TOOLTIP                                    :{BLACK}Vycentrovat pohled na bójku. Ctrl+Klik otevře nové okno náhledu
+STR_BUOY_VIEW_CENTER_TOOLTIP                                    :{BLACK}Vystředit pohled na bójku. Ctrl+Klik otevře nové okno náhledu
 STR_BUOY_VIEW_RENAME_TOOLTIP                                    :{BLACK}Přejmenovat bójku
 
 STR_WAYPOINT_VIEW_EDIT_WAYPOINT_SIGN                            :{WHITE}Upravit značku směřování

@@ -2700,7 +2700,7 @@ STR_CONTENT_DETAIL_SUBTITLE_AUTOSELECTED                        :{SILVER}Esta de
 STR_CONTENT_DETAIL_SUBTITLE_ALREADY_HERE                        :{SILVER}Já tem este conteúdo
 STR_CONTENT_DETAIL_SUBTITLE_DOES_NOT_EXIST                      :{SILVER}Este conteúdo é desconhecido e não pode ser descarregado no OpenTTD
 
-STR_CONTENT_DETAIL_UPDATE                                       :{SILVER}Isto é uma atualização para u{G 0 m m ma ns mas} {STRING} existente{G 0 "" "" "" s s}
+STR_CONTENT_DETAIL_UPDATE                                       :{SILVER}Este conteúdo é uma atualização para u{G 0 m m ma ns mas} {STRING} já existente{G 0 "" "" "" s s} no seu sistema
 STR_CONTENT_DETAIL_NAME                                         :{SILVER}Nome: {WHITE}{STRING}
 STR_CONTENT_DETAIL_VERSION                                      :{SILVER}Versão: {WHITE}{STRING}
 STR_CONTENT_DETAIL_DESCRIPTION                                  :{SILVER}Descrição: {WHITE}{STRING}
@@ -2719,7 +2719,7 @@ STR_CONTENT_TYPE_NEWGRF                                         :{G=m}NewGRF
 STR_CONTENT_TYPE_AI                                             :{G=f}IA
 STR_CONTENT_TYPE_AI_LIBRARY                                     :{G=f}Biblioteca de IA
 STR_CONTENT_TYPE_SCENARIO                                       :{G=m}Cenário
-STR_CONTENT_TYPE_HEIGHTMAP                                      :{G=m}Mapa de alturas
+STR_CONTENT_TYPE_HEIGHTMAP                                      :{G=m}Mapa de altura
 STR_CONTENT_TYPE_BASE_SOUNDS                                    :{G=mp}Sons base
 STR_CONTENT_TYPE_BASE_MUSIC                                     :{G=fp}Músicas base
 STR_CONTENT_TYPE_GAME_SCRIPT                                    :{G=m}Script de jogo

@@ -2090,6 +2090,8 @@ STR_CONFIG_SETTING_LARGER_TOWNS_VALUE                           :1 op {COMMA}
 STR_CONFIG_SETTING_LARGER_TOWNS_DISABLED                        :Geen
 STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER                         :Beginfactor voor stadsgroei: {STRING}
 STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER_HELPTEXT                :Gemiddelde grootte van steden in vergelijking tot normale steden bij het begin van het spel.
+STR_CONFIG_SETTING_TOWN_MIN_DISTANCE                            :Minimale afstand tussen steden: {STRING}
+STR_CONFIG_SETTING_TOWN_MIN_DISTANCE_HELPTEXT                   :Minimale afstand in tegels instellen tussen steden bij kaart genereren en willekeurig stichten
 
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL                    :Distributiegrafiek elke {STRING} bijwerken
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL_HELPTEXT           :De tijd tussen opeenvolgende herberekeningen van de koppelingsgrafiek. Elke berekening berekent de plannen voor één component van de grafiek. Dat betekent dat een waarde X voor deze instelling niet betekent dat de hele grafiek elke X seconden wordt bijgewerkt. Dat geldt alleen voor één component. Hoe korter je deze waarde instelt, hoe meer CPU-tijd er nodig is voor de berekening. Hoe langer je deze waarde instelt, hoe langer het duurt voordat de vrachtdistributie start op nieuwe routes.
@@ -2869,7 +2871,7 @@ STR_HOUSE_PICKER_YEARS_ANY                                      :{BLACK}Jaar: {G
 STR_HOUSE_PICKER_YEARS_FROM                                     :{BLACK}Jaar: {GOLD}Vanaf {NUM}
 STR_HOUSE_PICKER_YEARS_UNTIL                                    :{BLACK}Jaar: {GOLD}Tot en met {NUM}
 STR_HOUSE_PICKER_SIZE                                           :{BLACK}Grootte: {GOLD}{NUM}x{NUM} tegels
-STR_HOUSE_PICKER_CARGO_ACCEPTED                                 :{BLACK}Geaccepteerde vracht: {GOLD}{STRING}
+STR_HOUSE_PICKER_CARGO_ACCEPTED                                 :{BLACK}Geaccepteerde vracht: {GOLD}
 STR_HOUSE_PICKER_CARGO_PRODUCED                                 :{BLACK}Geproduceerde vracht: {GOLD}{CARGO_LIST}
 
 STR_HOUSE_PICKER_CLASS_ZONE1                                    :Rand
@@ -3693,6 +3695,7 @@ STR_EDIT_SIGN_CAPTION                                           :{WHITE}Bord bew
 STR_EDIT_SIGN_LOCATION_TOOLTIP                                  :{BLACK}Centreer het hoofdscherm op de locatie van het sein. Ctrl+klik opent een nieuw venster op de locatie van het sein.
 STR_EDIT_SIGN_NEXT_SIGN_TOOLTIP                                 :{BLACK}Ga naar volgende bord
 STR_EDIT_SIGN_PREVIOUS_SIGN_TOOLTIP                             :{BLACK}Ga naar vorige bord
+STR_EDIT_SIGN_TEXT_COLOUR_TOOLTIP                               :{BLACK}Kleur van tekst van bord
 
 STR_EDIT_SIGN_SIGN_OSKTITLE                                     :{BLACK}Geef een naam voor dit bord
 
