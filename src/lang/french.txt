@@ -2870,7 +2870,7 @@ STR_HOUSE_PICKER_YEARS_ANY                                      :{BLACK}Années{
 STR_HOUSE_PICKER_YEARS_FROM                                     :{BLACK}Années{NBSP}: {GOLD}À partir de {NUM}
 STR_HOUSE_PICKER_YEARS_UNTIL                                    :{BLACK}Années{NBSP}: {GOLD}Jusqu'à {NUM}
 STR_HOUSE_PICKER_SIZE                                           :{BLACK}Taille{NBSP}: {GOLD}{NUM}{NBSP}x{NBSP}{NUM} cases
-STR_HOUSE_PICKER_CARGO_ACCEPTED                                 :{BLACK}Cargaison acceptée{NBSP}: {GOLD}{STRING}
+STR_HOUSE_PICKER_CARGO_ACCEPTED                                 :{BLACK}Cargaison acceptée{NBSP}: {GOLD}
 STR_HOUSE_PICKER_CARGO_PRODUCED                                 :{BLACK}Marchandises produites : {GOLD}{CARGO_LIST}
 
 STR_HOUSE_PICKER_CLASS_ZONE1                                    :Bord
