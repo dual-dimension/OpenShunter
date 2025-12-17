@@ -2984,9 +2984,7 @@ STR_PICKER_MODE_SAVED                                           :Збереже�
 STR_PICKER_MODE_SAVED_TOOLTIP                                   :Переключити на показ лише збережених елементів
 
 STR_PICKER_PREVIEW_SHRINK                                       :-
-STR_PICKER_PREVIEW_SHRINK_TOOLTIP                               :Зменшити висоту попереднього перегляду зображень. Ctrl+клац зменшує до нижньої межі
 STR_PICKER_PREVIEW_EXPAND                                       :+
-STR_PICKER_PREVIEW_EXPAND_TOOLTIP                               :Збільшити висоту попереднього перегляду зображень. Ctrl+клац збільшує до верхньої межі
 
 STR_PICKER_STATION_CLASS_TOOLTIP                                :Виберіть тип станцій для відображення
 STR_PICKER_STATION_TYPE_TOOLTIP                                 :Виберіть тип станції для побудови. Клацніть Ctrl+Клік, щоб додати або видалити зі списку збереженого
@@ -3022,7 +3020,6 @@ STR_HOUSE_PICKER_PROTECT                                        :Заборон�
 STR_HOUSE_PICKER_PROTECT_TOOLTIP                                :Укажіть, чи буде захищено цю будівлю від змін у разі зростання міста
 
 STR_HOUSE_PICKER_REPLACE                                        :Замінити наявний
-STR_HOUSE_PICKER_REPLACE_TOOLTIP                                :Чи наявний будинок автоматично видалятиметься з клітинки розташування
 
 STR_STATION_CLASS_DFLT                                          :Звичайна
 STR_STATION_CLASS_DFLT_STATION                                  :Звичайна станція

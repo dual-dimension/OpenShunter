@@ -3575,7 +3575,6 @@ STR_GENERATION_RIVER_GENERATION                                 :{BLACK}Generov�
 STR_GENERATION_CLEARING_TILES                                   :{BLACK}Tvorba členitého a kamenitého území
 STR_GENERATION_TOWN_GENERATION                                  :{BLACK}Generování měst
 STR_GENERATION_LAND_INDUSTRY_GENERATION                         :{BLACK}Generování pozemního průmyslu
-STR_GENERATION_WATER_INDUSTRY_GENERATION                        :{BLACK}Generování vodního průmyslu
 STR_GENERATION_OBJECT_GENERATION                                :{BLACK}Výstavba nepřesunutelných objektů
 STR_GENERATION_TREE_GENERATION                                  :{BLACK}Výsadba stromů
 STR_GENERATION_SETTINGUP_GAME                                   :{BLACK}Nastavování hry
@@ -3788,6 +3787,7 @@ STR_EDIT_SIGN_CAPTION                                           :{WHITE}Upravit 
 STR_EDIT_SIGN_LOCATION_TOOLTIP                                  :{BLACK}Vystředit pohled na značku. Podrž Ctrl pro otevření nového pohledu
 STR_EDIT_SIGN_NEXT_SIGN_TOOLTIP                                 :{BLACK}Na další návěstidlo
 STR_EDIT_SIGN_PREVIOUS_SIGN_TOOLTIP                             :{BLACK}Na předešlé návěstidlo
+STR_EDIT_SIGN_TEXT_COLOUR_TOOLTIP                               :{BLACK}Barva textu cedule
 
 STR_EDIT_SIGN_SIGN_OSKTITLE                                     :{BLACK}Zadej název pro značku
 
@@ -4905,7 +4905,7 @@ STR_TIMETABLE_TRAVEL_FOR_ESTIMATED                              :Jeď ({STRING},
 STR_TIMETABLE_TRAVEL_FOR_SPEED_ESTIMATED                        :Jeď ({STRING}, mimo jízdní řád) při maximální rychlosti {VELOCITY}
 STR_TIMETABLE_STAY_FOR_ESTIMATED                                :{SPACE}(zastavit na {STRING}, není v jízdním řádu)
 STR_TIMETABLE_AND_TRAVEL_FOR_ESTIMATED                          :{SPACE}(jet {STRING}, mimo jízdní řád)
-STR_TIMETABLE_STAY_FOR                                          :{SPACE}a počkat {STRING}
+STR_TIMETABLE_STAY_FOR                                          :a zůstat {STRING}
 STR_TIMETABLE_AND_TRAVEL_FOR                                    :{SPACE}a cestovat do {STRING}
 
 STR_TIMETABLE_APPROX_TIME                                       :{BLACK}Tento jízdní řád bude trvat přibližně {STRING}
