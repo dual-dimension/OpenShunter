@@ -56,6 +56,62 @@ public:
 	 */
 	void End()
 	{
+		return this->list->items.empty() || this->has_no_more_items;
+	}
+
+	/**
+	 * Callback from the list if an item gets removed.
+	 */
+	virtual void Remove(SQInteger item) = 0;
+
+	/**
+	 * Attach the sorter to a new list. This assumes the content of the old list has been moved to
+	 * the new list, too, so that we don't have to invalidate any iterators. Note that std::swap
+	 * doesn't invalidate iterators on lists and maps, so that should be safe.
+	 * @param target New list to attach to.
+	 */
+	virtual void Retarget(ScriptList *new_list)
+	{
+		this->list = new_list;
+	}
+};
+
+/**
+ * Sort by value, ascending.
+ */
+class ScriptListSorterValueAscending : public ScriptListSorter {
+private:
+	ScriptList::ScriptListSet::iterator value_iter; ///< The iterator over the value/item pairs in the set.
+
+public:
+	/**
+	 * Create a new sorter.
+	 * @param list The list to sort.
+	 */
+	ScriptListSorterValueAscending(ScriptList *list)
+	{
+		this->list = list;
+		this->End();
+	}
+
+	std::optional<SQInteger> Begin() override
+	{
+		if (this->list->values.empty()) {
+			this->item_next = std::nullopt;
+			return std::nullopt;
+		}
+		this->has_no_more_items = false;
+
+		this->value_iter = this->list->values.begin();
+		this->item_next = this->value_iter->second;
+
+		std::optional<SQInteger> item_current = this->item_next;
+		this->FindNext();
+		return item_current;
+	}
+
+	void End() override
+	{
 		this->item_next = std::nullopt;
 		this->has_no_more_items = true;
 	}
@@ -64,7 +120,18 @@ public:
 	 * Get the next item of the sorter.
 	 * @return Optional containing the next item, or std::nullopt when there is none.
 	 */
-	std::optional<SQInteger> Next()
+	void FindNext()
+	{
+		this->item_next = std::nullopt;
+		if (this->value_iter == this->list->values.end()) {
+			this->has_no_more_items = true;
+			return;
+		}
+		++this->value_iter;
+		if (this->value_iter != this->list->values.end()) this->item_next = this->value_iter->second;
+	}
+
+	std::optional<SQInteger> Next() override
 	{
 		if (this->IsEnd()) return std::nullopt;
 
@@ -165,7 +232,7 @@ private:
 	/* Note: We cannot use reverse_iterator.
 	 *       The iterators must only be invalidated when the element they are pointing to is removed.
 	 *       This only holds for forward iterators. */
-	ScriptList::ScriptListSet::const_iterator value_iter; ///< The iterator over the value/item pairs in the set.
+	ScriptList::ScriptListSet::iterator value_iter; ///< The iterator over the value/item pairs in the set.
 
 public:
 	/**
@@ -192,6 +259,15 @@ public:
 	}
 
 	void FindNext() override
+	{
+		this->item_next = std::nullopt;
+		this->has_no_more_items = true;
+	}
+
+	/**
+	 * Find the next item, and store that information.
+	 */
+	void FindNext()
 	{
 		this->item_next = std::nullopt;
 		if (this->value_iter == this->list->values.end()) {
@@ -502,10 +578,9 @@ bool ScriptList::SetValue(SQInteger item, SQInteger value)
 	this->sorter->Remove(item);
 	auto value_iter = this->values.find({value_old, item});
 	assert(value_iter != this->values.end());
+	this->values.erase(value_iter);
 	item_iter->second = value;
-	auto node_handle = this->values.extract(value_iter);
-	node_handle.value().first = value;
-	this->values.insert(std::move(node_handle));
+	this->values.emplace(value, item);
 
 	return true;
 }
