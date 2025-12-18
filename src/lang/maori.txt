@@ -2090,6 +2090,8 @@ STR_CONFIG_SETTING_LARGER_TOWNS_VALUE                           :1 i te {COMMA}
 STR_CONFIG_SETTING_LARGER_TOWNS_DISABLED                        :Kore
 STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER                         :Tau whakarea o te rahi o ngā tāone nui i te tīmatanga: {STRING}
 STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER_HELPTEXT                :Te rahi toharite o ngā tāone nui ki ngā tāone arowhānui i te tīmatanga o te kēmu
+STR_CONFIG_SETTING_TOWN_MIN_DISTANCE                            :Roanga mōkito i waenga i ngā tāone: {STRING}
+STR_CONFIG_SETTING_TOWN_MIN_DISTANCE_HELPTEXT                   :Tautuhia te roanga mōkito ā-papariki i waenga i ngā tāone mō te hanga mahere me te whakatūranga matapōkere
 
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL                    :Whakahoutia te kauwhata tuari ia {STRING}
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL_HELPTEXT           :Te wā i waenganui o ngā tātai anō i te kauwhata hono. Mō tētahi huānga o te kauwhata ia tātai anō, nā reira, mehemea ka H tēnei tautuhinga, kāore te kauwhata katoa e whakahoutia ia H hēkena, ka whakahoutia te huānga kotahi anake. Ka poto ake te tautuhinga, ka roa ake te wā ka pīrangitia e te pūtukatuka matua kia tātaitia ai. Ka roa ake te tautuhinga, ka roa ake te tōmuri ki te tīmata o te tuari utanga i ngā ara hou
@@ -2869,7 +2871,7 @@ STR_HOUSE_PICKER_YEARS_ANY                                      :{BLACK}Tau: {GO
 STR_HOUSE_PICKER_YEARS_FROM                                     :{BLACK}Tau: {GOLD}Mai i te {NUM}
 STR_HOUSE_PICKER_YEARS_UNTIL                                    :{BLACK}Tau: {GOLD}Ki te {NUM}
 STR_HOUSE_PICKER_SIZE                                           :{BLACK}Rahi: {GOLD}{NUM}x{NUM} papariki
-STR_HOUSE_PICKER_CARGO_ACCEPTED                                 :{BLACK}Utanga hei whiwhi: {GOLD}{STRING}
+STR_HOUSE_PICKER_CARGO_ACCEPTED                                 :{BLACK}Utanga hei whiwhi: {GOLD}
 STR_HOUSE_PICKER_CARGO_PRODUCED                                 :{BLACK}Utanga hei whakaputa: {GOLD}{CARGO_LIST}
 
 STR_HOUSE_PICKER_CLASS_ZONE1                                    :Tapa
@@ -3693,6 +3695,7 @@ STR_EDIT_SIGN_CAPTION                                           :{WHITE}Whakarer
 STR_EDIT_SIGN_LOCATION_TOOLTIP                                  :{BLACK}Nekehia te tirohanga matua ki te tauwāhi o te tohu. Pātaki+Pāwhiri kia huaki i tētahi atu tirohanga i te tauwāhi o te tohu
 STR_EDIT_SIGN_NEXT_SIGN_TOOLTIP                                 :{BLACK}Haere ki te tohu ki muri
 STR_EDIT_SIGN_PREVIOUS_SIGN_TOOLTIP                             :{BLACK}Haere ki te tohu ki mua
+STR_EDIT_SIGN_TEXT_COLOUR_TOOLTIP                               :{BLACK}Kara o te kuputuhi o te tohu
 
 STR_EDIT_SIGN_SIGN_OSKTITLE                                     :{BLACK}Tāurua he ingoa mō te tohu
 
@@ -5139,7 +5142,7 @@ STR_ERROR_TOO_MANY_TRUCK_STOPS                                  :{WHITE}Tuhene n
 STR_ERROR_TOO_CLOSE_TO_ANOTHER_DOCK                             :{WHITE}Tata rawa ki tētahi atu tauranga
 STR_ERROR_TOO_CLOSE_TO_ANOTHER_AIRPORT                          :{WHITE}Tata rawa ki tētahi atu taunga rererangi
 STR_ERROR_CAN_T_RENAME_STATION                                  :{WHITE}Tē taea te tapa anō te teihana...
-STR_ERROR_CAN_T_MOVE_STATION_NAME                               :{WHITE}Tē taea te neke te tohu o te teihana...
+STR_ERROR_CAN_T_MOVE_STATION_NAME                               :{WHITE}Tē taea te neke te tohu o te teihana…
 STR_ERROR_DRIVE_THROUGH_ON_TOWN_ROAD                            :{WHITE}... nō tētahi tāone te rori
 STR_ERROR_DRIVE_THROUGH_DIRECTION                               :{WHITE}... ki te ahu hē te rori
 STR_ERROR_DRIVE_THROUGH_CORNER                                  :{WHITE}... tē āhei ngā koki i ngā tūnga taraiwamai
@@ -5171,7 +5174,7 @@ STR_ERROR_CAN_T_BUILD_RAIL_WAYPOINT                             :{WHITE}Tē taea
 STR_ERROR_CAN_T_BUILD_ROAD_WAYPOINT                             :{WHITE}Tē taea te hanga te aratohu rori i konei...
 STR_ERROR_CAN_T_POSITION_BUOY_HERE                              :{WHITE}Tē taea te maka te kārewa i konei...
 STR_ERROR_CAN_T_CHANGE_WAYPOINT_NAME                            :{WHITE}Tē taea te panoni te ingoa o te aratohu...
-STR_ERROR_CAN_T_MOVE_WAYPOINT_NAME                              :{WHITE}Tē taea te neke te tohu o te aratohu...
+STR_ERROR_CAN_T_MOVE_WAYPOINT_NAME                              :{WHITE}Tē taea te neke te tohu o te aratohu…
 
 STR_ERROR_CAN_T_REMOVE_RAIL_WAYPOINT                            :{WHITE}Tē taea te tango te aratohu tereina nei...
 STR_ERROR_CAN_T_REMOVE_ROAD_WAYPOINT                            :{WHITE}Tē taea te tango te aratohu rori nei...

@@ -2091,6 +2091,8 @@ STR_CONFIG_SETTING_LARGER_TOWNS_VALUE                           :1 de cada {COMM
 STR_CONFIG_SETTING_LARGER_TOWNS_DISABLED                        :Ninguna
 STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER                         :Multiplicador inicial del tamaño de ciudad: {STRING}
 STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER_HELPTEXT                :Tamaño medio de las ciudades en relación a los municipios normales al comienzo de la partida
+STR_CONFIG_SETTING_TOWN_MIN_DISTANCE                            :Distancia mínima entre municipios: {STRING}
+STR_CONFIG_SETTING_TOWN_MIN_DISTANCE_HELPTEXT                   :Fija la distancia mínima entre municipios en casillas para la generación de mapas y la fundación aleatoria de municipios
 
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL                    :Actualizar gráfico de distribución cada {STRING}
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL_HELPTEXT           :Intervalo entre cálculos sucesivos del grafo de distribución. Cada cálculo planifica uno de los componentes del grafo. Esto significa que un valor X en este ajuste no implica que el grafo completo se actualice cada X segundos. Solo lo hará algún componente. Cuanto más corto sea, más tiempo de CPU será necesario para calcularlo. Cuanto más largo sea, más tiempo tardará la distribución de carga en incorporar nuevas rutas
@@ -2870,7 +2872,7 @@ STR_HOUSE_PICKER_YEARS_ANY                                      :{BLACK}Años: {
 STR_HOUSE_PICKER_YEARS_FROM                                     :{BLACK}Años: {GOLD}Desde {NUM}
 STR_HOUSE_PICKER_YEARS_UNTIL                                    :{BLACK}Años: {GOLD}Hasta {NUM}
 STR_HOUSE_PICKER_SIZE                                           :{BLACK}Tamaño: {GOLD}{NUM}x{NUM} casillas
-STR_HOUSE_PICKER_CARGO_ACCEPTED                                 :{BLACK}Carga aceptada: {GOLD}{STRING}
+STR_HOUSE_PICKER_CARGO_ACCEPTED                                 :{BLACK}Carga aceptada: {GOLD}
 STR_HOUSE_PICKER_CARGO_PRODUCED                                 :{BLACK}Carga producida: {GOLD}{CARGO_LIST}
 
 STR_HOUSE_PICKER_CLASS_ZONE1                                    :Afueras
@@ -3694,6 +3696,7 @@ STR_EDIT_SIGN_CAPTION                                           :{WHITE}Editar l
 STR_EDIT_SIGN_LOCATION_TOOLTIP                                  :{BLACK}Centra la vista principal en el letrero. Ctrl+clic abre un nuevo punto de vista en dicha posición
 STR_EDIT_SIGN_NEXT_SIGN_TOOLTIP                                 :{BLACK}Ir al letrero siguiente
 STR_EDIT_SIGN_PREVIOUS_SIGN_TOOLTIP                             :{BLACK}Ir al letrero anterior
+STR_EDIT_SIGN_TEXT_COLOUR_TOOLTIP                               :{BLACK}Color del texto del letrero
 
 STR_EDIT_SIGN_SIGN_OSKTITLE                                     :{BLACK}Introduce un nombre para el letrero
 
