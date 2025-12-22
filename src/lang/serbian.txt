@@ -3715,6 +3715,7 @@ STR_EDIT_SIGN_CAPTION                                           :{WHITE}Promena 
 STR_EDIT_SIGN_LOCATION_TOOLTIP                                  :{BLACK}Prebacuje glavni pogled na lokaciju znaka. Ctrl+klik otvara novi pogled na znak
 STR_EDIT_SIGN_NEXT_SIGN_TOOLTIP                                 :{BLACK}Položaj sledećeg znaka
 STR_EDIT_SIGN_PREVIOUS_SIGN_TOOLTIP                             :{BLACK}Položaj prethodnog znaka
+STR_EDIT_SIGN_TEXT_COLOUR_TOOLTIP                               :{BLACK}Boja teksta na znaku
 
 STR_EDIT_SIGN_SIGN_OSKTITLE                                     :{BLACK}Unos naziva znaka
 
@@ -4729,7 +4730,6 @@ STR_ORDER_ROAD_VEHICLE_DEPOT                                    :Drumski Depo
 STR_ORDER_SHIP_DEPOT                                            :Brodogradilište
 ###next-name-looks-similar
 
-STR_ORDER_GO_TO_NEAREST_HANGAR_FORMAT                           :{STRING} do najbližeg hangara
 STR_ORDER_GO_TO_NEAREST_DEPOT_FORMAT                            :{STRING} do najbližeg {STRING}
 STR_ORDER_GO_TO_DEPOT_FORMAT                                    :{STRING} {DEPOT}
 

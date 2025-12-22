@@ -1126,7 +1126,7 @@ STR_GAME_OPTIONS_BASE_MUSIC_DESCRIPTION_TOOLTIP                 :Temel müzik ha
 STR_GAME_OPTIONS_ONLINE_CONTENT                                 :İçerik Al
 STR_GAME_OPTIONS_ONLINE_CONTENT_TOOLTIP                         :İndirilecek yeni ve güncellenmiş içeriği kontrol et
 
-STR_GAME_OPTIONS_SOCIAL_PLUGINS_NONE                            :(yüklü sosyal platformlarla entegre edilecek eklenti yok)
+STR_GAME_OPTIONS_SOCIAL_PLUGINS_NONE                            :(hiçbir sosyal medya entegrasyonu eklentisi yüklenmemiş)
 
 STR_GAME_OPTIONS_SOCIAL_PLUGIN_TITLE                            :{STRING} ({STRING})
 STR_GAME_OPTIONS_SOCIAL_PLUGIN_PLATFORM                         :Platform:
@@ -1964,8 +1964,8 @@ STR_CONFIG_SETTING_ENDING_YEAR_ZERO                             :Asla
 
 STR_CONFIG_SETTING_ECONOMY_TYPE                                 :Ekonomi türü: {STRING}
 ###length 2
-STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT                        :Sorunsuz ekonomi, üretim değişikliklerini daha sık ve daha küçük adımlarla yapar. Donuk ekonomi, üretim değişikliklerini ve fabrika kapanışlarını durdurur. Sektör türleri bir NewGRF tarafından sağlanırsa bu ayarın hiçbir etkisi olmayabilir.{}{}Ekonomi Donmuş ise aylık Fabrika üretimi yine de değişken görünebilir, çünkü üretim belli aralıklarla tetiklenir ve ay başına denk gelmeyebilir
-STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT_PERIOD                 :Sorunsuz ekonomi, üretim değişikliklerini daha sık ve daha küçük adımlarla yapar. Donuk ekonomi, üretim değişikliklerini ve fabrika kapanışlarını durdurur. Sektör türleri bir NewGRF tarafından sağlanırsa bu ayarın hiçbir etkisi olmayabilir.{}{}Ekonomi Donmuş ise dakikalık Fabrika üretimi yine de değişken görünebilir, çünkü üretim belli aralıklarla tetiklenir ve dakika başına denk gelmeyebilir
+STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT                        :Sorunsuz ekonomi, üretim değişikliklerini daha sık ve daha küçük adımlarla yapar. Donuk ekonomi, üretim değişikliklerini ve fabrika kapanışlarını durdurur. Sektör türleri bir NewGRF tarafından sağlanırsa bu ayarın hiçbir etkisi olmayabilir.{}{}Ekonomi Donuk ise aylık Fabrika üretimi yine de değişken görünebilir, çünkü üretim belli aralıklarla tetiklenir ve ay başına denk gelmeyebilir
+STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT_PERIOD                 :Sorunsuz ekonomi, üretim değişikliklerini daha sık ve daha küçük adımlarla yapar. Donuk ekonomi, üretim değişikliklerini ve fabrika kapanışlarını durdurur. Sektör türleri bir NewGRF tarafından sağlanırsa bu ayarın hiçbir etkisi olmayabilir.{}{}Ekonomi Donuk ise dakikalık Fabrika üretimi yine de değişken görünebilir, çünkü üretim belli aralıklarla tetiklenir ve dakika başına denk gelmeyebilir
 
 ###length 3
 STR_CONFIG_SETTING_ECONOMY_TYPE_ORIGINAL                        :Orijinal
@@ -3659,17 +3659,17 @@ STR_NEWGRF_LIST_COMPATIBLE                                      :{YELLOW}Uyumlu 
 STR_NEWGRF_LIST_MISSING                                         :{RED}Eksik dosyalar
 
 # NewGRF 'it's broken' warnings
-STR_NEWGRF_BROKEN                                               :{WHITE}NewGRF '{PUSH_COLOUR}{0:STRING}{POP_COLOUR}' davranışı senkron kaybına ve/veya çökmelere sebep olabilir
-STR_NEWGRF_BROKEN_POWERED_WAGON                                 :{WHITE}'{PUSH_COLOUR}{1:ENGINE}{POP_COLOUR}' için enerjilendirilmiş wagon durumunu depo dışındayken değiştirdi
-STR_NEWGRF_BROKEN_VEHICLE_LENGTH                                :{WHITE}'{PUSH_COLOUR}{1:ENGINE}{POP_COLOUR}' hangar içinde değilken araç uzunluğunu değiştirdi
-STR_NEWGRF_BROKEN_CAPACITY                                      :{WHITE}Bir garajda veya tamirde değilken araç kapasitesini '{PUSH_COLOUR}{1:ENGINE}{POP_COLOUR}' için değiştirdi
+STR_NEWGRF_BROKEN                                               :{WHITE}NewGRF '{0:STRING}' davranışı senkron kaybına ve/veya çökmelere sebep olabilir
+STR_NEWGRF_BROKEN_POWERED_WAGON                                 :{WHITE}'{1:ENGINE}' için enerjilendirilmiş wagon durumunu garaj içinde değilken değiştirdi
+STR_NEWGRF_BROKEN_VEHICLE_LENGTH                                :{WHITE}'{1:ENGINE}' için araç uzunluğunu garaj içinde değilken değiştirdi
+STR_NEWGRF_BROKEN_CAPACITY                                      :{WHITE}'{1:ENGINE}' için araç kapasitesini bir garajda veya tamirde değilken değiştirdi
 STR_BROKEN_VEHICLE_LENGTH                                       :{WHITE}'{VEHICLE}' adlı tren '{COMPANY}' şirketine ait olup uzunluğu geçersizdir. Muhtemelen NewGRF'lerle ilgili bir problemden kaynaklanıyor. Oyun senkron kaybına uğrayabilir ya da çakılabilir
 
-STR_NEWGRF_BUGGY                                                :{WHITE}NewGRF '{PUSH_COLOUR}{0:STRING}{POP_COLOUR}' geçersiz bilgi vermektedir
-STR_NEWGRF_BUGGY_ARTICULATED_CARGO                              :{WHITE}'{PUSH_COLOUR}{1:ENGINE}{POP_COLOUR}' için kargo tür değişim bilgisi yapımdan sonraki alım listesinden farklı. Bu otomatik yenileme-değiştirmenin kargo türünü doğru şekilde değiştirmesine engel olabilir
-STR_NEWGRF_BUGGY_ENDLESS_PRODUCTION_CALLBACK                    :{WHITE}'{PUSH_COLOUR}{1:STRING}{POP_COLOUR}' üretim yordamında sonsuz döngüye neden oldu
+STR_NEWGRF_BUGGY                                                :{WHITE}'{0:STRING}' NewGRF'si geçersiz bilgi vermektedir
+STR_NEWGRF_BUGGY_ARTICULATED_CARGO                              :{WHITE}'{1:ENGINE}' için kargo tür değişim bilgisi yapımdan sonraki alım listesinden farklı. Bu otomatik yenileme-değiştirmenin kargo türünü düzgün değiştirememesine sebep olabilir
+STR_NEWGRF_BUGGY_ENDLESS_PRODUCTION_CALLBACK                    :{WHITE}'{1:STRING}' üretim yordamında sonsuz döngüye sebep oldu
 STR_NEWGRF_BUGGY_UNKNOWN_CALLBACK_RESULT                        :{WHITE}{1:HEX} adlı callback hata ya da geçersiz sonuç döndü {2:HEX}
-STR_NEWGRF_BUGGY_INVALID_CARGO_PRODUCTION_CALLBACK              :{WHITE}'{PUSH_COLOUR}{1:STRING}{POP_COLOUR}' üretim geri çağırımında, geçerli olmayan kargo türü geri döndü {2:HEX}
+STR_NEWGRF_BUGGY_INVALID_CARGO_PRODUCTION_CALLBACK              :{WHITE}'{1:STRING}' üretim geri çağırımında, geçerli olmayan kargo türü geri döndürdü {2:HEX}
 
 # 'User removed essential NewGRFs'-placeholders for stuff without specs
 STR_NEWGRF_INVALID_CARGO                                        :<geçersiz kargo>
@@ -4089,7 +4089,7 @@ STR_VEHICLE_LIST_AIRCRAFT_CAPTION                               :{WHITE}{STRING}
 
 ###length VEHICLE_TYPES
 STR_VEHICLE_LIST_TRAIN_LIST_TOOLTIP                             :{BLACK}Trenler - daha fazla bilgi için trene tıklayın. Kargo türünü görmek için Ctrl+Shift basılı tutun
-STR_VEHICLE_LIST_ROAD_VEHICLE_TOOLTIP                           :{BLACK}Karayolu araçları - bilgi için araca tıklayın. Kargo türünü görmek için Ctrl+Shift basılı tutun
+STR_VEHICLE_LIST_ROAD_VEHICLE_TOOLTIP                           :{BLACK}Karayolu taşıtları - bilgi için taşıta tıklayın. Kargo türünü görmek için Ctrl+Shift basılı tutun
 STR_VEHICLE_LIST_SHIP_TOOLTIP                                   :{BLACK}Gemiler - bilgi için gemiye tıkla. Kargo türünü görmek için Ctrl+Shift basılı tutun
 STR_VEHICLE_LIST_AIRCRAFT_TOOLTIP                               :{BLACK}Uçak - ayrıntılı bilgi için uçağı tıkla. Kargo türünü görmek için Ctrl+Shift basılı tutun
 
@@ -4478,7 +4478,7 @@ STR_VEHICLE_VIEW_AIRCRAFT_ORDERS_TOOLTIP                        :{BLACK}Uçağı
 
 ###length VEHICLE_TYPES
 STR_VEHICLE_VIEW_TRAIN_SHOW_DETAILS_TOOLTIP                     :{BLACK}Tren ayrıntılarını göster. Tren grubunu görmek için Ctrl+Tık
-STR_VEHICLE_VIEW_ROAD_VEHICLE_SHOW_DETAILS_TOOLTIP              :{BLACK}Karayolu aracı ayrıntılarını göster. Aracın grubunu göstermek için Ctrl+Tık
+STR_VEHICLE_VIEW_ROAD_VEHICLE_SHOW_DETAILS_TOOLTIP              :{BLACK}Karayolu taşıtı ayrıntılarını göster. Taşıtın grubunu göstermek için Ctrl+Tık
 STR_VEHICLE_VIEW_SHIP_SHOW_DETAILS_TOOLTIP                      :{BLACK}Gemi ayrıntılarını göster. Geminin grubunu görmek için Ctrl+Tık
 STR_VEHICLE_VIEW_AIRCRAFT_SHOW_DETAILS_TOOLTIP                  :{BLACK}Uçak ayrıntılarını göster. Uçak grubunu göstermek için Ctrl+Tık
 
