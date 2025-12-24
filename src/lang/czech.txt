@@ -726,8 +726,8 @@ STR_GRAPH_CARGO_PAYMENT_RATES_SECONDS                           :{TINY_FONT}{BLA
 STR_GRAPH_CARGO_PAYMENT_RATES_TITLE                             :{TINY_FONT}{BLACK}Platba za doručeni 10 jednotek (nebo 10 000 litru) nákladu do vzdálenosti 20 čtverecků
 STR_GRAPH_CARGO_ENABLE_ALL                                      :{TINY_FONT}{BLACK}Vše
 STR_GRAPH_CARGO_DISABLE_ALL                                     :{TINY_FONT}{BLACK}Nic
-STR_GRAPH_CARGO_TOOLTIP_ENABLE_ALL                              :{BLACK}Zobraz všechny druhy nákladu na grafu přepravních sazeb
-STR_GRAPH_CARGO_TOOLTIP_DISABLE_ALL                             :{BLACK}Skryje všechny položky na grafu přepravních sazeb
+STR_GRAPH_CARGO_TOOLTIP_ENABLE_ALL                              :{BLACK}V grafu zobrazit všechny náklady
+STR_GRAPH_CARGO_TOOLTIP_DISABLE_ALL                             :{BLACK}V grafu nezobrazovat žádné náklady
 STR_GRAPH_CARGO_PAYMENT_TOGGLE_CARGO                            :{BLACK}Zobrazit nebo skrýt graf pro tento druh nákladu
 STR_GRAPH_CARGO_PAYMENT_CARGO                                   :{TINY_FONT}{BLACK}{STRING}
 
@@ -3575,6 +3575,7 @@ STR_GENERATION_RIVER_GENERATION                                 :{BLACK}Generov�
 STR_GENERATION_CLEARING_TILES                                   :{BLACK}Tvorba členitého a kamenitého území
 STR_GENERATION_TOWN_GENERATION                                  :{BLACK}Generování měst
 STR_GENERATION_LAND_INDUSTRY_GENERATION                         :{BLACK}Generování pozemního průmyslu
+STR_GENERATION_WATER_INDUSTRY_GENERATION                        :{BLACK}Generování vodního průmyslu
 STR_GENERATION_OBJECT_GENERATION                                :{BLACK}Výstavba nepřesunutelných objektů
 STR_GENERATION_TREE_GENERATION                                  :{BLACK}Výsadba stromů
 STR_GENERATION_SETTINGUP_GAME                                   :{BLACK}Nastavování hry
@@ -4835,7 +4836,7 @@ STR_ORDER_GO_TO_DEPOT_FORMAT                                    :{STRING} {DEPOT
 
 STR_ORDER_REFIT_ORDER                                           :{SPACE}(Přestavět na {STRING})
 STR_ORDER_REFIT_STOP_ORDER                                      :{SPACE}(Přestavět na {STRING} a zastavit)
-STR_ORDER_STOP_ORDER                                            :{SPACE}(Zastávka)
+STR_ORDER_STOP_ORDER                                            :(Zastavit)
 
 STR_ORDER_WAIT_TO_UNBUNCH                                       :{SPACE}(Počkat na vyrovnání rozestupů)
 
@@ -4846,27 +4847,27 @@ STR_ORDER_IMPLICIT                                              :{SPACE}(Implici
 
 STR_ORDER_FULL_LOAD                                             :{SPACE}(Úplně naložit)
 STR_ORDER_FULL_LOAD_ANY                                         :{SPACE}(Úplně naložit cokoliv)
-STR_ORDER_NO_LOAD                                               :{SPACE}(Nenakládat)
+STR_ORDER_NO_LOAD                                               :(nenakládat)
 STR_ORDER_UNLOAD                                                :{SPACE}(Vyložit a vzít náklad)
 STR_ORDER_UNLOAD_FULL_LOAD                                      :{SPACE}(vyložit a plně naložit)
 STR_ORDER_UNLOAD_FULL_LOAD_ANY                                  :{SPACE}(vyložit a plně naložit čímkoliv)
-STR_ORDER_UNLOAD_NO_LOAD                                        :{SPACE}(Vylozit a nechat pradzne)
-STR_ORDER_TRANSFER                                              :{SPACE}(Přeložit a vzít náklad)
+STR_ORDER_UNLOAD_NO_LOAD                                        :(vyložit a nechat prázdné)
+STR_ORDER_TRANSFER                                              :(přeložit a hned naložit)
 STR_ORDER_TRANSFER_FULL_LOAD                                    :{SPACE}(Přeložit a počkat na úplné naložení)
 STR_ORDER_TRANSFER_FULL_LOAD_ANY                                :{SPACE}(Přeložit a počkat na úplné naložení čehokoliv)
-STR_ORDER_TRANSFER_NO_LOAD                                      :{SPACE}(Přeložit a nechat prázdné)
-STR_ORDER_NO_UNLOAD                                             :{SPACE}(Nevykládat a vzít náklad)
-STR_ORDER_NO_UNLOAD_FULL_LOAD                                   :{SPACE}(Nevykládat a počkat na úplné naložení)
-STR_ORDER_NO_UNLOAD_FULL_LOAD_ANY                               :{SPACE}(Nevykládat a počkat na jakékoliv úplné naložení)
-STR_ORDER_NO_UNLOAD_NO_LOAD                                     :{SPACE}(Nevykládat a nenakládat)
+STR_ORDER_TRANSFER_NO_LOAD                                      :(přeložit a nechat prázdné)
+STR_ORDER_NO_UNLOAD                                             :(nevykládat a hned naložit)
+STR_ORDER_NO_UNLOAD_FULL_LOAD                                   :(nevykládat a plně naložit)
+STR_ORDER_NO_UNLOAD_FULL_LOAD_ANY                               :(nevykládat a plně naložit čímkoli)
+STR_ORDER_NO_UNLOAD_NO_LOAD                                     :(nevykládat ani nenakládat)
 
 STR_ORDER_AUTO_REFIT                                            :{SPACE}(Přestavět na {STRING})
 STR_ORDER_FULL_LOAD_REFIT                                       :{SPACE}(Úplně naložit s přestavbou na {STRING})
 STR_ORDER_FULL_LOAD_ANY_REFIT                                   :{SPACE}(Úplně naložit cokoliv s přestavbou na {STRING})
-STR_ORDER_UNLOAD_REFIT                                          :{SPACE}(Vyložit a naložit náklad s přestavbou na {STRING})
+STR_ORDER_UNLOAD_REFIT                                          :(Vyložit a naložit s přestavěním na {STRING})
 STR_ORDER_UNLOAD_FULL_LOAD_REFIT                                :{SPACE}(Vyložit a počkat na plné naložení s přestavěním na {STRING})
 STR_ORDER_UNLOAD_FULL_LOAD_ANY_REFIT                            :{SPACE}(Vyložit a počkat na naložení čehokoliv s přestavěním na {STRING})
-STR_ORDER_TRANSFER_REFIT                                        :{SPACE}(Přeložit a naložit náklad s přestavbou na {STRING})
+STR_ORDER_TRANSFER_REFIT                                        :(Přeložit a naložit s přestavěním na {STRING})
 STR_ORDER_TRANSFER_FULL_LOAD_REFIT                              :{SPACE}(Přeložit a počkat na úplné naložení s přestavbou na {STRING})
 STR_ORDER_TRANSFER_FULL_LOAD_ANY_REFIT                          :{SPACE}(Přeložit a počkat na úplné naložení čehokoliv s přestavbou na {STRING})
 STR_ORDER_NO_UNLOAD_REFIT                                       :(Nevykládat a naložit s přestavěním na {STRING})
@@ -4905,7 +4906,7 @@ STR_TIMETABLE_TRAVEL_FOR_ESTIMATED                              :Jeď ({STRING},
 STR_TIMETABLE_TRAVEL_FOR_SPEED_ESTIMATED                        :Jeď ({STRING}, mimo jízdní řád) při maximální rychlosti {VELOCITY}
 STR_TIMETABLE_STAY_FOR_ESTIMATED                                :{SPACE}(zastavit na {STRING}, není v jízdním řádu)
 STR_TIMETABLE_AND_TRAVEL_FOR_ESTIMATED                          :{SPACE}(jet {STRING}, mimo jízdní řád)
-STR_TIMETABLE_STAY_FOR                                          :a zůstat {STRING}
+STR_TIMETABLE_STAY_FOR                                          :{SPACE}a počkat {STRING}
 STR_TIMETABLE_AND_TRAVEL_FOR                                    :{SPACE}a cestovat do {STRING}
 
 STR_TIMETABLE_APPROX_TIME                                       :{BLACK}Tento jízdní řád bude trvat přibližně {STRING}

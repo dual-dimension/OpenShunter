@@ -3707,7 +3707,7 @@ STR_NEWGRF_ERROR_MSG_WARNING                                    :{RED}Προει
 STR_NEWGRF_ERROR_MSG_ERROR                                      :{RED}Λάθος: {SILVER}{STRING}
 STR_NEWGRF_ERROR_MSG_FATAL                                      :{RED}Καταστροφικό: {SILVER}{STRING}
 STR_NEWGRF_ERROR_FATAL_POPUP                                    :{WHITE}Το NewGRF «{STRING}» επέστρεψε ένα καταστροφικό λάθος:{}{STRING}
-STR_NEWGRF_ERROR_POPUP                                          :{WHITE}Το NewGRF "{STRING}" επέστρεψε ένα λάθος:{}{STRING}
+STR_NEWGRF_ERROR_POPUP                                          :{WHITE}Το NewGRF «{STRING}» επέστρεψε ένα λάθος:{}{STRING}
 STR_NEWGRF_ERROR_VERSION_NUMBER                                 :Το {1:STRING} δεν θα δουλέψει με την έκδοση του TTDPatch όπως αναφέρεται από το OpenTTD
 STR_NEWGRF_ERROR_DOS_OR_WINDOWS                                 :Το {1:STRING} είναι για την έκδοση {2:STRING} του TTD
 STR_NEWGRF_ERROR_UNSET_SWITCH                                   :Το {1:STRING} είναι σχεδιασμένο να δουλέψει με το {2:STRING}
@@ -4994,7 +4994,7 @@ STR_ERROR_AI_DEBUG_SERVER_ONLY                                  :{YELLOW}Το π
 
 # AI configuration window
 STR_AI_CONFIG_CAPTION_AI                                        :{WHITE}Ρυθμίσεις AI
-STR_AI_CONFIG_CAPTION_GAMESCRIPT                                :{WHITE}Ρυθμίσεις Δεσμών Ενεργειών Παιχνιδιού
+STR_AI_CONFIG_CAPTION_GAMESCRIPT                                :{WHITE}Ρυθμίσεις δέσμης ενεργειών παιχνιδιού
 STR_AI_CONFIG_GAMELIST_TOOLTIP                                  :{BLACK}Η Δέσμη Ενεργειών παιχνιδιού που θα φορτωθεί στο επόμενο παιχνίδι
 STR_AI_CONFIG_AILIST_TOOLTIP                                    :{BLACK}Τα AI που θα φορτωθούν στο επόμενο παιχνίδι
 STR_AI_CONFIG_HUMAN_PLAYER                                      :Ανθρώπινος παίκτης
@@ -5042,7 +5042,7 @@ STR_SCREENSHOT_MINIMAP_SCREENSHOT                               :{BLACK}Στιγ
 
 # Script Parameters
 STR_AI_SETTINGS_CAPTION_AI                                      :{WHITE}Παράμετροι AI
-STR_AI_SETTINGS_CAPTION_GAMESCRIPT                              :{WHITE}Παράμετροι Δεσμών Ενεργειών Παιχνιδιού
+STR_AI_SETTINGS_CAPTION_GAMESCRIPT                              :{WHITE}Παράμετροι σεναρίου παιχνιδιού
 STR_AI_SETTINGS_RESET                                           :{BLACK}Επαναφορά
 STR_AI_SETTINGS_SETTING                                         :{STRING}: {ORANGE}{STRING}
 
