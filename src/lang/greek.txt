@@ -754,7 +754,7 @@ STR_GRAPH_KEY_CAPTION                                           :{WHITE}Υπόμ
 STR_GRAPH_KEY_COMPANY_SELECTION_TOOLTIP                         :{BLACK}Εναλλαγή εμφάνισης γραφήματος τις εταιρείας
 
 # Company league window
-STR_COMPANY_LEAGUE_TABLE_CAPTION                                :{WHITE}Πίνακας Πρωταθλήματος Εταιριών
+STR_COMPANY_LEAGUE_TABLE_CAPTION                                :{WHITE}Πίνακας Κατάταξης Εταιρειών
 STR_COMPANY_LEAGUE_COMPANY_NAME                                 :{ORANGE}{COMPANY} {BLACK}{COMPANY_NUM} «{STRING}»
 STR_COMPANY_LEAGUE_COMPANY_RANK                                 :{YELLOW}#{NUM}
 STR_COMPANY_LEAGUE_PERFORMANCE_TITLE_ENGINEER                   :Μηχανικός
@@ -982,7 +982,7 @@ STR_NEWS_COMPANY_BANKRUPT_DESCRIPTION                           :{BIG_FONT}{BLAC
 STR_NEWS_COMPANY_LAUNCH_TITLE                                   :{BIG_FONT}{BLACK}Ιδρύεται νέα εταιρεία μεταφορών!
 STR_NEWS_COMPANY_LAUNCH_DESCRIPTION                             :{BIG_FONT}{BLACK}Η {STRING} ξεκινά τις κατασκευές κοντά στην πόλη {TOWN}!
 STR_NEWS_MERGER_TAKEOVER_TITLE                                  :{BIG_FONT}{BLACK}Η {STRING} εξαγοράστηκε από την {STRING} για ένα μη ανακοινώσιμο ποσό!
-STR_PRESIDENT_NAME_MANAGER                                      :{BLACK}{PRESIDENT_NAME}{}(Διευθυντής})
+STR_PRESIDENT_NAME_MANAGER                                      :{BLACK}{PRESIDENT_NAME}{}(Διευθ{G 0 υντής ύντρια ""})
 
 STR_NEWS_NEW_TOWN                                               :{BLACK}{BIG_FONT}Η {STRING} χορήγεισε την κατασκεύη της νέας πόλης {TOWN}!
 STR_NEWS_NEW_TOWN_UNSPONSORED                                   :{BLACK}{BIG_FONT}Μια νέα πόλη με όνομα {TOWN} κατασκευάστηκε!
@@ -1541,7 +1541,7 @@ STR_CONFIG_SETTING_SHOWFINANCES_HELPTEXT_PERIOD                 :Εάν είνα
 STR_CONFIG_SETTING_NONSTOP_BY_DEFAULT                           :Οι νέες οδηγίες είναι «χωρίς στάση» εξ' ορισμού: {STRING}
 STR_CONFIG_SETTING_NONSTOP_BY_DEFAULT_HELPTEXT                  :Κανονικά, τα οχήματα σταματούν σε κάθε σταθμό που περνούν. Ενεργοποιώντας αυτήν τη ρύθμιση, δεν θα σταματούν σε κανένα σταθμό που θα βρει στη διαδρομή τους προς τον τελικό προορισμό. Σημείωστε πως αυτή η ρύθμιση ορίζει μόνο μια καθορισμένη τιμή για νέες εντολές. Ειδικές εντολές μπορούν να δοθούν για οποιαδήποτε συμπεριφορά, άσχετα από την προκαθορισμένη
 
-STR_CONFIG_SETTING_STOP_LOCATION                                :Οι νέες εντολές τρένων έχουν στάση εξ' ορισμού στ{G 0 ον η ο} {0:STRING} της πλατφόρμας
+STR_CONFIG_SETTING_STOP_LOCATION                                :Οι νέες εντολές τρένων έχουν στάση εξ' ορισμού στ{G "ον" "η" "ο"} {STRING} της πλατφόρμας
 STR_CONFIG_SETTING_STOP_LOCATION_HELPTEXT                       :Ορισμός προεπιλεγμένου σημείου που θα σταματούν τα τρένα στην πλατφόρμα. Το «κοντινό άκρο» σημαίνει κοντά στο σημείο εισόδου, «μέση» σημαίνει στο μέσο της πλατφόρμας και «μακρινό άκρο» σημαίνει στο άλλο άκρο από το σημείο εισόδου. Σημειώστε ότι αυτή η ρύθμιση ορίζει μόνο την προεπιλεγμένη τιμή για νέες εντολές. Οι μεμονωμένες εντολές μπορούν να έχουν τη δική τους θέση στάσης κάνοντας κλικ πάνω στο κείμενο της εντολής
 ###length 3
 STR_CONFIG_SETTING_STOP_LOCATION_NEAR_END                       :{G=n}κοντινό άκρο
@@ -2040,7 +2040,7 @@ STR_CONFIG_SETTING_NEWS_SUBSIDIES_HELPTEXT                      :Πρόβαλλ�
 STR_CONFIG_SETTING_NEWS_GENERAL_INFORMATION                     :Γενικές πληροφορίες: {STRING}
 STR_CONFIG_SETTING_NEWS_GENERAL_INFORMATION_HELPTEXT            :Εμφάνιση εφημερίδας σε γενικά συμβάντα, όπως αγορά αποκλειστικών δικαιωμάτων ή χρηματοδότηση ανακατασκευής δρόμων
 ###length 3
-STR_CONFIG_SETTING_NEWS_MESSAGES_OFF                            :Απενεργοποιημένα
+STR_CONFIG_SETTING_NEWS_MESSAGES_OFF                            :Απενεργοποιημένες
 STR_CONFIG_SETTING_NEWS_MESSAGES_SUMMARY                        :Περιλήψεις
 STR_CONFIG_SETTING_NEWS_MESSAGES_FULL                           :Ολόκληρες
 
@@ -2188,7 +2188,7 @@ STR_CONFIG_SETTING_TOWN_MIN_DISTANCE_HELPTEXT                   :Ορίστε τ
 
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL                    :Ανανέωση του γραφήματος κατανομής κάθε {STRING}
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL_HELPTEXT           :Χρόνος μεταξύ των επακόλουθων επανυπολογισμών του γραφήματος σύνδεσης. Κάθε επανυπολογισμός υπολογίζει τα σχέδια για ένα στοιχείο του γραφήματος. Αυτό σημαίνει ότι μια τιμή X για αυτήν τη ρύθμιση δεν σημαίνει ότι ολόκληρο το γράφημα θα ενημερώνεται κάθε Χ δευτερόλεπτα. Μόνο κάποιο συστατικό του θα ανανεωθεί. Σε όσο πιο μικρή τιμή το ρυθμίσετε, τόσο περισσότερη επεξεργαστική ισχύς θα χρειαστεί για τον υπολογισμό του. Σε όσο πιο μεγάλη τιμή το ρυθμίσετε, τόσο περισσότερος χρόνος θα χρειαστεί μέχρι να ξεκινήσει η διανομή φορτίου σε νέα δρομολόγια
-STR_CONFIG_SETTING_LINKGRAPH_RECALC_TIME                        :Χρήση του {STRING} για τον επαναυπολογισμό του γραφήματος κατανομής
+STR_CONFIG_SETTING_LINKGRAPH_RECALC_TIME                        :Υπομονή για {STRING} για τον επαναυπολογισμό του γραφήματος κατανομής
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_TIME_HELPTEXT               :Χρόνος που απαιτείται για κάθε επανυπολογισμό ενός στοιχείου γραφήματος συνδέσμου. Όταν ξεκινά ένας επανυπολογισμός, δημιουργείται ένα νήμα στο οποίο επιτρέπεται να τρέξει για αυτόν τον αριθμό δευτερολέπτων. Σε όσο πιο μικρή τιμή το ορίσετε, τόσο πιο πιθανό είναι να μην έχει τελειώσει το νήμα στον χρόνο που έχει προβλεφθεί. Στη συνέχεια, το παιχνίδι σταματά μέχρι να είναι σε «καθυστέρηση» («lag»). Σε όσο πιο μεγάλη τιμή το ορίσετε, τόσο περισσότερος χρόνος θα χρειαστεί για να ενημερωθεί η διανομή όταν αλλάζουν οι διαδρομές
 
 STR_CONFIG_SETTING_DISTRIBUTION_PAX                             :Τρόπος διανομής επιβατών: {STRING}
@@ -2636,10 +2636,10 @@ STR_NETWORK_CLIENT_LIST_ADMIN_COMPANY_RESET                     :Διαγραφ�
 STR_NETWORK_CLIENT_LIST_ASK_CAPTION                             :{WHITE}Ενέργεια διαχειριστή
 STR_NETWORK_CLIENT_LIST_ASK_CLIENT_KICK                         :{YELLOW}Σίγουρα θέλετε να διώξετε τον παίκτη «{STRING}»;
 STR_NETWORK_CLIENT_LIST_ASK_CLIENT_BAN                          :{YELLOW}Σίγουρα θέλετε να απαγορέψετε τον παίκτη «{STRING}»;
-STR_NETWORK_CLIENT_LIST_ASK_COMPANY_RESET                       :{YELLOW}Σίγουρα θέλετε να διαγράψετε την εταιρία «{COMPANY}»;
+STR_NETWORK_CLIENT_LIST_ASK_COMPANY_RESET                       :{YELLOW}Σίγουρα θέλετε να διαγράψετε την εταιρεία «{COMPANY}»;
 
 STR_NETWORK_ASK_RELAY_CAPTION                                   :{WHITE}Χρήση αναμετάδοσης;
-STR_NETWORK_ASK_RELAY_TEXT                                      :{YELLOW}Δεν ήταν δυνατή η σύνδεση με τον server «{STRING}».{}Θέλετε να αναμεταδόσετε αυτή την συνεδρία μέσω «{STRING}»;
+STR_NETWORK_ASK_RELAY_TEXT                                      :{YELLOW}Δεν ήταν δυνατή η σύνδεση με τον διακομιστή «{STRING}».{}Θέλετε να αναμεταδόσετε αυτή την συνεδρία μέσω «{STRING}»;
 STR_NETWORK_ASK_RELAY_NO                                        :{BLACK}Όχι
 STR_NETWORK_ASK_RELAY_YES_ONCE                                  :{BLACK}Ναι, μόνο αυτή τη φορά
 STR_NETWORK_ASK_RELAY_YES_ALWAYS                                :{BLACK}Ναι, μην ρωτήσεις ξανά
@@ -3755,7 +3755,7 @@ STR_NEWGRF_BROKEN                                               :{WHITE}Η συ�
 STR_NEWGRF_BROKEN_POWERED_WAGON                                 :{WHITE}Άλλαξε την κατάσταση μηχανοκίνητου βαγονιού για την «{1:ENGINE}» όταν δεν είναι μέσα σε αμαξοστάσιο
 STR_NEWGRF_BROKEN_VEHICLE_LENGTH                                :{WHITE}Άλλαξε το μήκος οχήματος για το «{1:ENGINE}» όταν δεν βρίσκεται μέσα σε αμαξοστάσιο
 STR_NEWGRF_BROKEN_CAPACITY                                      :{WHITE}Άλλαξε τη χωρητικότητα οχήματος για την «{1:ENGINE}» όταν δεν είναι σε αμαξοστάσιο ή σε διαδικασία μετατροπής
-STR_BROKEN_VEHICLE_LENGTH                                       :{WHITE}Το τρένο «{VEHICLE}» που ανήκει στην εταιρία «{COMPANY}» έχει μη έγκυρο μήκος. Πιθανόν να προκλήθηκε από προβλήματα με κάποια NewGRF. Το παιχνίδι μπορεί να αποσυγχρονιστεί ή να κλείσει απρόοπτα.
+STR_BROKEN_VEHICLE_LENGTH                                       :{WHITE}Το τρένο «{VEHICLE}» που ανήκει στην εταιρεία «{COMPANY}» έχει μη έγκυρο μήκος. Πιθανόν να προκλήθηκε από προβλήματα με κάποια NewGRF. Το παιχνίδι μπορεί να αποσυγχρονιστεί ή να κλείσει απρόοπτα.
 
 STR_NEWGRF_BUGGY                                                :{WHITE}Το NewGRF «{0:STRING}» παρέχει λάθος πληροφορίες
 STR_NEWGRF_BUGGY_ARTICULATED_CARGO                              :{WHITE}Η πληροφορία εμπορεύματος/μετατροπής για τη «{1:ENGINE}» διαφέρει από τη λίστα αγοράς μετά την κατασκευή. Αυτό μπορεί να προκαλέσει την αποτυχία σωστής μετατροπής της διαδικασίας αυτόματης ανανέωσης/αντικατάστασης
@@ -4071,7 +4071,7 @@ STR_FINANCES_INFRASTRUCTURE_BUTTON                              :{BLACK}Υποδ
 
 # Company view
 STR_COMPANY_VIEW_CAPTION                                        :{WHITE}{COMPANY} {BLACK}{COMPANY_NUM}
-STR_COMPANY_VIEW_PRESIDENT_MANAGER_TITLE                        :{WHITE}{PRESIDENT_NAME}{}{GOLD}(Διευθυντής)
+STR_COMPANY_VIEW_PRESIDENT_MANAGER_TITLE                        :{WHITE}{PRESIDENT_NAME}{}{GOLD}(Διευθ{G 0 υντής ύντρια ""})
 
 STR_COMPANY_VIEW_INAUGURATED_TITLE                              :{GOLD}Ίδρυση: {WHITE}{NUM}
 STR_COMPANY_VIEW_INAUGURATED_TITLE_WALLCLOCK                    :{GOLD}Εγκαινιάστηκε: {WHITE}{NUM} (περίοδος {NUM})
@@ -4994,7 +4994,7 @@ STR_ERROR_AI_DEBUG_SERVER_ONLY                                  :{YELLOW}Το π
 
 # AI configuration window
 STR_AI_CONFIG_CAPTION_AI                                        :{WHITE}Ρυθμίσεις AI
-STR_AI_CONFIG_CAPTION_GAMESCRIPT                                :{WHITE}Ρυθμίσεις δέσμης ενεργειών παιχνιδιού
+STR_AI_CONFIG_CAPTION_GAMESCRIPT                                :{WHITE}Ρυθμίσεις Δεσμών Ενεργειών Παιχνιδιού
 STR_AI_CONFIG_GAMELIST_TOOLTIP                                  :{BLACK}Η Δέσμη Ενεργειών παιχνιδιού που θα φορτωθεί στο επόμενο παιχνίδι
 STR_AI_CONFIG_AILIST_TOOLTIP                                    :{BLACK}Τα AI που θα φορτωθούν στο επόμενο παιχνίδι
 STR_AI_CONFIG_HUMAN_PLAYER                                      :Ανθρώπινος παίκτης
@@ -5042,7 +5042,7 @@ STR_SCREENSHOT_MINIMAP_SCREENSHOT                               :{BLACK}Στιγ
 
 # Script Parameters
 STR_AI_SETTINGS_CAPTION_AI                                      :{WHITE}Παράμετροι AI
-STR_AI_SETTINGS_CAPTION_GAMESCRIPT                              :{WHITE}Παράμετροι σεναρίου παιχνιδιού
+STR_AI_SETTINGS_CAPTION_GAMESCRIPT                              :{WHITE}Παράμετροι Δεσμών Ενεργειών Παιχνιδιού
 STR_AI_SETTINGS_RESET                                           :{BLACK}Επαναφορά
 STR_AI_SETTINGS_SETTING                                         :{STRING}: {ORANGE}{STRING}
 
