@@ -3574,8 +3574,9 @@ STR_MAPGEN_BORDER_WATER                                         :{BLACK}вода
 STR_MAPGEN_BORDER_RANDOM                                        :{BLACK}довільно
 
 ###length 3
-STR_MAPGEN_BORDER_RANDOMIZE                                     :{BLACK}довільно
+STR_MAPGEN_BORDER_RANDOMIZE                                     :Випадково
 STR_MAPGEN_BORDER_MANUAL                                        :вручну
+STR_MAPGEN_BORDER_INFINITE_WATER                                :Вода без меж
 
 STR_MAPGEN_HEIGHTMAP_ROTATION                                   :{BLACK}Поворот рельєфу
 STR_MAPGEN_HEIGHTMAP_NAME                                       :{BLACK}Назва мапи висот:

@@ -982,7 +982,7 @@ STR_NEWS_COMPANY_BANKRUPT_DESCRIPTION                           :{BIG_FONT}{BLAC
 STR_NEWS_COMPANY_LAUNCH_TITLE                                   :{BIG_FONT}{BLACK}Ιδρύεται νέα εταιρεία μεταφορών!
 STR_NEWS_COMPANY_LAUNCH_DESCRIPTION                             :{BIG_FONT}{BLACK}Η {STRING} ξεκινά τις κατασκευές κοντά στην πόλη {TOWN}!
 STR_NEWS_MERGER_TAKEOVER_TITLE                                  :{BIG_FONT}{BLACK}Η {STRING} εξαγοράστηκε από την {STRING} για ένα μη ανακοινώσιμο ποσό!
-STR_PRESIDENT_NAME_MANAGER                                      :{BLACK}{PRESIDENT_NAME}{}(Διευθ{G 0 υντής ύντρια ""})
+STR_PRESIDENT_NAME_MANAGER                                      :{BLACK}{PRESIDENT_NAME}{}(Διευθυντής})
 
 STR_NEWS_NEW_TOWN                                               :{BLACK}{BIG_FONT}Η {STRING} χορήγεισε την κατασκεύη της νέας πόλης {TOWN}!
 STR_NEWS_NEW_TOWN_UNSPONSORED                                   :{BLACK}{BIG_FONT}Μια νέα πόλη με όνομα {TOWN} κατασκευάστηκε!
@@ -1541,7 +1541,7 @@ STR_CONFIG_SETTING_SHOWFINANCES_HELPTEXT_PERIOD                 :Εάν είνα
 STR_CONFIG_SETTING_NONSTOP_BY_DEFAULT                           :Οι νέες οδηγίες είναι «χωρίς στάση» εξ' ορισμού: {STRING}
 STR_CONFIG_SETTING_NONSTOP_BY_DEFAULT_HELPTEXT                  :Κανονικά, τα οχήματα σταματούν σε κάθε σταθμό που περνούν. Ενεργοποιώντας αυτήν τη ρύθμιση, δεν θα σταματούν σε κανένα σταθμό που θα βρει στη διαδρομή τους προς τον τελικό προορισμό. Σημείωστε πως αυτή η ρύθμιση ορίζει μόνο μια καθορισμένη τιμή για νέες εντολές. Ειδικές εντολές μπορούν να δοθούν για οποιαδήποτε συμπεριφορά, άσχετα από την προκαθορισμένη
 
-STR_CONFIG_SETTING_STOP_LOCATION                                :Οι νέες εντολές τρένων έχουν στάση εξ' ορισμού στ{G "ον" "η" "ο"} {STRING} της πλατφόρμας
+STR_CONFIG_SETTING_STOP_LOCATION                                :Οι νέες εντολές τρένων έχουν στάση εξ' ορισμού στ{G ον η ο} {STRING} της πλατφόρμας
 STR_CONFIG_SETTING_STOP_LOCATION_HELPTEXT                       :Ορισμός προεπιλεγμένου σημείου που θα σταματούν τα τρένα στην πλατφόρμα. Το «κοντινό άκρο» σημαίνει κοντά στο σημείο εισόδου, «μέση» σημαίνει στο μέσο της πλατφόρμας και «μακρινό άκρο» σημαίνει στο άλλο άκρο από το σημείο εισόδου. Σημειώστε ότι αυτή η ρύθμιση ορίζει μόνο την προεπιλεγμένη τιμή για νέες εντολές. Οι μεμονωμένες εντολές μπορούν να έχουν τη δική τους θέση στάσης κάνοντας κλικ πάνω στο κείμενο της εντολής
 ###length 3
 STR_CONFIG_SETTING_STOP_LOCATION_NEAR_END                       :{G=n}κοντινό άκρο
@@ -4071,7 +4071,7 @@ STR_FINANCES_INFRASTRUCTURE_BUTTON                              :{BLACK}Υποδ
 
 # Company view
 STR_COMPANY_VIEW_CAPTION                                        :{WHITE}{COMPANY} {BLACK}{COMPANY_NUM}
-STR_COMPANY_VIEW_PRESIDENT_MANAGER_TITLE                        :{WHITE}{PRESIDENT_NAME}{}{GOLD}(Διευθ{G 0 υντής ύντρια ""})
+STR_COMPANY_VIEW_PRESIDENT_MANAGER_TITLE                        :{WHITE}{PRESIDENT_NAME}{}{GOLD}(Διευθυντής)
 
 STR_COMPANY_VIEW_INAUGURATED_TITLE                              :{GOLD}Ίδρυση: {WHITE}{NUM}
 STR_COMPANY_VIEW_INAUGURATED_TITLE_WALLCLOCK                    :{GOLD}Εγκαινιάστηκε: {WHITE}{NUM} (περίοδος {NUM})
