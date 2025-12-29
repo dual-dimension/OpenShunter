@@ -787,6 +787,7 @@ STR_GRAPH_INDUSTRY_RANGE_TRANSPORTED                            :Перевез�
 STR_GRAPH_INDUSTRY_RANGE_DELIVERED                              :Доставлено
 STR_GRAPH_INDUSTRY_RANGE_WAITING                                :Очікує
 
+STR_GRAPH_TOWN_CARGO_CAPTION                                    :{WHITE}{TOWN} - Історія вантажів
 STR_GRAPH_TOWN_RANGE_PRODUCED                                   :Постачання
 STR_GRAPH_TOWN_RANGE_TRANSPORTED                                :Перевезено
 
@@ -2226,6 +2227,7 @@ STR_CONFIG_SETTING_LARGER_TOWNS_VALUE                           :1 з {COMMA}
 STR_CONFIG_SETTING_LARGER_TOWNS_DISABLED                        :Жодного
 STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER                         :Множник розміру мегаполісів: {STRING}
 STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER_HELPTEXT                :Середньостатистичне відношення початкового розміру мегаполісів порівняно зі звичайними містами.
+STR_CONFIG_SETTING_TOWN_MIN_DISTANCE                            :Найменша відстань між містами: {STRING}
 
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL                    :Оновлення обрахунку зв'язків, час {STRING}
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL_HELPTEXT           :Час між перерозрахунками графа зв'язків. Кожен розрахунок обчислює один компонент графа, тобто лише деякі компоненти оновляться після закінчення кожного проміжку часу, а не весь граф. Чим менше це значення, тим більше часу процесора буде витрачатися. Чим більше це значення, тим довше доведеться очікувати розподілення вантажів на нових маршрутах
