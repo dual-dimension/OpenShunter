@@ -3002,12 +3002,12 @@ STR_PICKER_HOUSE_TYPE_TOOLTIP                                   :Виберіт�
 
 STR_HOUSE_PICKER_CAPTION                                        :Вибір будівлі
 STR_HOUSE_PICKER_NAME                                           :{BLACK}Назва: {GOLD}{STRING}
-STR_HOUSE_PICKER_POPULATION                                     :{BLACK}Населення: {GOLD}{NUM}
-STR_HOUSE_PICKER_YEARS                                          :{BLACK}Роки: {GOLD}{NUM}-{NUM}
-STR_HOUSE_PICKER_YEARS_ANY                                      :{BLACK}Роки: {GOLD}будь-які
-STR_HOUSE_PICKER_YEARS_FROM                                     :{BLACK}Роки: {GOLD}з {NUM}
-STR_HOUSE_PICKER_YEARS_UNTIL                                    :{BLACK}Роки: {GOLD}до {NUM}
-STR_HOUSE_PICKER_SIZE                                           :{BLACK}Розмір: {GOLD}{NUM}x{NUM} клітинок
+STR_HOUSE_PICKER_POPULATION                                     :{BLACK}Населення: {ORANGE}{NUM}
+STR_HOUSE_PICKER_YEARS                                          :{BLACK}Роки: {ORANGE}{NUM}-{NUM}
+STR_HOUSE_PICKER_YEARS_ANY                                      :{BLACK}Роки: {ORANGE}будь-які
+STR_HOUSE_PICKER_YEARS_FROM                                     :{BLACK}Роки: {ORANGE}з {NUM}
+STR_HOUSE_PICKER_YEARS_UNTIL                                    :{BLACK}Роки: {ORANGE}до {NUM}
+STR_HOUSE_PICKER_SIZE                                           :{BLACK}Розмір: {ORANGE}{NUM}x{NUM} клітинок
 STR_HOUSE_PICKER_CARGO_ACCEPTED                                 :{BLACK}Приймається вантаж: {GOLD}{STRING}
 STR_HOUSE_PICKER_CARGO_PRODUCED                                 :{BLACK}Вантажу вироблено: {GOLD}{CARGO_LIST}
 
@@ -3863,7 +3863,6 @@ STR_TOWN_VIEW_LOCAL_AUTHORITY_BUTTON                            :{BLACK}Місц
 STR_TOWN_VIEW_LOCAL_AUTHORITY_TOOLTIP                           :{BLACK}Інформація про місцеву владу
 STR_TOWN_VIEW_RENAME_TOOLTIP                                    :{BLACK}Перейменувати місто
 STR_TOWN_VIEW_CARGO_GRAPH                                       :Вантажопотік
-STR_TOWN_VIEW_CARGO_GRAPH_TOOLTIP                               :Показати графік історії міських вантажів
 
 STR_TOWN_VIEW_EXPAND_BUTTON                                     :{BLACK}Розширити
 STR_TOWN_VIEW_EXPAND_TOOLTIP                                    :{BLACK}Збільшити розмір міста
