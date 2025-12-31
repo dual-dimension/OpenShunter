@@ -3002,12 +3002,12 @@ STR_PICKER_HOUSE_TYPE_TOOLTIP                                   :Виберіт�
 
 STR_HOUSE_PICKER_CAPTION                                        :Вибір будівлі
 STR_HOUSE_PICKER_NAME                                           :{BLACK}Назва: {GOLD}{STRING}
-STR_HOUSE_PICKER_POPULATION                                     :{BLACK}Населення: {ORANGE}{NUM}
-STR_HOUSE_PICKER_YEARS                                          :{BLACK}Роки: {ORANGE}{NUM}-{NUM}
-STR_HOUSE_PICKER_YEARS_ANY                                      :{BLACK}Роки: {ORANGE}будь-які
-STR_HOUSE_PICKER_YEARS_FROM                                     :{BLACK}Роки: {ORANGE}з {NUM}
-STR_HOUSE_PICKER_YEARS_UNTIL                                    :{BLACK}Роки: {ORANGE}до {NUM}
-STR_HOUSE_PICKER_SIZE                                           :{BLACK}Розмір: {ORANGE}{NUM}x{NUM} клітинок
+STR_HOUSE_PICKER_POPULATION                                     :{BLACK}Населення: {GOLD}{NUM}
+STR_HOUSE_PICKER_YEARS                                          :{BLACK}Роки: {GOLD}{NUM}-{NUM}
+STR_HOUSE_PICKER_YEARS_ANY                                      :{BLACK}Роки: {GOLD}будь-які
+STR_HOUSE_PICKER_YEARS_FROM                                     :{BLACK}Роки: {GOLD}з {NUM}
+STR_HOUSE_PICKER_YEARS_UNTIL                                    :{BLACK}Роки: {GOLD}до {NUM}
+STR_HOUSE_PICKER_SIZE                                           :{BLACK}Розмір: {GOLD}{NUM}x{NUM} клітинок
 STR_HOUSE_PICKER_CARGO_ACCEPTED                                 :{BLACK}Приймається вантаж: {GOLD}{STRING}
 STR_HOUSE_PICKER_CARGO_PRODUCED                                 :{BLACK}Вантажу вироблено: {GOLD}{CARGO_LIST}
 
@@ -3831,6 +3831,7 @@ STR_EDIT_SIGN_CAPTION                                           :{WHITE}Реда
 STR_EDIT_SIGN_LOCATION_TOOLTIP                                  :{BLACK}Показати позначку в центрі екрану. Ctrl+клац мишею відкриє нове вікно у місці розташування позначки
 STR_EDIT_SIGN_NEXT_SIGN_TOOLTIP                                 :{BLACK}Наступне позначення
 STR_EDIT_SIGN_PREVIOUS_SIGN_TOOLTIP                             :{BLACK}Попереднє позначення
+STR_EDIT_SIGN_TEXT_COLOUR_TOOLTIP                               :{BLACK}Колір тексту напису
 
 STR_EDIT_SIGN_SIGN_OSKTITLE                                     :{BLACK}Введіть назву знака
 
