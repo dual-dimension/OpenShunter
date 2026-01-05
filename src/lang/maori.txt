@@ -727,8 +727,8 @@ STR_MUSIC_TRACK                                                 :{TINY_FONT}{BLA
 STR_MUSIC_XTITLE                                                :{TINY_FONT}{BLACK}Taitara
 STR_MUSIC_SHUFFLE                                               :{TINY_FONT}{BLACK}Riwhiriwhi
 STR_MUSIC_PROGRAM                                               :{TINY_FONT}{BLACK}Hōtaka
-STR_MUSIC_TOOLTIP_SKIP_TO_PREVIOUS_TRACK                        :{BLACK}Peke ki te waiata kua hipa i tēnei tīpakonga
-STR_MUSIC_TOOLTIP_SKIP_TO_NEXT_TRACK_IN_SELECTION               :{BLACK}Peke ki te waiata e whai ake nei i tēnei tīpakonga
+STR_MUSIC_TOOLTIP_SKIP_TO_PREVIOUS_TRACK                        :{BLACK}Peke ki te waiata kua hipa i tēnei tīpako
+STR_MUSIC_TOOLTIP_SKIP_TO_NEXT_TRACK_IN_SELECTION               :{BLACK}Peke ki te waiata e whai ake nei i tēnei tīpako
 STR_MUSIC_TOOLTIP_STOP_PLAYING_MUSIC                            :{BLACK}Kāti te puoro
 STR_MUSIC_TOOLTIP_START_PLAYING_MUSIC                           :{BLACK}Pureitia te puoro
 STR_MUSIC_TOOLTIP_DRAG_SLIDERS_TO_SET_MUSIC                     :{BLACK}Tōia ngā tāneke kia tautuhi te kaha mō te puoro me ngā orotaunaki
@@ -748,10 +748,10 @@ STR_PLAYLIST_TRACK_INDEX                                        :{TINY_FONT}{BLA
 STR_PLAYLIST_PROGRAM                                            :{TINY_FONT}{BLACK}Hōtaka - "{STRING}"
 STR_PLAYLIST_CLEAR                                              :{TINY_FONT}{BLACK}Ūkui
 STR_PLAYLIST_CHANGE_SET                                         :{BLACK}Panoni rārangi
-STR_PLAYLIST_TOOLTIP_CLEAR_CURRENT_PROGRAM_CUSTOM1              :{BLACK}Ūkuia te hōtaka onāianei (ko Motuhake 1 anake, ko Motuhake 2 anake rānei)
+STR_PLAYLIST_TOOLTIP_CLEAR_CURRENT_PROGRAM_CUSTOM1              :{BLACK}Ūkuia te hōtaka onāianei (ko Whaiaro 1, ko Whaiaro 2 rānei anake)
 STR_PLAYLIST_TOOLTIP_CHANGE_SET                                 :{BLACK}Panonitia te tīpakonga puoro ki tētahi atu rārangi kua tāutangia
-STR_PLAYLIST_TOOLTIP_CLICK_TO_ADD_TRACK                         :{BLACK}Pāwhiria he waiata kia tāpiria ki te hōtaka onāianei (ko Motuhake 1 anake, ko Motuhake 2 anake rānei)
-STR_PLAYLIST_TOOLTIP_CLICK_TO_REMOVE_TRACK                      :{BLACK}Pāwhiria he waiata kia tangohia mai i te hōtaka onāianei (ko Motuhake 1 anake, ko Motuhake 2 anake rānei)
+STR_PLAYLIST_TOOLTIP_CLICK_TO_ADD_TRACK                         :{BLACK}Pāwhiria he waiata kia tāpiria ki te hōtaka onāianei (ko Whaiaro 1, ko Whaiaro 2 rānei anake)
+STR_PLAYLIST_TOOLTIP_CLICK_TO_REMOVE_TRACK                      :{BLACK}Pāwhiria he waiata kia tangohia mai i te hōtaka onāianei (ko Whaiaro 1, ko Whaiaro 2 rānei anake)
 
 # Highscore window
 STR_HIGHSCORE_TOP_COMPANIES                                     :{BIG_FONT}{BLACK}Umanga kei runga
@@ -1003,7 +1003,7 @@ STR_GAME_OPTIONS_CURRENCY_GBP                                   :Pāuna Piritana
 STR_GAME_OPTIONS_CURRENCY_USD                                   :Tāra Amerikana
 STR_GAME_OPTIONS_CURRENCY_EUR                                   :Ūro
 STR_GAME_OPTIONS_CURRENCY_JPY                                   :Ene Hapanihi
-STR_GAME_OPTIONS_CURRENCY_ATS                                   :Herengi Ateriana
+STR_GAME_OPTIONS_CURRENCY_ATS                                   :Herengi o Ateria
 STR_GAME_OPTIONS_CURRENCY_BEF                                   :Wharangi o Peretiama
 STR_GAME_OPTIONS_CURRENCY_CHF                                   :Wharangi o Huiterangi
 STR_GAME_OPTIONS_CURRENCY_CZK                                   :Koruna o Tiekia
@@ -1082,8 +1082,8 @@ STR_GAME_OPTIONS_INTERFACE                                      :Tāhono
 
 STR_GAME_OPTIONS_GUI_SCALE_FRAME                                :Rahi o te tāhono
 STR_GAME_OPTIONS_GUI_SCALE_TOOLTIP                              :Tōia te tāneke kia tautuhi i te rahi o te tāhono. Pātaki+Tō kia motukore te whakarite
-STR_GAME_OPTIONS_GUI_SCALE_AUTO                                 :Kimi aunoatia te rahi
-STR_GAME_OPTIONS_GUI_SCALE_AUTO_TOOLTIP                         :Whakakā kia kite aunoatia te rahi o te tāhono
+STR_GAME_OPTIONS_GUI_SCALE_AUTO                                 :Rapu aunoatia te rahi
+STR_GAME_OPTIONS_GUI_SCALE_AUTO_TOOLTIP                         :Mākatia tēnei pouaka kia kite aunoatia te rahi o te tāhono
 
 STR_GAME_OPTIONS_GUI_SCALE_BEVELS                               :Hurirahitia ngā hema
 STR_GAME_OPTIONS_GUI_SCALE_BEVELS_TOOLTIP                       :Whakakā kia hurirahitia ngā hema kia ōrite ki te rahi o te tāhono
@@ -5477,7 +5477,7 @@ STR_BASESOUNDS_NONE_DESCRIPTION                                 :He takai oro k�
 STR_BASEMUSIC_WIN_DESCRIPTION                                   :Pūoro taketake o Transport Tycoon Deluxe Windows edition.
 STR_BASEMUSIC_DOS_DESCRIPTION                                   :Pūoro taketake o Transport Tycoon Deluxe DOS edition.
 STR_BASEMUSIC_TTO_DESCRIPTION                                   :Pūoro taketake o Transport Tycoon (Original/World Editor) DOS edition.
-STR_BASEMUSIC_NONE_DESCRIPTION                                  :He takai puoro kāore he puoro tūturu.
+STR_BASEMUSIC_NONE_DESCRIPTION                                  :He takai puoro ki te kore puoro tūturu.
 
 ##id 0x2000
 # Town building names
