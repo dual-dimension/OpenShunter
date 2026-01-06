@@ -1003,7 +1003,7 @@ STR_GAME_OPTIONS_CURRENCY_GBP                                   :Pāuna Piritana
 STR_GAME_OPTIONS_CURRENCY_USD                                   :Tāra Amerikana
 STR_GAME_OPTIONS_CURRENCY_EUR                                   :Ūro
 STR_GAME_OPTIONS_CURRENCY_JPY                                   :Ene Hapanihi
-STR_GAME_OPTIONS_CURRENCY_ATS                                   :Herengi o Ateria
+STR_GAME_OPTIONS_CURRENCY_ATS                                   :Herengi Ateriana
 STR_GAME_OPTIONS_CURRENCY_BEF                                   :Wharangi o Peretiama
 STR_GAME_OPTIONS_CURRENCY_CHF                                   :Wharangi o Huiterangi
 STR_GAME_OPTIONS_CURRENCY_CZK                                   :Koruna o Tiekia
