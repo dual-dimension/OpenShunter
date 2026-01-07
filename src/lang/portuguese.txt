@@ -4362,7 +4362,7 @@ STR_DEPOT_SELL_CONFIRMATION_TEXT                                :{YELLOW}Está p
 
 # Engine preview window
 STR_ENGINE_PREVIEW_CAPTION                                      :{WHITE}Mensagem de um fabricante de veículos
-STR_ENGINE_PREVIEW_MESSAGE                                      :{GOLD}Desenvolvemos u{G 0 m m ma ns mas} nov{G 0 "o modelo de" o a os as} {STRING} - teria interesse num ano de utilização exclusiva deste{G 0 "" "" "" s s} veículo{G 0 "" "" "" s s}, para que possamos avaliar o {G 0 "seu " "seu " "seu " "" ""}desempenho antes de o{G 0 "" "" "" s s} lançar globalmente?
+STR_ENGINE_PREVIEW_MESSAGE                                      :{GOLD}Desenvolvemos u{G 0 m m ma ns mas} nov{G 0 "o modelo de" o a os as} {STRING} - estaria interessado num ano de utilização exclusiva deste{G 0 "" "" "" s s} veículo{G 0 "" "" "" s s}, para que possamos avaliar o {G 0 "seu " "seu " "seu " "" ""}desempenho antes de o{G 0 "" "" "" s s} lançar globalmente?
 
 STR_ENGINE_PREVIEW_RAILROAD_LOCOMOTIVE                          :{G=f}locomotiva ferroviária
 STR_ENGINE_PREVIEW_ELRAIL_LOCOMOTIVE                            :{G=f}locomotiva elétrica ferroviária
@@ -4380,7 +4380,7 @@ STR_ENGINE_PREVIEW_COST_MAX_SPEED                               :Custo: {CURRENC
 STR_ENGINE_PREVIEW_SPEED_POWER                                  :Velocidade: {VELOCITY}  Potência: {POWER}
 STR_ENGINE_PREVIEW_SPEED_POWER_MAX_TE                           :Velocidade: {VELOCITY}  Potência: {POWER}  Tração Máx.: {FORCE}
 STR_ENGINE_PREVIEW_TYPE                                         :Tipo de aeronave: {STRING}
-STR_ENGINE_PREVIEW_TYPE_RANGE                                   :Tipo de aeronave: {STRING}   Alcance: {COMMA} mosaicos
+STR_ENGINE_PREVIEW_TYPE_RANGE                                   :Tipo de aeronave: {STRING}   Autonomia: {COMMA} mosaicos
 STR_ENGINE_PREVIEW_RUNCOST_YEAR                                 :Custo de Circulação: {CURRENCY_LONG}/ano
 STR_ENGINE_PREVIEW_RUNCOST_PERIOD                               :Custo de Circulação: {CURRENCY_LONG}/período
 STR_ENGINE_PREVIEW_CAPACITY                                     :Capacidade: {CARGO_LONG}
