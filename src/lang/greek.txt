@@ -2299,7 +2299,7 @@ STR_CONFIG_ERROR                                                :{WHITE}Σφάλ
 STR_CONFIG_ERROR_ARRAY                                          :{WHITE}... σφάλμα στον πίνακα «{STRING}»
 STR_CONFIG_ERROR_INVALID_VALUE                                  :{WHITE}... η τιμή «{STRING}» είναι άκυρη για «{STRING}»
 STR_CONFIG_ERROR_TRAILING_CHARACTERS                            :{WHITE}... καταληκτικοί χαρακτήρες στο τέλος της ρύθμισης «{STRING}»
-STR_CONFIG_ERROR_DUPLICATE_GRFID                                :{WHITE}... αγνοήθηκε το NewGRF «{STRING}»: διπλότυπο ID NewGRF με «{STRING}»
+STR_CONFIG_ERROR_DUPLICATE_GRFID                                :{WHITE}... αγνοήθηκε το NewGRF «{STRING}»: διπλότυπο NewGRF ID με «{STRING}»
 STR_CONFIG_ERROR_INVALID_GRF                                    :{WHITE}... αγνοείται το άκυρο NewGRF «{STRING}»: {STRING}
 STR_CONFIG_ERROR_INVALID_GRF_NOT_FOUND                          :δεν βρέθηκε
 STR_CONFIG_ERROR_INVALID_GRF_UNSAFE                             :ανασφαλής για στατική χρήση
@@ -3734,7 +3734,7 @@ STR_NEWGRF_ERROR_INDPROD_CALLBACK                               :Άγνωστη/
 STR_NEWGRF_POPUP_CAUTION_CAPTION                                :{WHITE}Προσοχή!
 STR_NEWGRF_CONFIRMATION_TEXT                                    :{YELLOW}Πρόκειται να κάνετε αλλαγές σε παιχνίδι που είναι ήδη σε εξέλιξη. Αυτό μπορεί να κλείσει απρόοπτα το OpenTTD ή να διαλύσει την κατάσταση του παιχνιδιού. Μην καταχωρείτε αναφορές σφάλματος για τέτοια προβλήματα.{}Είστε απόλυτα σίγουροι για αυτή την ενέργεια;
 
-STR_NEWGRF_DUPLICATE_GRFID                                      :{WHITE}Δεν μπορεί να προστεθεί το αρχείο: διπλότυπο ID NewGRF
+STR_NEWGRF_DUPLICATE_GRFID                                      :{WHITE}Δεν μπορεί να γίνει προσθήκη του αρχείου: διπλότυπο NewGRF ID
 STR_NEWGRF_COMPATIBLE_LOADED                                    :{ORANGE}Δεν βρέθηκε ταυτοποιημένο αρχείο (φορτώθηκε συμβατό NewGRF)
 STR_NEWGRF_TOO_MANY_NEWGRFS                                     :{WHITE}Δεν μπορεί να προστεθεί το αρχείο: φτάσατε το όριο αρχείων NewGRF
 
@@ -6083,4 +6083,3 @@ STR_BADGE_CONFIG_FILTERS                                        :{WHITE}Φίλτ
 STR_BADGE_CONFIG_PREVIEW                                        :Προεπισκόπιση Εικόνας
 STR_BADGE_CONFIG_NAME                                           :Όνομα
 STR_BADGE_FILTER_ANY_LABEL                                      :Κάθε {STRING}
-STR_BADGE_FILTER_IS_LABEL                                       :{STRING} είναι {STRING}

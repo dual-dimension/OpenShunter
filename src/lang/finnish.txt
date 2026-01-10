@@ -5978,4 +5978,3 @@ STR_BADGE_CONFIG_FILTERS                                        :{WHITE}Tunnussu
 STR_BADGE_CONFIG_PREVIEW                                        :Esikatselu
 STR_BADGE_CONFIG_NAME                                           :Nimi
 STR_BADGE_FILTER_ANY_LABEL                                      :Mikä tahansa {STRING}
-STR_BADGE_FILTER_IS_LABEL                                       :{STRING} on {STRING}

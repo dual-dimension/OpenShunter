@@ -6239,4 +6239,3 @@ STR_BADGE_CONFIG_FILTERS                                        :{WHITE}Филь
 STR_BADGE_CONFIG_PREVIEW                                        :Предпросмотр
 STR_BADGE_CONFIG_NAME                                           :Название
 STR_BADGE_FILTER_ANY_LABEL                                      :Любой {STRING}
-STR_BADGE_FILTER_IS_LABEL                                       :{STRING} равен {STRING}

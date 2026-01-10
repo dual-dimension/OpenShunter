@@ -1110,17 +1110,17 @@ STR_GAME_OPTIONS_REFRESH_RATE_TOOLTIP                           :選擇畫面更
 STR_GAME_OPTIONS_REFRESH_RATE_ITEM                              :{NUM}Hz
 STR_GAME_OPTIONS_REFRESH_RATE_WARNING                           :{WHITE}高於60Hz的畫面更新率可能會影響遊戲性能
 
-STR_GAME_OPTIONS_BASE_GRF                                       :基本圖形集
-STR_GAME_OPTIONS_BASE_GRF_TOOLTIP                               :選擇使用的基本圖形集（無法在遊戲中更改，只能從主選單中更改）
-STR_GAME_OPTIONS_BASE_GRF_DESCRIPTION_TOOLTIP                   :關於基本圖形集的額外資訊
+STR_GAME_OPTIONS_BASE_GRF                                       :基礎圖形集
+STR_GAME_OPTIONS_BASE_GRF_TOOLTIP                               :選擇使用的基礎圖形集（無法在遊戲中更改，只能從主選單中更改）
+STR_GAME_OPTIONS_BASE_GRF_DESCRIPTION_TOOLTIP                   :關於基礎圖形集的額外資訊
 
-STR_GAME_OPTIONS_BASE_SFX                                       :基本音效集
-STR_GAME_OPTIONS_BASE_SFX_TOOLTIP                               :選擇使用的基本音效集
-STR_GAME_OPTIONS_BASE_SFX_DESCRIPTION_TOOLTIP                   :關於基本音效集的額外資訊
+STR_GAME_OPTIONS_BASE_SFX                                       :基礎音效集
+STR_GAME_OPTIONS_BASE_SFX_TOOLTIP                               :選擇使用的基礎音效集
+STR_GAME_OPTIONS_BASE_SFX_DESCRIPTION_TOOLTIP                   :關於基礎音效集的額外資訊
 
-STR_GAME_OPTIONS_BASE_MUSIC                                     :基本音樂集
-STR_GAME_OPTIONS_BASE_MUSIC_TOOLTIP                             :選擇使用的基本音樂集
-STR_GAME_OPTIONS_BASE_MUSIC_DESCRIPTION_TOOLTIP                 :關於基本音樂集的額外資訊
+STR_GAME_OPTIONS_BASE_MUSIC                                     :基礎音樂集
+STR_GAME_OPTIONS_BASE_MUSIC_TOOLTIP                             :選擇使用的基礎音樂集
+STR_GAME_OPTIONS_BASE_MUSIC_DESCRIPTION_TOOLTIP                 :關於基礎音樂集的額外資訊
 
 STR_GAME_OPTIONS_ONLINE_CONTENT                                 :取得內容
 STR_GAME_OPTIONS_ONLINE_CONTENT_TOOLTIP                         :檢查及下載最新內容
@@ -2205,7 +2205,7 @@ STR_CONFIG_SETTING_QUERY_CAPTION                                :{WHITE}修改�
 STR_CONFIG_ERROR                                                :{WHITE}讀取或更新設定檔時出錯
 STR_CONFIG_ERROR_ARRAY                                          :{WHITE}... 處理陣列 '{STRING}' 時出錯
 STR_CONFIG_ERROR_INVALID_VALUE                                  :{WHITE}……「 {STRING} 」不是「 {STRING} 」的有效值
-STR_CONFIG_ERROR_TRAILING_CHARACTERS                            :{WHITE}……在設定「{STRING}」的末尾有殘餘字句
+STR_CONFIG_ERROR_TRAILING_CHARACTERS                            :{WHITE}... 在設定 '{STRING}' 的末尾有殘餘字句
 STR_CONFIG_ERROR_DUPLICATE_GRFID                                :{WHITE}……正忽略 NewGRF「{STRING}」：重複的 NewGRF ID「{STRING}」
 STR_CONFIG_ERROR_INVALID_GRF                                    :{WHITE}……正忽略無效的 NewGRF「{STRING}」：{STRING}
 STR_CONFIG_ERROR_INVALID_GRF_NOT_FOUND                          :找不到
@@ -2213,8 +2213,8 @@ STR_CONFIG_ERROR_INVALID_GRF_UNSAFE                             :此套件被標
 STR_CONFIG_ERROR_INVALID_GRF_SYSTEM                             :系統 NewGRF
 STR_CONFIG_ERROR_INVALID_GRF_INCOMPATIBLE                       :與此版本的 OpenTTD 不相容
 STR_CONFIG_ERROR_INVALID_GRF_UNKNOWN                            :不明
-STR_CONFIG_ERROR_INVALID_SAVEGAME_COMPRESSION_LEVEL             :{WHITE}……無效的壓縮層級值「{STRING}」
-STR_CONFIG_ERROR_INVALID_SAVEGAME_COMPRESSION_ALGORITHM         :{WHITE}……本版本不支援存檔格式「{STRING}」，現改用「{STRING}」格式
+STR_CONFIG_ERROR_INVALID_SAVEGAME_COMPRESSION_LEVEL             :{WHITE}... 無效的壓縮層級值 '{STRING}'
+STR_CONFIG_ERROR_INVALID_SAVEGAME_COMPRESSION_ALGORITHM         :{WHITE}... 本版本不支援存檔格式 '{STRING}'，現改用 '{STRING}' 格式
 STR_CONFIG_ERROR_INVALID_BASE_GRAPHICS_NOT_FOUND                :{WHITE}……正忽略基礎圖形集「{STRING}」：找不到檔案
 STR_CONFIG_ERROR_INVALID_BASE_SOUNDS_NOT_FOUND                  :{WHITE}……正忽略基礎音效集「{STRING}」：找不到檔案
 STR_CONFIG_ERROR_INVALID_BASE_MUSIC_NOT_FOUND                   :{WHITE}……正忽略基礎音樂集「{STRING}」：找不到檔案
@@ -5978,4 +5978,3 @@ STR_BADGE_CONFIG_FILTERS                                        :{WHITE}篩選�
 STR_BADGE_CONFIG_PREVIEW                                        :預覽圖
 STR_BADGE_CONFIG_NAME                                           :名稱
 STR_BADGE_FILTER_ANY_LABEL                                      :任何{STRING}
-STR_BADGE_FILTER_IS_LABEL                                       :{STRING}：{STRING}

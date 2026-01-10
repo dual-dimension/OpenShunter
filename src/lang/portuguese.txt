@@ -5979,4 +5979,3 @@ STR_BADGE_CONFIG_FILTERS                                        :{WHITE}Filtros 
 STR_BADGE_CONFIG_PREVIEW                                        :Pré-visualizar imagem
 STR_BADGE_CONFIG_NAME                                           :Nome
 STR_BADGE_FILTER_ANY_LABEL                                      :Qua{G 0 l l l is is}quer {STRING}
-STR_BADGE_FILTER_IS_LABEL                                       :{STRING} {G 0 é é é são são} {STRING}

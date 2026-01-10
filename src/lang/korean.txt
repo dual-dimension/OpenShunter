@@ -5979,4 +5979,3 @@ STR_BADGE_CONFIG_FILTERS                                        :{WHITE}배지 �
 STR_BADGE_CONFIG_PREVIEW                                        :미리보기 이미지
 STR_BADGE_CONFIG_NAME                                           :이름
 STR_BADGE_FILTER_ANY_LABEL                                      :모든 {STRING}
-STR_BADGE_FILTER_IS_LABEL                                       :{STRING} = {STRING}
