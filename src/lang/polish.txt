@@ -2006,6 +2006,8 @@ STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_SMOOTH                  :Łagodny
 STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_ROUGH                   :Pofałdowany
 STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_VERY_ROUGH              :Bardzo pofałdowany
 
+###length 4
+
 STR_CONFIG_SETTING_VARIETY                                      :Różnorodność terenu: {STRING}
 STR_CONFIG_SETTING_VARIETY_HELPTEXT                             :Wybierz, czy mapa ma zawierać zarówno obszary górskie, jak i płaskie. Im większa różnorodność, tym większe różnice wysokości między obszarami górskimi i płaskimi
 

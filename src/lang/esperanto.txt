@@ -1717,6 +1717,8 @@ STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_SMOOTH                  :Glata
 STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_ROUGH                   :Ne glata
 STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_VERY_ROUGH              :Malglata
 
+###length 4
+
 STR_CONFIG_SETTING_VARIETY                                      :Diverseca distribuo: {STRING}
 STR_CONFIG_SETTING_VARIETY_HELPTEXT                             :Elektu, ĉu la mapo enhavas ambaŭ montarojn kaj ebenaĵojn. Ju pli alta de variaĵo, des pli la altecdiferenco inter montaroj kaj ebenaĵoj
 
