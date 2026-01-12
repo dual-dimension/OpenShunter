@@ -1598,7 +1598,7 @@ STR_CONFIG_SETTING_LAND_GENERATOR_HELPTEXT                      :「原版」地
 STR_CONFIG_SETTING_LAND_GENERATOR_ORIGINAL                      :原版
 STR_CONFIG_SETTING_LAND_GENERATOR_TERRA_GENESIS                 :TerraGenesis
 
-STR_CONFIG_SETTING_TERRAIN_TYPE                                 :地形種類：{STRING}
+STR_CONFIG_SETTING_TERRAIN_TYPE                                 :地形最大高度預設值：{STRING}
 STR_CONFIG_SETTING_TERRAIN_TYPE_HELPTEXT                        :選擇產生版圖的地型起伏度
 
 STR_CONFIG_SETTING_INDUSTRY_DENSITY                             :工業設施密度：{STRING}
@@ -1626,7 +1626,13 @@ STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_SMOOTH                  :平滑
 STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_ROUGH                   :高低不平
 STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_VERY_ROUGH              :非常粗糙
 
+STR_CONFIG_SETTING_AVERAGE_HEIGHT                               :平均地勢高度：{STRING}
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_HELPTEXT                      :選擇平均地勢高度。若選擇「自動」，系統將根據所選的氣候去決定預設值：亞熱帶為「平原」，溫帶與玩具樂園為「普通」，而寒帶則為「高原」。
 ###length 4
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_AUTO                          :自動
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_LOWLANDS                      :平原
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_NORMAL                        :普通
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_PLATEAUS                      :高原
 
 STR_CONFIG_SETTING_VARIETY                                      :地形起伏分佈：{STRING}
 STR_CONFIG_SETTING_VARIETY_HELPTEXT                             :選擇地圖是否同時包含山脈和平坦地域。多樣性越豐富，高山和平地之間的海拔差距就越大
@@ -3388,7 +3394,8 @@ STR_MAPGEN_DESERT_COVERAGE                                      :{BLACK}沙漠�
 STR_MAPGEN_DESERT_COVERAGE_UP_TOOLTIP                           :{BLACK}將沙漠覆蓋率提高10%
 STR_MAPGEN_DESERT_COVERAGE_DOWN_TOOLTIP                         :{BLACK}將沙漠覆蓋率降低10%
 STR_MAPGEN_DESERT_COVERAGE_TEXT                                 :{BLACK}{NUM}%
-STR_MAPGEN_TERRAIN_TYPE                                         :{BLACK}地形種類：
+STR_MAPGEN_TERRAIN_TYPE                                         :{BLACK}地形最大高度：
+STR_MAPGEN_AVERAGE_HEIGHT                                       :{BLACK}平均地勢高度：
 STR_MAPGEN_SEA_LEVEL                                            :{BLACK}海平面：
 STR_MAPGEN_SEA_LEVEL_TOOLTIP                                    :{BLACK}選擇海洋覆蓋率
 STR_MAPGEN_QUANTITY_OF_RIVERS                                   :{BLACK}河流:

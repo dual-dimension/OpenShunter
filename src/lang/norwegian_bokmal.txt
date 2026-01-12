@@ -1600,7 +1600,7 @@ STR_CONFIG_SETTING_LAND_GENERATOR_HELPTEXT                      :Den opprinnelig
 STR_CONFIG_SETTING_LAND_GENERATOR_ORIGINAL                      :Orginal
 STR_CONFIG_SETTING_LAND_GENERATOR_TERRA_GENESIS                 :TerraGenesis
 
-STR_CONFIG_SETTING_TERRAIN_TYPE                                 :Terrengtype: {STRING}
+STR_CONFIG_SETTING_TERRAIN_TYPE                                 :Valgt maksimal høyde: {STRING}
 STR_CONFIG_SETTING_TERRAIN_TYPE_HELPTEXT                        :Velg høyden til bakker og fjell i landskapet
 
 STR_CONFIG_SETTING_INDUSTRY_DENSITY                             :Industritetthet: {STRING}
@@ -1628,7 +1628,13 @@ STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_SMOOTH                  :Jevnt
 STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_ROUGH                   :Ulendt
 STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_VERY_ROUGH              :Veldig ulendt
 
+STR_CONFIG_SETTING_AVERAGE_HEIGHT                               :Gjennomsnittshøyde: {STRING}
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_HELPTEXT                      :Velg gjennomsnittshøyde for land. 'Automatisk' er basert på valgt klima: 'Lavland' for subtropisk, 'Normal' for temperert og leketøyland, og 'Platå' for subarktisk.
 ###length 4
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_AUTO                          :Automatisk
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_LOWLANDS                      :Lavland
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_NORMAL                        :Normal
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_PLATEAUS                      :Platå
 
 STR_CONFIG_SETTING_VARIETY                                      :Variasjonsspredning: {STRING}
 STR_CONFIG_SETTING_VARIETY_HELPTEXT                             :Velg om kartet inneholder både fjellrike og flate områder. Jo høyere variasjon, dess større forskjeller i høyde mellom fjellrike og flate områder
@@ -3390,7 +3396,8 @@ STR_MAPGEN_DESERT_COVERAGE                                      :{BLACK}Ørkende
 STR_MAPGEN_DESERT_COVERAGE_UP_TOOLTIP                           :{BLACK}Øk ørkendekningen med ti prosent
 STR_MAPGEN_DESERT_COVERAGE_DOWN_TOOLTIP                         :{BLACK}Reduser ørkendekning med 10 prosent
 STR_MAPGEN_DESERT_COVERAGE_TEXT                                 :{BLACK}{NUM}%
-STR_MAPGEN_TERRAIN_TYPE                                         :{BLACK}Terrengtype:
+STR_MAPGEN_TERRAIN_TYPE                                         :{BLACK}Maksimal høyde:
+STR_MAPGEN_AVERAGE_HEIGHT                                       :{BLACK}Gjennomsnittshøyde:
 STR_MAPGEN_SEA_LEVEL                                            :{BLACK}Havnivå:
 STR_MAPGEN_SEA_LEVEL_TOOLTIP                                    :{BLACK}Velg havnivået
 STR_MAPGEN_QUANTITY_OF_RIVERS                                   :{BLACK}Elver:
