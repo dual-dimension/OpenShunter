@@ -1469,9 +1469,9 @@ STR_GAME_OPTIONS_GUI_SCALE_BEVELS                               :Skaluj fazy kra
 STR_GAME_OPTIONS_GUI_SCALE_BEVELS_TOOLTIP                       :Włącz, aby skalować fazy krawędzi zgodnie z rozmiarem interfejsu
 
 STR_GAME_OPTIONS_GUI_FONT_SPRITE                                :Użyj tradycyjnego fonta typu sprite
-STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Zaznacz to pole, jeśli wolisz używać tradycyjnego fonta typu sprite o stałym rozmiarze
+STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Włącz, jeśli wolisz używać tradycyjnego fonta typu sprite o stałym rozmiarze
 STR_GAME_OPTIONS_GUI_FONT_AA                                    :Wygładzanie fontów
-STR_GAME_OPTIONS_GUI_FONT_AA_TOOLTIP                            :Zaznacz to pole, aby wygładzać fonty o zmiennym rozmiarze
+STR_GAME_OPTIONS_GUI_FONT_AA_TOOLTIP                            :Włącz, aby wygładzać fonty o zmiennym rozmiarze
 
 STR_GAME_OPTIONS_GUI_SCALE_MARK                                 :{DECIMAL}x
 

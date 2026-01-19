@@ -1234,7 +1234,7 @@ STR_GAME_OPTIONS_GUI_SCALE_BEVELS                               :Рельефн�
 STR_GAME_OPTIONS_GUI_SCALE_BEVELS_TOOLTIP                       :Масштабировать рельефные элементы интерфейса
 
 STR_GAME_OPTIONS_GUI_FONT_SPRITE                                :Использовать растровый шрифт
-STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Включить/отключить использование классического растрового шрифта фиксированного размера
+STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Использовать классический растровый шрифт фиксированного размера
 STR_GAME_OPTIONS_GUI_FONT_AA                                    :Сглаживание шрифтов
 STR_GAME_OPTIONS_GUI_FONT_AA_TOOLTIP                            :Сглаживать масштабируемые шрифты
 
