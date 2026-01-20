@@ -1089,7 +1089,7 @@ STR_GAME_OPTIONS_GUI_SCALE_BEVELS                               :缩放边框
 STR_GAME_OPTIONS_GUI_SCALE_BEVELS_TOOLTIP                       :启用使边框随界面大小而缩放
 
 STR_GAME_OPTIONS_GUI_FONT_SPRITE                                :使用位图字体
-STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :勾选此框以使用固定大小的传统位图字体
+STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :启用以使用固定大小的传统位图字体
 STR_GAME_OPTIONS_GUI_FONT_AA                                    :字体抗锯齿
 STR_GAME_OPTIONS_GUI_FONT_AA_TOOLTIP                            :启用以应用字体抗锯齿
 
@@ -1598,7 +1598,7 @@ STR_CONFIG_SETTING_LAND_GENERATOR_HELPTEXT                      :使用原始算
 STR_CONFIG_SETTING_LAND_GENERATOR_ORIGINAL                      :原始算法
 STR_CONFIG_SETTING_LAND_GENERATOR_TERRA_GENESIS                 :TerraGenesis
 
-STR_CONFIG_SETTING_TERRAIN_TYPE                                 :地貌类型：{STRING}
+STR_CONFIG_SETTING_TERRAIN_TYPE                                 :默认最大高度：{STRING}
 STR_CONFIG_SETTING_TERRAIN_TYPE_HELPTEXT                        :选择生成地图的起伏度
 
 STR_CONFIG_SETTING_INDUSTRY_DENSITY                             :工业密度：{STRING}
@@ -1626,7 +1626,13 @@ STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_SMOOTH                  :光滑
 STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_ROUGH                   :粗糙
 STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_VERY_ROUGH              :非常粗糙
 
+STR_CONFIG_SETTING_AVERAGE_HEIGHT                               :平均海拔：{STRING}
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_HELPTEXT                      :选择地图平均海拔。选择“自动”时，系统将根据所选的场景类型自动决定平均高度：“热带”为“低地”，“温带”与“玩具”为“普通”，寒带为“高原”。
 ###length 4
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_AUTO                          :自动
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_LOWLANDS                      :低地
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_NORMAL                        :普通
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_PLATEAUS                      :高原
 
 STR_CONFIG_SETTING_VARIETY                                      :多样地形：{STRING}
 STR_CONFIG_SETTING_VARIETY_HELPTEXT                             :此设置控制地图是否同时包含多山及平坦的地带。多样性越丰富，山地和平地之间的海拔差距就越大
@@ -3388,7 +3394,8 @@ STR_MAPGEN_DESERT_COVERAGE                                      :{BLACK}沙漠�
 STR_MAPGEN_DESERT_COVERAGE_UP_TOOLTIP                           :{BLACK}将沙漠比率增加 10%
 STR_MAPGEN_DESERT_COVERAGE_DOWN_TOOLTIP                         :{BLACK}将沙漠比率减少 10%
 STR_MAPGEN_DESERT_COVERAGE_TEXT                                 :{BLACK}{NUM}%
-STR_MAPGEN_TERRAIN_TYPE                                         :{BLACK}地形特点：
+STR_MAPGEN_TERRAIN_TYPE                                         :{BLACK}最大高度：
+STR_MAPGEN_AVERAGE_HEIGHT                                       :{BLACK}平均海拔：
 STR_MAPGEN_SEA_LEVEL                                            :{BLACK}海洋面积：
 STR_MAPGEN_SEA_LEVEL_TOOLTIP                                    :{BLACK}选择海洋覆盖率
 STR_MAPGEN_QUANTITY_OF_RIVERS                                   :{BLACK}河流数量：
