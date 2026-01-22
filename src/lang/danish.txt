@@ -1089,7 +1089,7 @@ STR_GAME_OPTIONS_GUI_SCALE_BEVELS                               :Skalere facette
 STR_GAME_OPTIONS_GUI_SCALE_BEVELS_TOOLTIP                       :Slå til for at skalere facetter efter grænsefladestørrelse
 
 STR_GAME_OPTIONS_GUI_FONT_SPRITE                                :Brug traditionel sprite-skrifttype
-STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Marker dette felt, hvis du foretrækker at bruge den traditionelle sprite-skrifttype med fast størrelse
+STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Slå til, hvis du foretrækker at bruge den traditionelle sprite-skrifttype med fast størrelse
 STR_GAME_OPTIONS_GUI_FONT_AA                                    :Anti-alias skrifttyper
 STR_GAME_OPTIONS_GUI_FONT_AA_TOOLTIP                            :Slå antialias-skrifttyper til, der kan tilpasses i størrelse
 
