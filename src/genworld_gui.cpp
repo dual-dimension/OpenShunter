@@ -822,7 +822,8 @@ struct GenerateLandscapeWindow : public Window {
 
 			/* Map borders */
 			case WID_GL_BORDERS_PULLDOWN:
-				ShowDropDownMenu(this, _borders, to_underlying(_settings_newgame.game_creation.water_border_presets), WID_GL_BORDERS_PULLDOWN, 0, 0);
+				/* WHen loading a heightmap, hide the first option "Random". */
+				ShowDropDownMenu(this, _borders, to_underlying(_settings_newgame.game_creation.water_border_presets), WID_GL_BORDERS_PULLDOWN, 0, mode == GLWM_HEIGHTMAP ? (1U << 0) : 0);
 				break;
 
 			case WID_GL_WATER_NW:
