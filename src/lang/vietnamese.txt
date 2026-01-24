@@ -1626,7 +1626,13 @@ STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_SMOOTH                  :Phẳng
 STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_ROUGH                   :Gồ Ghề
 STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_VERY_ROUGH              :Rất Gồ Ghề
 
+STR_CONFIG_SETTING_AVERAGE_HEIGHT                               :Độ cao trung bình: {STRING}
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_HELPTEXT                      :Chọn độ cao trung bình của nền đất. 'Tự động' sử dụng nền mặc định dựa trên khí hậu: 'Đất thấp' cho vùng khí hậu Cận nhiệt đới, 'Bình thường' cho Ôn hoà và Đồ chơi, và 'Cao nguyên' cho khi hậu Bắc Cực.
 ###length 4
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_AUTO                          :Tự động
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_LOWLANDS                      :Đất thấp
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_NORMAL                        :Bình thường
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_PLATEAUS                      :Cao nguyên
 
 STR_CONFIG_SETTING_VARIETY                                      :Phân bổ sự đa dạng: {STRING}
 STR_CONFIG_SETTING_VARIETY_HELPTEXT                             :Điều chỉnh liệu rằng bản đồ gồm cả vùng núi cao và vùng đồng bằng. Độ đa dạng càng cao thì sự chênh lệch về độ cao giữa vùng núi và vùng đồng bằng càng nhiều
@@ -3389,6 +3395,7 @@ STR_MAPGEN_DESERT_COVERAGE_UP_TOOLTIP                           :{BLACK}Tăng đ
 STR_MAPGEN_DESERT_COVERAGE_DOWN_TOOLTIP                         :{BLACK}Giảm độ phủ sa mạc đi mười phần trăm
 STR_MAPGEN_DESERT_COVERAGE_TEXT                                 :{BLACK}{NUM}%
 STR_MAPGEN_TERRAIN_TYPE                                         :{BLACK}Kiểu nền đất:
+STR_MAPGEN_AVERAGE_HEIGHT                                       :{BLACK}Độ cao trung bình:
 STR_MAPGEN_SEA_LEVEL                                            :{BLACK}Mực nước biển:
 STR_MAPGEN_SEA_LEVEL_TOOLTIP                                    :{BLACK}Chọn mực nước biển
 STR_MAPGEN_QUANTITY_OF_RIVERS                                   :{BLACK}Số sông/suối:
