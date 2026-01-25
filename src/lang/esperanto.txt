@@ -721,7 +721,7 @@ STR_GRAPH_LAST_24_YEARS                                         :{TINY_FONT}{BLA
 STR_GRAPH_TOGGLE_RANGE                                          :{BLACK}Baskulu diagramon de tiu ŝarĝotipo
 STR_GRAPH_SELECT_SCALE                                          :Ŝanĝi horizontalan skalon de diagramoj
 
-STR_GRAPH_CARGO_PAYMENT_RATES_CAPTION                           :{WHITE}Ŝarĝpagaj Tarifoj
+STR_GRAPH_CARGO_PAYMENT_RATES_CAPTION                           :{WHITE}Ŝarĝpagaj tarifoj
 STR_GRAPH_CARGO_PAYMENT_RATES_DAYS                              :{TINY_FONT}{BLACK}Tagoj dum transito
 STR_GRAPH_CARGO_PAYMENT_RATES_SECONDS                           :{TINY_FONT}{BLACK}Sekundoj dum transito
 STR_GRAPH_CARGO_PAYMENT_RATES_TITLE                             :{TINY_FONT}{BLACK}Pago por liveri 10 unuojn (aŭ 10,000 litrojn) da ŝarĝo trans 20 kvadratoj
@@ -2449,7 +2449,7 @@ STR_LIVERY_FREIGHT_TRAM                                         :Frajttramo
 
 # Face selection window
 STR_FACE_CAPTION                                                :{WHITE}Elekto de vizaĝo
-STR_FACE_CANCEL_TOOLTIP                                         :{BLACK}Nuligi elekton de nova vizaĝo
+STR_FACE_CANCEL_TOOLTIP                                         :{BLACK}Nuligu elekton de nova vizaĝo
 STR_FACE_OK_TOOLTIP                                             :{BLACK}Akceptu elekton de nova vizaĝo
 
 STR_FACE_NEW_FACE_BUTTON                                        :{BLACK}Nova Vizaĝo
@@ -2994,7 +2994,7 @@ STR_STATION_CLASS_WAYP                                          :Vojpunktoj
 STR_STATION_CLASS_WAYP_WAYPOINT                                 :Defaŭlta vojpunkto
 
 # Signal window
-STR_BUILD_SIGNAL_CAPTION                                        :{WHITE}Elekto de Signalo
+STR_BUILD_SIGNAL_CAPTION                                        :{WHITE}Elekto de signalo
 STR_BUILD_SIGNAL_SEMAPHORE_NORM_TOOLTIP                         :{BLACK}Bloksignalo (semafora){}Tio ĉi estas la plej baza tipo de signalo, kiu permesas al nur unu vagonaro esti en la sama bloko dum la sama tempo
 STR_BUILD_SIGNAL_SEMAPHORE_ENTRY_TOOLTIP                        :{BLACK}Enirsemaforo{}Restas verda dum estas almenaŭ unu verda elirsemaforo de la sekva traksekcio. Alikaze ĝi estas ruĝa
 STR_BUILD_SIGNAL_SEMAPHORE_EXIT_TOOLTIP                         :{BLACK}Elira semaforo{}Kondutas same kiel bloka semaforo, sed estas bezonata por kaŭzi la ĝustan koloron ĉe eniraj kaj kombinaj antaŭsemaforoj
@@ -3151,7 +3151,7 @@ STR_TREES_MODE_FOREST_LG_BUTTON.n                               :{BLACK}Arbaron
 STR_TREES_MODE_FOREST_LG_TOOLTIP                                :{BLACK}Plantu grandajn arbarojn per trenado super la pejzaĝo
 
 # Land generation window (SE)
-STR_TERRAFORM_TOOLBAR_LAND_GENERATION_CAPTION                   :{WHITE}Landa Generado
+STR_TERRAFORM_TOOLBAR_LAND_GENERATION_CAPTION                   :{WHITE}Generado de tero
 STR_TERRAFORM_TOOLTIP_PLACE_ROCKY_AREAS_ON_LANDSCAPE            :{BLACK}Metu rokecajn lokojn en la lando
 STR_TERRAFORM_TOOLTIP_DEFINE_DESERT_AREA                        :{BLACK}Difinu dezertan regionon.{}Stir+Klaku por forigi dezertan regionon
 STR_TERRAFORM_TOOLTIP_INCREASE_SIZE_OF_LAND_AREA                :{BLACK}Grandigu landparton por (mal)altigi
@@ -3166,9 +3166,9 @@ STR_RESET_LANDSCAPE_CONFIRMATION_TEXT                           :{WHITE}Ĉu vi c
 
 # Town generation window (SE)
 STR_FOUND_TOWN_CAPTION                                          :{WHITE}Urba generado
-STR_FOUND_TOWN_NEW_TOWN_BUTTON                                  :{BLACK}Nova urbo
-STR_FOUND_TOWN_NEW_TOWN_TOOLTIP                                 :{BLACK}Fondi novan urbon. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
-STR_FOUND_TOWN_RANDOM_TOWN_BUTTON                               :{BLACK}Hazarda urbo
+STR_FOUND_TOWN_NEW_TOWN_BUTTON                                  :{BLACK}Nova Urbo
+STR_FOUND_TOWN_NEW_TOWN_TOOLTIP                                 :{BLACK}Fondu novan urbon. Ankaŭ premu Shift por nur montri kostotakson
+STR_FOUND_TOWN_RANDOM_TOWN_BUTTON                               :{BLACK}Hazarda Urbo
 STR_FOUND_TOWN_RANDOM_TOWN_TOOLTIP                              :{BLACK}Fondi urbon en hazarda loko
 STR_FOUND_TOWN_MANY_RANDOM_TOWNS                                :{BLACK}Multaj hazardaj urboj
 STR_FOUND_TOWN_RANDOM_TOWNS_TOOLTIP                             :{BLACK}Kovru la mapon per hazarde metitajn urbojn
@@ -3430,11 +3430,11 @@ STR_FRAMETIME_CAPTION_AI                                        :AI {NUM} {STRIN
 
 
 # Save/load game/scenario
-STR_SAVELOAD_SAVE_CAPTION                                       :{WHITE}Konservu Ludon
-STR_SAVELOAD_LOAD_CAPTION                                       :{WHITE}Ŝarĝu Ludon
-STR_SAVELOAD_SAVE_SCENARIO                                      :{WHITE}Konservu Scenaron
-STR_SAVELOAD_LOAD_SCENARIO                                      :{WHITE}Ŝarĝu Scenaron
-STR_SAVELOAD_LOAD_HEIGHTMAP                                     :{WHITE}Ŝarĝu Altecmapon
+STR_SAVELOAD_SAVE_CAPTION                                       :{WHITE}Konservu ludon
+STR_SAVELOAD_LOAD_CAPTION                                       :{WHITE}Ŝarĝu ludon
+STR_SAVELOAD_SAVE_SCENARIO                                      :{WHITE}Konservu scenaron
+STR_SAVELOAD_LOAD_SCENARIO                                      :{WHITE}Ŝarĝu scenaron
+STR_SAVELOAD_LOAD_HEIGHTMAP                                     :{WHITE}Ŝarĝu altecmapon
 STR_SAVELOAD_SAVE_HEIGHTMAP                                     :{WHITE}Konservu altecmapon
 STR_SAVELOAD_LOAD_TOWN_DATA                                     :{WHITE}Ŝarĝi urbodatumon
 STR_SAVELOAD_HOME_BUTTON_TOOLTIP                                :{BLACK}Klaku ĉi tie por salti al la nuna defaŭlta konserva dosierujo
@@ -3449,7 +3449,7 @@ STR_SAVELOAD_LOAD_BUTTON                                        :{BLACK}Ŝarĝu
 STR_SAVELOAD_LOAD_TOOLTIP                                       :{BLACK}Ŝarĝu la elektan ludon
 STR_SAVELOAD_LOAD_HEIGHTMAP_TOOLTIP                             :{BLACK}Ŝarĝu la elektitan altecmapon
 STR_SAVELOAD_LOAD_TOWN_DATA_TOOLTIP                             :{BLACK}Ŝarĝi la datumon de elektita urbo
-STR_SAVELOAD_DETAIL_CAPTION                                     :{BLACK}Detaloj de la Ludo
+STR_SAVELOAD_DETAIL_CAPTION                                     :{BLACK}Detaloj de la ludo
 STR_SAVELOAD_DETAIL_NOT_AVAILABLE                               :{BLACK}Ne disponeblas informoj
 STR_SAVELOAD_DETAIL_COMPANY_INDEX                               :{SILVER}{COMMA}: {WHITE}{STRING}
 STR_SAVELOAD_DETAIL_GRFSTATUS                                   :{SILVER}NewGRF: {WHITE}{STRING}
@@ -4126,7 +4126,7 @@ STR_COMPANY_VIEW_PRESIDENT_NAME_BUTTON                          :{BLACK}Manaĝan
 STR_COMPANY_VIEW_PRESIDENT_NAME_TOOLTIP                         :{BLACK}Ŝanĝi la nomon de la manaĝanto
 
 STR_COMPANY_VIEW_COMPANY_NAME_QUERY_CAPTION                     :Kompania nomo
-STR_COMPANY_VIEW_PRESIDENT_S_NAME_QUERY_CAPTION                 :Nomo de la manaĝanto
+STR_COMPANY_VIEW_PRESIDENT_S_NAME_QUERY_CAPTION                 :Nomo de la Manaĝanto
 STR_COMPANY_VIEW_GIVE_MONEY_QUERY_CAPTION                       :Entajpu la monkvanton kiun vi volas doni
 
 STR_BUY_COMPANY_MESSAGE                                         :{WHITE}Ni serĉas transportkompanion por transpreni nian kompanion.{}{}Ĉu vi volas aĉeti {COMPANY} por {CURRENCY_LONG}?
@@ -4511,13 +4511,13 @@ STR_REPLACE_LEFT_ARRAY_TOOLTIP                                  :{BLACK}Elektu m
 STR_REPLACE_RIGHT_ARRAY_TOOLTIP                                 :{BLACK}Elektu novan maŝinon por uzi anstataŭ la maldekstre elektitan
 
 STR_REPLACE_VEHICLES_START                                      :{BLACK}Komenci anstataŭigon
-STR_REPLACE_VEHICLES_NOW                                        :Anstataŭigi ĉiujn veturilojn nun
-STR_REPLACE_VEHICLES_WHEN_OLD                                   :Anstataŭigi nur malnovajn veturilojn
+STR_REPLACE_VEHICLES_NOW                                        :Anstataŭigu ĉiujn veturilojn nun
+STR_REPLACE_VEHICLES_WHEN_OLD                                   :Anstataŭigu nur malnovajn veturilojn
 STR_REPLACE_START_BUTTON_TOOLTIP                                :{BLACK}Premu por komenci anstataŭi la maldekstre elektitan maŝinon per la dekstre elektitan
 STR_REPLACE_NOT_REPLACING                                       :{BLACK}Neniu anstataŭigo
 STR_REPLACE_NOT_REPLACING_VEHICLE_SELECTED                      :{BLACK}Ne elektiĝis veturilo
 STR_REPLACE_REPLACING_WHEN_OLD                                  :{ENGINE}, kiam malnova
-STR_REPLACE_VEHICLES_STOP                                       :{BLACK}Ĉesu Anstataŭi
+STR_REPLACE_VEHICLES_STOP                                       :{BLACK}Haltigi anstataŭigon
 STR_REPLACE_STOP_BUTTON_TOOLTIP                                 :{BLACK}Premu por ĉesi anstataŭi la maldekstre elektitan maŝinon
 
 STR_REPLACE_ENGINE_WAGON_SELECT_TOOLTIP                         :{BLACK}Baskuligi inter fenestroj de maŝina kaj vagona anstataŭigo
