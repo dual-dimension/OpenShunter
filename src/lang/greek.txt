@@ -1720,7 +1720,7 @@ STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_ROUGH                   :Τραχιά
 STR_CONFIG_SETTING_ROUGHNESS_OF_TERRAIN_VERY_ROUGH              :Πολύ Τραχιά
 
 STR_CONFIG_SETTING_AVERAGE_HEIGHT                               :Μέσο ύψος: {STRING}
-STR_CONFIG_SETTING_AVERAGE_HEIGHT_HELPTEXT                      :Επιλέξτε το μέσο ύψος της γης. Η επιλογή «Αυτόματη» χρησιμοποιεί την προεπιλογή με βάση το επιλεγμένο κλίμα: «Πεδινές περιοχές» για Υποτροπικό, «Κανονικό» για Εύκρατο και Παιχνιδότοπο και «Οροπέδια» για Υποαρκτικό.
+STR_CONFIG_SETTING_AVERAGE_HEIGHT_HELPTEXT                      :Επιλέξτε το μέσο ύψος της γης. Η επιλογή «Αυτόματη» χρησιμοποιεί την προεπιλογή με βάση το επιλεγμένο κλίμα: «Πεδινές περιοχές» για Υποτροπικό, «Κανονικό» για Εύκρατο και Παιχνιδότοπο και «Οροπέδια» για Πολικό.
 ###length 4
 STR_CONFIG_SETTING_AVERAGE_HEIGHT_AUTO                          :Αυτόματο
 STR_CONFIG_SETTING_AVERAGE_HEIGHT_LOWLANDS                      :Πεδινές περιοχές
@@ -2307,7 +2307,7 @@ STR_CONFIG_ERROR                                                :{WHITE}Σφάλ
 STR_CONFIG_ERROR_ARRAY                                          :{WHITE}... σφάλμα στον πίνακα «{STRING}»
 STR_CONFIG_ERROR_INVALID_VALUE                                  :{WHITE}... η τιμή «{STRING}» είναι άκυρη για «{STRING}»
 STR_CONFIG_ERROR_TRAILING_CHARACTERS                            :{WHITE}... καταληκτικοί χαρακτήρες στο τέλος της ρύθμισης «{STRING}»
-STR_CONFIG_ERROR_DUPLICATE_GRFID                                :{WHITE}... αγνοήθηκε το NewGRF «{STRING}»: διπλότυπο NewGRF ID με «{STRING}»
+STR_CONFIG_ERROR_DUPLICATE_GRFID                                :{WHITE}... αγνοήθηκε το NewGRF «{STRING}»: διπλότυπο ID NewGRF με «{STRING}»
 STR_CONFIG_ERROR_INVALID_GRF                                    :{WHITE}... αγνοείται το άκυρο NewGRF «{STRING}»: {STRING}
 STR_CONFIG_ERROR_INVALID_GRF_NOT_FOUND                          :δεν βρέθηκε
 STR_CONFIG_ERROR_INVALID_GRF_UNSAFE                             :ανασφαλής για στατική χρήση
@@ -2950,6 +2950,8 @@ STR_PICKER_PREVIEW_SHRINK                                       :-
 STR_PICKER_PREVIEW_SHRINK_TOOLTIP                               :Μείωση του ύψους των εικόνων προεπισκόπισης. Ctrl+κλικ για μείωση στο ελάχιστο
 STR_PICKER_PREVIEW_EXPAND                                       :+
 STR_PICKER_PREVIEW_EXPAND_TOOLTIP                               :Αύξηση του ύψους των εικόνων προεπισκόπισης. Ctrl+κλικ για αύξηση στο μέγιστο
+
+
 
 STR_PICKER_STATION_CLASS_TOOLTIP                                :Επιλογή κατηγορίας σταθμού για εμφάνιση
 STR_PICKER_STATION_TYPE_TOOLTIP                                 :Επιλογή τύπου σταθμού για κατασκευή. Ctrl+κλικ για προσθήκη σε ή αφαίρεση από αποθηκευμένα στοιχεία
@@ -3743,7 +3745,7 @@ STR_NEWGRF_ERROR_INDPROD_CALLBACK                               :Άγνωστη/
 STR_NEWGRF_POPUP_CAUTION_CAPTION                                :{WHITE}Προσοχή!
 STR_NEWGRF_CONFIRMATION_TEXT                                    :{YELLOW}Πρόκειται να κάνετε αλλαγές σε παιχνίδι που είναι ήδη σε εξέλιξη. Αυτό μπορεί να κλείσει απρόοπτα το OpenTTD ή να διαλύσει την κατάσταση του παιχνιδιού. Μην καταχωρείτε αναφορές σφάλματος για τέτοια προβλήματα.{}Είστε απόλυτα σίγουροι για αυτή την ενέργεια;
 
-STR_NEWGRF_DUPLICATE_GRFID                                      :{WHITE}Δεν μπορεί να γίνει προσθήκη του αρχείου: διπλότυπο NewGRF ID
+STR_NEWGRF_DUPLICATE_GRFID                                      :{WHITE}Δεν μπορεί να προστεθεί το αρχείο: διπλότυπο ID NewGRF
 STR_NEWGRF_COMPATIBLE_LOADED                                    :{ORANGE}Δεν βρέθηκε ταυτοποιημένο αρχείο (φορτώθηκε συμβατό NewGRF)
 STR_NEWGRF_TOO_MANY_NEWGRFS                                     :{WHITE}Δεν μπορεί να προστεθεί το αρχείο: φτάσατε το όριο αρχείων NewGRF
 
