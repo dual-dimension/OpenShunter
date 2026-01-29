@@ -4565,7 +4565,8 @@ STR_DEPOT_SELL_CONFIRMATION_TEXT                                :{YELLOW}Вес�
 
 # Engine preview window
 STR_ENGINE_PREVIEW_CAPTION                                      :{WHITE}Сообщение от производителя транспортных средств
-STR_ENGINE_PREVIEW_MESSAGE                                      :{GOLD}Мы разработали новую модель {STRING.gen}. Заинтересованы ли вы в его годовом эксклюзивном использовании для проверки перед запуском в серийное производство?
+STR_ENGINE_PREVIEW_CAPTION_COUNT                                :{WHITE}Сообщение от производителя транспортных средств ({COMMA} из {COMMA})
+STR_ENGINE_PREVIEW_MESSAGE                                      :{GOLD}Мы создали новую модель {STRING.gen}. Заинтересованы ли вы в его годовом эксклюзивном использовании для проверки перед запуском в серийное производство?
 
 
 STR_ENGINE_PREVIEW_RAILROAD_LOCOMOTIVE                          :ж/д локомотив
