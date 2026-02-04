@@ -5105,6 +5105,7 @@ STR_ERROR_ALREADY_AT_SEA_LEVEL                                  :{WHITE}Merenpin
 STR_ERROR_TOO_HIGH                                              :{WHITE}Liian korkea.
 STR_ERROR_ALREADY_LEVELLED                                      :{WHITE}... alue on jo litteä
 STR_ERROR_BRIDGE_TOO_HIGH_AFTER_LOWER_LAND                      :{WHITE}Yläpuolella olevasta sillasta tulisi liian korkea.
+STR_ERROR_MUST_DEMOLISH_RIVER_FIRST                             :{WHITE}Joki täytyy tuhota ensin
 
 # Company related errors
 STR_ERROR_CAN_T_CHANGE_COMPANY_NAME                             :{WHITE}Yhtiön nimeä ei voi muuttaa...
