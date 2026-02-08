@@ -803,6 +803,7 @@ void *UniquePtrSpriteAllocator::AllocatePtr(size_t size)
  * @param requested requested sprite type
  * @param sc the currently known sprite cache for the requested sprite
  * @param allocator Callback that provides the memory when loading sprites.
+ * @param encoder Sprite encoder to use. Set to nullptr to use the currently active blitter.
  * @return fallback sprite
  * @note this function will do UserError() in the case the fallback sprite isn't available
  */
