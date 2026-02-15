@@ -3176,7 +3176,7 @@ STR_LAND_AREA_INFORMATION_OWNER                                 :{BLACK}Rangatir
 STR_LAND_AREA_INFORMATION_ROAD_OWNER                            :{BLACK}Rangatira rori: {LTBLUE}{STRING}
 STR_LAND_AREA_INFORMATION_TRAM_OWNER                            :{BLACK}Rangatira taramuwē: {LTBLUE}{STRING}
 STR_LAND_AREA_INFORMATION_RAIL_OWNER                            :{BLACK}Rangatira rerewhenua: {LTBLUE}{STRING}
-STR_LAND_AREA_INFORMATION_LOCAL_AUTHORITY                       :{BLACK}Kāwanatanga ārohe: {LTBLUE}{STRING}
+STR_LAND_AREA_INFORMATION_LOCAL_AUTHORITY                       :{BLACK}Kāwanatanga ā-rohe: {LTBLUE}{STRING}
 STR_LAND_AREA_INFORMATION_LOCAL_AUTHORITY_NONE                  :Kore
 STR_LAND_AREA_INFORMATION_LANDINFO_COORDS                       :{BLACK}Taunga: {LTBLUE}{NUM} x {NUM} x {NUM}
 STR_LAND_AREA_INFORMATION_LANDINFO_INDEX                        :{BLACK}Kuputohu o te papariki: {LTBLUE}{NUM} ({HEX})
