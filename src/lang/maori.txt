@@ -2373,6 +2373,8 @@ STR_FACE_FACECODE_TOOLTIP                                       :{BLACK}Tirohia,
 STR_FACE_FACECODE_CAPTION                                       :{WHITE}Tirohia, tautuhitia rānei te waehere mata o te perehitene o te umanga
 STR_FACE_FACECODE_SET                                           :{WHITE}Kua tautuhitia te mata o te perehitene
 STR_FACE_FACECODE_ERR                                           :{WHITE}Tē taea te tautuhi te waehere mata o te perehitene - me tika te tapanga me te nama
+STR_FACE_SAVE                                                   :{BLACK}Pupuri
+STR_FACE_SAVE_TOOLTIP                                           :{BLACK}Puritia te tino mata
 STR_FACE_SAVE_DONE                                              :{WHITE}Ka puritia tēnei hei tō tino mata ki roto ki te kōnae whirihoranga o OpenTTD
 STR_FACE_SAVE                                                   :{BLACK}Tiaki
 STR_FACE_SAVE_TOOLTIP                                           :{BLACK}Tiakina tō tino mata
@@ -3662,7 +3664,7 @@ STR_NEWGRF_ERROR_MULTIPLE_ACTION_8                              :He maha ngā t�
 STR_NEWGRF_ERROR_READ_BOUNDS                                    :I pānui ki muri ki te mutunga o tētahi ata tipatipa (ata {3:NUM})
 STR_NEWGRF_ERROR_GRM_FAILED                                     :Kāore i te wātea ngā rauemi newGRF kua tonoa (ata {3:NUM})
 STR_NEWGRF_ERROR_FORCEFULLY_DISABLED                            :I whakakorea a {1:STRING} e {2:STRING}
-STR_NEWGRF_ERROR_INVALID_SPRITE_LAYOUT                          :Hōputu takotoranga ata muhu/kāore i te mōhiotia (ata {3:NUM})
+STR_NEWGRF_ERROR_INVALID_SPRITE_LAYOUT                          :Hōputu takotoranga ata muhu/tē mōhiotia (ata {3:NUM})
 STR_NEWGRF_ERROR_LIST_PROPERTY_TOO_LONG                         :He tuhene ngā huānga i roto i te rārangi uara āhuatanga (ata {3:NUM}, āhuatanga {4:HEX})
 STR_NEWGRF_ERROR_INDPROD_CALLBACK                               :Karangamua whakaputa ahumahi muhu (ata {3:NUM}, "{2:STRING}")
 
