@@ -2549,6 +2549,8 @@ STR_NETWORK_CLIENT_LIST_SERVER_CONNECTION_TYPE_TURN             :{BLACK}Mā tēt
 STR_NETWORK_CLIENT_LIST_ADMIN_CLIENT_KICK                       :Whana atu
 STR_NETWORK_CLIENT_LIST_ADMIN_CLIENT_BAN                        :Aukati
 STR_NETWORK_CLIENT_LIST_ADMIN_COMPANY_RESET                     :Muku
+STR_NETWORK_CLIENT_LIST_ADMIN_COMPANY_ALLOW_ANY                 :Tukuna ngā kiritaki katoa
+STR_NETWORK_CLIENT_LIST_ADMIN_COMPANY_ALLOW_LISTED              :Tukuna ngā kiritaki anake kei te rārangi
 
 STR_NETWORK_CLIENT_LIST_ASK_CAPTION                             :{WHITE}Mahi whakahaere
 STR_NETWORK_CLIENT_LIST_ASK_CLIENT_KICK                         :{YELLOW}Kei te tino hiahia rānei koe ki te whana i te kaitākaro ko {STRING}?
