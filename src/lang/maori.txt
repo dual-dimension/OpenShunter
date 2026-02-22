@@ -1046,8 +1046,8 @@ STR_GAME_OPTIONS_CURRENCY_PTE                                   :Ekutu Pōtukihi
 STR_GAME_OPTIONS_CURRENCY_UAH                                   :Hirinia o Ukareinga
 STR_GAME_OPTIONS_CURRENCY_VND                                   :Tongi o Whitināma
 
-STR_GAME_OPTIONS_AUTOSAVE_FRAME                                 :Pupuri aunoa
-STR_GAME_OPTIONS_AUTOSAVE_DROPDOWN_TOOLTIP                      :Kōwhiria te wā i waenganui o ngā pupuri aunoa i te kēmu
+STR_GAME_OPTIONS_AUTOSAVE_FRAME                                 :Tiaki aunoa
+STR_GAME_OPTIONS_AUTOSAVE_DROPDOWN_TOOLTIP                      :Kōwhiria te wā i waenganui o ngā tiaki aunoa i te kēmu
 
 # Autosave dropdown
 ###length 5
@@ -1445,11 +1445,11 @@ STR_CONFIG_SETTING_SHOWFINANCES_PERIOD                          :Whakaaria te ma
 STR_CONFIG_SETTING_SHOWFINANCES_HELPTEXT                        :Ina kā, ka puta mai te matapihi ahumoni i te mutunga o ia tau kia āta mātakina ai te tūranga ahumoni o te umanga
 STR_CONFIG_SETTING_SHOWFINANCES_HELPTEXT_PERIOD                 :Ina kā, ka puta mai te matapihi ahumoni i te mutunga o ia wā kia āta mātakina ai te tūranga ahumoni o te umanga
 
-STR_CONFIG_SETTING_NONSTOP_BY_DEFAULT                           :Mā te taunoa, ka "mutungakore" ngā mahi hou: {STRING}
+STR_CONFIG_SETTING_NONSTOP_BY_DEFAULT                           :Hei taunoa, ka "mutungakore" ngā mahi hou: {STRING}
 STR_CONFIG_SETTING_NONSTOP_BY_DEFAULT_HELPTEXT                  :I te maha o ngā wā, ka tū ngā waka ki ia teihana ka whakahipa ai. Ina kā tēnei tautuhinga, ka taraiwa mutungakore te waka ki ngā teihana katoa i te haerenga. Kia mahara ka tautuhi tēnei i te uara taunoa mō ngā mahi hou. Ka taea te tautuhi anō ia whanonga ahakoa tēnei tautuhinga
 
-STR_CONFIG_SETTING_STOP_LOCATION                                :Mā te taunoa, ka mutu ngā mahi hou a ngā tereina i te {STRING} o te atamira
-STR_CONFIG_SETTING_STOP_LOCATION_HELPTEXT                       :Te wāhi ka tū ai ngā tereina ki te atamira mā te taunoa. Ko te "pito tata" te wāhi he tata ki te tomokanga, ko te "pokapū" te pokapū o te atamira, ko te "pito mamao" te wāhi he mamao atu i te tomokanga. Kia mahara ka tautuhi tēnei i te uara taunoa mō ngā mahi hou. Ka taea te tautuhi anō ia mahi mā te pāwhiri ki te kuputuhi mō te mahi
+STR_CONFIG_SETTING_STOP_LOCATION                                :Hei taunoa, ka mutu ngā mahi hou a ngā tereina i te {STRING} o te atamira
+STR_CONFIG_SETTING_STOP_LOCATION_HELPTEXT                       :Te wāhi ka tū ai ngā tereina ki te atamira hei taunoa. Ko te "pito tata" te wāhi he tata ki te tomokanga, ko te "pokapū" te pokapū o te atamira, ko te "pito mamao" te wāhi he mamao atu i te tomokanga. Kia mahara ka tautuhi tēnei i te uara taunoa mō ngā mahi hou. Ka taea te tautuhi anō ia mahi mā te pāwhiri ki te kuputuhi mō te mahi
 ###length 3
 STR_CONFIG_SETTING_STOP_LOCATION_NEAR_END                       :pito tata
 STR_CONFIG_SETTING_STOP_LOCATION_MIDDLE                         :pokapū
@@ -2128,7 +2128,7 @@ STR_CONFIG_SETTING_DEMAND_SIZE                                  :Tatau o te utan
 STR_CONFIG_SETTING_DEMAND_SIZE_HELPTEXT                         :Ina iti ake tēnei i te 100%, ka āhua ōrite te tuari hangarite ki te tuari hikuwaru. Ka ouou ake te tatau o te utanga ka hiahiatia ki te tuku whakamuri mehemea ka tukuna tētahi tatau ki tētahi teihana. Ina tautuhitia ki te 0%, ka ōrite pū te tuari hangarite ki te tuari hikuwaru
 
 STR_CONFIG_SETTING_SHORT_PATH_SATURATION                        :Kohura o ngā ara poto i mua i te whakamahi i ngā ara kītanga nui: {STRING}
-STR_CONFIG_SETTING_SHORT_PATH_SATURATION_HELPTEXT               :I te maha o ngā wā, ka maha ngā ara i waenganui o te rua teihana. Ka mātua whakakī te hātepe i te ara poto rawa atu, kātahi, ka whakamahia te ara poto tuarua āpānoa kia kohura tērā, ka pērā tonu te hātepe. Ka whakatau tatangia te kohura kia taurite ki te kītanga me te whakamahinga kua whakamaheretia. I te wā kua kohura ngā ara katoa, mehemea ka toe te popono, ka kūkātia ngā ara katoa, e mariu ana ki ngā ara kītanga nui. Engari i te nuinga o te wā, kāore e tika te whakatau tata i te kītanga. Ka tukuna koe kia tautuhi i te ōrau me whakakī ai he ara poto i te haerenga tuatahi i mua i te kōwhiri i tētahi ara roa ake. Tautuhitia ki raro ki te 100% kia karo ai i ngā teihana kōpipiri mehemea kāore i tika te whakatau tata i te kītanga
+STR_CONFIG_SETTING_SHORT_PATH_SATURATION_HELPTEXT               :I te maha o ngā wā, ka maha ngā ara i waenganui o te rua teihana. Ka mātua whakakī te hātepe i te ara poto rawa atu, kātahi, ka whakamahia te ara poto tuarua āpānoa kia kohura tērā, ka pērā tonu te hātepe. Ka whakatau tatangia te kohura kia taurite ki te kītanga me te whakamahinga kua whakamaheretia. I te wā kua kohura ngā ara katoa, mehemea ka toe te popono, ka kūkātia ngā ara katoa, e mariu ana ki ngā ara kītanga nui. Engari i te nuinga o te wā, kāore e tika te whakatau tata i te kītanga. Ka tukuna koe kia tautuhi i te ōrau me whakakī ai he ara poto i te haerenga tuatahi i mua i te kōwhiri i tētahi ara roa ake. Tautuhitia ki raro i te 100% kia karo ai i ngā teihana kōpipiri mehemea kāore i tika te whakatau tata i te kītanga
 
 STR_CONFIG_SETTING_LOCALISATION_UNITS_VELOCITY                  :Waeine tere (whenua): {STRING}
 STR_CONFIG_SETTING_LOCALISATION_UNITS_VELOCITY_NAUTICAL         :Waeine tere (wai): {STRING}
@@ -2222,7 +2222,7 @@ STR_CONFIG_ERROR_INVALID_GRF_SYSTEM                             :newGRF o te pū
 STR_CONFIG_ERROR_INVALID_GRF_INCOMPATIBLE                       :hotokore ki tēnei whakaputanga o OpenTTD
 STR_CONFIG_ERROR_INVALID_GRF_UNKNOWN                            :tē mōhiotia
 STR_CONFIG_ERROR_INVALID_SAVEGAME_COMPRESSION_LEVEL             :{WHITE}... he muhu te kōeke hīnohi o te "{STRING}"
-STR_CONFIG_ERROR_INVALID_SAVEGAME_COMPRESSION_ALGORITHM         :{WHITE}... kāore te hōputu pupuri o te "{STRING}" i te wātea. Kei te hoki ki te "{STRING}"
+STR_CONFIG_ERROR_INVALID_SAVEGAME_COMPRESSION_ALGORITHM         :{WHITE}... kāore te hōputu o te kōnae tiakikēmu, ko te "{STRING}", i te wātea. Kei te hoki ki te "{STRING}"
 STR_CONFIG_ERROR_INVALID_BASE_GRAPHICS_NOT_FOUND                :{WHITE}... kei te waiho i te kohinga Whakairoiro Mātāmua ko "{STRING}": kāore i kitea
 STR_CONFIG_ERROR_INVALID_BASE_SOUNDS_NOT_FOUND                  :{WHITE}... kei te waiho i te kohinga Oro Mātāmua ko "{STRING}": kāore i kitea
 STR_CONFIG_ERROR_INVALID_BASE_MUSIC_NOT_FOUND                   :{WHITE}... kei te waiho i te kohinga Pūoro Mātāmua ko "{STRING}": kāore i kitea
@@ -2373,11 +2373,9 @@ STR_FACE_FACECODE_TOOLTIP                                       :{BLACK}Tirohia,
 STR_FACE_FACECODE_CAPTION                                       :{WHITE}Tirohia, tautuhitia rānei te waehere mata o te perehitene o te umanga
 STR_FACE_FACECODE_SET                                           :{WHITE}Kua tautuhitia te mata o te perehitene
 STR_FACE_FACECODE_ERR                                           :{WHITE}Tē taea te tautuhi te waehere mata o te perehitene - me tika te tapanga me te nama
-STR_FACE_SAVE                                                   :{BLACK}Pupuri
-STR_FACE_SAVE_TOOLTIP                                           :{BLACK}Puritia te tino mata
-STR_FACE_SAVE_DONE                                              :{WHITE}Ka puritia tēnei hei tō tino mata ki roto ki te kōnae whirihoranga o OpenTTD
 STR_FACE_SAVE                                                   :{BLACK}Tiaki
 STR_FACE_SAVE_TOOLTIP                                           :{BLACK}Tiakina tō tino mata
+STR_FACE_SAVE_DONE                                              :{WHITE}Ka tiakina tēnei hei tō tino mata i roto i te kōnae whirihoranga o OpenTTD
 STR_FACE_SETTING_TOGGLE                                         :{STRING} {ORANGE}{STRING}
 STR_FACE_SETTING_NUMERIC                                        :{STRING} {ORANGE}{NUM} / {NUM}
 STR_FACE_YES                                                    :Āe
@@ -2596,7 +2594,7 @@ STR_NETWORK_ERROR_NOCONNECTION                                  :{WHITE}I tuhene
 STR_NETWORK_ERROR_NEWGRF_MISMATCH                               :{WHITE}Tē taea te hono i te mea ehara ngā newGRF i te taurite
 STR_NETWORK_ERROR_DESYNC                                        :{WHITE}I mūhore te tukutahi i waenganui o te whatunga me te kēmu
 STR_NETWORK_ERROR_LOSTCONNECTION                                :{WHITE}I ngaro te hononga i waenganui o te whatunga me te kēmu
-STR_NETWORK_ERROR_SAVEGAMEERROR                                 :{WHITE}Tē taea te uta te kōnae pupuri
+STR_NETWORK_ERROR_SAVEGAMEERROR                                 :{WHITE}Tē taea te uta te kōnae tiakikēmu
 STR_NETWORK_ERROR_SERVER_START                                  :{WHITE}Tē taea te tīmata te tūmau
 STR_NETWORK_ERROR_SERVER_ERROR                                  :{WHITE}I kitea he hapa kawa, ā, i katia te hononga
 STR_NETWORK_ERROR_BAD_PLAYER_NAME                               :{WHITE}Kāore anō kia tautuhitia te ingoa o tō kaitākaro. Ka taea te tautuhi i runga i te matapihi Kaitākarorau
@@ -2695,7 +2693,7 @@ STR_CONTENT_UNSELECT_ALL_CAPTION_TOOLTIP                        :{BLACK}Mākatia
 STR_CONTENT_SEARCH_EXTERNAL                                     :{BLACK}Kimi i ngā paetukutuku kei waho
 STR_CONTENT_SEARCH_EXTERNAL_TOOLTIP                             :{BLACK}Kimihia he ihirangi kāore i te wātea i te ratonga a OpenTTD, i ētahi paetukutuku kāore i te pāhekoheko ki OpenTTD
 STR_CONTENT_SEARCH_EXTERNAL_DISCLAIMER_CAPTION                  :{WHITE}Kei te wehe atu koe i OpenTTD!
-STR_CONTENT_SEARCH_EXTERNAL_DISCLAIMER                          :{WHITE}Ka rerekē ngā ture me ngā herenga mō te tiki ihirangi ake i ngā paetukutuku i waho.{}Me whakawhirinaki koe ki ngā paetukutuku mō ngā tohutohu me pēwhea te tāuta ihirangi ki roto ki OpenTTD.{}Kei te hiahia rānei koe ki te whano tonu?
+STR_CONTENT_SEARCH_EXTERNAL_DISCLAIMER                          :{WHITE}Ka rerekē ngā ture me ngā herenga mō te tiki ihirangi ake i ngā paetukutuku i waho.{}Me whakawhirinaki koe ki ngā paetukutuku mō ngā tohutohu me pēwhea te tāuta ihirangi ki roto i OpenTTD.{}Kei te hiahia rānei koe ki te whano tonu?
 STR_CONTENT_FILTER_TITLE                                        :{BLACK}Tātari tapanga/ingoa:
 STR_CONTENT_OPEN_URL                                            :{BLACK}Paetukutuku
 STR_CONTENT_OPEN_URL_TOOLTIP                                    :{BLACK}Toroa te paetukutuku mō tēnei ihirangi
@@ -2855,7 +2853,7 @@ STR_PICKER_MODE_ALL_TOOLTIP                                     :Hohokona te wha
 STR_PICKER_MODE_USED                                            :Whakamahi
 STR_PICKER_MODE_USED_TOOLTIP                                    :Hohokona te whakaari i ngā tūemi kua whakamahia
 STR_PICKER_MODE_SAVED                                           :Kua tiakina
-STR_PICKER_MODE_SAVED_TOOLTIP                                   :Hohokona te whakaari i ngā tūemi anake kua purutia
+STR_PICKER_MODE_SAVED_TOOLTIP                                   :Hohokona te whakaari i ngā tūemi anake kua puritia
 
 STR_PICKER_PREVIEW_SHRINK                                       :-
 STR_PICKER_PREVIEW_SHRINK_TOOLTIP                               :Whakapakutia te teitei o ngā ata tiro takamua. Pātaki+Pāwhiri kia whakapakutia ki te mōkito
@@ -4771,7 +4769,7 @@ STR_ORDER_GO_TO_NEAREST_DEPOT                                   :Haere ki te tau
 STR_ORDER_GO_TO_NEAREST_HANGAR                                  :Haere ki te whare waka rererangi tata rawa atu
 STR_ORDER_CONDITIONAL                                           :Peke whakawhirinaki
 STR_ORDER_SHARE                                                 :Tohaina ngā mahi
-STR_ORDERS_GO_TO_TOOLTIP                                        :{BLACK}Kuhuna he mahi hou ki mua ki te mahi kua miramiratia, tāpiria rānei ki te mutunga o te rārangi. Pātaki+Pāwhiri ki tētahi teihana kia "uta katoatia tētahi momo utanga", ki tētahi aratohu kia huripoki i te tautuhinga "mutungakore mā te taunoa", ki tētahi taupuni rānei kia "wetepiri". Pāwhiria tētahi atu waka kia tārua i ana mahi, Pātaki+Pāwhiri rānei kia toha i ngā mahi. Ka ārai he toro taupuni i te tapi aunoa i te waka
+STR_ORDERS_GO_TO_TOOLTIP                                        :{BLACK}Kuhuna he mahi hou ki mua ki te mahi kua miramiratia, tāpiria rānei ki te mutunga o te rārangi. Pātaki+Pāwhiri ki tētahi teihana kia "uta katoatia tētahi momo utanga", ki tētahi aratohu kia huripoki i te tautuhinga "mutungakore hei taunoa", ki tētahi taupuni rānei kia "wetepiri". Pāwhiria tētahi atu waka kia tārua i ana mahi, Pātaki+Pāwhiri rānei kia toha i ngā mahi. Ka ārai he toro taupuni i te tapi aunoa i te waka
 
 STR_ORDERS_VEH_WITH_SHARED_ORDERS_LIST_TOOLTIP                  :{BLACK}Whakaaturia ngā waka katoa e toha ana i ēnei mahi
 
@@ -5038,15 +5036,15 @@ STR_MESSAGE_ESTIMATED_COST                                      :{WHITE}Whakatau
 STR_MESSAGE_ESTIMATED_INCOME                                    :{WHITE}Whakataunga Tata o te Moniwhiwhi: {CURRENCY_LONG}
 
 # Saveload messages
-STR_ERROR_SAVE_STILL_IN_PROGRESS                                :{WHITE}Kei te pupuri tonu,{}tatari koa ki te mutunga!
-STR_ERROR_AUTOSAVE_FAILED                                       :{WHITE}I mūhore te pupuri aunoa
+STR_ERROR_SAVE_STILL_IN_PROGRESS                                :{WHITE}Kei te tiaki tonu,{}tatari koa ki te mutunga!
+STR_ERROR_AUTOSAVE_FAILED                                       :{WHITE}I mūhore te tiaki aunoa
 STR_ERROR_UNABLE_TO_READ_DRIVE                                  :{BLACK}Tē taea te pānui te puku
-STR_ERROR_GAME_SAVE_FAILED                                      :{WHITE}I mūhore te pupuri i te kēmu...
+STR_ERROR_GAME_SAVE_FAILED                                      :{WHITE}I mūhore te tiaki i te kēmu...
 STR_ERROR_UNABLE_TO_DELETE_FILE                                 :{WHITE}Tē taea te muku te kōnae
 STR_ERROR_GAME_LOAD_FAILED                                      :{WHITE}I mūhore te uta i te kēmu...
 STR_GAME_SAVELOAD_ERROR_BROKEN_INTERNAL_ERROR                   :Hapa o roto: {STRING}
-STR_GAME_SAVELOAD_ERROR_BROKEN_SAVEGAME                         :Kōnae pupuri pakaru - {STRING}
-STR_GAME_SAVELOAD_ERROR_TOO_NEW_SAVEGAME                        :I hangaia te kōnae pupuri ki tētahi whakaputanga hou ake
+STR_GAME_SAVELOAD_ERROR_BROKEN_SAVEGAME                         :Kōnae tiakikēmu pakaru - {STRING}
+STR_GAME_SAVELOAD_ERROR_TOO_NEW_SAVEGAME                        :I hangaia te kōnae tiakikēmu ki tētahi whakaputanga hou ake
 STR_GAME_SAVELOAD_ERROR_FILE_NOT_READABLE                       :Tē taea te pānui te kōnae
 STR_GAME_SAVELOAD_ERROR_FILE_NOT_WRITEABLE                      :Tē taea te tuhi ki roto i te kōnae
 STR_GAME_SAVELOAD_ERROR_DATA_INTEGRITY_CHECK_FAILED             :I mūhore te kotahitanga o te raraunga
@@ -5079,7 +5077,7 @@ STR_WARNING_SCREENSHOT_SIZE_CAPTION                             :{WHITE}Kapomata
 STR_WARNING_SCREENSHOT_SIZE_MESSAGE                             :{YELLOW}E {COMMA} x {COMMA} tongi te ariari o te kapomata. Ka roa pea te tukatuka. Kei te hiahia rānei koe ki te whano tonu?
 
 STR_MESSAGE_HEIGHTMAP_SUCCESSFULLY                              :{WHITE}I tutuki te pupuri i te mahereteitei hei "{STRING}". {NUM} te taumata teitei rawa atu
-STR_MESSAGE_SCREENSHOT_SUCCESSFULLY                             :{WHITE}I tutuki te pupuri i te kapomata hei "{STRING}"
+STR_MESSAGE_SCREENSHOT_SUCCESSFULLY                             :{WHITE}I tutuki te tiaki i te kapomata hei "{STRING}"
 STR_ERROR_SCREENSHOT_FAILED                                     :{WHITE}I mūhore te kapomata!
 
 # Error message titles
