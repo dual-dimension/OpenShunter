@@ -1089,7 +1089,7 @@ STR_GAME_OPTIONS_GUI_SCALE_BEVELS                               :Hurirahitia ng�
 STR_GAME_OPTIONS_GUI_SCALE_BEVELS_TOOLTIP                       :Whakakā kia hurirahitia ngā hema kia ōrite ki te rahi o te tāhono
 
 STR_GAME_OPTIONS_GUI_FONT_SPRITE                                :Whakamahia te momotuhi taketake
-STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Whakakā mehemea ka hiahia koe ki te whakamahi i te momotuhi taketake he tūmau te rahi
+STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Whakakā mehemea ka hiahia koe ki te whakamahi i te momotuhi taketake he pūmau ai te rahi
 STR_GAME_OPTIONS_GUI_FONT_AA                                    :Whakamahenitia ngā tongi i te momotuhi
 STR_GAME_OPTIONS_GUI_FONT_AA_TOOLTIP                            :Whakakā kia whakamahenitia ngā tongi kei ngā momotuhi hurirahi
 
@@ -1704,7 +1704,7 @@ STR_CONFIG_SETTING_TOOLBAR_DROPDOWN_AUTOSELECT                  :Whanonga taketa
 STR_CONFIG_SETTING_TOOLBAR_DROPDOWN_AUTOSELECT_HELPTEXT         :Kōwhiria te whanonga mō te tīpakonga tahua i te pae utauta. Ina poko, ka tuwhera tonu ngā tahua tae noa ki tētahi tīpakonga. Ina kā, ka tīpakona te kōwhiringa i te tuku i te pātene o te kiore.
 
 STR_CONFIG_SETTING_MEASURE_TOOLTIP                              :Whakaaria he whakamāramatanga hunahuna ina whakamahia ētahi utauta hangahanga: {STRING}
-STR_CONFIG_SETTING_MEASURE_TOOLTIP_HELPTEXT                     :Whakaaria ngā mamao o ngā papariki me ngā rerekētanga i te teitei ina tō i ngā mahi hangahanga
+STR_CONFIG_SETTING_MEASURE_TOOLTIP_HELPTEXT                     :I te wā e tō ana, whakaaria te mamao papariki me te rerekētanga teitei i ngā mahi hangahanga
 
 STR_CONFIG_SETTING_LIVERIES                                     :Whakaaria ngā momo peita mō tētahi momo waka: {STRING}
 STR_CONFIG_SETTING_LIVERIES_HELPTEXT                            :Tautuhitia te whakamahinga o ngā momo peita mō tētahi momo waka (ehara mō tētahi umanga hoki)
@@ -1971,8 +1971,8 @@ STR_CONFIG_SETTING_ENDING_YEAR_ZERO                             :Kāore rawa
 
 STR_CONFIG_SETTING_ECONOMY_TYPE                                 :Momo ōhanga: {STRING}
 ###length 2
-STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT                        :Ōhanga Mōhanihani: ka putuputu, ka iti hoki ngā panonitanga whakaputa. Ōhanga Whakatio: ka mutu ngā panonitanga whakaputa me ngā kati ahumahi. Kāore pea he hua a tēnei tautuhinga mehemea ka whakaratoa ētahi momo ahumahi e tētahi newGRF.{}{}Ka panoni tonu te āhua o te whakaputa ahumahi i ia marama i te ōhanga Whakatio, i te mea ka keua te whakaputa i ētahi wā tūmau kāore i te tukutahitia ki te marama
-STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT_PERIOD                 :Ōhanga Mōhanihani: ka putuputu, ka iti hoki ngā panonitanga whakaputa. Ōhanga Whakatio: ka mutu ngā panonitanga whakaputa me ngā kati ahumahi. Kāore pea he hua a tēnei tautuhinga mehemea ka whakaratoa ētahi momo ahumahi e tētahi newGRF.{}{}Ka panoni tonu te āhua o te whakaputa ahumahi i ia meneti i te ōhanga Whakatio, i te mea ka keua te whakaputa i ētahi wā tūmau kāore i te tukutahitia ki te meneti
+STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT                        :Ōhanga Mōhanihani: ka putuputu, ka iti hoki ngā panonitanga whakaputa. Ōhanga Whakatio: ka mutu ngā panonitanga whakaputa me ngā kati ahumahi. Kāore pea he hua a tēnei tautuhinga mehemea ka whakaratoa ētahi momo ahumahi e tētahi newGRF.{}{}Ka panoni tonu te āhua o te whakaputa ahumahi i ia marama i te ōhanga Whakatio, i te mea ka keua te whakaputa i ētahi wā pūmau kāore i te tukutahitia ki te marama
+STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT_PERIOD                 :Ōhanga Mōhanihani: ka putuputu, ka iti hoki ngā panonitanga whakaputa. Ōhanga Whakatio: ka mutu ngā panonitanga whakaputa me ngā kati ahumahi. Kāore pea he hua a tēnei tautuhinga mehemea ka whakaratoa ētahi momo ahumahi e tētahi newGRF.{}{}Ka panoni tonu te āhua o te whakaputa ahumahi i ia meneti i te ōhanga Whakatio, i te mea ka keua te whakaputa i ētahi wā pūmau kāore i te tukutahitia ki te meneti
 
 ###length 3
 STR_CONFIG_SETTING_ECONOMY_TYPE_ORIGINAL                        :Taketake
@@ -1985,7 +1985,7 @@ STR_CONFIG_SETTING_FEEDER_PAYMENT_SHARE_HELPTEXT                :Te ōrau o te m
 STR_CONFIG_SETTING_DRAG_SIGNALS_DENSITY                         :I te wā e tō ana, maka tohu ki ia: {STRING}
 STR_CONFIG_SETTING_DRAG_SIGNALS_DENSITY_HELPTEXT                :Tautuhitia te āputa me hanga tohu ai i te ara tae noa ki tētahi ārai (tētahi atu tohu, he pūtahitanga), i te wā e tōia ana ngā tohu
 STR_CONFIG_SETTING_DRAG_SIGNALS_DENSITY_VALUE                   :{COMMA} papariki
-STR_CONFIG_SETTING_DRAG_SIGNALS_FIXED_DISTANCE                  :Ina tō, me tūmau te āputa i waenganui o ngā tohu: {STRING}
+STR_CONFIG_SETTING_DRAG_SIGNALS_FIXED_DISTANCE                  :I te wā e tō ana, me pūmau te āputa i waenganui o ngā tohu: {STRING}
 STR_CONFIG_SETTING_DRAG_SIGNALS_FIXED_DISTANCE_HELPTEXT         :Tīpakona me pēwhea te whakatakotoranga tohu ina Pātaki+Tōia ngā tohu. Ina poko, ka makaia ngā tohu ki ngā putanga o ngā anaroa me ngā arawhiti kia karo ai i ngā ara roa ki te kore tohu. Ina kā, ka makaia ngā tohu ki ia papariki T, kia whakamāmā te tīaroaro tohu i ngā ara whakarara
 
 STR_CONFIG_SETTING_SEMAPHORE_BUILD_BEFORE_DATE                  :Hanga aunoatia ngā tohu haki i mua i te: {STRING}
@@ -5141,7 +5141,6 @@ STR_ERROR_CAN_T_GENERATE_TOWN                                   :Tē taea te han
 STR_ERROR_CAN_T_RENAME_TOWN                                     :Tē taea te tapa anō te tāone...
 STR_ERROR_CAN_T_FOUND_TOWN_HERE                                 :Tē taea te whakatū tāone i konei...
 STR_ERROR_CAN_T_EXPAND_TOWN                                     :Tē taea te whakamakoha te tāone...
-STR_ERROR_TOO_CLOSE_TO_EDGE_OF_MAP_SUB                          :tata rawa ki te tapa o te mahere
 STR_ERROR_TOO_CLOSE_TO_ANOTHER_TOWN                             :tata rawa ki tētahi atu tāone
 STR_ERROR_TOO_MANY_TOWNS                                        :tuhene ngā tāone
 STR_ERROR_NO_SPACE_FOR_TOWN                                     :kāore he wāhi atu i te mahere
