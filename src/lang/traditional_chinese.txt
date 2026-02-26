@@ -5145,7 +5145,7 @@ STR_ERROR_TOO_CLOSE_TO_ANOTHER_TOWN                             :太接近另一
 STR_ERROR_TOO_MANY_TOWNS                                        :已有太多市鎮
 STR_ERROR_NO_SPACE_FOR_TOWN                                     :地圖沒有足夠空間
 STR_ERROR_ROAD_WORKS_IN_PROGRESS                                :道路施工中
-STR_ERROR_TOWN_CAN_T_DELETE                                     :無法刪除該市鎮……{}{}市鎮範圍內還有車站或機廠或無法移除的區塊
+STR_ERROR_TOWN_CAN_T_DELETE                                     :無法刪除該市鎮……{}{}市鎮範圍內還有車站、機廠或無法移除的區塊
 STR_ERROR_STATUE_NO_SUITABLE_PLACE                              :市中心沒有適合的空間建造雕像
 STR_ERROR_CAN_T_BUILD_HOUSE                                     :無法興建房屋……
 
@@ -5201,7 +5201,7 @@ STR_ERROR_DRIVE_THROUGH_CORNER                                  :路邊車站不
 STR_ERROR_DRIVE_THROUGH_JUNCTION                                :路邊車站不能建在岔路口處
 
 # Station destruction related errors
-STR_ERROR_CAN_T_REMOVE_PART_OF_STATION                          :無法移除車站附屬建築物……
+STR_ERROR_CAN_T_REMOVE_PART_OF_STATION                          :無法拆毀車站附屬建築物……
 STR_ERROR_MUST_REMOVE_RAILWAY_STATION_FIRST                     :必須先拆毀鐵道車站
 STR_ERROR_CAN_T_REMOVE_BUS_STATION                              :無法拆毀公車站……
 STR_ERROR_CAN_T_REMOVE_TRUCK_STATION                            :無法拆毀貨運站……
@@ -5277,7 +5277,7 @@ STR_ERROR_AUTOREPLACE_INCOMPATIBLE_REFIT                        :新車輛無法
 
 # Rail construction errors
 STR_ERROR_IMPOSSIBLE_TRACK_COMBINATION                          :不合理的軌道組合
-STR_ERROR_MUST_REMOVE_SIGNALS_FIRST                             :必須先移除號誌
+STR_ERROR_MUST_REMOVE_SIGNALS_FIRST                             :必須先拆毀號誌
 STR_ERROR_NO_SUITABLE_RAILROAD_TRACK                            :沒有適合的軌道
 STR_ERROR_MUST_REMOVE_RAILROAD_TRACK                            :必須先拆毀鐵道
 STR_ERROR_CROSSING_ON_ONEWAY_ROAD                               :道路是單行道或已封閉

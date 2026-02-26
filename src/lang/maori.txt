@@ -935,7 +935,7 @@ STR_NEWS_TRAIN_IS_STUCK                                         :{WHITE}Kāore a
 STR_NEWS_VEHICLE_IS_LOST                                        :{WHITE}Kei te ngaro a {VEHICLE}
 STR_NEWS_VEHICLE_UNPROFITABLE_YEAR                              :{WHITE}I {1:CURRENCY_LONG} te monihua a {0:VEHICLE} i tērā tau
 STR_NEWS_VEHICLE_UNPROFITABLE_PERIOD                            :{WHITE}I {1:CURRENCY_LONG} te monihua a {0:VEHICLE} i tērā wā
-STR_NEWS_AIRCRAFT_DEST_TOO_FAR                                  :{WHITE}Tē taea e {VEHICLE} te whano ki te ūnga i te mea he mamao rawa
+STR_NEWS_AIRCRAFT_DEST_TOO_FAR                                  :{WHITE}Tē taea e {VEHICLE} te whano ki te ūnga nā te mea he mamao rawa
 
 STR_NEWS_ORDER_REFIT_FAILED                                     :{WHITE}Kua tū a {VEHICLE} nā te mea i mūhore te urutaunga kua tonoa
 STR_NEWS_VEHICLE_AUTORENEW_FAILED                               :{WHITE}I mūhore te whakahou aunoa i {VEHICLE}{}{STRING}
@@ -982,8 +982,8 @@ STR_GAME_OPTIONS_TAB_SOUND                                      :Oro
 STR_GAME_OPTIONS_TAB_SOUND_TOOLTIP                              :Kōwhiria ngā tautuhinga oro
 STR_GAME_OPTIONS_TAB_SOCIAL                                     :Pāpori
 STR_GAME_OPTIONS_TAB_SOCIAL_TOOLTIP                             :Kōwhiri ngā tautuhinga whakauruuru pāpori
-STR_GAME_OPTIONS_TAB_ADVANCED                                   :Matatau
-STR_GAME_OPTIONS_TAB_ADVANCED_TOOLTIP                           :Panonitia ngā tautuhinga mō ngā kaiwhakamahi matatau
+STR_GAME_OPTIONS_TAB_ADVANCED                                   :Matatini
+STR_GAME_OPTIONS_TAB_ADVANCED_TOOLTIP                           :Panonitia ngā tautuhinga mō ngā kaiwhakamahi matatini
 
 STR_GAME_OPTIONS_VOLUME                                         :Kahaoro
 STR_GAME_OPTIONS_SFX_VOLUME                                     :Orotaunaki
@@ -1971,8 +1971,8 @@ STR_CONFIG_SETTING_ENDING_YEAR_ZERO                             :Kāore rawa
 
 STR_CONFIG_SETTING_ECONOMY_TYPE                                 :Momo ōhanga: {STRING}
 ###length 2
-STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT                        :Ōhanga Mōhanihani: ka putuputu, ka iti hoki ngā panonitanga whakaputa. Ōhanga Whakatio: ka mutu ngā panonitanga whakaputa me ngā kati ahumahi. Kāore pea he hua a tēnei tautuhinga mehemea ka whakaratoa ētahi momo ahumahi e tētahi newGRF.{}{}Ka panoni tonu te āhua o te whakaputa ahumahi i ia marama i te ōhanga Whakatio, i te mea ka keua te whakaputa i ētahi wā pūmau kāore i te tukutahitia ki te marama
-STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT_PERIOD                 :Ōhanga Mōhanihani: ka putuputu, ka iti hoki ngā panonitanga whakaputa. Ōhanga Whakatio: ka mutu ngā panonitanga whakaputa me ngā kati ahumahi. Kāore pea he hua a tēnei tautuhinga mehemea ka whakaratoa ētahi momo ahumahi e tētahi newGRF.{}{}Ka panoni tonu te āhua o te whakaputa ahumahi i ia meneti i te ōhanga Whakatio, i te mea ka keua te whakaputa i ētahi wā pūmau kāore i te tukutahitia ki te meneti
+STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT                        :Ōhanga Maheni: ka putuputu, ka iti hoki ngā panonitanga whakaputa. Ōhanga Whakatio: ka mutu ngā panonitanga whakaputa me ngā kati ahumahi. Kāore pea he hua a tēnei tautuhinga mehemea ka whakaratoa ētahi momo ahumahi e tētahi newGRF.{}{}Ka panoni tonu te āhua o te whakaputa ahumahi i ia marama i te ōhanga Whakatio nā te mea ka keua te whakaputa i ētahi wā pūmau kāore i te tukutahitia ki te marama
+STR_CONFIG_SETTING_ECONOMY_TYPE_HELPTEXT_PERIOD                 :Ōhanga Maheni: ka putuputu, ka iti hoki ngā panonitanga whakaputa. Ōhanga Whakatio: ka mutu ngā panonitanga whakaputa me ngā kati ahumahi. Kāore pea he hua a tēnei tautuhinga mehemea ka whakaratoa ētahi momo ahumahi e tētahi newGRF.{}{}Ka panoni tonu te āhua o te whakaputa ahumahi i ia meneti i te ōhanga Whakatio nā te mea ka keua te whakaputa i ētahi wā pūmau kāore i te tukutahitia ki te meneti
 
 ###length 3
 STR_CONFIG_SETTING_ECONOMY_TYPE_ORIGINAL                        :Taketake
@@ -2111,7 +2111,7 @@ STR_CONFIG_SETTING_DISTRIBUTION_PAX_HELPTEXT                    :"Hangarite": ka
 STR_CONFIG_SETTING_DISTRIBUTION_MAIL                            :Aratau tuari mō te mēra: {STRING}
 STR_CONFIG_SETTING_DISTRIBUTION_MAIL_HELPTEXT                   :"Hangarite": ka tata ōrite te tatau o te mēra ka haere mai i te teihana A ki te teihana E ki ērā ka haere mai i te teihana E ki te teihana A. "Hikuwaru": ka matapōkere te tatau o te mēra ka haere ki ia ahu. "Ā ringa": kāore he tuari aunoa mō te mēra
 STR_CONFIG_SETTING_DISTRIBUTION_ARMOURED                        :Aratau tuari mō te momo utanga PUKUPUKU RINO: {STRING}
-STR_CONFIG_SETTING_DISTRIBUTION_ARMOURED_HELPTEXT               :Kei roto i te momo utanga PUKUPUKU RINO te tino taonga i te taiao hātai, te taimana i te taiao wera, otirā te kōura i te taiao makariri. Ka taea te panoni tērā e ngā newGRF. "Hangarite": ka tata ōrite te tatau o taua utanga ka haere mai i te teihana A ki te teihana E ki ērā ka haere mai i te teihana E ki te teihana A. "Hikuwaru": ka matapōkere te tatau o taua utanga ka haere ki ia ahu. "Ā ringa": kāore he tuari aunoa mō taua utanga. Me tautuhitia tēnei ki te hikuwaru, te ā ringa rānei ina tākaro i te taiao makariri, te taiao wera rānei, i te mea ka whiwhi utanga anake ngā pēke i aua taiao. Mō te taiao hātai, ka taea te kōwhiri te hangarite i te mea ka tuku taonga ngā pēke ki te pēke taketake
+STR_CONFIG_SETTING_DISTRIBUTION_ARMOURED_HELPTEXT               :Kei roto i te momo utanga PUKUPUKU RINO te tino taonga i te taiao hātai, te taimana i te taiao wera, otirā te kōura i te taiao makariri. Ka taea te panoni tērā e ngā newGRF. "Hangarite": ka tata ōrite te tatau o taua utanga ka haere mai i te teihana A ki te teihana E ki ērā ka haere mai i te teihana E ki te teihana A. "Hikuwaru": ka matapōkere te tatau o taua utanga ka haere ki ia ahu. "Ā ringa": kāore he tuari aunoa mō taua utanga. Me tautuhitia tēnei ki te hikuwaru, te ā ringa rānei ina tākaro i te taiao makariri, te taiao wera rānei, nā te mea ka whiwhi utanga anake ngā pēke i aua taiao. Mō te taiao hātai, ka taea te kōwhiri te hangarite nā te mea ka tuku taonga ngā pēke ki te pēke taketake
 STR_CONFIG_SETTING_DISTRIBUTION_DEFAULT                         :Aratau tuari mō ngā momo utanga kē: {STRING}
 STR_CONFIG_SETTING_DISTRIBUTION_DEFAULT_HELPTEXT                :"Hikuwaru": ka matapōkere te tatau o te utanga ka haere ki ia ahu. "Ā ringa": kāore he tuari aunoa mō te utanga
 ###length 3
@@ -2243,10 +2243,10 @@ STR_INTRO_PLAY_HEIGHTMAP                                        :{BLACK}Tākaro 
 STR_INTRO_SCENARIO_EDITOR                                       :{BLACK}Pūtakatā takiwā
 STR_INTRO_MULTIPLAYER                                           :{BLACK}Kaitākarorau
 
-STR_INTRO_GAME_OPTIONS                                          :{BLACK}Kōwhiringa Kēmu
-STR_INTRO_HIGHSCORE                                             :{BLACK}Tūtohi Tauteitei
-STR_INTRO_HELP                                                  :{BLACK}Āwhina & Puka Āwhina
-STR_INTRO_ONLINE_CONTENT                                        :{BLACK}Ihirangi Tuihono
+STR_INTRO_GAME_OPTIONS                                          :{BLACK}Kōwhiringa kēmu
+STR_INTRO_HIGHSCORE                                             :{BLACK}Tūtohi tauteitei
+STR_INTRO_HELP                                                  :{BLACK}Āwhina me te puka āwhina
+STR_INTRO_ONLINE_CONTENT                                        :{BLACK}Ihirangi tuihono
 STR_INTRO_QUIT                                                  :{BLACK}Puta Atu
 
 STR_INTRO_TOOLTIP_NEW_GAME                                      :{BLACK}Tīmatahia he kēmu hou. Pātaki+Pāwhiri kia peke atu i te whirihoranga mahere
@@ -2591,7 +2591,7 @@ STR_NETWORK_CHAT_OSKTITLE                                       :{BLACK}Tāuru k
 # Network messages
 STR_NETWORK_ERROR_NOTAVAILABLE                                  :Kāore he pūrere whatunga i kitea
 STR_NETWORK_ERROR_NOCONNECTION                                  :I tuhene te wā, i whakakāhoretia rānei te hononga ki te tūmau
-STR_NETWORK_ERROR_NEWGRF_MISMATCH                               :Tē taea te hono i te mea ehara ngā newGRF i te taurite
+STR_NETWORK_ERROR_NEWGRF_MISMATCH                               :Tē taea te hono nā te mea ehara ngā newGRF i te taurite
 STR_NETWORK_ERROR_DESYNC                                        :I mūhore te tukutahi i waenganui o te whatunga me te kēmu
 STR_NETWORK_ERROR_LOSTCONNECTION                                :I ngaro te hononga i waenganui o te whatunga me te kēmu
 STR_NETWORK_ERROR_SAVEGAMEERROR                                 :Tē taea te uta te kōnae tiakikēmu
@@ -2806,7 +2806,7 @@ STR_JOIN_WAYPOINT_CAPTION                                       :{WHITE}Honoa te
 STR_JOIN_WAYPOINT_CREATE_SPLIT_WAYPOINT                         :{YELLOW}Hangaia he aratohu motuhake
 
 # Generic toolbar
-STR_TOOLBAR_DISABLED_NO_VEHICLE_AVAILABLE                       :{BLACK}Ka āraia ināianei i te mea kāore he waka i te wātea mō tēnei tūāhanga
+STR_TOOLBAR_DISABLED_NO_VEHICLE_AVAILABLE                       :{BLACK}Ka āraia ināianei nā te mea kāore he waka i te wātea mō tēnei tūāhanga
 
 # Rail construction toolbar
 STR_RAIL_TOOLBAR_RAILROAD_CONSTRUCTION_CAPTION                  :Hanga Rerewhenua
