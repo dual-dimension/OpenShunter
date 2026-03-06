@@ -2986,7 +2986,7 @@ STR_NETWORK_ERROR_SERVER_FULL                                   :Serwer jest pe�
 STR_NETWORK_ERROR_SERVER_BANNED                                 :Masz zakaz dostępu do tego serwera
 STR_NETWORK_ERROR_KICKED                                        :Wyrzucono cię z rozgrywki
 STR_NETWORK_ERROR_KICK_MESSAGE                                  :Powód: {STRING}
-STR_NETWORK_ERROR_CHEATER                                       :{WHITE}Ułatwienia są niedozwolone na tym serwerze
+STR_NETWORK_ERROR_CHEATER                                       :Ułatwienia są niedozwolone na tym serwerze
 STR_NETWORK_ERROR_TOO_MANY_COMMANDS                             :Wysyłano zbyt wiele poleceń do serwera
 STR_NETWORK_ERROR_TIMEOUT_PASSWORD                              :Wpisywanie hasła trwało zbyt długo
 STR_NETWORK_ERROR_TIMEOUT_COMPUTER                              :Twój komputer jest zbyt wolny, by nadążyć za serwerem
@@ -3903,8 +3903,8 @@ STR_GENERATION_PREPARING_GAME                                   :{BLACK}Przygoto
 
 STR_TOWN_DATA_ERROR_LOAD_FAILED                                 :Wczytanie danych o miastach nie powiodło się
 STR_TOWN_DATA_ERROR_JSON_FORMATTED_INCORRECTLY                  :nieprawidłowo sformatowany plik JSON
-STR_TOWN_DATA_ERROR_TOWN_FORMATTED_INCORRECTLY                  :Nieprawidłowo sformatowane dane miasta {STRING}
-STR_TOWN_DATA_ERROR_BAD_COORDINATE                              :{WHITE}Nieprawidłowo sformatowane współrzędne miasta {STRING}, muszą wynosić od 0 do 1 jako ułamek całkowitego wymiaru mapy wysokości
+STR_TOWN_DATA_ERROR_TOWN_FORMATTED_INCORRECTLY                  :nieprawidłowo sformatowane dane miasta {STRING}
+STR_TOWN_DATA_ERROR_BAD_COORDINATE                              :nieprawidłowo sformatowane współrzędne miasta {STRING}; muszą być w zakresie od 0 do 1 jako ułamek całkowitego wymiaru mapy
 
 STR_TOWN_DATA_ERROR_FAILED_TO_FOUND_TOWN                        :Nie znaleziono prawidłowej lokalizacji dla {NUM} miast{P a "" ""}. Zamiast tego w dany{P m ch ch} miejsc{P u ach ach} utworzono napis{P "" y y}
 
@@ -5531,7 +5531,7 @@ STR_ERROR_TOO_CLOSE_TO_ANOTHER_TOWN                             :zbyt blisko inn
 STR_ERROR_TOO_MANY_TOWNS                                        :zbyt wiele miast
 STR_ERROR_NO_SPACE_FOR_TOWN                                     :nie ma więcej miejsca na mapie
 STR_ERROR_ROAD_WORKS_IN_PROGRESS                                :trwają roboty drogowe
-STR_ERROR_TOWN_CAN_T_DELETE                                     :{WHITE}Nie można usunąć tego miasta...{}{}Stacja lub zajezdnia przynależy do tego miasta lub obszar miasta nie może być usunięty
+STR_ERROR_TOWN_CAN_T_DELETE                                     :Nie można usunąć tego miasta...{}{}przynależy do niego stacja lub zajezdnia, albo pole należące do niego nie może być usunięte
 STR_ERROR_STATUE_NO_SUITABLE_PLACE                              :w centrum tego miasta nie ma odpowiedniego miejsca na pomnik
 STR_ERROR_CAN_T_BUILD_HOUSE                                     :Nie można postawić budynku...
 
@@ -5574,7 +5574,7 @@ STR_ERROR_STATION_TOO_SPREAD_OUT                                :stacja zbyt roz
 STR_ERROR_STATION_DISALLOWED_NUMBER_TRACKS                      :nieobsługiwana liczba torów
 STR_ERROR_STATION_DISALLOWED_LENGTH                             :nieobsługiwana długość
 STR_ERROR_TOO_MANY_STATIONS_LOADING                             :za dużo stacji
-STR_ERROR_TOO_MANY_STATION_SPECS                                :{WHITE}Za dużo części stacji kolejowej
+STR_ERROR_TOO_MANY_STATION_SPECS                                :zbyt wiele części stacji kolejowej
 STR_ERROR_TOO_MANY_BUS_STOPS                                    :zbyt wiele przystanków autobusowych
 STR_ERROR_TOO_MANY_TRUCK_STOPS                                  :zbyt wiele stacji ciężarówek
 STR_ERROR_TOO_CLOSE_TO_ANOTHER_DOCK                             :zbyt blisko innego portu
@@ -5637,7 +5637,7 @@ STR_ERROR_AIRCRAFT_MUST_BE_STOPPED_INSIDE_HANGAR                :musi być zatrz
 STR_ERROR_TRAINS_CAN_ONLY_BE_ALTERED_INSIDE_A_DEPOT             :pociąg może być modyfikowany tylko, gdy jest zatrzymany w hali warsztatów
 STR_ERROR_TRAIN_TOO_LONG                                        :pociąg jest zbyt długi
 STR_ERROR_CAN_T_REVERSE_DIRECTION_RAIL_VEHICLE                  :Nie można zawrócić pociągu...
-STR_ERROR_CAN_T_REVERSE_DIRECTION_RAIL_VEHICLE_MULTIPLE_UNITS   :{WHITE}... składa się z wielu jednostek
+STR_ERROR_CAN_T_REVERSE_DIRECTION_RAIL_VEHICLE_MULTIPLE_UNITS   :składa się z wielu jednostek
 STR_ERROR_INCOMPATIBLE_RAIL_TYPES                               :niezgodne typy torów
 
 STR_ERROR_CAN_T_MOVE_VEHICLE                                    :Nie można przenieść pojazdu...
@@ -5837,13 +5837,13 @@ STR_ERROR_NO_VEHICLES_AVAILABLE_AT_ALL_EXPLANATION              :Zmień konfigur
 STR_ERROR_NO_VEHICLES_AVAILABLE_YET                             :Obecnie żaden pojazd nie jest dostępny
 STR_ERROR_NO_VEHICLES_AVAILABLE_YET_EXPLANATION                 :Zacznij grę po {DATE_SHORT} albo użyj zestawu NewGRF, który zawiera wczesne pojazdy
 
-STR_ERROR_NO_TOWN_ROADTYPES_AVAILABLE_AT_ALL                    :Brak dostępnych typów dróg miejskich
+STR_ERROR_NO_TOWN_ROADTYPES_AVAILABLE_AT_ALL                    :Żadne rodzaje dróg miejskich nie są dostępne
 STR_ERROR_NO_TOWN_ROADTYPES_AVAILABLE_AT_ALL_EXPLANATION        :Zmień konfigurację NewGRF
-STR_ERROR_NO_TOWN_ROADTYPES_AVAILABLE_YET                       :{WHITE}Brak jeszcze dostępnych typów dróg miejskich
+STR_ERROR_NO_TOWN_ROADTYPES_AVAILABLE_YET                       :Żadne rodzaje dróg miejskich nie są jeszcze dostępne
 STR_ERROR_NO_TOWN_ROADTYPES_AVAILABLE_YET_EXPLANATION           :Rozpocznij nową grę po {DATE_SHORT} roku lub użyj NewGRF-a, który umożliwia wczesne budowanie dróg miejskich
 
 # Specific vehicle errors
-STR_ERROR_CAN_T_MAKE_TRAIN_PASS_SIGNAL                          :{WHITE}Nie można przepuścić pociągu za sygnał, niebezpieczeństwo...
+STR_ERROR_CAN_T_MAKE_TRAIN_PASS_SIGNAL                          :{WHITE}Nie można zmusić pociągu do zignorowania sygnału
 STR_ERROR_CAN_T_REVERSE_DIRECTION_TRAIN                         :Nie można odwrócić kierunku jazdy pociągu...
 STR_ERROR_TRAIN_START_NO_POWER                                  :pociąg nie ma mocy
 
@@ -5888,8 +5888,8 @@ STR_ERROR_NO_ROAD_WAYPOINT                                      :Brak posterunku
 STR_ERROR_NO_BUOY                                               :Brak boi
 
 # Timetable related errors
-STR_ERROR_CAN_T_TIMETABLE_VEHICLE                               :{WHITE}Nie można wyznaczyć rozkładu jazdy pojazdu...
-STR_ERROR_TIMETABLE_ONLY_WAIT_AT_STATIONS                       :{WHITE}Pojazdy mogą czekać tylko na stacjach
+STR_ERROR_CAN_T_TIMETABLE_VEHICLE                               :Nie można wyznaczyć rozkładu jazdy pojazdu...
+STR_ERROR_TIMETABLE_ONLY_WAIT_AT_STATIONS                       :pojazdy mogą czekać tylko na stacjach
 STR_ERROR_TIMETABLE_NOT_STOPPING_HERE                           :ten pojazd nie zatrzymuje się na tej stacji.
 STR_ERROR_TIMETABLE_INCOMPLETE                                  :rozkład jazdy jest niekompletny
 STR_ERROR_TIMETABLE_NOT_STARTED                                 :rozkład jazdy jeszcze się nie rozpoczął
