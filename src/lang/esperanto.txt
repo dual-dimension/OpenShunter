@@ -989,7 +989,7 @@ STR_NEWS_INDUSTRY_CLOSURE_GENERAL                               :{BIG_FONT}{BLAC
 STR_NEWS_INDUSTRY_CLOSURE_SUPPLY_PROBLEMS                       :{BIG_FONT}{BLACK}Pro liverproblemoj {STRING} devas anonci tre baldaŭan fermiĝon!
 STR_NEWS_INDUSTRY_CLOSURE_LACK_OF_TREES                         :{BIG_FONT}{BLACK}Pro manko da proksimaj arboj {STRING} devas anonci tre baldaŭan fermiĝon!
 
-STR_NEWS_EURO_INTRODUCTION                                      :{BIG_FONT}{BLACK}Eŭropa Mona Unio!{}{}De nun uziĝos la Eŭro kiel monunuo por ĉiutagaj montransskriboj en via lando!
+STR_NEWS_EURO_INTRODUCTION                                      :{BIG_FONT}{BLACK}Eŭropa Mona Unio!{}{}De nun uziĝos la eŭro kiel monunuo por ĉiutagaj montransskriboj en via lando!
 STR_NEWS_BEGIN_OF_RECESSION                                     :{BIG_FONT}{BLACK}Monda recesio!{}{}Financaj spertuloj timas, ke malpliboniĝas treege! Ekonomio malboniĝadas!
 STR_NEWS_END_OF_RECESSION                                       :{BIG_FONT}{BLACK}Recesio finiĝis!{}{}Komerca pliboniĝos donas konfidon al industrioj!
 
@@ -2578,15 +2578,13 @@ STR_NETWORK_CONNECTING_WAITING                                  :{BLACK}{NUM} kl
 STR_NETWORK_CONNECTING_DOWNLOADING_1                            :{BLACK}{BYTES} ĝis nun elŝutiĝis
 STR_NETWORK_CONNECTING_DOWNLOADING_2                            :{BLACK}{BYTES} / {BYTES} ĝis nun elŝutiĝis
 
-###length 8
+###length 6
 STR_NETWORK_CONNECTING_1                                        :{BLACK}(1/6) Konektado...
 STR_NETWORK_CONNECTING_2                                        :{BLACK}(2/6) Rajtigado...
 STR_NETWORK_CONNECTING_3                                        :{BLACK}(3/6) Atendado...
 STR_NETWORK_CONNECTING_4                                        :{BLACK}(4/6) Elŝutado de mapo...
 STR_NETWORK_CONNECTING_5                                        :{BLACK}(5/6) Procesado de datenoj...
 STR_NETWORK_CONNECTING_6                                        :{BLACK}(6/6) Registrado...
-STR_NETWORK_CONNECTING_SPECIAL_1                                :{BLACK}Kaptado de ludinformoj...
-STR_NETWORK_CONNECTING_SPECIAL_2                                :{BLACK}Kaptado de kompaniaj informoj...
 
 STR_NETWORK_CONNECTION_DISCONNECT                               :{BLACK}Malkonekti
 
@@ -3634,7 +3632,7 @@ STR_NEWGRF_SETTINGS_PRESET_SAVE                                 :{BLACK}Konservi
 STR_NEWGRF_SETTINGS_PRESET_SAVE_TOOLTIP                         :{BLACK}Konservi la nunan liston kiel antaŭagordo
 STR_NEWGRF_SETTINGS_PRESET_DELETE                               :{BLACK}Forviŝu antaŭaron
 STR_NEWGRF_SETTINGS_PRESET_DELETE_TOOLTIP                       :{BLACK}Forviŝu la kurente elektan antaŭaron
-STR_NEWGRF_SETTINGS_ADD                                         :{BLACK}Aldonu
+STR_NEWGRF_SETTINGS_ADD                                         :{BLACK}Aldoni
 STR_NEWGRF_SETTINGS_ADD_FILE_TOOLTIP                            :{BLACK}Aldonu la elektitan NewGRF-dosieron al viaj agordoj
 STR_NEWGRF_SETTINGS_RESCAN_FILES                                :{BLACK}Reserĉu dosierojn
 STR_NEWGRF_SETTINGS_RESCAN_FILES_TOOLTIP                        :{BLACK}Ĝisdatigu la liston da haveblaj NewGRF-dosieroj
@@ -3645,14 +3643,14 @@ STR_NEWGRF_SETTINGS_MOVEUP_TOOLTIP                              :{BLACK}Movu la 
 STR_NEWGRF_SETTINGS_MOVEDOWN                                    :{BLACK}Malsupren
 STR_NEWGRF_SETTINGS_MOVEDOWN_TOOLTIP                            :{BLACK}Movu la elektitan NewGRF-dosieron malsupren en la listo
 STR_NEWGRF_SETTINGS_UPGRADE                                     :{BLACK}Ĝisdatigi
-STR_NEWGRF_SETTINGS_UPGRADE_TOOLTIP                             :{BLACK}Ĝisdatigi NewGRF-dosierojn, por kiuj vi havas instalitan pli novan version
+STR_NEWGRF_SETTINGS_UPGRADE_TOOLTIP                             :{BLACK}Ĝisdatigu NewGRF-dosierojn por kiuj vi havas instalitan pli novan version
 STR_NEWGRF_SETTINGS_FILE_TOOLTIP                                :{BLACK}Listo da instalitaj NewGRF-dosieroj
 
-STR_NEWGRF_SETTINGS_SET_PARAMETERS                              :{BLACK}Agordu parametrojn
+STR_NEWGRF_SETTINGS_SET_PARAMETERS                              :{BLACK}Agordi parametrojn
 STR_NEWGRF_SETTINGS_SHOW_PARAMETERS                             :{BLACK}Montri parametrojn
 STR_NEWGRF_SETTINGS_TOGGLE_PALETTE                              :{BLACK}Baskuligi paletron
 STR_NEWGRF_SETTINGS_TOGGLE_PALETTE_TOOLTIP                      :{BLACK}Baskuligi la paletron de elektita NewGRF.{}Uzi ĉi tiun agordon, se grafikoj de NewGRF aspektas rozkolora enlude
-STR_NEWGRF_SETTINGS_APPLY_CHANGES                               :{BLACK}Apliku ŝanĝojn
+STR_NEWGRF_SETTINGS_APPLY_CHANGES                               :{BLACK}Apliki ŝanĝojn
 
 STR_NEWGRF_SETTINGS_FIND_MISSING_CONTENT_BUTTON                 :{BLACK}Trovi mankan enhavon enrete
 STR_NEWGRF_SETTINGS_FIND_MISSING_CONTENT_TOOLTIP                :{BLACK}Kontroli ĉu eblas trovi la mankan enhavon enrete.
@@ -4044,7 +4042,7 @@ STR_STATION_VIEW_SCHEDULED_SHIPS_TOOLTIP                        :{BLACK}Montri �
 
 STR_STATION_VIEW_EDIT_STATION_SIGN                              :{WHITE}Redakti ŝildon de stacio
 
-STR_STATION_VIEW_CLOSE_AIRPORT                                  :{BLACK}Fermu la flughavenon
+STR_STATION_VIEW_CLOSE_AIRPORT                                  :{BLACK}Fermi la flughavenon
 STR_STATION_VIEW_CLOSE_AIRPORT_TOOLTIP                          :{BLACK}Malpermesi al aviadiloj surteriĝi ĉe tiu ĉi flughaveno
 
 # Waypoint/buoy view window
@@ -4868,6 +4866,7 @@ STR_ORDERS_SKIP_BUTTON                                          :{BLACK}Plusaltu
 STR_ORDERS_SKIP_TOOLTIP                                         :{BLACK}Transsalti la nunan ordonon, kaj fari la sekvan. Stir+Klaku por transsalti al la elektita ordono
 
 STR_ORDERS_DELETE_BUTTON                                        :{BLACK}Forviŝu
+STR_ORDERS_DELETE_ALL_BUTTON                                    :{BLACK}Forigi ĉiujn
 STR_ORDERS_DELETE_TOOLTIP                                       :{BLACK}Forviŝi la elektitan ordonon.
 STR_ORDERS_DELETE_ALL_TOOLTIP                                   :{BLACK}Forviŝu ĉiujn ordonojn
 STR_ORDERS_STOP_SHARING_BUTTON                                  :{BLACK}Haltu kunhavanta
