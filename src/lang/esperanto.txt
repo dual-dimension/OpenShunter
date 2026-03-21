@@ -375,8 +375,8 @@ STR_TOOLTIP_CLOSE_WINDOW                                        :{BLACK}Fermi fe
 STR_TOOLTIP_WINDOW_TITLE_DRAG_THIS                              :{BLACK}Fenestra titolo - tiru por movi la fenestron
 STR_TOOLTIP_SHADE                                               :{BLACK}Minimumigi fenestron - montri nur la titolbreton
 STR_TOOLTIP_DEBUG                                               :{BLACK}Montri sencimigajn informojn por NewGRF-oj
-STR_TOOLTIP_DEFSIZE                                             :{BLACK}Aligrandigu la fenestron al la defaŭlta grandeco. Stir+Klaku por konservi la nunan grandecon kiel defaŭltan. Duoble Stir+Klaku por restarigi konservitan defaŭlton
-STR_TOOLTIP_STICKY                                              :{BLACK}Marki, ke la fenestro ne fermiĝu per la klavo 'fermi ĉiujn fenestrojn'. Konservi kiel defaŭlta stato per Stir-klavo + alklako.
+STR_TOOLTIP_DEFSIZE                                             :{BLACK}Aligrandigi la fenestron al la defaŭlta grandeco. Stir+Klaku por konservi la nunan grandecon kiel defaŭltan. Duoble Stir+Klaku por restarigi konservitan defaŭlton
+STR_TOOLTIP_STICKY                                              :{BLACK}Marki, ke la fenestro ne fermiĝos per la klavo 'fermi ĉiujn fenestrojn'. Konservi kiel defaŭlta stato per Stir-klavo + alklako.
 STR_TOOLTIP_RESIZE                                              :{BLACK}Klaku kaj tiru por reformi la fenestron
 STR_TOOLTIP_TOGGLE_LARGE_SMALL_WINDOW                           :{BLACK}Baskuligi inter ega/eta grandeco de fenestro
 STR_TOOLTIP_VSCROLL_BAR_SCROLLS_LIST                            :{BLACK}Skrolbreto - skrolas la liston supren/malsupren
@@ -1170,15 +1170,15 @@ STR_GAME_OPTIONS_INTERFACE                                      :Interfaco
 
 STR_GAME_OPTIONS_GUI_SCALE_FRAME                                :Interfacgrandeco
 STR_GAME_OPTIONS_GUI_SCALE_TOOLTIP                              :Ŝovu flanken por ŝanĝi grandecon de interfaco. Stir-ŝovo por maldiskreta agordado
-STR_GAME_OPTIONS_GUI_SCALE_AUTO                                 :Aŭtomate rekonu grandecon
+STR_GAME_OPTIONS_GUI_SCALE_AUTO                                 :Aŭtomate rekoni grandecon
 STR_GAME_OPTIONS_GUI_SCALE_AUTO_TOOLTIP                         :Ŝaltu por aŭtomate detekti grandecon de la interfaco
 
-STR_GAME_OPTIONS_GUI_SCALE_BEVELS                               :Grandigu randojn
+STR_GAME_OPTIONS_GUI_SCALE_BEVELS                               :Grandigi randojn
 STR_GAME_OPTIONS_GUI_SCALE_BEVELS_TOOLTIP                       :Ŝaltu ĉi tiun agordoj por aŭtomate grandigi randojn laŭ grandeco de interfaco
 
-STR_GAME_OPTIONS_GUI_FONT_SPRITE                                :Uzu tradician bildetan tiparon
+STR_GAME_OPTIONS_GUI_FONT_SPRITE                                :Uzi tradician bildetan tiparon
 STR_GAME_OPTIONS_GUI_FONT_SPRITE_TOOLTIP                        :Ŝaltu, se vi preferas uzi la tradician fiksgrandecan bildetan tiparon
-STR_GAME_OPTIONS_GUI_FONT_AA                                    :Glatigu tiparojn
+STR_GAME_OPTIONS_GUI_FONT_AA                                    :Glatigi tiparojn
 STR_GAME_OPTIONS_GUI_FONT_AA_TOOLTIP                            :Ŝaltu por glatigi aligrandigeblajn tiparojn
 
 STR_GAME_OPTIONS_GUI_SCALE_MARK                                 :{DECIMAL}x
@@ -1334,7 +1334,7 @@ STR_WARNING_NO_SUITABLE_AI                                      :{WHITE}Neniu ta
 STR_CONFIG_SETTING_FILTER_TITLE                                 :Filtrilo:
 STR_CONFIG_SETTING_EXPAND_ALL                                   :Etendu ĉion
 STR_CONFIG_SETTING_COLLAPSE_ALL                                 :Maletendi ĉiujn
-STR_CONFIG_SETTING_RESET_ALL                                    :Restarigu ĉiujn valorojn
+STR_CONFIG_SETTING_RESET_ALL                                    :Restarigi ĉiujn valorojn
 STR_CONFIG_SETTING_NO_EXPLANATION_AVAILABLE_HELPTEXT            :(neniu ekspliko disponeble)
 STR_CONFIG_SETTING_VALUE                                        :{ORANGE}{STRING}
 STR_CONFIG_SETTING_DEFAULT_VALUE                                :{LTBLUE}Defaŭlta valoro: {ORANGE}{STRING}
@@ -1696,7 +1696,7 @@ STR_CONFIG_SETTING_INDUSTRY_DENSITY                             :Denseco de indu
 STR_CONFIG_SETTING_INDUSTRY_DENSITY_HELPTEXT                    :Agordu kiom da entreprenoj estu generitaj, kaj kiu nivelo estu tenata dum la ludo
 
 STR_CONFIG_SETTING_OIL_REF_EDGE_DISTANCE                        :Maksimuma distanco de la maprando por olea industrio: {STRING}
-STR_CONFIG_SETTING_OIL_REF_EDGE_DISTANCE_HELPTEXT               :Limigu kiom for de la eĝo de la mapo konstrueblas olerafinejoj kaj oleplatformoj. Ĉe insulaj mapoj, tio certigas ke ili estos proksime de la bordo. Ĉe mapoj pli grandaj ol 256 kaheloj, tiu ĉi agordo estos laŭskale grandigita
+STR_CONFIG_SETTING_OIL_REF_EDGE_DISTANCE_HELPTEXT               :Limigi, kiom for de la eĝo de la mapo konstrueblas olerafinejoj kaj oleplatformoj. Ĉe insulaj mapoj, tio certigas, ke ili estos proksime de la bordo. Ĉe mapoj pli grandaj ol 256 kaheloj, tiu ĉi agordo estos laŭskale grandigita
 
 STR_CONFIG_SETTING_SNOWLINE_HEIGHT                              :Neĝregiona alto: {STRING}
 STR_CONFIG_SETTING_SNOWLINE_HEIGHT_HELPTEXT                     :Elektu, ekde kiu alteco neĝo komencas en la arktikeca landaspekto. Neĝo ankaŭ influas generadon de industriejoj kaj kondiĉojn por kreskado de urboj. Nur modifebla per scenarokreilo, alimaniere estas kalkulita per agordo de neĝa kovro
@@ -1899,7 +1899,7 @@ STR_CONFIG_SETTING_PERSISTENT_BUILDINGTOOLS                     :Lasu aktivaj la
 STR_CONFIG_SETTING_PERSISTENT_BUILDINGTOOLS_HELPTEXT            :Lasu aktivaj la ilojn por konstrui pontojn, tunelojn ktp post uzo
 
 STR_CONFIG_SETTING_AUTO_REMOVE_SIGNALS                          :Aŭtomate forigi semaforojn dum relkonstruado: {STRING}
-STR_CONFIG_SETTING_AUTO_REMOVE_SIGNALS_HELPTEXT                 :Aŭtomate forigu semaforojn dum relkonstruado, se ili malhelpas konstrui. Atentu, ke tio ĉi eventuale povas kaŭzi vagonarkoliziojn
+STR_CONFIG_SETTING_AUTO_REMOVE_SIGNALS_HELPTEXT                 :Aŭtomate forigi semaforojn dum relkonstruado, se ili malhelpas konstruadon. Atentu, ke tio ĉi eventuale povas kaŭzi vagonarkoliziojn
 
 STR_CONFIG_SETTING_FAST_FORWARD_SPEED_LIMIT                     :Maksimuma rapideco dum rapidpluigo: {STRING}
 STR_CONFIG_SETTING_FAST_FORWARD_SPEED_LIMIT_HELPTEXT            :Limo de ludrapideco dum rapidpluigo. 0 = senlima (tiel rapide, kiel via komputilo povas). Valoroj sub 100% malplirapidigas la ludon. La efektiva maksimuma rapideco dependas de specifoj de via komputilo, kaj povas ŝanĝi depende de la ludo
@@ -2110,7 +2110,7 @@ STR_CONFIG_SETTING_ALLOW_TOWN_ROADS_HELPTEXT                    :Permesi al urbo
 STR_CONFIG_SETTING_ALLOW_TOWN_LEVEL_CROSSINGS                   :Urboj rajtas konstrui traknivelajn pasejojn: {STRING}
 STR_CONFIG_SETTING_ALLOW_TOWN_LEVEL_CROSSINGS_HELPTEXT          :Kiam tiu ĉi agordo estas aktiva, urboj rajtas konstrui traknivelajn pasejojn
 
-STR_CONFIG_SETTING_NOISE_LEVEL                                  :Limigu lokigon de flughavenoj surbaze de brunivelo: {STRING}
+STR_CONFIG_SETTING_NOISE_LEVEL                                  :Limigi lokigon de flughavenoj surbaze de brunivelo: {STRING}
 STR_CONFIG_SETTING_NOISE_LEVEL_HELPTEXT                         :Permesi al urboj bloki konstruadon de flughavenoj surbaze de ilia bruo-toleremo, kiu dependas de la loĝantaro kaj de la grandeco kaj distanco de la flughaveno. Kiam tiu ĉi agordo estas malaktiva, urboj permesas nur du flughavenojn krom se la sinteno de lokaj estraroj estas agordita al "Permesema"
 
 STR_CONFIG_SETTING_TOWN_FOUNDING                                :Konstruanta urbojn en ludo: {STRING}
@@ -2136,10 +2136,10 @@ STR_CONFIG_SETTING_TOWN_CARGOGENMODE_BITCOUNT                   :Lineara
 STR_CONFIG_SETTING_EXTRA_TREE_PLACEMENT                         :Dumluda metado de arboj: {STRING}
 STR_CONFIG_SETTING_EXTRA_TREE_PLACEMENT_HELPTEXT                :Regu la hazardan aperadon de arboj dum la ludo. Tio povas influi al industriejoj kiuj dependas je arbokreskado, ekzemple segejoj
 ###length 4
-STR_CONFIG_SETTING_EXTRA_TREE_PLACEMENT_NO_SPREAD               :Kresku sed ne disvastiĝu {RED}(malfunkciigas lignejojn)
-STR_CONFIG_SETTING_EXTRA_TREE_PLACEMENT_SPREAD_RAINFOREST       :Kresku, sed disvastiĝu nur en pluvarbaroj
-STR_CONFIG_SETTING_EXTRA_TREE_PLACEMENT_SPREAD_ALL              :Kresku kaj disvastiĝu ĉie
-STR_CONFIG_SETTING_EXTRA_TREE_PLACEMENT_NO_GROWTH_NO_SPREAD     :Ne kresku, ne disvastiĝu {RED}(malfunkciigas lignejojn)
+STR_CONFIG_SETTING_EXTRA_TREE_PLACEMENT_NO_SPREAD               :Kreski, sed ne disvastiĝi {RED}(malfunkciigas lignejojn)
+STR_CONFIG_SETTING_EXTRA_TREE_PLACEMENT_SPREAD_RAINFOREST       :Kreski, sed disvastiĝi nur en pluvarbaroj
+STR_CONFIG_SETTING_EXTRA_TREE_PLACEMENT_SPREAD_ALL              :Kreski kaj disvastiĝi ĉie
+STR_CONFIG_SETTING_EXTRA_TREE_PLACEMENT_NO_GROWTH_NO_SPREAD     :Ne kreski, ne disvastiĝi {RED}(malfunkciigas lignejojn)
 
 STR_CONFIG_SETTING_TOOLBAR_POS                                  :Loko de ĉefa ilbreto: {STRING}
 STR_CONFIG_SETTING_TOOLBAR_POS_HELPTEXT                         :Horizontala pozicio de la ĉefa ilobreto je la supro de la ekrano
@@ -2194,7 +2194,7 @@ STR_CONFIG_SETTING_CITY_SIZE_MULTIPLIER_HELPTEXT                :Averaĝa grande
 STR_CONFIG_SETTING_TOWN_MIN_DISTANCE                            :Malpleja distanco inter urboj: {STRING}
 STR_CONFIG_SETTING_TOWN_MIN_DISTANCE_HELPTEXT                   :Elektu malplejan distancon inter urboj, en kaheloj, por generado kaj hazarda fondado de urboj
 
-STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL                    :Ĝisdatigu la distribuan grafeon ĉiujn {STRING.n}
+STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL                    :Ĝisdatigi la distribuan grafeon ĉiujn {STRING.n}
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_INTERVAL_HELPTEXT           :Tempo inter sinsekvaj rekalkuloj de la liga grafeo. Ĉiu rekalkulo kalkulas planoj por unu komponento de la grafeo. Tio signifas ke meti valoron X por tiu ĉi agordo ne signifas ke la tuta grafeo estos ĝisdatigita ĉiujn X sekundojn. Nur iu komponento estos. Ju pli mallongan tempon vi elektas, des pli da procesora tempo bezonatas por la kalkulado. Ju pli longan tempon vi elektas, des pli longe daŭros ĝis kiam komenciĝos distribuado de kargoj en novaj itineroj
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_TIME                        :Uzu {STRING.n} por rekalkulado de la distribua grafeo
 STR_CONFIG_SETTING_LINKGRAPH_RECALC_TIME_HELPTEXT               :Tempo inter sinsekvaj rekalkuloj de la liga grafeo. Kiam rekalkulo komencas, fadeno estas kreita, kiu povas funkcii nur por ĉi tiu nombro de sekundoj. Ju malpli da ĉi tiu valoro, des pli da ŝanco, ke la fadeno ne finiĝis la laboron dum la fina tempo. En tiu okazo, la ludo haltas ĝis la fino de kalkulo. Ju pli da valoro, des pli da tempo, en kiu distribuo ĝisdatigas, kiam vojplanoj ŝanĝas
@@ -2449,7 +2449,7 @@ STR_LIVERY_FREIGHT_TRAM                                         :Frajttramo
 
 # Face selection window
 STR_FACE_CAPTION                                                :{WHITE}Elekto de vizaĝo
-STR_FACE_CANCEL_TOOLTIP                                         :{BLACK}Nuligu elekton de nova vizaĝo
+STR_FACE_CANCEL_TOOLTIP                                         :{BLACK}Nuligi elekton de nova vizaĝo
 STR_FACE_OK_TOOLTIP                                             :{BLACK}Akceptu elekton de nova vizaĝo
 
 STR_FACE_NEW_FACE_BUTTON                                        :{BLACK}Nova Vizaĝo
@@ -2614,7 +2614,7 @@ STR_NETWORK_CLIENT_LIST_PLAYER_NAME_EDIT_TOOLTIP                :{BLACK}Ŝanĝi 
 STR_NETWORK_CLIENT_LIST_PLAYER_NAME_QUERY_CAPTION               :Via ludantnomo
 STR_NETWORK_CLIENT_LIST_ADMIN_CLIENT_TOOLTIP                    :{BLACK}Administraj agoj fareblaj por tiu ĉi kliento
 STR_NETWORK_CLIENT_LIST_ADMIN_COMPANY_TOOLTIP                   :{BLACK}Administraj agoj fareblaj por tiu ĉi kompanio
-STR_NETWORK_CLIENT_LIST_JOIN_TOOLTIP                            :{BLACK}Aliĝu al tiu ĉi kompanio
+STR_NETWORK_CLIENT_LIST_JOIN_TOOLTIP                            :{BLACK}Aliĝi al tiu ĉi kompanio
 STR_NETWORK_CLIENT_LIST_COMPANY_AUTHORIZE_TOOLTIP               :{BLACK}Permesi ĉi tiun klienton aliĝi al via kompanio
 STR_NETWORK_CLIENT_LIST_CHAT_CLIENT_TOOLTIP                     :{BLACK}Sendu mesaĝon al tiu ĉi ludanto
 STR_NETWORK_CLIENT_LIST_CHAT_COMPANY_TOOLTIP                    :{BLACK}Sendu mesaĝon al ĉiuj ludantoj de tiu ĉi kompanio
@@ -2858,7 +2858,7 @@ STR_TRANSPARENT_BRIDGES_TOOLTIP                                 :{BLACK}Baskulig
 STR_TRANSPARENT_STRUCTURES_TOOLTIP                              :{BLACK}Baskuligi travideblecon de aĵoj, kiel lumturoj kaj antenoj. Stir+Klaku por ŝlosi
 STR_TRANSPARENT_CATENARY_TOOLTIP                                :{BLACK}Baskuligi travideblecon de katenario. Stir+Klaku por ŝlosi
 STR_TRANSPARENT_TEXT_TOOLTIP                                    :{BLACK}Baskuligi travideblecon de teksto de (de)ŝarĝado kaj kosto/enspezo. Stir+Klaku por ŝlosi
-STR_TRANSPARENT_INVISIBLE_TOOLTIP                               :{BLACK}Igu objektojn nevideblaj anstataŭ travideblaj
+STR_TRANSPARENT_INVISIBLE_TOOLTIP                               :{BLACK}Igi objektojn nevideblaj anstataŭ travideblaj
 
 # Linkgraph legend window
 STR_LINKGRAPH_LEGEND_CAPTION                                    :{BLACK}Skemo de ŝarĝfluo
@@ -2914,7 +2914,7 @@ STR_RAIL_TOOLBAR_TOOLTIP_BUILD_RAILROAD_SIGNALS                 :{BLACK}Konstrui
 STR_RAIL_TOOLBAR_TOOLTIP_BUILD_RAILROAD_BRIDGE                  :{BLACK}Konstrui fervojan ponton. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
 STR_RAIL_TOOLBAR_TOOLTIP_BUILD_RAILROAD_TUNNEL                  :{BLACK}Konstrui fervojtunelon. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
 STR_RAIL_TOOLBAR_TOOLTIP_TOGGLE_BUILD_REMOVE_FOR                :{BLACK}Elekti inter konstruado/forigado de trako, signaliloj, vojpunktoj kaj stacidomoj. Stir+klaku por forigi relojn de vojpunktoj kaj stacioj
-STR_RAIL_TOOLBAR_TOOLTIP_CONVERT_RAIL                           :{BLACK}Transigu/Plibonigi reltipon. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
+STR_RAIL_TOOLBAR_TOOLTIP_CONVERT_RAIL                           :{BLACK}Konverti/plibonigi reltipon. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
 
 STR_RAIL_NAME_RAILROAD                                          :Fervojo
 STR_RAIL_NAME_ELRAIL                                            :Elektrofervojo
@@ -2947,9 +2947,9 @@ STR_PICKER_MODE_SAVED                                           :Konservitaj
 STR_PICKER_MODE_SAVED_TOOLTIP                                   :Baskuligi montradon de nur konservitaj konstruaĵoj
 
 STR_PICKER_PREVIEW_SHRINK                                       :-
-STR_PICKER_PREVIEW_SHRINK_TOOLTIP                               :Malgrandigu la altecon de antaŭmontraj bildoj. Stir-klaku por uzi minimumon
+STR_PICKER_PREVIEW_SHRINK_TOOLTIP                               :Malgrandigi la altecon de antaŭmontraj bildoj. Stir-klaku por uzi minimumon
 STR_PICKER_PREVIEW_EXPAND                                       :+
-STR_PICKER_PREVIEW_EXPAND_TOOLTIP                               :Grandigu la altecon de antaŭmontraj bildoj. Stir-klaku por uzi maksimumon
+STR_PICKER_PREVIEW_EXPAND_TOOLTIP                               :Grandigi la altecon de antaŭmontraj bildoj. Stir-klaku por uzi maksimumon
 
 STR_PICKER_DEFAULT_COLLECTION                                   :Defaŭlta kolekto
 STR_PICKER_SELECT_COLLECTION_TOOLTIP                            :Elekti kolekton
@@ -3072,8 +3072,8 @@ STR_ROAD_TOOLBAR_TOOLTIP_BUILD_ROAD_TUNNEL                      :{BLACK}Konstrui
 STR_ROAD_TOOLBAR_TOOLTIP_BUILD_TRAMWAY_TUNNEL                   :{BLACK}Konstrui tramtunelon. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
 STR_ROAD_TOOLBAR_TOOLTIP_TOGGLE_BUILD_REMOVE_FOR_ROAD           :{BLACK}Baskuligi konstruadon/forigadon por stratkonstruadon
 STR_ROAD_TOOLBAR_TOOLTIP_TOGGLE_BUILD_REMOVE_FOR_TRAMWAYS       :{BLACK}Ŝaltu konstruadon/forigadon por konstruado de tramvojoj
-STR_ROAD_TOOLBAR_TOOLTIP_CONVERT_ROAD                           :{BLACK}Konvertu/Plibonigu la tipon de vojo. Ankaŭ premu majuskligan klavon por nur montri kostotakson
-STR_ROAD_TOOLBAR_TOOLTIP_CONVERT_TRAM                           :{BLACK}Konvertu/Plibonigu la tipon de tramo. Ankaŭ premu majuskligan klavon por nur montri kostotakson
+STR_ROAD_TOOLBAR_TOOLTIP_CONVERT_ROAD                           :{BLACK}Konverti/plibonigi la tipon de vojo. Ankaŭ premu majuskligan klavon por nur montri kostotakson
+STR_ROAD_TOOLBAR_TOOLTIP_CONVERT_TRAM                           :{BLACK}Konverti/plibonigu la tipon de tramo. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
 
 STR_ROAD_NAME_ROAD                                              :Strato
 STR_ROAD_NAME_TRAM                                              :Tramvojo
@@ -3142,9 +3142,9 @@ STR_STATION_BUILD_NOISE                                         :{BLACK}Bruon ge
 
 # Landscaping toolbar
 STR_LANDSCAPING_TOOLBAR                                         :{WHITE}Landaspekto
-STR_LANDSCAPING_TOOLTIP_LOWER_A_CORNER_OF_LAND                  :{BLACK}Malaltigu landangulon. Stir+Trenu por unue malaltigi la unuan elektitan angulon, kaj poste ebenigi la elektitan areon. Stir+Maj+Trenu por elekti areon diagonale. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
-STR_LANDSCAPING_TOOLTIP_RAISE_A_CORNER_OF_LAND                  :{BLACK}Altigu landangulon. Stir+Trenu por unue altigi la unuan elektitan angulon, kaj poste ebenigi la elektitan areon. Stir+Maj+Trenu por elekti areon diagonale. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
-STR_LANDSCAPING_LEVEL_LAND_TOOLTIP                              :{BLACK}Ebenigu landon ĝis la nivelo de unua elektita angulo. Stir+Maj+Trenu por elekti areon diagonale. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
+STR_LANDSCAPING_TOOLTIP_LOWER_A_CORNER_OF_LAND                  :{BLACK}Malaltigi landangulon. Klak+Trenu por unue malaltigi la unuan elektitan angulon, kaj poste ebenigi la elektitan areon. Stir+Klak+Trenu por elekti areon diagonale. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
+STR_LANDSCAPING_TOOLTIP_RAISE_A_CORNER_OF_LAND                  :{BLACK}Altigi landangulon. Klak+Trenu por unue altigi la unuan elektitan angulon, kaj poste ebenigi la elektitan areon. Stir+Klak+Trenu por elekti areon diagonale. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
+STR_LANDSCAPING_LEVEL_LAND_TOOLTIP                              :{BLACK}Ebenigi landon ĝis la nivelo de unua elektita angulo. Stir+Maj+Trenu por elekti areon diagonale. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
 STR_LANDSCAPING_TOOLTIP_PURCHASE_LAND                           :{BLACK}Aĉeti landon por onta uzo. Stir+Klaku+Trenu por elekti areon diagonale. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
 
 # Object construction window
@@ -3214,9 +3214,9 @@ STR_FOUND_TOWN_CITY_TOOLTIP                                     :{BLACK}Urbegoj 
 
 STR_FOUND_TOWN_EXPAND_MODE                                      :{YELLOW}Etendado de urboj:
 STR_FOUND_TOWN_EXPAND_BUILDINGS                                 :Etendu konstruaĵojn
-STR_FOUND_TOWN_EXPAND_BUILDINGS_TOOLTIP                         :Pliigu konstruaĵojn de urboj
+STR_FOUND_TOWN_EXPAND_BUILDINGS_TOOLTIP                         :Pliigi konstruaĵojn de urboj
 STR_FOUND_TOWN_EXPAND_ROADS                                     :Etendu stratojn
-STR_FOUND_TOWN_EXPAND_ROADS_TOOLTIP                             :Pliigu stratojn de urboj
+STR_FOUND_TOWN_EXPAND_ROADS_TOOLTIP                             :Pliigi stratojn de urboj
 
 STR_FOUND_TOWN_ROAD_LAYOUT                                      :{YELLOW}Urba strataranĝo:
 STR_FOUND_TOWN_SELECT_LAYOUT_TOOLTIP                            :{BLACK}Selektu strataranĝon uzendan por ĉi tiu urbo
@@ -3252,7 +3252,7 @@ STR_INDUSTRY_CARGOES_INDUSTRY_TOOLTIP                           :{BLACK}Alklaku 
 STR_INDUSTRY_CARGOES_CARGO_TOOLTIP                              :{BLACK}{STRING}{}Alklaku la ŝarĝon por vidi ĝia provizantoj kaj klientoj
 STR_INDUSTRY_DISPLAY_CHAIN                                      :{BLACK}Industria ĉeno
 STR_INDUSTRY_DISPLAY_CHAIN_TOOLTIP                              :{BLACK}Montri ŝarĝo-provizantajn kaj akceptantajn industriojn
-STR_INDUSTRY_CARGOES_NOTIFY_SMALLMAP                            :{BLACK}Sinsekvigu al karteto
+STR_INDUSTRY_CARGOES_NOTIFY_SMALLMAP                            :{BLACK}Sinsekvigi al karteto
 STR_INDUSTRY_CARGOES_NOTIFY_SMALLMAP_TOOLTIP                    :{BLACK}Ankaŭ elektu la montrajn industriojn je la karteto
 STR_INDUSTRY_CARGOES_SELECT_CARGO                               :{BLACK}Elekti ŝarĝon
 STR_INDUSTRY_CARGOES_SELECT_CARGO_TOOLTIP                       :{BLACK}Elekti la ŝarĝon, kiun vi deziras montri
@@ -3261,7 +3261,7 @@ STR_INDUSTRY_CARGOES_SELECT_INDUSTRY_TOOLTIP                    :{BLACK}Elekti i
 
 # Land area window
 STR_LAND_AREA_INFORMATION_CAPTION                               :{WHITE}Landregionaj informoj
-STR_LAND_AREA_INFORMATION_LOCATION_TOOLTIP                      :{BLACK}Centrigu la ĉefvidon ĉe la loko de la kahelo. Stir+Klaku por malfermi novan vidujon ĉe la loko de la kahelo
+STR_LAND_AREA_INFORMATION_LOCATION_TOOLTIP                      :{BLACK}Centrigi la ĉefvidon ĉe la loko de la kahelo. Stir+Klaku por malfermi novan vidujon ĉe la loko de la kahelo
 STR_LAND_AREA_INFORMATION_COST_TO_CLEAR_N_A                     :{BLACK}Forviŝkosto: {LTBLUE}ne eblas
 STR_LAND_AREA_INFORMATION_COST_TO_CLEAR                         :{BLACK}Forviŝkosto: {RED}{CURRENCY_LONG}
 STR_LAND_AREA_INFORMATION_REVENUE_WHEN_CLEARED                  :{BLACK}Enspezo kaze de forigo: {LTBLUE}{CURRENCY_LONG}
@@ -3498,8 +3498,8 @@ STR_MAPGEN_NUMBER_OF_INDUSTRIES                                 :{BLACK}Kiom da 
 STR_MAPGEN_NUMBER_OF_INDUSTRIES_TOOLTIP                         :{BLACK}Elektu densecon de industriejoj, aŭ specifan nombron
 STR_MAPGEN_HEIGHTMAP_HEIGHT                                     :{BLACK}Plej alta pinto:
 STR_MAPGEN_HEIGHTMAP_HEIGHT_TOOLTIP                             :{BLACK}Elektu la plej altaj pinton, kiu ludo klopodas krei, mezurita kiel alteco super marnivelo
-STR_MAPGEN_HEIGHTMAP_HEIGHT_UP_TOOLTIP                          :{BLACK}Pliigu la maksimuman altecon de la plej alta pinto sur la mapo je unu
-STR_MAPGEN_HEIGHTMAP_HEIGHT_DOWN_TOOLTIP                        :{BLACK}Malpliigu la maksimuman altecon de la plej alta pinto sur la mapo je unu
+STR_MAPGEN_HEIGHTMAP_HEIGHT_UP_TOOLTIP                          :{BLACK}Pliigi la maksimuman altecon de la plej alta pinto sur la mapo je unu
+STR_MAPGEN_HEIGHTMAP_HEIGHT_DOWN_TOOLTIP                        :{BLACK}Malpliigi la maksimuman altecon de la plej alta pinto sur la mapo je unu
 STR_MAPGEN_SNOW_COVERAGE                                        :{BLACK}Neĝa kovro:
 STR_MAPGEN_SNOW_COVERAGE_UP_TOOLTIP                             :{BLACK}Pliigi neĝan kovron je dek procentoj
 STR_MAPGEN_SNOW_COVERAGE_DOWN_TOOLTIP                           :{BLACK}Malpliigi neĝan kovron je dek procentoj
@@ -3587,8 +3587,8 @@ STR_SE_MAPGEN_FLAT_WORLD_TOOLTIP                                :{BLACK}Generu e
 STR_SE_MAPGEN_RANDOM_LAND                                       :{WHITE}Hazarda lando
 STR_SE_MAPGEN_FLAT_WORLD_HEIGHT                                 :{BLACK}Alteco de ebena lando:
 STR_SE_MAPGEN_FLAT_WORLD_HEIGHT_TOOLTIP                         :{BLACK}Elektu altecon de la tero super marnivelo
-STR_SE_MAPGEN_FLAT_WORLD_HEIGHT_DOWN_TOOLTIP                    :{BLACK}Malaltigu la altecon de ebena lando per unu
-STR_SE_MAPGEN_FLAT_WORLD_HEIGHT_UP_TOOLTIP                      :{BLACK}Altigu la altecon de ebena lando per unu
+STR_SE_MAPGEN_FLAT_WORLD_HEIGHT_DOWN_TOOLTIP                    :{BLACK}Malaltigi la altecon de ebena lando per unu
+STR_SE_MAPGEN_FLAT_WORLD_HEIGHT_UP_TOOLTIP                      :{BLACK}Altigi la altecon de ebena lando per unu
 
 STR_SE_MAPGEN_FLAT_WORLD_HEIGHT_QUERY_CAPT                      :{WHITE}Ŝanĝi altecon de ebena lando
 
@@ -3630,20 +3630,20 @@ STR_NEWGRF_FILTER_TITLE                                         :{ORANGE}Filtril
 STR_NEWGRF_SETTINGS_PRESET_LIST_TOOLTIP                         :{BLACK}Ŝarĝi la elektan antaŭaron
 STR_NEWGRF_SETTINGS_PRESET_SAVE                                 :{BLACK}Konservi antaŭagordon
 STR_NEWGRF_SETTINGS_PRESET_SAVE_TOOLTIP                         :{BLACK}Konservi la nunan liston kiel antaŭagordo
-STR_NEWGRF_SETTINGS_PRESET_DELETE                               :{BLACK}Forviŝu antaŭaron
-STR_NEWGRF_SETTINGS_PRESET_DELETE_TOOLTIP                       :{BLACK}Forviŝu la kurente elektan antaŭaron
+STR_NEWGRF_SETTINGS_PRESET_DELETE                               :{BLACK}Forviŝi antaŭaron
+STR_NEWGRF_SETTINGS_PRESET_DELETE_TOOLTIP                       :{BLACK}Forviŝi la nune elektitan antaŭaron
 STR_NEWGRF_SETTINGS_ADD                                         :{BLACK}Aldoni
 STR_NEWGRF_SETTINGS_ADD_FILE_TOOLTIP                            :{BLACK}Aldonu la elektitan NewGRF-dosieron al viaj agordoj
-STR_NEWGRF_SETTINGS_RESCAN_FILES                                :{BLACK}Reserĉu dosierojn
-STR_NEWGRF_SETTINGS_RESCAN_FILES_TOOLTIP                        :{BLACK}Ĝisdatigu la liston da haveblaj NewGRF-dosieroj
-STR_NEWGRF_SETTINGS_REMOVE                                      :{BLACK}Forviŝu
+STR_NEWGRF_SETTINGS_RESCAN_FILES                                :{BLACK}Reserĉi dosierojn
+STR_NEWGRF_SETTINGS_RESCAN_FILES_TOOLTIP                        :{BLACK}Ĝisdatigi la liston da haveblaj NewGRF-dosieroj
+STR_NEWGRF_SETTINGS_REMOVE                                      :{BLACK}Forviŝi
 STR_NEWGRF_SETTINGS_REMOVE_TOOLTIP                              :{BLACK}Forviŝu la elektitan NewGRF-dosieron el la listo
 STR_NEWGRF_SETTINGS_MOVEUP                                      :{BLACK}Supren
 STR_NEWGRF_SETTINGS_MOVEUP_TOOLTIP                              :{BLACK}Movu la elektitan NewGRF-dosieron supren en la listo
 STR_NEWGRF_SETTINGS_MOVEDOWN                                    :{BLACK}Malsupren
 STR_NEWGRF_SETTINGS_MOVEDOWN_TOOLTIP                            :{BLACK}Movu la elektitan NewGRF-dosieron malsupren en la listo
 STR_NEWGRF_SETTINGS_UPGRADE                                     :{BLACK}Ĝisdatigi
-STR_NEWGRF_SETTINGS_UPGRADE_TOOLTIP                             :{BLACK}Ĝisdatigu NewGRF-dosierojn por kiuj vi havas instalitan pli novan version
+STR_NEWGRF_SETTINGS_UPGRADE_TOOLTIP                             :{BLACK}Ĝisdatigi NewGRF-dosierojn, por kiuj vi havas instalitan pli novan version
 STR_NEWGRF_SETTINGS_FILE_TOOLTIP                                :{BLACK}Listo da instalitaj NewGRF-dosieroj
 
 STR_NEWGRF_SETTINGS_SET_PARAMETERS                              :{BLACK}Agordi parametrojn
@@ -3722,12 +3722,12 @@ STR_SPRITE_ALIGNER_CENTRE_SPRITE                                :{BLACK}Bildeto 
 
 STR_SPRITE_ALIGNER_CROSSHAIR                                    :{BLACK}Celkruco
 
-STR_SPRITE_ALIGNER_RESET_BUTTON                                 :{BLACK}Restarigu relativajn
-STR_SPRITE_ALIGNER_RESET_TOOLTIP                                :{BLACK}Restarigu la nunajn relativajn deŝovojn
+STR_SPRITE_ALIGNER_RESET_BUTTON                                 :{BLACK}Restarigi relativajn
+STR_SPRITE_ALIGNER_RESET_TOOLTIP                                :{BLACK}Restarigi la nunajn relativajn deŝovojn
 STR_SPRITE_ALIGNER_OFFSETS_ABS                                  :{BLACK}X-deŝovo: {NUM}, Y-deŝovo: {NUM} (Absoluta)
 STR_SPRITE_ALIGNER_OFFSETS_REL                                  :{BLACK}X-deŝovo: {NUM}, Y-deŝovo: {NUM} (Relativa)
 STR_SPRITE_ALIGNER_PICKER_BUTTON                                :{BLACK}Elekti bildeton
-STR_SPRITE_ALIGNER_PICKER_TOOLTIP                               :{BLACK}Elektu bildeton ie el la ekrano
+STR_SPRITE_ALIGNER_PICKER_TOOLTIP                               :{BLACK}Elekti bildeton ie el la ekrano
 
 STR_SPRITE_ALIGNER_GOTO_CAPTION                                 :{WHITE}Iru al bildeto
 
@@ -3815,12 +3815,12 @@ STR_SIGN_LIST_MATCH_CASE_TOOLTIP                                :{BLACK}Aktivu/M
 
 # Sign window
 STR_EDIT_SIGN_CAPTION                                           :{WHITE}Ŝanĝu ŝildon
-STR_EDIT_SIGN_LOCATION_TOOLTIP                                  :{BLACK}Centrigu ĉefvidon je la loko de la ŝildo. Stir+Klaku por malfermi novan vidujon ĉe la loko de la ŝildo
+STR_EDIT_SIGN_LOCATION_TOOLTIP                                  :{BLACK}Centrigi ĉefvidon je la loko de la ŝildo. Stir+Klaku por malfermi novan vidujon ĉe la loko de la ŝildo
 STR_EDIT_SIGN_NEXT_SIGN_TOOLTIP                                 :{BLACK}Iri al la sekva ŝildo
 STR_EDIT_SIGN_PREVIOUS_SIGN_TOOLTIP                             :{BLACK}Iri al la antaŭa ŝildo
 STR_EDIT_SIGN_TEXT_COLOUR_TOOLTIP                               :{BLACK}Koloro de ŝildoteksto
 
-STR_EDIT_SIGN_SIGN_OSKTITLE                                     :{BLACK}Enigu nomon por la ŝildo
+STR_EDIT_SIGN_SIGN_OSKTITLE                                     :{BLACK}Enigi nomon por la ŝildo
 
 # Town directory window
 STR_TOWN_DIRECTORY_CAPTION                                      :{WHITE}Urboj ({COMMA} de {COMMA})
@@ -3854,13 +3854,13 @@ STR_TOWN_VIEW_CARGO_GRAPH                                       :Ŝarĝodiagramo
 STR_TOWN_VIEW_CARGO_GRAPH_TOOLTIP                               :Montri diagramon de ŝarĝohistorio de urbo
 
 STR_TOWN_VIEW_EXPAND_BUTTON                                     :{BLACK}Vastigu
-STR_TOWN_VIEW_EXPAND_TOOLTIP                                    :{BLACK}Grandigu la urbon
-STR_TOWN_VIEW_EXPAND_BUILDINGS_BUTTON                           :{BLACK}Vastigu konstruaĵojn
-STR_TOWN_VIEW_EXPAND_BUILDINGS_TOOLTIP                          :{BLACK}Pliigu la konstruaĵojn de urbo
-STR_TOWN_VIEW_EXPAND_ROADS_BUTTON                               :{BLACK}Vastigu stratojn
-STR_TOWN_VIEW_EXPAND_ROADS_TOOLTIP                              :{BLACK}Pliigu la stratojn de urbo
+STR_TOWN_VIEW_EXPAND_TOOLTIP                                    :{BLACK}Grandigi la urbon
+STR_TOWN_VIEW_EXPAND_BUILDINGS_BUTTON                           :{BLACK}Vastigi konstruaĵojn
+STR_TOWN_VIEW_EXPAND_BUILDINGS_TOOLTIP                          :{BLACK}Pliigi la konstruaĵojn de urbo
+STR_TOWN_VIEW_EXPAND_ROADS_BUTTON                               :{BLACK}Vastigi stratojn
+STR_TOWN_VIEW_EXPAND_ROADS_TOOLTIP                              :{BLACK}Pliigi la stratojn de urbo
 STR_TOWN_VIEW_DELETE_BUTTON                                     :{BLACK}Forigu
-STR_TOWN_VIEW_DELETE_TOOLTIP                                    :{BLACK}Plene forigu ĉi tiun urbon
+STR_TOWN_VIEW_DELETE_TOOLTIP                                    :{BLACK}Plene forigi ĉi tiun urbon
 
 STR_TOWN_VIEW_RENAME_TOWN_BUTTON                                :Alinomi urbon
 
@@ -4556,8 +4556,8 @@ STR_REPLACE_LEFT_ARRAY_TOOLTIP                                  :{BLACK}Elektu m
 STR_REPLACE_RIGHT_ARRAY_TOOLTIP                                 :{BLACK}Elektu novan maŝinon por uzi anstataŭ la maldekstre elektitan
 
 STR_REPLACE_VEHICLES_START                                      :{BLACK}Komenci anstataŭigon
-STR_REPLACE_VEHICLES_NOW                                        :Anstataŭigu ĉiujn veturilojn nun
-STR_REPLACE_VEHICLES_WHEN_OLD                                   :Anstataŭigu nur malnovajn veturilojn
+STR_REPLACE_VEHICLES_NOW                                        :Anstataŭigi ĉiujn veturilojn nun
+STR_REPLACE_VEHICLES_WHEN_OLD                                   :Anstataŭigi nur malnovajn veturilojn
 STR_REPLACE_START_BUTTON_TOOLTIP                                :{BLACK}Premu por komenci anstataŭi la maldekstre elektitan maŝinon per la dekstre elektitan
 STR_REPLACE_NOT_REPLACING                                       :{BLACK}Neniu anstataŭigo
 STR_REPLACE_NOT_REPLACING_VEHICLE_SELECTED                      :{BLACK}Ne elektiĝis veturilo
@@ -4596,10 +4596,10 @@ STR_REPLACE_REMOVE_WAGON_GROUP_HELP                             :{STRING}. Stir-
 STR_VEHICLE_VIEW_CAPTION                                        :{WHITE}{VEHICLE}
 
 ###length VEHICLE_TYPES
-STR_VEHICLE_VIEW_TRAIN_CENTER_TOOLTIP                           :{BLACK}Centrigu ĉefvidon ĉe la pozicio de la vagonaro. Duobla klako igas la ĉefvidon sekvi la vagonaron. Stir+Klak malfermas novan vidujon ĉe la pozicio de la vagonaro
-STR_VEHICLE_VIEW_ROAD_VEHICLE_CENTER_TOOLTIP                    :{BLACK}Centrigu ĉefvidon ĉe la pozicio de la veturilo. Duoble klaku por igi la ĉefvidon sekvi la veturilon. Stir+Klaku por malfermi novan vidujon ĉe la pozicio de la veturilo
-STR_VEHICLE_VIEW_SHIP_CENTER_TOOLTIP                            :{BLACK}Centrigu ĉefvidon ĉe la pozicio de la ŝipo. Duoble klaku por igi la ĉefvidon sekvi la ŝipon. Stir+Klaku por malfermi novan vidujon ĉe la ŝipa loko
-STR_VEHICLE_VIEW_AIRCRAFT_CENTER_TOOLTIP                        :{BLACK}Centrigu ĉefvidon ĉe la pozicio de la aviadilo. Duoble klaku por igi la ĉefvidon sekvi la aviadilon. Stir+Klaku por malfermi novan vidujon ĉe la pozicio de la aviadilo
+STR_VEHICLE_VIEW_TRAIN_CENTER_TOOLTIP                           :{BLACK}Centrigi ĉefvidon ĉe la pozicio de la vagonaro. Duobla klako igas la ĉefvidon sekvi la vagonaron. Stir+Klak malfermas novan vidujon ĉe la pozicio de la vagonaro
+STR_VEHICLE_VIEW_ROAD_VEHICLE_CENTER_TOOLTIP                    :{BLACK}Centrigi ĉefvidon ĉe la pozicio de la veturilo. Duoble klaku por igi la ĉefvidon sekvi la veturilon. Stir+Klaku por malfermi novan vidujon ĉe la pozicio de la veturilo
+STR_VEHICLE_VIEW_SHIP_CENTER_TOOLTIP                            :{BLACK}Centrigi ĉefvidon ĉe la pozicio de la ŝipo. Duoble klaku por igi la ĉefvidon sekvi la ŝipon. Stir+Klaku por malfermi novan vidujon ĉe la ŝipa loko
+STR_VEHICLE_VIEW_AIRCRAFT_CENTER_TOOLTIP                        :{BLACK}Centrigi ĉefvidon ĉe la pozicio de la aviadilo. Duoble klaku por igi la ĉefvidon sekvi la aviadilon. Stir+Klaku por malfermi novan vidujon ĉe la pozicio de la aviadilo
 
 ###length VEHICLE_TYPES
 STR_VEHICLE_VIEW_TRAIN_SEND_TO_DEPOT_TOOLTIP                    :{BLACK}Sendi vagonaron al garaĝo. Stir+Klak nur prizorgos
@@ -4613,10 +4613,10 @@ STR_VEHICLE_VIEW_CLONE_ROAD_VEHICLE_INFO                        :{BLACK}Aĉeti k
 STR_VEHICLE_VIEW_CLONE_SHIP_INFO                                :{BLACK}Aĉeti kopion de la ŝipo. Stir+Klaku por kunhavigi la itineron. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
 STR_VEHICLE_VIEW_CLONE_AIRCRAFT_INFO                            :{BLACK}Aĉeti kopion de la aviadilo. Stir+Klak por kunhavigi la itineron. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
 
-STR_VEHICLE_VIEW_TRAIN_IGNORE_SIGNAL_TOOLTIP                    :{BLACK}Igu vagonaron iri malgraŭ signalilo
-STR_VEHICLE_VIEW_TRAIN_REVERSE_TOOLTIP                          :{BLACK}Inversigu vagonaran direkton
-STR_VEHICLE_VIEW_ROAD_VEHICLE_REVERSE_TOOLTIP                   :{BLACK}Igu veturilon ĉirkaŭturni
-STR_VEHICLE_VIEW_ORDER_LOCATION_TOOLTIP                         :{BLACK}Centrigu ĉefvidon ĉe la celpunkto de la ordono. Stir+Klaku por malfermi novan vidujon ĉe la celpunkto de la ordono
+STR_VEHICLE_VIEW_TRAIN_IGNORE_SIGNAL_TOOLTIP                    :{BLACK}Igi vagonaron iri malgraŭ signalilo
+STR_VEHICLE_VIEW_TRAIN_REVERSE_TOOLTIP                          :{BLACK}Inversigi vagonaran direkton
+STR_VEHICLE_VIEW_ROAD_VEHICLE_REVERSE_TOOLTIP                   :{BLACK}Igi veturilon ĉirkaŭturni
+STR_VEHICLE_VIEW_ORDER_LOCATION_TOOLTIP                         :{BLACK}Centrigi ĉefvidon ĉe la celpunkto de la ordono. Stir+Klaku por malfermi novan vidujon ĉe la celpunkto de la ordono
 
 ###length VEHICLE_TYPES
 STR_VEHICLE_VIEW_TRAIN_REFIT_TOOLTIP                            :{BLACK}Transformi vagonaron por porti alian ŝarĝtipon
@@ -4713,12 +4713,12 @@ STR_VEHICLE_DETAILS_SERVICING_INTERVAL_MINUTES                  :{BLACK}Prizorga
 STR_VEHICLE_DETAILS_SERVICING_INTERVAL_PERCENT                  :{BLACK}Prizorga intertempo: {LTBLUE}{COMMA}%{BLACK} {STRING}
 STR_VEHICLE_DETAILS_LAST_SERVICE_DATE                           :Lasta prizorgo: {LTBLUE}{DATE_LONG}
 STR_VEHICLE_DETAILS_LAST_SERVICE_MINUTES_AGO                    :Lasta prizorgo: antaŭ {LTBLUE}{NUM} minuto{P "" j}
-STR_VEHICLE_DETAILS_INCREASE_SERVICING_INTERVAL_TOOLTIP_DAYS    :{BLACK}Pliigu prizorgan intertempon je 10 tagoj. Stir+Klaku por pliigi prizorgan intertempon je 5 tagoj
-STR_VEHICLE_DETAILS_INCREASE_SERVICING_INTERVAL_TOOLTIP_MINUTES :{BLACK}Pliigu prizorgan intertempon je 5 minutoj. Stir+Klaku por pliigi prizorgan intertempon je 1 minuto
-STR_VEHICLE_DETAILS_INCREASE_SERVICING_INTERVAL_TOOLTIP_PERCENT :{BLACK}Pliigu prizorgan intertempon je 10 procentoj. Stir+Klaku por pliigi prizorgan intertempon je 5 procentoj
-STR_VEHICLE_DETAILS_DECREASE_SERVICING_INTERVAL_TOOLTIP_DAYS    :{BLACK}Malpliigu prizorgan intertempon je 10 tagoj. Stir+Klaku por malpliigi prizorgan intertempon je 5 tagoj
-STR_VEHICLE_DETAILS_DECREASE_SERVICING_INTERVAL_TOOLTIP_MINUTES :{BLACK}Malpliigu prizorgan intertempon je 5 minutoj. Stir+Klaku por malpliigi prizorgan intertempon je 1 minuto
-STR_VEHICLE_DETAILS_DECREASE_SERVICING_INTERVAL_TOOLTIP_PERCENT :{BLACK}Malpliigu prizorgan intertempon je 10 procentoj. Stir+Klaku por malpliigi prizorgan intertempon je 5 procentoj
+STR_VEHICLE_DETAILS_INCREASE_SERVICING_INTERVAL_TOOLTIP_DAYS    :{BLACK}Pliigi prizorgan intertempon je 10 tagoj. Stir+Klaku por pliigi prizorgan intertempon je 5 tagoj
+STR_VEHICLE_DETAILS_INCREASE_SERVICING_INTERVAL_TOOLTIP_MINUTES :{BLACK}Pliigi prizorgan intertempon je 5 minutoj. Stir+Klaku por pliigi prizorgan intertempon je 1 minuto
+STR_VEHICLE_DETAILS_INCREASE_SERVICING_INTERVAL_TOOLTIP_PERCENT :{BLACK}Pliigi prizorgan intertempon je 10 procentoj. Stir+Klaku por pliigi prizorgan intertempon je 5 procentoj
+STR_VEHICLE_DETAILS_DECREASE_SERVICING_INTERVAL_TOOLTIP_DAYS    :{BLACK}Malpliigi prizorgan intertempon je 10 tagoj. Stir+Klaku por malpliigi prizorgan intertempon je 5 tagoj
+STR_VEHICLE_DETAILS_DECREASE_SERVICING_INTERVAL_TOOLTIP_MINUTES :{BLACK}Malpliigi prizorgan intertempon je 5 minutoj. Stir+Klaku por malpliigi prizorgan intertempon je 1 minuto
+STR_VEHICLE_DETAILS_DECREASE_SERVICING_INTERVAL_TOOLTIP_PERCENT :{BLACK}Malpliigi prizorgan intertempon je 10 procentoj. Stir+Klaku por malpliigi prizorgan intertempon je 5 procentoj
 
 STR_SERVICE_INTERVAL_DROPDOWN_TOOLTIP                           :{BLACK}Ŝanĝi la tipo de servon intervalon
 STR_VEHICLE_DETAILS_DEFAULT                                     :Defaŭlto
@@ -5006,7 +5006,7 @@ STR_TIMETABLE_RESET_LATENESS                                    :{BLACK}Reigi ma
 STR_TIMETABLE_RESET_LATENESS_TOOLTIP                            :{BLACK}Reigi malfruan kalkulumon, por ke la veturilo estos akurata. Stir+Klaku por reagordi la ĉiun grupon, por ke la plej lasta veturilo estos akurata, kaj ĉiuj aliaj estos fruaj
 
 STR_TIMETABLE_AUTOFILL                                          :{BLACK}Aŭtomata plenigo
-STR_TIMETABLE_AUTOFILL_TOOLTIP                                  :{BLACK}Aŭtomate plenigu la horaron per la valoroj de la sekva iro. Stir+Klaku por klopodi konservi atendodaŭrojn
+STR_TIMETABLE_AUTOFILL_TOOLTIP                                  :{BLACK}Aŭtomate plenigi la horaron per la valoroj de la sekva iro. Stir+Klaku por klopodi konservi atendodaŭrojn
 
 STR_TIMETABLE_EXPECTED                                          :{BLACK}Tempoj laŭ atendo
 STR_TIMETABLE_SCHEDULED                                         :{BLACK}Tempoj laŭ horaro
