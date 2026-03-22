@@ -366,7 +366,7 @@ STR_LIST_FILTER_TOOLTIP                                         :{BLACK}Enigu ŝ
 STR_TOOLTIP_GROUP_ORDER                                         :{BLACK}Elekti grupordigon
 STR_TOOLTIP_SORT_ORDER                                          :{BLACK}Elekti direkton de ordigo
 STR_TOOLTIP_SORT_CRITERIA                                       :{BLACK}Elekti ordigajn kondiĉojn
-STR_TOOLTIP_FILTER_CRITERIA                                     :{BLACK}Selektu kriteriojn por filtrado
+STR_TOOLTIP_FILTER_CRITERIA                                     :{BLACK}Elektu kriteriojn por filtrado
 STR_BUTTON_SORT_BY                                              :{BLACK}Ordigi laŭ
 STR_BUTTON_CATCHMENT                                            :{BLACK}Servata areo
 STR_TOOLTIP_CATCHMENT                                           :{BLACK}Ŝalti montradon de servata areo
@@ -921,7 +921,7 @@ STR_SMALLMAP_SHOW_HEIGHT                                        :{BLACK}Montri a
 STR_SMALLMAP_SHOW_INDUSTRY_NAMES                                :{BLACK}Montri nomojn de entreprenoj
 STR_SMALLMAP_TOOLTIP_DISABLE_ALL_INDUSTRIES                     :{BLACK}Ne montri industriojn sur la mapo.
 STR_SMALLMAP_TOOLTIP_ENABLE_ALL_INDUSTRIES                      :{BLACK}Montri ĉiujn industriojn sur la mapo.
-STR_SMALLMAP_TOOLTIP_SHOW_HEIGHT                                :{BLACK}Ŝaltu montro de altecmapo
+STR_SMALLMAP_TOOLTIP_SHOW_HEIGHT                                :{BLACK}Ŝalti montradon de altecmapo
 STR_SMALLMAP_TOOLTIP_SHOW_INDUSTRY_NAMES                        :{BLACK}Baskuligi montradon de nomoj de entreprenoj
 STR_SMALLMAP_TOOLTIP_DISABLE_ALL_COMPANIES                      :{BLACK}Montri neniajn kompaniajn posedaĵojn en la mapo
 STR_SMALLMAP_TOOLTIP_ENABLE_ALL_COMPANIES                       :{BLACK}Montri ĉiujn kompaniajn posedaĵojn sur la mapo
@@ -3071,7 +3071,7 @@ STR_ROAD_TOOLBAR_TOOLTIP_BUILD_TRAMWAY_BRIDGE                   :{BLACK}Konstrui
 STR_ROAD_TOOLBAR_TOOLTIP_BUILD_ROAD_TUNNEL                      :{BLACK}Konstrui vojtunelon. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
 STR_ROAD_TOOLBAR_TOOLTIP_BUILD_TRAMWAY_TUNNEL                   :{BLACK}Konstrui tramtunelon. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
 STR_ROAD_TOOLBAR_TOOLTIP_TOGGLE_BUILD_REMOVE_FOR_ROAD           :{BLACK}Baskuligi konstruadon/forigadon por stratkonstruadon
-STR_ROAD_TOOLBAR_TOOLTIP_TOGGLE_BUILD_REMOVE_FOR_TRAMWAYS       :{BLACK}Ŝaltu konstruadon/forigadon por konstruado de tramvojoj
+STR_ROAD_TOOLBAR_TOOLTIP_TOGGLE_BUILD_REMOVE_FOR_TRAMWAYS       :{BLACK}Baskuligi inter konstruadon/forigadon por konstruado de tramvojoj
 STR_ROAD_TOOLBAR_TOOLTIP_CONVERT_ROAD                           :{BLACK}Konverti/plibonigi la tipon de vojo. Ankaŭ premu majuskligan klavon por nur montri kostotakson
 STR_ROAD_TOOLBAR_TOOLTIP_CONVERT_TRAM                           :{BLACK}Konverti/plibonigu la tipon de tramo. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
 
@@ -3159,16 +3159,16 @@ STR_OBJECT_CLASS_TRNS                                           :Transigantoj
 STR_PLANT_TREE_CAPTION                                          :{WHITE}Arboj
 STR_PLANT_TREE_TOOLTIP                                          :{BLACK}Elektu arbo-tipon por planti. Kiam la regiono jam havas arbojn, aliaj arb-tipoj plantiĝos
 STR_TREES_RANDOM_TYPE                                           :{BLACK}Arboj de hazardaj tipoj
-STR_TREES_RANDOM_TYPE_TOOLTIP                                   :{BLACK}Metu arbojn de hazardaj tipoj. Stir+Klaku+Trenu por elekti areon diagonale. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
+STR_TREES_RANDOM_TYPE_TOOLTIP                                   :{BLACK}Meti arbojn de hazardaj tipoj. Stir+Klaku+Trenu por elekti areon diagonale. Ankaŭ premu la majuskligan klavon por nur montri kostotakson
 STR_TREES_RANDOM_TREES_BUTTON                                   :{BLACK}Hazardaj Arboj
 STR_TREES_RANDOM_TREES_TOOLTIP                                  :{BLACK}Hazarde planti arbojn en la tuta lando
 STR_TREES_MODE_NORMAL_BUTTON                                    :{BLACK}Normala
-STR_TREES_MODE_NORMAL_TOOLTIP                                   :{BLACK}Plantu unuopajn arbojn per trenado super la pejzaĝo
+STR_TREES_MODE_NORMAL_TOOLTIP                                   :{BLACK}Planti unuopajn arbojn per trenado super la pejzaĝo
 STR_TREES_MODE_FOREST_SM_BUTTON                                 :Arbareto
-STR_TREES_MODE_FOREST_SM_TOOLTIP                                :{BLACK}Plantu malgrandajn arbarojn per trenado super la pejzaĝo
+STR_TREES_MODE_FOREST_SM_TOOLTIP                                :{BLACK}Planti malgrandajn arbarojn per trenado super la pejzaĝo
 STR_TREES_MODE_FOREST_LG_BUTTON                                 :{BLACK}Arbaro
 STR_TREES_MODE_FOREST_LG_BUTTON.n                               :{BLACK}Arbaron
-STR_TREES_MODE_FOREST_LG_TOOLTIP                                :{BLACK}Plantu grandajn arbarojn per trenado super la pejzaĝo
+STR_TREES_MODE_FOREST_LG_TOOLTIP                                :{BLACK}Planti grandajn arbarojn per trenado super la pejzaĝo
 
 # Land generation window (SE)
 STR_TERRAFORM_TOOLBAR_LAND_GENERATION_CAPTION                   :{WHITE}Generado de tero
@@ -3853,13 +3853,13 @@ STR_TOWN_VIEW_RENAME_TOOLTIP                                    :{BLACK}Ŝanĝu 
 STR_TOWN_VIEW_CARGO_GRAPH                                       :Ŝarĝodiagramo
 STR_TOWN_VIEW_CARGO_GRAPH_TOOLTIP                               :Montri diagramon de ŝarĝohistorio de urbo
 
-STR_TOWN_VIEW_EXPAND_BUTTON                                     :{BLACK}Vastigu
+STR_TOWN_VIEW_EXPAND_BUTTON                                     :{BLACK}Vastigi
 STR_TOWN_VIEW_EXPAND_TOOLTIP                                    :{BLACK}Grandigi la urbon
 STR_TOWN_VIEW_EXPAND_BUILDINGS_BUTTON                           :{BLACK}Vastigi konstruaĵojn
 STR_TOWN_VIEW_EXPAND_BUILDINGS_TOOLTIP                          :{BLACK}Pliigi la konstruaĵojn de urbo
 STR_TOWN_VIEW_EXPAND_ROADS_BUTTON                               :{BLACK}Vastigi stratojn
 STR_TOWN_VIEW_EXPAND_ROADS_TOOLTIP                              :{BLACK}Pliigi la stratojn de urbo
-STR_TOWN_VIEW_DELETE_BUTTON                                     :{BLACK}Forigu
+STR_TOWN_VIEW_DELETE_BUTTON                                     :{BLACK}Forigi
 STR_TOWN_VIEW_DELETE_TOOLTIP                                    :{BLACK}Plene forigi ĉi tiun urbon
 
 STR_TOWN_VIEW_RENAME_TOWN_BUTTON                                :Alinomi urbon
@@ -3958,7 +3958,7 @@ STR_STORY_BOOK_SPECTATOR_CAPTION                                :{WHITE}Monda ra
 STR_STORY_BOOK_SPECTATOR                                        :Monda rakontolibro
 STR_STORY_BOOK_TITLE                                            :{YELLOW}{STRING}
 STR_STORY_BOOK_GENERIC_PAGE_ITEM                                :Paĝo {NUM}
-STR_STORY_BOOK_SEL_PAGE_TOOLTIP                                 :{BLACK}Saltu al specifa paĝo elektante ĝin en tiu ĉi falmenuo
+STR_STORY_BOOK_SEL_PAGE_TOOLTIP                                 :{BLACK}Saltu al specifa paĝo, elektante ĝin en tiu ĉi falmenuo
 STR_STORY_BOOK_PREV_PAGE                                        :{BLACK}Antaŭa
 STR_STORY_BOOK_PREV_PAGE_TOOLTIP                                :{BLACK}Iru al la antaŭa paĝo
 STR_STORY_BOOK_NEXT_PAGE                                        :{BLACK}Sekva
@@ -4227,9 +4227,9 @@ STR_VEHICLE_LIST_AVAILABLE_SHIPS                                :Haveblaj ŝipoj
 STR_VEHICLE_LIST_AVAILABLE_AIRCRAFT                             :Haveblaj aviadiloj
 
 STR_VEHICLE_LIST_MANAGE_LIST                                    :{BLACK}Manaĝi liston
-STR_VEHICLE_LIST_MANAGE_LIST_TOOLTIP                            :{BLACK}Sendu instrukciojn al ĉiuj veturiloj en la listo
-STR_VEHICLE_LIST_REPLACE_VEHICLES                               :Anstataŭu veturilojn
-STR_VEHICLE_LIST_SEND_FOR_SERVICING                             :Sendu por prizorgo
+STR_VEHICLE_LIST_MANAGE_LIST_TOOLTIP                            :{BLACK}Sendi instrukciojn al ĉiuj veturiloj en la listo
+STR_VEHICLE_LIST_REPLACE_VEHICLES                               :Anstataŭigi veturilojn
+STR_VEHICLE_LIST_SEND_FOR_SERVICING                             :Sendi por prizorgo
 STR_VEHICLE_LIST_CREATE_GROUP                                   :Krei grupon
 STR_VEHICLE_LIST_PROFIT_THIS_YEAR_LAST_YEAR                     :{TINY_FONT}{BLACK}Gajno ĉi-jare: {CURRENCY_LONG} (pasintjare: {CURRENCY_LONG})
 STR_VEHICLE_LIST_PROFIT_THIS_PERIOD_LAST_PERIOD                 :{TINY_FONT}{BLACK}Gajno ĉi-periode: {CURRENCY_LONG} (pasintperiode: {CURRENCY_LONG})
@@ -4862,7 +4862,7 @@ STR_ORDER_CONDITIONAL_COMPARATOR_IS_FALSE                       :estas falsa
 STR_ORDER_CONDITIONAL_VALUE_TOOLTIP                             :{BLACK}La valoro al kiu kompari la datumojn de la veturilo
 STR_ORDER_CONDITIONAL_VALUE_CAPT                                :{WHITE}Enigi valoron por kompari
 
-STR_ORDERS_SKIP_BUTTON                                          :{BLACK}Plusaltu
+STR_ORDERS_SKIP_BUTTON                                          :{BLACK}Plusalti
 STR_ORDERS_SKIP_TOOLTIP                                         :{BLACK}Transsalti la nunan ordonon, kaj fari la sekvan. Stir+Klaku por transsalti al la elektita ordono
 
 STR_ORDERS_DELETE_BUTTON                                        :{BLACK}Forviŝu
