@@ -739,8 +739,9 @@ STR_GRAPH_INDUSTRY_RANGE_DELIVERED                              :Liverita
 STR_GRAPH_INDUSTRY_RANGE_WAITING                                :Atendita
 
 STR_GRAPH_TOWN_CARGO_CAPTION                                    :{WHITE}{TOWN} - Historio de ŝarĝo
-STR_GRAPH_TOWN_RANGE_PRODUCED                                   :Provizado
+STR_GRAPH_TOWN_RANGE_PRODUCED                                   :Provizita
 STR_GRAPH_TOWN_RANGE_TRANSPORTED                                :Transportita
+STR_GRAPH_TOWN_RANGE_DELIVERED                                  :Liverita
 
 STR_GRAPH_PERFORMANCE_DETAIL_TOOLTIP                            :{BLACK}Montri detalaj rendimentpritaksoj
 
@@ -2616,9 +2617,9 @@ STR_NETWORK_CLIENT_LIST_ADMIN_CLIENT_TOOLTIP                    :{BLACK}Administ
 STR_NETWORK_CLIENT_LIST_ADMIN_COMPANY_TOOLTIP                   :{BLACK}Administraj agoj fareblaj por tiu ĉi kompanio
 STR_NETWORK_CLIENT_LIST_JOIN_TOOLTIP                            :{BLACK}Aliĝi al tiu ĉi kompanio
 STR_NETWORK_CLIENT_LIST_COMPANY_AUTHORIZE_TOOLTIP               :{BLACK}Permesi ĉi tiun klienton aliĝi al via kompanio
-STR_NETWORK_CLIENT_LIST_CHAT_CLIENT_TOOLTIP                     :{BLACK}Sendu mesaĝon al tiu ĉi ludanto
-STR_NETWORK_CLIENT_LIST_CHAT_COMPANY_TOOLTIP                    :{BLACK}Sendu mesaĝon al ĉiuj ludantoj de tiu ĉi kompanio
-STR_NETWORK_CLIENT_LIST_CHAT_SPECTATOR_TOOLTIP                  :{BLACK}Sendu mesaĝon al ĉiuj spektantoj
+STR_NETWORK_CLIENT_LIST_CHAT_CLIENT_TOOLTIP                     :{BLACK}Sendi mesaĝon al tiu ĉi ludanto
+STR_NETWORK_CLIENT_LIST_CHAT_COMPANY_TOOLTIP                    :{BLACK}Sendi mesaĝon al ĉiuj ludantoj de tiu ĉi kompanio
+STR_NETWORK_CLIENT_LIST_CHAT_SPECTATOR_TOOLTIP                  :{BLACK}Sendi mesaĝon al ĉiuj spektantoj
 STR_NETWORK_CLIENT_LIST_SPECTATORS                              :Spektantoj
 STR_NETWORK_CLIENT_LIST_NEW_COMPANY                             :(Nova kompanio)
 STR_NETWORK_CLIENT_LIST_NEW_COMPANY_TOOLTIP                     :{BLACK}Krei novan kompanion kaj aliĝi al ĝi
@@ -3683,7 +3684,7 @@ STR_SAVE_PRESET_SAVE_TOOLTIP                                    :{BLACK}Konservi
 
 # NewGRF parameters window
 STR_BASEGRF_PARAMETERS_CAPTION                                  :{WHITE}Ŝanĝi parametrojn de baza grafikaro
-STR_NEWGRF_PARAMETERS_CAPTION                                   :{WHITE}Ŝanĝu parametroj de la NewGRF
+STR_NEWGRF_PARAMETERS_CAPTION                                   :{WHITE}Ŝanĝi parametrojn de la NewGRF
 STR_NEWGRF_PARAMETERS_RESET                                     :{BLACK}Reigu
 STR_NEWGRF_PARAMETERS_RESET_TOOLTIP                             :{BLACK}Kondiĉu ĉiujn parametrojn al ilia norma valoro
 STR_NEWGRF_PARAMETERS_DEFAULT_NAME                              :Parametro {NUM}
@@ -3814,7 +3815,7 @@ STR_SIGN_LIST_MATCH_CASE                                        :{BLACK}Distingi
 STR_SIGN_LIST_MATCH_CASE_TOOLTIP                                :{BLACK}Aktivu/Malaktivu parigan kazon dum komparanta signajn nomojn kontraŭ la filtra teksto
 
 # Sign window
-STR_EDIT_SIGN_CAPTION                                           :{WHITE}Ŝanĝu ŝildon
+STR_EDIT_SIGN_CAPTION                                           :{WHITE}Ŝanĝi ŝildon
 STR_EDIT_SIGN_LOCATION_TOOLTIP                                  :{BLACK}Centrigi ĉefvidon je la loko de la ŝildo. Stir+Klaku por malfermi novan vidujon ĉe la loko de la ŝildo
 STR_EDIT_SIGN_NEXT_SIGN_TOOLTIP                                 :{BLACK}Iri al la sekva ŝildo
 STR_EDIT_SIGN_PREVIOUS_SIGN_TOOLTIP                             :{BLACK}Iri al la antaŭa ŝildo
@@ -3849,7 +3850,7 @@ STR_TOWN_VIEW_NOISE_IN_TOWN                                     :{BLACK}Urba bru
 STR_TOWN_VIEW_CENTER_TOOLTIP                                    :{BLACK}Centri ĉefvidon ĉe la urbo. Stir+Klak por malfermi novan vidujon ĉe la urba loko
 STR_TOWN_VIEW_LOCAL_AUTHORITY_BUTTON                            :{BLACK}Lokaj estroj
 STR_TOWN_VIEW_LOCAL_AUTHORITY_TOOLTIP                           :{BLACK}Montri informojn pri lokaj estroj
-STR_TOWN_VIEW_RENAME_TOOLTIP                                    :{BLACK}Ŝanĝu urbonomon
+STR_TOWN_VIEW_RENAME_TOOLTIP                                    :{BLACK}Ŝanĝi urbonomon
 STR_TOWN_VIEW_CARGO_GRAPH                                       :Ŝarĝodiagramo
 STR_TOWN_VIEW_CARGO_GRAPH_TOOLTIP                               :Montri diagramon de ŝarĝohistorio de urbo
 
@@ -4146,7 +4147,7 @@ STR_COMPANY_VIEW_PRESIDENT_NAME_BUTTON                          :{BLACK}Manaĝan
 STR_COMPANY_VIEW_PRESIDENT_NAME_TOOLTIP                         :{BLACK}Ŝanĝi la nomon de la manaĝanto
 
 STR_COMPANY_VIEW_COMPANY_NAME_QUERY_CAPTION                     :Kompania nomo
-STR_COMPANY_VIEW_PRESIDENT_S_NAME_QUERY_CAPTION                 :Nomo de la Manaĝanto
+STR_COMPANY_VIEW_PRESIDENT_S_NAME_QUERY_CAPTION                 :Nomo de la manaĝanto
 STR_COMPANY_VIEW_GIVE_MONEY_QUERY_CAPTION                       :Entajpu la monkvanton kiun vi volas doni
 
 STR_BUY_COMPANY_MESSAGE                                         :{WHITE}Ni serĉas transportkompanion por transpreni nian kompanion.{}{}Ĉu vi volas aĉeti {COMPANY} por {CURRENCY_LONG}?
@@ -4266,7 +4267,7 @@ STR_GROUPS_CLICK_ON_GROUP_FOR_TOOLTIP                           :{BLACK}Grupoj -
 STR_GROUP_CREATE_TOOLTIP                                        :{BLACK}Klaku por krei grupon
 STR_GROUP_DELETE_TOOLTIP                                        :{BLACK}Viŝu la selektitan grupon
 STR_GROUP_RENAME_TOOLTIP                                        :{BLACK}Alinomi la elektitan grupon
-STR_GROUP_LIVERY_TOOLTIP                                        :{BLACK}Ŝanĝu la koloraron de elektita grupo
+STR_GROUP_LIVERY_TOOLTIP                                        :{BLACK}Ŝanĝi la koloraron de elektita grupo
 STR_GROUP_REPLACE_PROTECTION_TOOLTIP                            :{BLACK}Klaku por protekti ĉi tiun grupon kontraŭ globa aŭtoanstataŭigo. Stir+Klako ankaŭ protektas subgrupojn
 
 STR_QUERY_GROUP_DELETE_CAPTION                                  :{WHITE}Forviŝu grupon
@@ -4694,6 +4695,7 @@ STR_VEHICLE_INFO_PROFIT_THIS_YEAR_LAST_YEAR                     :{BLACK}Gajno ĉ
 STR_VEHICLE_INFO_PROFIT_THIS_YEAR_LAST_YEAR_MIN_PERFORMANCE     :{BLACK}Gajno ĉi-jare: {LTBLUE}{CURRENCY_LONG} (lastjare: {CURRENCY_LONG}) {BLACK}Min. rendimento: {LTBLUE}{POWER_TO_WEIGHT}
 STR_VEHICLE_INFO_PROFIT_THIS_PERIOD_LAST_PERIOD                 :{BLACK}Gajno ĉi-periode: {LTBLUE}{CURRENCY_LONG} (lastperiode: {CURRENCY_LONG})
 STR_VEHICLE_INFO_PROFIT_THIS_PERIOD_LAST_PERIOD_MIN_PERFORMANCE :{BLACK}Gajno ĉi-periode: {LTBLUE}{CURRENCY_LONG} (lastperiode: {CURRENCY_LONG}) {BLACK}Min. rendimento: {LTBLUE}{POWER_TO_WEIGHT}
+STR_VEHICLE_INFO_RELIABILITY_BREAKDOWNS                         :{BLACK}Fidindo: {LTBLUE}{COMMA}% (maks.: {COMMA}%) {BLACK}Paneoj ekde lasta servo: {LTBLUE}{COMMA}
 
 STR_VEHICLE_INFO_BUILT_VALUE                                    :{LTBLUE}{ENGINE} {BLACK}Konstruita: {LTBLUE}{NUM}{BLACK} Valoro: {LTBLUE}{CURRENCY_LONG}
 STR_VEHICLE_INFO_NO_CAPACITY                                    :{BLACK}Enhaveco: {LTBLUE}Neniu{STRING}
@@ -4984,7 +4986,7 @@ STR_TIMETABLE_START_TOOLTIP                                     :{BLACK}Elektu, 
 STR_TIMETABLE_START_SECONDS_QUERY                               :Sekundoj ĝis kiam komenciĝos la horaro
 
 STR_TIMETABLE_CHANGE_TIME                                       :{BLACK}Ŝanĝi tempon
-STR_TIMETABLE_WAIT_TIME_TOOLTIP                                 :{BLACK}Ŝanĝu, kiom da tempo devus postuli la markita ordono. Stir+Klaku por ŝanĝi la tempon por ĉiuj ordonoj
+STR_TIMETABLE_WAIT_TIME_TOOLTIP                                 :{BLACK}Ŝanĝi, kiom da tempo devus postuli la markita ordono. Stir+Klaku por ŝanĝi la tempon por ĉiuj ordonoj
 STR_TIMETABLE_CHANGE_TIME_QUERY                                 :Ŝanĝi tempon
 
 STR_TIMETABLE_CLEAR_TIME                                        :{BLACK}Vakigi tempon
