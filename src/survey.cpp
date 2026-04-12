@@ -303,16 +303,10 @@ void SurveyConfiguration(nlohmann::json &survey)
  */
 void SurveyFont(nlohmann::json &survey)
 {
-	for (FontSize fs = FS_BEGIN; fs < FS_END; fs++) {
-		const FontCacheSubSetting *setting = GetFontCacheSubSetting(fs);
-		auto &font = survey[std::string(FontSizeToName(fs))];
-		font["configured"]["font"] = setting->font;
-		font["configured"]["size"] = setting->size;
-	}
-	for (const auto &fc : FontCache::Get()) {
-		auto &font = survey[std::string(FontSizeToName(fc->GetSize()))];
-		font["active"].push_back(fc->GetFontName());
-	}
+	survey["small"] = FontCache::Get(FontSize::Small)->GetFontName();
+	survey["medium"] = FontCache::Get(FontSize::Normal)->GetFontName();
+	survey["large"] = FontCache::Get(FontSize::Large)->GetFontName();
+	survey["mono"] = FontCache::Get(FontSize::Monospace)->GetFontName();
 }
 
 /**
