@@ -855,6 +855,8 @@ static void OnStartGame(bool dedicated_server)
 
 	NetworkOnGameStart();
 
+	OpenShunter::OnStart();
+
 	/* Execute the game-start script */
 	IConsoleCmdExec("exec scripts/game_start.scr 0");
 }
@@ -1283,6 +1285,7 @@ void StateGameLoop()
 
 		CallWindowGameTickEvent();
 		NewsLoop();
+		OpenShunter::OnTick();
 	}
 
 	assert(IsLocalCompany());
