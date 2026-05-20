@@ -88,6 +88,8 @@
 
 #include "table/strings.h"
 
+#include "../openshunter/bootstrap.h"
+
 #ifdef __EMSCRIPTEN__
 #	include <emscripten.h>
 #	include <emscripten/html5.h>
@@ -296,6 +298,8 @@ static void ShutdownGame()
 	IConsoleFree();
 
 	if (_network_available) NetworkShutDown(); // Shut down the network and close any open connections
+
+	OpenShunter::Shutdown(); // Shutdown our ModLoader
 
 	SocialIntegration::Shutdown();
 	DriverFactoryBase::ShutdownDrivers();
@@ -801,6 +805,8 @@ int openttd_main(std::span<std::string_view> arguments)
 
 	if (musicdriver.empty() && !_ini_musicdriver.empty()) musicdriver = _ini_musicdriver;
 	DriverFactoryBase::SelectDriver(musicdriver, Driver::DT_MUSIC);
+
+	OpenShunter::Bootstrap(); // Initialise our ModLoader
 
 	GenerateWorld(GWM_EMPTY, 64, 64); // Make the viewport initialization happy
 	LoadIntroGame(false);
