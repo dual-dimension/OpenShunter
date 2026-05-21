@@ -22,3 +22,6 @@ using OnWeekPassedFn    = void(*)(int month, int year);
 using OnMonthPassedFn   = void(*)(int month, int year);
 using OnQuarterPassedFn = void(*)(int quarter, int year);
 using OnYearPassedFn    = void(*)(int year);
+
+/* Decisions - filter hooks that receive and return the engine's default result */
+using AskCanTrainEnterTileFn = bool(*)(uint32_t tile, uint8_t tile_owner, uint8_t train_owner, bool default_result);
