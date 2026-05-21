@@ -7,14 +7,14 @@ void SendChat(const char* message)
 {
     if (_networking && _network_server)
     {
-        NetworkServerSendChat(NetworkAction::ChatBroadcast, NetworkChatDestinationType::Broadcast, 0, message, CLIENT_ID_SERVER);
+        NetworkServerSendChat(NETWORK_ACTION_CHAT, DESTTYPE_BROADCAST, 0, message, CLIENT_ID_SERVER);
     }
     else if (_networking)
     {
-        NetworkClientSendChat(NetworkAction::ChatBroadcast, NetworkChatDestinationType::Broadcast, 0, message);
+        NetworkClientSendChat(NETWORK_ACTION_CHAT, DESTTYPE_BROADCAST, 0, message);
     }
     else
     {
-        NetworkTextMessage(NetworkAction::ChatBroadcast, CC_DEFAULT, false, "Mod", message);
+        NetworkTextMessage(NETWORK_ACTION_CHAT, TC_WHITE, false, "Mod", message);
     }
 }
