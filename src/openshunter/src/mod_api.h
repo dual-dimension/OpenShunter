@@ -11,8 +11,11 @@ struct ModInfo
 
 struct Callbacks
 {
-    OnStartFn on_start;
-    OnTickFn on_tick;
+    OnMenuStartFn on_menu_start;
+    OnMenuTickFn  on_menu_tick;
+
+    OnGameStartFn on_game_start;
+    OnGameTickFn  on_game_tick;
 };
 
 struct ModApi

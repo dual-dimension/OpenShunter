@@ -5,6 +5,9 @@ void Register(ModInfo* info, const Callbacks callbacks);
 
 namespace OpenShunter
 {
-    void OnStart();
-    void OnTick();
+    void OnMenuStart();
+    void OnMenuTick();
+
+    void OnGameStart();
+    void OnGameTick();
 }
