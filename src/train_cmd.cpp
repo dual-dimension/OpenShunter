@@ -3064,8 +3064,10 @@ static void TrainEnterStation(Train *v, StationID station)
 /* Check if the vehicle is compatible with the specified tile */
 static inline bool CheckCompatibleRail(const Train *v, TileIndex tile)
 {
-	return OpenShunter::AskCanTrainEnterTile(static_cast<uint32_t>(tile), GetTileOwner(tile).base(), v->owner.base(), IsTileOwner(tile, v->owner)) &&
+    bool result = IsTileOwner(tile, v->owner) &&
 			(!check_railtype || !v->IsFrontEngine() || v->compatible_railtypes.Test(GetRailType(tile)));
+
+	return OpenShunter::AskCanTrainEnterTile(static_cast<uint32_t>(tile), GetTileOwner(tile).base(), v->owner.base(), result);
 }
 
 /** Data structure for storing engine speed changes of an acceleration type. */
