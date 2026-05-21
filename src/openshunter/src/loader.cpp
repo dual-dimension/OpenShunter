@@ -1,7 +1,7 @@
 #include "shunter.h"
 #include "hooks.h"
-#include "settings_api.h"
-#include "mod_settings.h"
+#include "api/settings_api.h"
+#include "mod_settings/mod_settings.h"
 #include "../../debug.h"
 
 #if defined(_WIN32) || defined(_WIN64)

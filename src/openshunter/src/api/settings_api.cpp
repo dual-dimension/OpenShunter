@@ -1,7 +1,7 @@
 #include "settings_api.h"
-#include "mod_settings.h"
-#include "../../settings_internal.h"
-#include "../../settings_type.h"
+#include "../mod_settings/mod_settings.h"
+#include "../../../settings_internal.h"
+#include "../../../settings_type.h"
 #include <climits>
 
 int64_t GetSettingInt(const char* name)

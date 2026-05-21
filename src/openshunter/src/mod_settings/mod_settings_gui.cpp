@@ -1,19 +1,19 @@
-#include "../../stdafx.h"
+#include "../../../stdafx.h"
 #include "mod_settings_gui.h"
 #include "mod_settings.h"
-#include "../../settings_gui.h"
-#include "../../strings_func.h"
-#include "../../gfx_func.h"
-#include "../../window_gui.h"
-#include "../../window_func.h"
-#include "../../dropdown_func.h"
-#include "../../dropdown_type.h"
-#include "../../timer/timer.h"
-#include "../../timer/timer_window.h"
+#include "../../../settings_gui.h"
+#include "../../../strings_func.h"
+#include "../../../gfx_func.h"
+#include "../../../window_gui.h"
+#include "../../../window_func.h"
+#include "../../../dropdown_func.h"
+#include "../../../dropdown_type.h"
+#include "../../../timer/timer.h"
+#include "../../../timer/timer_window.h"
 
-#include "../../table/strings.h"
+#include "../../../table/strings.h"
 
-#include "../../safeguards.h"
+#include "../../../safeguards.h"
 
 enum ModSettingsWidgets : WidgetID {
 	WID_MS_CAPTION,
