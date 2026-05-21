@@ -348,6 +348,8 @@ add_files(
     object_type.h
     openttd.cpp
     openttd.h
+    openshunter/src/openshunter.cpp
+    openshunter/src/mod_logic.cpp
     order_backup.cpp
     order_backup.h
     order_base.h
