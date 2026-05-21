@@ -1,6 +1,7 @@
-#include "../../../stdafx.h"
 #include "mod_settings_gui.h"
 #include "mod_settings.h"
+
+#include "../../../stdafx.h"
 #include "../../../settings_gui.h"
 #include "../../../strings_func.h"
 #include "../../../gfx_func.h"
