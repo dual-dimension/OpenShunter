@@ -9,6 +9,15 @@ static std::vector<OnMenuTickFn>  on_menu_tick_hooks;
 static std::vector<OnGameStartFn> on_game_start_hooks;
 static std::vector<OnGameTickFn>  on_game_tick_hooks;
 
+static std::vector<OnPlayerJoinedFn> on_player_joined_hooks;
+static std::vector<OnMoneyChangedFn> on_money_changed_hooks;
+
+static std::vector<OnDayPassedFn>     on_day_passed_hooks;
+static std::vector<OnWeekPassedFn>    on_week_passed_hooks;
+static std::vector<OnMonthPassedFn>   on_month_passed_hooks;
+static std::vector<OnQuarterPassedFn> on_quarter_passed_hooks;
+static std::vector<OnYearPassedFn>    on_year_passed_hooks;
+
 void Register(ModInfo* info, const Callbacks callbacks)
 {
 	Debug(script, 2, "Registering mod name '{}' \nVersion: '{}'\nAuthor: '{}'", std::string(info->name), std::string(info->version), std::string(info->author));
@@ -18,6 +27,15 @@ void Register(ModInfo* info, const Callbacks callbacks)
 
     if (callbacks.on_game_start) on_game_start_hooks.push_back(callbacks.on_game_start);
     if (callbacks.on_game_tick) on_game_tick_hooks.push_back(callbacks.on_game_tick);
+
+    if (callbacks.on_player_joined) on_player_joined_hooks.push_back(callbacks.on_player_joined);
+    if (callbacks.on_money_changed) on_money_changed_hooks.push_back(callbacks.on_money_changed);
+
+    if (callbacks.on_day_passed)     on_day_passed_hooks.push_back(callbacks.on_day_passed);
+    if (callbacks.on_week_passed)    on_week_passed_hooks.push_back(callbacks.on_week_passed);
+    if (callbacks.on_month_passed)   on_month_passed_hooks.push_back(callbacks.on_month_passed);
+    if (callbacks.on_quarter_passed) on_quarter_passed_hooks.push_back(callbacks.on_quarter_passed);
+    if (callbacks.on_year_passed)    on_year_passed_hooks.push_back(callbacks.on_year_passed);
 }
 
 /* Menu */
@@ -40,4 +58,44 @@ void OpenShunter::OnGameStart()
 void OpenShunter::OnGameTick()
 {
     for (auto& hook : on_game_tick_hooks) hook();
+}
+
+/* Network */
+void OpenShunter::OnPlayerJoined(uint32_t client_id, const char* client_name)
+{
+    for (auto& hook : on_player_joined_hooks) hook(client_id, client_name);
+}
+
+/* Economy */
+
+void OpenShunter::OnMoneyChanged(uint8_t company_id, int64_t old_money, int64_t new_money)
+{
+    for (auto& hook : on_money_changed_hooks) hook(company_id, old_money, new_money);
+}
+
+/* Time */
+
+void OpenShunter::OnDayPassed(int day, int month, int year)
+{
+    for (auto& hook : on_day_passed_hooks) hook(day, month, year);
+}
+
+void OpenShunter::OnWeekPassed(int month, int year)
+{
+    for (auto& hook : on_week_passed_hooks) hook(month, year);
+}
+
+void OpenShunter::OnMonthPassed(int month, int year)
+{
+    for (auto& hook : on_month_passed_hooks) hook(month, year);
+}
+
+void OpenShunter::OnQuarterPassed(int quarter, int year)
+{
+    for (auto& hook : on_quarter_passed_hooks) hook(quarter, year);
+}
+
+void OpenShunter::OnYearPassed(int year)
+{
+    for (auto& hook : on_year_passed_hooks) hook(year);
 }

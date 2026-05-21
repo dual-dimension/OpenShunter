@@ -8,7 +8,7 @@
 /** @file company_cmd.cpp Handling of companies. */
 
 #include "stdafx.h"
-#include "openshunter/src/shunter.h"
+#include "openshunter/src/openshunter.h"
 #include "company_base.h"
 #include "company_func.h"
 #include "company_gui.h"
@@ -317,7 +317,7 @@ static void SubtractMoneyFromCompany(Company *c, const CommandCost &cost)
 		c->cur_economy.expenses -= cost.GetCost();
 	}
 
-	Shunter::OnMoneyChanged(c->index.base(), (int64_t)old_money, (int64_t)c->money);
+	OpenShunter::OnMoneyChanged(c->index.base(), (int64_t)old_money, (int64_t)c->money);
 
 	InvalidateCompanyWindows(c);
 }

@@ -1,5 +1,9 @@
 #pragma once
 
+#include "mod_logic.h"
+#include <filesystem>
+#include <vector>
+
 #if defined(_WIN32) || defined(_WIN64)
 	#include <windows.h>
     #define MOD_EXTENSION ".dll"
@@ -21,8 +25,6 @@
 #endif
 
 static const char* MOD_LIST_PATH = "mods/";
-
-#include "mod_logic.h"
 
 namespace OpenShunter
 {
