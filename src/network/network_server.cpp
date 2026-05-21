@@ -8,7 +8,7 @@
 /** @file network_server.cpp Server part of the network protocol. */
 
 #include "../stdafx.h"
-#include "../openshunter/src/openshunter.h"
+#include "../openshunter/src/shunter.h"
 #include "../strings_func.h"
 #include "core/network_game_info.h"
 #include "network_admin.h"
@@ -1014,7 +1014,7 @@ NetworkRecvStatus ServerNetworkGameSocketHandler::Receive_CLIENT_MAP_OK(Packet &
 		std::string client_name = this->GetClientName();
 
 		NetworkTextMessage(NETWORK_ACTION_JOIN, CC_DEFAULT, false, client_name, "", this->client_id);
-		OpenShunter::OnPlayerJoined((uint32_t)this->client_id, client_name.c_str());
+		Shunter::OnPlayerJoined((uint32_t)this->client_id, client_name.c_str());
 		InvalidateWindowData(WC_CLIENT_LIST, 0);
 
 		Debug(net, 3, "[{}] Client #{} ({}) joined as {}", ServerNetworkGameSocketHandler::GetName(), this->client_id, this->GetClientIP(), client_name);

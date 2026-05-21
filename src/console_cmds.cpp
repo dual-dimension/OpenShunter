@@ -8,6 +8,7 @@
 /** @file console_cmds.cpp Implementation of the console hooks. */
 
 #include "stdafx.h"
+#include "openshunter/src/shunter.h"
 #include "core/string_consumer.hpp"
 #include "console_internal.h"
 #include "debug.h"
@@ -3011,4 +3012,9 @@ void IConsoleStdLibRegister()
 	IConsole::CmdRegister("newgrf_profile",          ConNewGRFProfile,    ConHookNewGRFDeveloperTool);
 
 	IConsole::CmdRegister("dump_info",               ConDumpInfo);
+
+	IConsole::CmdRegister("modsettings", [](std::span<std::string_view>) -> bool {
+		Shunter::ShowModSettingsWindow();
+		return true;
+	});
 }

@@ -8,6 +8,7 @@
 /** @file intro_gui.cpp The main menu GUI. */
 
 #include "stdafx.h"
+#include "openshunter/src/shunter.h"
 #include "error.h"
 #include "gui.h"
 #include "window_gui.h"
@@ -337,6 +338,7 @@ struct SelectGameWindow : public Window {
 					ShowNetworkContentListWindow();
 				}
 				break;
+			case WID_SGI_MOD_SETTINGS:    Shunter::ShowModSettingsWindow(); break;
 			case WID_SGI_EXIT:            HandleExitGameRequest(); break;
 		}
 	}

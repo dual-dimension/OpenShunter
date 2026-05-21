@@ -7,3 +7,10 @@ docs/source/*
 /out
 /vcpkg_installed
 !build.bat
+vcpkg-overlays/breakpad/add-algorithm-1.patch
+vcpkg-overlays/breakpad/add-algorithm.patch
+vcpkg-overlays/breakpad/check_getcontext.cc
+vcpkg-overlays/breakpad/portfile.cmake
+vcpkg-overlays/breakpad/unofficial-breakpadConfig.cmake
+vcpkg-overlays/breakpad/vcpkg.json
+vcpkg-triplets/x64-windows.cmake
