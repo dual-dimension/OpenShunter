@@ -1,6 +1,7 @@
 #include "shunter.h"
 #include "hooks.h"
 #include "api/settings_api.h"
+#include "api/chat_api.h"
 #include "mod_settings/mod_settings.h"
 #include <debug.h>
 
@@ -101,6 +102,7 @@ static bool LoadMod(const char* path)
 	api.GetSettingInt    = &GetSettingInt;
 	api.GetSettingBool   = &GetSettingBool;
 	api.RegisterSetting  = &ApiRegisterSetting;
+	api.SendChat         = &SendChat;
 
 	// Call the register function from the mod
 	register_fn(&api);
