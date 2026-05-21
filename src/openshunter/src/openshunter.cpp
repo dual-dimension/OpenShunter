@@ -1,4 +1,4 @@
-#include "bootstrap.h"
+#include "openshunter.h"
 #include "mod_api.h"
 #include "mod_logic.h"
 #include "../../openttd/src/debug.h"

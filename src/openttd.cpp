@@ -88,7 +88,7 @@
 
 #include "table/strings.h"
 
-#include "../openshunter/bootstrap.h"
+#include "openshunter/src/openshunter.h"
 
 #ifdef __EMSCRIPTEN__
 #	include <emscripten.h>
