@@ -70,10 +70,7 @@ bool OpenShunter::LoadMod(const char* path)
 void OpenShunter::Bootstrap()
 {
 	Debug(script, 2, "Starting bootstrap");
-    // find mods
-    // load em
-    // check success?
-    // allow boot
+
     LoadModsFromFolder();
 
     Debug(script, 2, "Bootstrap complete");
