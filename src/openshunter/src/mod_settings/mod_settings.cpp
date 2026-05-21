@@ -1,7 +1,7 @@
 #include "mod_settings.h"
-#include "../../../ini_type.h"
-#include "../../../fileio_func.h"
-#include "../../../debug.h"
+#include <ini_type.h>
+#include <fileio_func.h>
+#include <debug.h>
 
 #include <algorithm>
 #include <set>

@@ -6,6 +6,8 @@ if(OPTION_TOOLS_ONLY)
     return()
 endif()
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+
 add_subdirectory(3rdparty)
 add_subdirectory(ai)
 add_subdirectory(blitter)
@@ -350,9 +352,9 @@ add_files(
     openttd.h
     openshunter/src/loader.cpp
     openshunter/src/hooks.cpp
-    openshunter/src/settings_api.cpp
-    openshunter/src/mod_settings.cpp
-    openshunter/src/mod_settings_gui.cpp
+    openshunter/src/api/settings_api.cpp
+    openshunter/src/mod_settings/mod_settings.cpp
+    openshunter/src/mod_settings/mod_settings_gui.cpp
     order_backup.cpp
     order_backup.h
     order_base.h
