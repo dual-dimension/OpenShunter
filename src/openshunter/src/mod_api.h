@@ -16,6 +16,15 @@ struct Callbacks
 
     OnGameStartFn on_game_start;
     OnGameTickFn  on_game_tick;
+
+    OnPlayerJoinedFn on_player_joined;
+    OnMoneyChangedFn on_money_changed;
+
+    OnDayPassedFn     on_day_passed;
+    OnWeekPassedFn    on_week_passed;
+    OnMonthPassedFn   on_month_passed;
+    OnQuarterPassedFn on_quarter_passed;
+    OnYearPassedFn    on_year_passed;
 };
 
 struct ModApi
