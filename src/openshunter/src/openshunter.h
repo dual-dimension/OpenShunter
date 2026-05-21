@@ -24,7 +24,7 @@
     #define MOD_CLOSE(lib)      dlclose(lib)
 #endif
 
-static const char* MOD_LIST_PATH = "ShunterMods/";
+static const char* MOD_LIST_PATH = "mods/";
 
 #include "mod_logic.h"
 
