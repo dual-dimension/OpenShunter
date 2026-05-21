@@ -3103,10 +3103,8 @@ void IConsoleStdLibRegister()
 
 	IConsole::CmdRegister("dump_info",               ConDumpInfo);
 
-	if (!_network_dedicated) {
-		IConsole::CmdRegister("modsettings", [](std::span<std::string_view>) -> bool {
-			Shunter::ShowModSettingsWindow();
-			return true;
-		});
-	}
+	IConsole::CmdRegister("modsettings", [](std::span<std::string_view>) -> bool {
+		Shunter::ShowModSettingsWindow();
+		return true;
+	});
 }

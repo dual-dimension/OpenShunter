@@ -348,7 +348,7 @@ static void LoadIntroGame(bool load_newgrfs = true)
 
 	MusicLoop(); // ensure music is correct
 
-	OpenShunter::OnMenuStart();
+	Shunter::OnMenuStart();
 }
 
 void MakeNewgameSettingsLive()
@@ -857,7 +857,7 @@ static void OnStartGame(bool dedicated_server)
 
 	NetworkOnGameStart();
 
-	OpenShunter::OnGameStart();
+	Shunter::OnGameStart();
 
 	/* Execute the game-start script */
 	IConsoleCmdExec("exec scripts/game_start.scr 0");
@@ -1287,7 +1287,7 @@ void StateGameLoop()
 
 		CallWindowGameTickEvent();
 		NewsLoop();
-		OpenShunter::OnGameTick();
+		Shunter::OnGameTick();
 	}
 
 	assert(IsLocalCompany());
@@ -1398,7 +1398,7 @@ void GameLoop()
 
 	if (_pause_mode.None() && _display_opt.Test(DisplayOption::FullAnimation)) DoPaletteAnimations();
 
-	if (_game_mode == GM_MENU) OpenShunter::OnMenuTick();
+	if (_game_mode == GM_MENU) Shunter::OnMenuTick();
 
 	SoundDriver::GetInstance()->MainLoop();
 	MusicLoop();

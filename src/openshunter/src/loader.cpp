@@ -1,9 +1,8 @@
 #include "shunter.h"
 #include "hooks.h"
-#include "api/settings_api.h"
-#include "api/chat_api.h"
-#include "mod_settings/mod_settings.h"
-#include <debug.h>
+#include "settings_api.h"
+#include "mod_settings.h"
+#include "../../debug.h"
 
 #if defined(_WIN32) || defined(_WIN64)
 	#include <windows.h>
@@ -27,25 +26,9 @@
 
 #include <filesystem>
 #include <vector>
-#include <algorithm>
-#include <cctype>
 
 static const char* MOD_LIST_PATH = "mods/";
-static std::vector<ModApi> mod_apis;
 static std::string current_mod_name;
-
-static std::string NormalizeModName(const char* name)
-{
-    std::string result(name);
-    result.erase(std::remove(result.begin(), result.end(), ' '), result.end());
-    return result;
-}
-
-static void ApiRegister(ModInfo* info, const Callbacks callbacks, const Decisions decisions)
-{
-    current_mod_name = NormalizeModName(info->name);
-    ::Register(info, callbacks, decisions);
-}
 
 static void ApiRegisterSetting(const char* name, const char* label, const char* help,
                                int32_t def, int32_t min, int32_t max,
@@ -81,7 +64,6 @@ static std::vector<std::filesystem::path> GetModList()
 static void LoadModsFromFolder()
 {
 	auto mod_list = GetModList();
-	mod_apis.reserve(mod_list.size());
     for (const auto& mod : mod_list)
     {
     	LoadMod(mod.string().c_str());
@@ -108,14 +90,17 @@ static bool LoadMod(const char* path)
 		return success;
 	}
 
-	// Hook up the API — stored permanently so mods can safely keep the pointer to the api data they originally passed in
-	// Before: this was nuked when loading another mod
-	ModApi &api = mod_apis.emplace_back();
-	api.Register         = &ApiRegister;
+	// Derive mod name from filename (strip path and extension)
+	std::filesystem::path mod_path(path);
+	current_mod_name = mod_path.stem().string();
+
+	// Hook up the API and call the register function from the mod
+	ModApi api {};
+
+	api.Register         = &::Register;
 	api.GetSettingInt    = &GetSettingInt;
 	api.GetSettingBool   = &GetSettingBool;
 	api.RegisterSetting  = &ApiRegisterSetting;
-	api.SendChat         = &SendChat;
 
 	// Call the register function from the mod
 	register_fn(&api);
