@@ -1,6 +1,6 @@
 #include "hooks.h"
 #include "shunter.h"
-#include "../../debug.h"
+#include <debug.h>
 #include <string>
 #include <vector>
 

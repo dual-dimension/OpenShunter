@@ -2,7 +2,7 @@
 #include "hooks.h"
 #include "api/settings_api.h"
 #include "mod_settings/mod_settings.h"
-#include "../../debug.h"
+#include <debug.h>
 
 #if defined(_WIN32) || defined(_WIN64)
 	#include <windows.h>
