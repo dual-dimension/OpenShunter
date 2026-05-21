@@ -1,4 +1,6 @@
 #pragma once
 
-using OnStartFn = void(*)();
-using OnTickFn = void(*)();
+using OnMenuStartFn = void(*)();
+using OnMenuTickFn = void(*)();
+using OnGameStartFn = void(*)();
+using OnGameTickFn = void(*)();
