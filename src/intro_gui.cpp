@@ -8,6 +8,7 @@
 /** @file intro_gui.cpp The main menu GUI. */
 
 #include "stdafx.h"
+#include "openshunter/src/shunter.h"
 #include "error.h"
 #include "gui.h"
 #include "window_gui.h"
@@ -337,6 +338,7 @@ struct SelectGameWindow : public Window {
 					ShowNetworkContentListWindow();
 				}
 				break;
+			case WID_SGI_MOD_SETTINGS:    Shunter::ShowModSettingsWindow(); break;
 			case WID_SGI_EXIT:            HandleExitGameRequest(); break;
 		}
 	}
@@ -382,6 +384,7 @@ static constexpr std::initializer_list<NWidgetPart> _nested_select_game_widgets 
 			EndContainer(),
 
 			NWidget(NWID_VERTICAL),
+				NWidget(WWT_PUSHTXTBTN, Colours::Orange, WID_SGI_MOD_SETTINGS), SetToolbarMinimalSize(1), SetStringTip(STR_INTRO_MOD_SETTINGS, STR_INTRO_MOD_SETTINGS), SetFill(1, 0),
 				NWidget(WWT_PUSHTXTBTN, Colours::Orange, WID_SGI_EXIT), SetToolbarMinimalSize(1), SetStringTip(STR_INTRO_QUIT, STR_INTRO_TOOLTIP_QUIT),
 			EndContainer(),
 		EndContainer(),

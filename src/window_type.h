@@ -193,6 +193,12 @@ enum class WindowClass : uint16_t {
 	ScriptSettings,
 
 	/**
+	 * Mod settings (Shunter); %Window numbers:
+	 *   - 0 = #ModSettingsWidgets
+	 */
+	ModSettings,
+
+	/**
 	 * NewGRF parameters; %Window numbers:
 	 *   - 0 = #NewGRFParametersWidgets
 	 */

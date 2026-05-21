@@ -2263,6 +2263,7 @@ STR_INTRO_GAME_OPTIONS                                          :{BLACK}Game Opt
 STR_INTRO_HIGHSCORE                                             :{BLACK}Highscore Table
 STR_INTRO_HELP                                                  :{BLACK}Help & Manuals
 STR_INTRO_ONLINE_CONTENT                                        :{BLACK}Online Content
+STR_INTRO_MOD_SETTINGS                                          :{BLACK}Mod Settings
 STR_INTRO_QUIT                                                  :{BLACK}Exit
 
 STR_INTRO_TOOLTIP_NEW_GAME                                      :{BLACK}Start a new game. Ctrl+Click skips map configuration

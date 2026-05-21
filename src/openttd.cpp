@@ -88,7 +88,7 @@
 
 #include "table/strings.h"
 
-#include "openshunter/src/openshunter.h"
+#include "openshunter/src/shunter.h"
 
 #ifdef __EMSCRIPTEN__
 #	include <emscripten.h>
@@ -295,7 +295,7 @@ static void ShutdownGame()
 
 	if (_network_available) NetworkShutDown(); // Shut down the network and close any open connections
 
-	OpenShunter::Shutdown(); // Shutdown our ModLoader
+	Shunter::Shutdown(); // Shutdown our ModLoader
 
 	SocialIntegration::Shutdown();
 	DriverFactoryBase::ShutdownDrivers();
@@ -348,7 +348,7 @@ static void LoadIntroGame(bool load_newgrfs = true)
 
 	MusicLoop(); // ensure music is correct
 
-	OpenShunter::OnMenuStart();
+	Shunter::OnMenuStart();
 }
 
 void MakeNewgameSettingsLive()
@@ -804,7 +804,7 @@ int openttd_main(std::span<std::string_view> arguments)
 	if (musicdriver.empty() && !_ini_musicdriver.empty()) musicdriver = _ini_musicdriver;
 	DriverFactoryBase::SelectDriver(musicdriver, Driver::Type::Music);
 
-	OpenShunter::Bootstrap(); // Initialise our ModLoader
+	Shunter::Bootstrap(); // Initialise our ModLoader
 
 	GenerateWorld(GWM_EMPTY, 64, 64); // Make the viewport initialization happy
 	LoadIntroGame(false);
@@ -857,7 +857,7 @@ static void OnStartGame(bool dedicated_server)
 
 	NetworkOnGameStart();
 
-	OpenShunter::OnGameStart();
+	Shunter::OnGameStart();
 
 	/* Execute the game-start script */
 	IConsoleCmdExec("exec scripts/game_start.scr 0");
@@ -1287,7 +1287,7 @@ void StateGameLoop()
 
 		CallWindowGameTickEvent();
 		NewsLoop();
-		OpenShunter::OnGameTick();
+		Shunter::OnGameTick();
 	}
 
 	assert(IsLocalCompany());
@@ -1398,7 +1398,7 @@ void GameLoop()
 
 	if (_pause_mode.None() && _display_opt.Test(DisplayOption::FullAnimation)) DoPaletteAnimations();
 
-	if (_game_mode == GM_MENU) OpenShunter::OnMenuTick();
+	if (_game_mode == GM_MENU) Shunter::OnMenuTick();
 
 	SoundDriver::GetInstance()->MainLoop();
 	MusicLoop();

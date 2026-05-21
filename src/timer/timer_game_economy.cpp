@@ -27,7 +27,7 @@
 #include "timer_game_tick.h"
 #include "../vehicle_base.h"
 #include "../linkgraph/linkgraph.h"
-#include "../openshunter/src/openshunter.h"
+#include "../openshunter/src/shunter.h"
 
 #include "../safeguards.h"
 
@@ -147,14 +147,14 @@ bool TimerManager<TimerGameEconomy>::Elapsed(TimerGameEconomy::TElapsed)
 	/* Make a temporary copy of the timers, as a timer's callback might add/remove other timers. */
 	auto timers = TimerManager<TimerGameEconomy>::GetTimers();
 
-	OpenShunter::OnDayPassed(ymd.day, TimerGameEconomy::month, TimerGameEconomy::year.base());
+	Shunter::OnDayPassed(ymd.day, TimerGameEconomy::month, TimerGameEconomy::year.base());
 
 	for (auto timer : timers) {
 		timer->Elapsed(TimerGameEconomy::Trigger::Day);
 	}
 
 	if ((TimerGameEconomy::date.base() % 7) == 3) {
-		OpenShunter::OnWeekPassed(TimerGameEconomy::month, TimerGameEconomy::year.base());
+		Shunter::OnWeekPassed(TimerGameEconomy::month, TimerGameEconomy::year.base());
 
 		for (auto timer : timers) {
 			timer->Elapsed(TimerGameEconomy::Trigger::Week);
@@ -162,14 +162,14 @@ bool TimerManager<TimerGameEconomy>::Elapsed(TimerGameEconomy::TElapsed)
 	}
 
 	if (new_month) {
-		OpenShunter::OnMonthPassed(TimerGameEconomy::month, TimerGameEconomy::year.base());
+		Shunter::OnMonthPassed(TimerGameEconomy::month, TimerGameEconomy::year.base());
 
 		for (auto timer : timers) {
 			timer->Elapsed(TimerGameEconomy::Trigger::Month);
 		}
 
 		if ((TimerGameEconomy::month % 3) == 0) {
-			OpenShunter::OnQuarterPassed(TimerGameEconomy::month / 3, TimerGameEconomy::year.base());
+			Shunter::OnQuarterPassed(TimerGameEconomy::month / 3, TimerGameEconomy::year.base());
 
 			for (auto timer : timers) {
 				timer->Elapsed(TimerGameEconomy::Trigger::Quarter);
@@ -178,7 +178,7 @@ bool TimerManager<TimerGameEconomy>::Elapsed(TimerGameEconomy::TElapsed)
 	}
 
 	if (new_year) {
-		OpenShunter::OnYearPassed(TimerGameEconomy::year.base());
+		Shunter::OnYearPassed(TimerGameEconomy::year.base());
 
 		for (auto timer : timers) {
 			timer->Elapsed(TimerGameEconomy::Trigger::Year);
