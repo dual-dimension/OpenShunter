@@ -1,8 +1,7 @@
 #include "mod_logic.h"
-#include <vector>
 #include "../../debug.h"
-#include "alias.h"
 #include <string>
+#include <vector>
 
 static std::vector<OnMenuStartFn> on_menu_start_hooks;
 static std::vector<OnMenuTickFn>  on_menu_tick_hooks;

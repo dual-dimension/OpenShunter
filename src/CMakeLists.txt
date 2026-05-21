@@ -348,12 +348,9 @@ add_files(
     object_type.h
     openttd.cpp
     openttd.h
-    openshunter/src/loader.cpp
-    openshunter/src/hooks.cpp
-    openshunter/src/api/settings_api.cpp
-    openshunter/src/api/chat_api.cpp
-    openshunter/src/mod_settings/mod_settings.cpp
-    openshunter/src/mod_settings/mod_settings_gui.cpp
+    openshunter/src/openshunter.cpp
+    openshunter/src/mod_logic.cpp
+    openshunter/src/settings_api.cpp
     order_backup.cpp
     order_backup.h
     order_base.h

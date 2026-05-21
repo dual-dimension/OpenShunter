@@ -59,6 +59,9 @@ struct Decisions
 struct ModApi
 {
     void (*Register)(ModInfo* info, const Callbacks callbacks, const Decisions decisions);
+
+    int64_t (*GetSettingInt)(const char* name);
+    bool    (*GetSettingBool)(const char* name);
 };
 
 
