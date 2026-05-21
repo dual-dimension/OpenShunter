@@ -25,6 +25,9 @@
 #endif
 
 static const char* MOD_LIST_PATH = "ShunterMods/";
+
+#include "mod_logic.h"
+
 namespace OpenShunter
 {
     void Bootstrap();
