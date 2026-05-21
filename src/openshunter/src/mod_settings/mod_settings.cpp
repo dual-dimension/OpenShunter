@@ -19,7 +19,7 @@ void ModSettings::RegisterSetting(const std::string &mod_name, const char *name,
 	ModSettingDef d;
 	d.setting_name = name;
 	d.mod_name = mod_name;
-	d.full_key = mod_name + "." + name;
+	d.full_key = name;
 	d.label = label;
 	d.help = help;
 	d.def = def;
