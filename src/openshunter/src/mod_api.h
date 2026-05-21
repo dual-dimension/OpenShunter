@@ -51,19 +51,14 @@ struct Callbacks
     OnYearPassedFn    on_year_passed;
 };
 
+struct Decisions
+{
+    AskCanTrainEnterTileFn ask_can_train_enter_tile;
+};
+
 struct ModApi
 {
     void (*Register)(ModInfo* info, const Callbacks callbacks, const Decisions decisions);
-
-    int64_t (*GetSettingInt)(const char* name);
-    bool    (*GetSettingBool)(const char* name);
-
-    void (*RegisterSetting)(const char* name, const char* label, const char* help,
-                            int32_t def, int32_t min, int32_t max,
-                            bool is_bool, bool is_dropdown,
-                            const char** dropdown_labels, int dropdown_count);
-
-    void (*SendChat)(const char* message);
 };
 
 

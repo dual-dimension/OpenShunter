@@ -42,7 +42,7 @@
 #include "table/train_sprites.h"
 
 #include "safeguards.h"
-#include "openshunter/src/shunter.h"
+#include "openshunter/src/openshunter.h"
 
 static Track ChooseTrainTrack(Train *v, TileIndex tile, DiagDirection enterdir, TrackBits tracks, bool force_res, bool *got_reservation, bool mark_stuck);
 static bool TrainCheckIfLineEnds(Train *v, bool reverse = true);
@@ -3134,7 +3134,7 @@ static void TrainEnterStation(Train *consist, StationID station)
  */
 static inline bool CheckCompatibleRail(const Train *v, TileIndex tile, bool check_railtype)
 {
-    bool result = IsTileOwner(tile, v->owner) &&
+	return OpenShunter::AskCanTrainEnterTile(static_cast<uint32_t>(tile), GetTileOwner(tile).base(), v->owner.base(), IsTileOwner(tile, v->owner)) &&
 			(!check_railtype || !v->IsFrontEngine() || v->compatible_railtypes.Test(GetRailType(tile)));
 
 	return Shunter::AskCanTrainEnterTile(tile.base(), GetTileOwner(tile).base(), v->owner.base(), result);

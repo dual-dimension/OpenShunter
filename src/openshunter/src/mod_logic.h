@@ -1,7 +1,7 @@
 #include "mod_api.h"
 #include "alias.h"
 
-void Register(ModInfo* info, const Callbacks callbacks);
+void Register(ModInfo* info, const Callbacks callbacks, const Decisions decisions);
 
 namespace OpenShunter
 {
@@ -25,4 +25,7 @@ namespace OpenShunter
     void OnMonthPassed(int month, int year);
     void OnQuarterPassed(int quarter, int year);
     void OnYearPassed(int year);
+
+    /* Decisions */
+    bool AskCanTrainEnterTile(uint32_t tile, uint8_t tile_owner, uint8_t train_owner, bool default_result);
 }
