@@ -1,7 +1,7 @@
 #include "mod_settings.h"
-#include <ini_type.h>
-#include <fileio_func.h>
-#include <debug.h>
+#include "../../../ini_type.h"
+#include "../../../fileio_func.h"
+#include "../../../debug.h"
 
 #include <algorithm>
 #include <set>
@@ -19,7 +19,7 @@ void ModSettings::RegisterSetting(const std::string &mod_name, const char *name,
 	ModSettingDef d;
 	d.setting_name = name;
 	d.mod_name = mod_name;
-	d.full_key = name;
+	d.full_key = mod_name + "." + name;
 	d.label = label;
 	d.help = help;
 	d.def = def;
