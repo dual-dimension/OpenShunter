@@ -1,4 +1,8 @@
 #pragma once
+#include "mod_logic.h"
+#include <filesystem>
+#include <vector>
+
 
 #if defined(_WIN32) || defined(_WIN64)
 	#include <windows.h>
@@ -25,7 +29,7 @@ namespace OpenShunter
 {
     void Bootstrap();
     void Shutdown();
-    vector<std::filesystem::path> GetModList();
+    std::vector<std::filesystem::path> GetModList();
     void LoadModsFromFolder();
     bool LoadMod(const char* path);
 }

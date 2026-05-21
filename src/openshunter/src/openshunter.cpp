@@ -1,7 +1,7 @@
 #include "openshunter.h"
 #include "mod_api.h"
 #include "mod_logic.h"
-#include "../../openttd/src/debug.h"
+#include "../../debug.h"
 #include <string>
 #include <filesystem>
 #include <vector>
@@ -12,7 +12,7 @@ std::vector<std::filesystem::path> OpenShunter::GetModList()
     std::filesystem::path mod_list_path = MOD_LIST_PATH;
     if (!std::filesystem::exists(mod_list_path))
     {
-        Debug("GetModList", 0, "Mod list not found: %s", mod_list_path.string().c_str());
+        Debug(script, 0, "Mod list not found: {}", mod_list_path.string().c_str());
         return mod_list;
     }
 
@@ -36,28 +36,32 @@ void OpenShunter::LoadModsFromFolder()
 
 bool OpenShunter::LoadMod(const char* path)
 {
-	Debug("LoadMod",2, "Starting loading mod: %s", path);
+	Debug(script,2, "Starting loading mod: '{}'", path);
 	bool success = false;
+	// TODO: Make handler list and remove this in the shutdown
 	auto lib = MOD_OPEN(path);
 	if (!lib)
 	{
-		Debug("LoadMod",0, "Failed to load mod: %s", path);
+		Debug(script,0, "Failed to load mod: '{}'", path);
 		return success;
 	}
 
-	auto register_fn = MOD_SYM(lib, "RegisterMod");
+	auto register_fn = (RegisterMod)MOD_SYM(lib, "RegisterMod");
 	if (!register_fn)
 	{
-		Debug("LoadMod",0, "Failed to register mod: %s", path);
+		Debug(script,0, "Failed to register mod: '{}'", path);
 		MOD_CLOSE(lib);
 		return success;
 	}
 
+	// Hook up the API and call the register function from the mod
 	ModApi api {};
 
 	api.Register = &Register;
 
-	MOD_CLOSE(lib);
+	// Call the register function from the mod
+	register_fn(&api);
+
 	success = true;
 
 	return success;
@@ -65,17 +69,17 @@ bool OpenShunter::LoadMod(const char* path)
 
 void OpenShunter::Bootstrap()
 {
-	Debug("Bootstrap", 2, "Starting bootstrap");
+	Debug(script, 2, "Starting bootstrap");
     // find mods
     // load em
     // check success?
     // allow boot
     LoadModsFromFolder();
 
-    Debug("Bootstrap", 2, "Bootstrap complete");
+    Debug(script, 2, "Bootstrap complete");
 }
 
 void OpenShunter::Shutdown()
 {
-
+    // MOD_CLOSE(lib);
 }
