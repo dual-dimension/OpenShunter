@@ -67,6 +67,8 @@ struct ModApi
                             int32_t def, int32_t min, int32_t max,
                             bool is_bool, bool is_dropdown,
                             const char** dropdown_labels, int dropdown_count);
+
+    void (*SendChat)(const char* message);
 };
 
 
