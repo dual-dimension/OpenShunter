@@ -30,6 +30,7 @@
 #include "timer_game_tick.h"
 #include "../vehicle_base.h"
 #include "../linkgraph/linkgraph.h"
+#include "../openshunter/src/openshunter.h"
 
 #include "../safeguards.h"
 
@@ -151,22 +152,30 @@ bool TimerManager<TimerGameEconomy>::Elapsed([[maybe_unused]] TimerGameEconomy::
 	/* Make a temporary copy of the timers, as a timer's callback might add/remove other timers. */
 	auto timers = TimerManager<TimerGameEconomy>::GetTimers();
 
+	OpenShunter::OnDayPassed(ymd.day, TimerGameEconomy::month, TimerGameEconomy::year.base());
+
 	for (auto timer : timers) {
 		timer->Elapsed(TimerGameEconomy::DAY);
 	}
 
 	if ((TimerGameEconomy::date.base() % 7) == 3) {
+		OpenShunter::OnWeekPassed(TimerGameEconomy::month, TimerGameEconomy::year.base());
+
 		for (auto timer : timers) {
 			timer->Elapsed(TimerGameEconomy::WEEK);
 		}
 	}
 
 	if (new_month) {
+		OpenShunter::OnMonthPassed(TimerGameEconomy::month, TimerGameEconomy::year.base());
+
 		for (auto timer : timers) {
 			timer->Elapsed(TimerGameEconomy::MONTH);
 		}
 
 		if ((TimerGameEconomy::month % 3) == 0) {
+			OpenShunter::OnQuarterPassed(TimerGameEconomy::month / 3, TimerGameEconomy::year.base());
+
 			for (auto timer : timers) {
 				timer->Elapsed(TimerGameEconomy::QUARTER);
 			}
@@ -174,6 +183,8 @@ bool TimerManager<TimerGameEconomy>::Elapsed([[maybe_unused]] TimerGameEconomy::
 	}
 
 	if (new_year) {
+		OpenShunter::OnYearPassed(TimerGameEconomy::year.base());
+
 		for (auto timer : timers) {
 			timer->Elapsed(TimerGameEconomy::YEAR);
 		}
