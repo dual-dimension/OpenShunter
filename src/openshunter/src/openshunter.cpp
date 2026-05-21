@@ -57,7 +57,7 @@ bool OpenShunter::LoadMod(const char* path)
 	// Hook up the API and call the register function from the mod
 	ModApi api {};
 
-	api.Register = &Register;
+	api.Register = &::Register;
 
 	// Call the register function from the mod
 	register_fn(&api);

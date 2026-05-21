@@ -12,13 +12,15 @@ static std::vector<OnGameTickFn>  on_game_tick_hooks;
 static std::vector<OnPlayerJoinedFn> on_player_joined_hooks;
 static std::vector<OnMoneyChangedFn> on_money_changed_hooks;
 
+static std::vector<AskCanTrainEnterTileFn> ask_can_train_enter_tile_hooks;
+
 static std::vector<OnDayPassedFn>     on_day_passed_hooks;
 static std::vector<OnWeekPassedFn>    on_week_passed_hooks;
 static std::vector<OnMonthPassedFn>   on_month_passed_hooks;
 static std::vector<OnQuarterPassedFn> on_quarter_passed_hooks;
 static std::vector<OnYearPassedFn>    on_year_passed_hooks;
 
-void Register(ModInfo* info, const Callbacks callbacks)
+void Register(ModInfo* info, const Callbacks callbacks, const Decisions decisions)
 {
 	Debug(script, 2, "Registering mod name '{}' \nVersion: '{}'\nAuthor: '{}'", std::string(info->name), std::string(info->version), std::string(info->author));
 
@@ -36,6 +38,17 @@ void Register(ModInfo* info, const Callbacks callbacks)
     if (callbacks.on_month_passed)   on_month_passed_hooks.push_back(callbacks.on_month_passed);
     if (callbacks.on_quarter_passed) on_quarter_passed_hooks.push_back(callbacks.on_quarter_passed);
     if (callbacks.on_year_passed)    on_year_passed_hooks.push_back(callbacks.on_year_passed);
+
+    if (decisions.ask_can_train_enter_tile) ask_can_train_enter_tile_hooks.push_back(decisions.ask_can_train_enter_tile);
+}
+
+/* Decisions */
+bool OpenShunter::AskCanTrainEnterTile(uint32_t tile, uint8_t tile_owner, uint8_t train_owner, bool default_result)
+{
+    bool result = default_result;
+    for (auto& hook : ask_can_train_enter_tile_hooks)
+        result = hook(tile, tile_owner, train_owner, result);
+    return result;
 }
 
 /* Menu */

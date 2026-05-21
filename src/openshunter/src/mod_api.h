@@ -27,9 +27,14 @@ struct Callbacks
     OnYearPassedFn    on_year_passed;
 };
 
+struct Decisions
+{
+    AskCanTrainEnterTileFn ask_can_train_enter_tile;
+};
+
 struct ModApi
 {
-    void (*Register)(ModInfo* info, const Callbacks callbacks);
+    void (*Register)(ModInfo* info, const Callbacks callbacks, const Decisions decisions);
 };
 
 

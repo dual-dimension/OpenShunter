@@ -42,6 +42,7 @@
 #include "table/train_sprites.h"
 
 #include "safeguards.h"
+#include "openshunter/src/openshunter.h"
 
 static Track ChooseTrainTrack(Train *v, TileIndex tile, DiagDirection enterdir, TrackBits tracks, bool force_res, bool *got_reservation, bool mark_stuck);
 static bool TrainCheckIfLineEnds(Train *v, bool reverse = true);
@@ -3063,8 +3064,8 @@ static void TrainEnterStation(Train *v, StationID station)
 /* Check if the vehicle is compatible with the specified tile */
 static inline bool CheckCompatibleRail(const Train *v, TileIndex tile)
 {
-	return IsTileOwner(tile, v->owner) &&
-			(!v->IsFrontEngine() || v->compatible_railtypes.Test(GetRailType(tile)));
+	return OpenShunter::AskCanTrainEnterTile(static_cast<uint32_t>(tile), GetTileOwner(tile).base(), v->owner.base(), IsTileOwner(tile, v->owner)) &&
+			(!check_railtype || !v->IsFrontEngine() || v->compatible_railtypes.Test(GetRailType(tile)));
 }
 
 /** Data structure for storing engine speed changes of an acceleration type. */
