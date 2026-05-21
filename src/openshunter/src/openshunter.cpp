@@ -1,12 +1,37 @@
 #include "openshunter.h"
-#include "mod_api.h"
-#include "mod_logic.h"
+#include "settings_api.h"
 #include "../../debug.h"
-#include <string>
+
+#if defined(_WIN32) || defined(_WIN64)
+	#include <windows.h>
+    #define MOD_EXTENSION ".dll"
+    #define MOD_OPEN(path)      LoadLibraryA(path)
+    #define MOD_SYM(lib, name)  GetProcAddress(lib, name)
+    #define MOD_CLOSE(lib)      FreeLibrary(lib)
+#elif defined(__APPLE__)
+	#include <dlfcn.h>
+    #define MOD_EXTENSION ".dylib"
+    #define MOD_OPEN(path)      dlopen(path, RTLD_NOW)
+    #define MOD_SYM(lib, name)  dlsym(lib, name)
+    #define MOD_CLOSE(lib)      dlclose(lib)
+#else // Linux
+	#include <dlfcn.h>
+    #define MOD_EXTENSION ".so"
+    #define MOD_OPEN(path)      dlopen(path, RTLD_NOW)
+    #define MOD_SYM(lib, name)  dlsym(lib, name)
+    #define MOD_CLOSE(lib)      dlclose(lib)
+#endif
+
 #include <filesystem>
 #include <vector>
 
-std::vector<std::filesystem::path> OpenShunter::GetModList()
+static const char* MOD_LIST_PATH = "mods/";
+
+static std::vector<std::filesystem::path> GetModList();
+static bool LoadMod(const char* path);
+static void LoadModsFromFolder();
+
+static std::vector<std::filesystem::path> GetModList()
 {
     std::vector<std::filesystem::path> mod_list;
     std::filesystem::path mod_list_path = MOD_LIST_PATH;
@@ -25,7 +50,7 @@ std::vector<std::filesystem::path> OpenShunter::GetModList()
     return mod_list;
 }
 
-void OpenShunter::LoadModsFromFolder()
+static void LoadModsFromFolder()
 {
 	auto mod_list = GetModList();
     for (const auto& mod : mod_list)
@@ -34,7 +59,7 @@ void OpenShunter::LoadModsFromFolder()
     }
 }
 
-bool OpenShunter::LoadMod(const char* path)
+static bool LoadMod(const char* path)
 {
 	Debug(script,2, "Starting loading mod: '{}'", path);
 	bool success = false;
@@ -57,7 +82,9 @@ bool OpenShunter::LoadMod(const char* path)
 	// Hook up the API and call the register function from the mod
 	ModApi api {};
 
-	api.Register = &::Register;
+	api.Register        = &::Register;
+	api.GetSettingInt   = &GetSettingInt;
+	api.GetSettingBool  = &GetSettingBool;
 
 	// Call the register function from the mod
 	register_fn(&api);

@@ -350,6 +350,7 @@ add_files(
     openttd.h
     openshunter/src/openshunter.cpp
     openshunter/src/mod_logic.cpp
+    openshunter/src/settings_api.cpp
     order_backup.cpp
     order_backup.h
     order_base.h
