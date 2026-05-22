@@ -222,7 +222,7 @@ static constexpr std::initializer_list<NWidgetPart> _mod_settings_widgets = {
 
 static WindowDesc _mod_settings_desc(
 	WDP_CENTER, "mod_settings", 400, 200,
-	WC_MOD_SETTINGS, WC_NONE, {},
+	SHUNTER_MOD_SETTINGS, WC_NONE, {},
 	_mod_settings_widgets
 );
 
