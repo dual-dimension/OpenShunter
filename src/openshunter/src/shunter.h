@@ -42,5 +42,5 @@ namespace Shunter
 
     /* GUI */
     void ShowModSettingsWindow();
-    void DrawMenuInfo();
+    void DrawMenuInfo(int width, int height);
 }

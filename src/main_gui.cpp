@@ -275,7 +275,7 @@ struct MainWindow : Window
 
 			int text_y = this->height - GetCharacterHeight(FS_NORMAL) * 2;
 			DrawString(0, this->width - 1, text_y, STR_INTRO_VERSION, TC_WHITE, SA_CENTER);
-			Shunter::DrawMenuInfo();
+			Shunter::DrawMenuInfo(this->width, this->height);
 		}
 	}
 
