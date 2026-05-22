@@ -139,3 +139,8 @@ void Shunter::Shutdown()
 {
     // MOD_CLOSE(lib);
 }
+
+int Shunter::GetModCount()
+{
+    return mod_apis.size();
+}

@@ -10,6 +10,8 @@
 
 namespace Shunter
 {
+    int GetModCount();
+
     /* Lifecycle */
     void Bootstrap();
     void Shutdown();
@@ -40,4 +42,5 @@ namespace Shunter
 
     /* GUI */
     void ShowModSettingsWindow();
+    void DrawMenuInfo();
 }

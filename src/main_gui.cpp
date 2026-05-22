@@ -50,6 +50,8 @@
 
 #include "safeguards.h"
 
+#include "openshunter/src/shunter.h"
+
 /**
  * This code is shared for the majority of the pushbuttons.
  * Handles e.g. the pressing of a button (to build things), playing of click sound and sets certain parameters
@@ -273,6 +275,7 @@ struct MainWindow : Window
 
 			int text_y = this->height - GetCharacterHeight(FS_NORMAL) * 2;
 			DrawString(0, this->width - 1, text_y, STR_INTRO_VERSION, TC_WHITE, SA_CENTER);
+			Shunter::DrawMenuInfo();
 		}
 	}
 
