@@ -1,7 +1,7 @@
+#include <stdafx.h>
+
 #include "mod_settings_gui.h"
 #include "mod_settings.h"
-
-#include <stdafx.h>
 #include <settings_gui.h>
 #include <strings_func.h>
 #include <gfx_func.h>
@@ -44,7 +44,7 @@ struct ModSettingsWindow : Window {
 	void UpdateWidgetSize(WidgetID widget, Dimension &size, [[maybe_unused]] const Dimension &padding, [[maybe_unused]] Dimension &fill, [[maybe_unused]] Dimension &resize) override
 	{
 		if (widget != WID_MS_LIST) return;
-		this->line_height = std::max(SETTING_BUTTON_HEIGHT, GetCharacterHeight(FontSize::Normal)) + padding.height;
+		this->line_height = std::max(SETTING_BUTTON_HEIGHT, GetCharacterHeight(FS_NORMAL)) + padding.height;
 		resize.width = 1;
 		fill.height = resize.height = this->line_height;
 		size.height = 5 * this->line_height;
@@ -56,8 +56,8 @@ struct ModSettingsWindow : Window {
 
 		const auto &defs = ModSettings::GetAllDefs();
 		if (defs.empty()) {
-			DrawString(r.left, r.right, r.top + (this->line_height - GetCharacterHeight(FontSize::Normal)) / 2,
-			           "No mod settings registered.", TextColour::LightBlue);
+			DrawString(r.left, r.right, r.top + (this->line_height - GetCharacterHeight(FS_NORMAL)) / 2,
+			           "No mod settings registered.", TC_LIGHT_BLUE);
 			return;
 		}
 
@@ -68,7 +68,7 @@ struct ModSettingsWindow : Window {
 
 		int y = r.top;
 		int button_y_offset = (this->line_height - SETTING_BUTTON_HEIGHT) / 2;
-		int text_y_offset   = (this->line_height - GetCharacterHeight(FontSize::Normal)) / 2;
+		int text_y_offset   = (this->line_height - GetCharacterHeight(FS_NORMAL)) / 2;
 
 		const auto [first, last] = this->vscroll->GetVisibleRangeIterators(defs);
 		for (auto it = first; it != last; ++it) {
@@ -77,12 +77,12 @@ struct ModSettingsWindow : Window {
 			int row = static_cast<int>(std::distance(defs.begin(), it));
 
 			if (def.is_bool) {
-				DrawBoolButton(br.left, y + button_y_offset, Colours::Yellow, Colours::Mauve, value != 0, true);
+				DrawBoolButton(br.left, y + button_y_offset, COLOUR_YELLOW, COLOUR_MAUVE, value != 0, true);
 			} else if (def.is_dropdown) {
-				DrawDropDownButton(br.left, y + button_y_offset, Colours::Yellow,
+				DrawDropDownButton(br.left, y + button_y_offset, COLOUR_YELLOW,
 				                   this->clicked_row == row && this->clicked_dropdown, true);
 			} else {
-				DrawArrowButtons(br.left, y + button_y_offset, Colours::Yellow,
+				DrawArrowButtons(br.left, y + button_y_offset, COLOUR_YELLOW,
 				                 (this->clicked_row == row) ? 1 + (this->clicked_increase != rtl) : 0,
 				                 value > def.min, value < def.max);
 			}
@@ -97,7 +97,7 @@ struct ModSettingsWindow : Window {
 				display += fmt::format("{}", value);
 			}
 
-			DrawString(tr.left, tr.right, y + text_y_offset, display, TextColour::LightBlue);
+			DrawString(tr.left, tr.right, y + text_y_offset, display, TC_LIGHT_BLUE);
 			y += this->line_height;
 		}
 	}
@@ -124,7 +124,7 @@ struct ModSettingsWindow : Window {
 		int32_t value = ModSettings::Get(def.full_key);
 
 		if (this->clicked_row != row) {
-			this->CloseChildWindows(WindowClass::DropdownMenu);
+			this->CloseChildWindows(WC_DROPDOWN_MENU);
 			this->clicked_row = row;
 			this->clicked_dropdown = false;
 		}
@@ -138,7 +138,7 @@ struct ModSettingsWindow : Window {
 				ModSettings::Set(def.full_key, value ? 0 : 1);
 			} else if (def.is_dropdown) {
 				if (this->clicked_dropdown) {
-					this->CloseChildWindows(WindowClass::DropdownMenu);
+					this->CloseChildWindows(WC_DROPDOWN_MENU);
 					this->clicked_dropdown = false;
 					this->closing_dropdown = false;
 				} else {
@@ -155,7 +155,7 @@ struct ModSettingsWindow : Window {
 						for (size_t i = 0; i < def.dropdown_labels.size(); i++) {
 							list.push_back(MakeDropDownListStringItem(std::string(def.dropdown_labels[i]), static_cast<int>(i)));
 						}
-						ShowDropDownListAt(this, std::move(list), value, WID_MS_DROPDOWN, wi_rect, Colours::Orange);
+						ShowDropDownListAt(this, std::move(list), value, WID_MS_DROPDOWN, wi_rect, COLOUR_ORANGE);
 					}
 				}
 			} else {
@@ -206,23 +206,23 @@ struct ModSettingsWindow : Window {
 
 static constexpr std::initializer_list<NWidgetPart> _mod_settings_widgets = {
 	NWidget(NWID_HORIZONTAL),
-		NWidget(WWT_CLOSEBOX, Colours::Mauve),
-		NWidget(WWT_CAPTION, Colours::Mauve, WID_MS_CAPTION), SetStringTip(STR_NEWGRF_SETTINGS_CAPTION),
-		NWidget(WWT_DEFSIZEBOX, Colours::Mauve),
+		NWidget(WWT_CLOSEBOX, COLOUR_MAUVE),
+		NWidget(WWT_CAPTION, COLOUR_MAUVE, WID_MS_CAPTION), SetStringTip(STR_NEWGRF_SETTINGS_CAPTION),
+		NWidget(WWT_DEFSIZEBOX, COLOUR_MAUVE),
 	EndContainer(),
 	NWidget(NWID_HORIZONTAL),
-		NWidget(WWT_MATRIX, Colours::Mauve, WID_MS_LIST), SetMinimalSize(300, 150), SetFill(1, 1), SetResize(1, 1), SetMatrixDataTip(1, 0), SetScrollbar(WID_MS_SCROLLBAR),
-		NWidget(NWID_VSCROLLBAR, Colours::Mauve, WID_MS_SCROLLBAR),
+		NWidget(WWT_MATRIX, COLOUR_MAUVE, WID_MS_LIST), SetMinimalSize(300, 150), SetFill(1, 1), SetResize(1, 1), SetMatrixDataTip(1, 0), SetScrollbar(WID_MS_SCROLLBAR),
+		NWidget(NWID_VSCROLLBAR, COLOUR_MAUVE, WID_MS_SCROLLBAR),
 	EndContainer(),
 	NWidget(NWID_HORIZONTAL),
-		NWidget(WWT_PUSHTXTBTN, Colours::Mauve, WID_MS_RESET), SetStringTip(STR_AI_SETTINGS_RESET), SetFill(1, 0), SetResize(1, 0),
-		NWidget(WWT_RESIZEBOX, Colours::Mauve, WID_MS_RESIZE),
+		NWidget(WWT_PUSHTXTBTN, COLOUR_MAUVE, WID_MS_RESET), SetStringTip(STR_AI_SETTINGS_RESET), SetFill(1, 0), SetResize(1, 0),
+		NWidget(WWT_RESIZEBOX, COLOUR_MAUVE, WID_MS_RESIZE),
 	EndContainer(),
 };
 
 static WindowDesc _mod_settings_desc(
-	WindowPosition::Center, "mod_settings", 400, 200,
-	WindowClass::ModSettings, WindowClass::None, {},
+	WDP_CENTER, "mod_settings", 400, 200,
+	WC_MOD_SETTINGS, WC_NONE, {},
 	_mod_settings_widgets
 );
 

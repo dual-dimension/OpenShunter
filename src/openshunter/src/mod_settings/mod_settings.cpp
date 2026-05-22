@@ -1,3 +1,5 @@
+#include <stdafx.h>
+
 #include "mod_settings.h"
 #include <ini_type.h>
 #include <fileio_func.h>
@@ -87,14 +89,14 @@ std::vector<const ModSettingDef*> ModSettings::GetSettingsForMod(const std::stri
 
 void ModSettings::LoadFromFile()
 {
-	std::string path = FioFindDirectory(Subdirectory::Base) + CONFIG_FILENAME;
+	std::string path = FioFindDirectory(BASE_DIR) + CONFIG_FILENAME;
 	if (!FileExists(path)) {
 		Debug(script, 2, "No mod settings file found, using defaults");
 		return;
 	}
 
 	IniFile ini;
-	ini.LoadFromDisk(path, Subdirectory::None);
+	ini.LoadFromDisk(path, NO_DIRECTORY);
 
 	for (const auto &group : ini.groups) {
 		for (const auto &item : group.items) {
@@ -122,7 +124,7 @@ void ModSettings::SaveToFile()
 		item.SetValue(std::to_string(values[d.full_key]));
 	}
 
-	std::string path = FioFindDirectory(Subdirectory::Base) + CONFIG_FILENAME;
+	std::string path = FioFindDirectory(BASE_DIR) + CONFIG_FILENAME;
 	ini.SaveToDisk(path);
 
 	Debug(script, 2, "Saved mod settings to '{}'", path);

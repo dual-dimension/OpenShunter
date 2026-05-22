@@ -70,11 +70,3 @@ struct ModApi
 
     void (*SendChat)(const char* message);
 };
-
-
-#ifndef OPENSHUNTER_MOD
-extern "C"
-{
-    typedef void  (*RegisterMod)(ModApi* api);
-}
-#endif
