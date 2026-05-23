@@ -7,18 +7,21 @@
 
 #if defined(_WIN32) || defined(_WIN64)
 	#include <windows.h>
+    static std::vector<HMODULE> mod_object_list;
     #define MOD_EXTENSION ".dll"
     #define MOD_OPEN(path)      LoadLibraryA(path)
     #define MOD_SYM(lib, name)  GetProcAddress(lib, name)
     #define MOD_CLOSE(lib)      FreeLibrary(lib)
 #elif defined(__APPLE__)
 	#include <dlfcn.h>
+    static std::vector<void*> mod_object_list;
     #define MOD_EXTENSION ".dylib"
     #define MOD_OPEN(path)      dlopen(path, RTLD_NOW)
     #define MOD_SYM(lib, name)  dlsym(lib, name)
     #define MOD_CLOSE(lib)      dlclose(lib)
 #else // Linux
 	#include <dlfcn.h>
+    static std::vector<void*> mod_object_list;
     #define MOD_EXTENSION ".so"
     #define MOD_OPEN(path)      dlopen(path, RTLD_NOW)
     #define MOD_SYM(lib, name)  dlsym(lib, name)
@@ -28,7 +31,6 @@
 #include <filesystem>
 #include <vector>
 #include <algorithm>
-#include <cctype>
 
 static const char* MOD_LIST_PATH = "mods/";
 static std::vector<ModApi> mod_apis;
@@ -90,10 +92,13 @@ static void LoadModsFromFolder()
 
 static bool LoadMod(const char* path)
 {
-	Debug(script,2, "Starting loading mod: '{}'", path);
+	Debug(script,2, "Loading mod: '{}'", path);
 	bool success = false;
 	// TODO: Make handler list and remove this in the shutdown
 	auto lib = MOD_OPEN(path);
+
+    mod_object_list.push_back(lib);
+
 	if (!lib)
 	{
 		Debug(script,0, "Failed to load mod: '{}'", path);
@@ -137,7 +142,11 @@ void Shunter::Bootstrap()
 
 void Shunter::Shutdown()
 {
+    Debug(script, 2, "Unloading {} mods", GetModCount());
     // MOD_CLOSE(lib);
+    for (auto lib : mod_object_list) {
+        MOD_CLOSE(lib);
+    }
 }
 
 int Shunter::GetModCount()

@@ -14,3 +14,4 @@ vcpkg-overlays/breakpad/portfile.cmake
 vcpkg-overlays/breakpad/unofficial-breakpadConfig.cmake
 vcpkg-overlays/breakpad/vcpkg.json
 vcpkg-triplets/x64-windows.cmake
+.clangd*
