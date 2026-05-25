@@ -1,6 +1,4 @@
 #include "mod_api.h"
-#include "openshunter/src/api/chat_api.h"
-#include "openshunter/src/api/settings_api.h"
 #include "openshunter/src/hooks.h"
 #include "../mod_settings/mod_settings.h"
 #include <string>
@@ -24,7 +22,8 @@ void RegisterSetting(const char *name, const char *label, const char *help,
                                   bool is_bool, bool is_dropdown,
                                   const char **dropdown_labels, int dropdown_count)
 {
-	ModSettings::RegisterSetting(g_current_mod_name.c_str(), name, label, help, def, min, max, is_bool, is_dropdown, dropdown_labels, dropdown_count);
+	std::string full_key = g_current_mod_name + "." + name;
+	ModSettings::RegisterSetting(full_key.c_str(), label, help, def, min, max, is_bool, is_dropdown, dropdown_labels, dropdown_count);
 }
 
 bool GetSettingBool(const char *name)

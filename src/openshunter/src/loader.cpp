@@ -30,8 +30,6 @@
 
 
 static const char* MOD_LIST_PATH = "mods/";
-static std::string current_mod_name;
-
 static int mod_count = 0;
 
 static std::vector<std::filesystem::path> GetModList();
@@ -68,23 +66,25 @@ static void LoadModsFromFolder()
 
 static bool LoadMod(const char* path)
 {
-	Debug(script,2, "Loading mod: '{}'", path);
-	bool success = false;
-	// TODO: Make handler list and remove this in the shutdown
+	Debug(script, 2, "Loading mod: '{}'", path);
 	auto lib = MOD_OPEN(path);
 
-    mod_object_list.push_back(lib);
+	mod_object_list.push_back(lib);
 
-	if (!lib)
-	{
-		Debug(script,0, "Failed to load mod: '{}'", path);
-		return success;
+	if (!lib) {
+		Debug(script, 0, "Failed to load mod: '{}'", path);
+		return false;
 	}
 
-	mod_count++;
-	success = true;
+	auto entry = (void(*)())MOD_SYM(lib, "ModEntry");
+	if (!entry) {
+		Debug(script, 0, "Mod '{}' has no ModEntry export, skipping", path);
+		return false;
+	}
 
-	return success;
+	entry();
+	mod_count++;
+	return true;
 }
 
 void Shunter::Bootstrap()

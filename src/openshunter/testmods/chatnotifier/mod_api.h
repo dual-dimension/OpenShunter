@@ -1,5 +1,4 @@
 #pragma once
-
 #include <cstdint>
 
 /* Menu */
@@ -56,17 +55,14 @@ struct Decisions
     AskCanTrainEnterTileFn ask_can_train_enter_tile;
 };
 
-struct ModApi
-{
-    void (*Register)(ModInfo* info, const Callbacks callbacks, const Decisions decisions);
+extern "C" __declspec(dllexport)void RegisterMod(ModInfo* info, const Callbacks callbacks, const Decisions decisions);
 
-    int64_t (*GetSettingInt)(const char* name);
-    bool    (*GetSettingBool)(const char* name);
+extern "C" __declspec(dllexport)void SendChat(const char* message);
 
-    void (*RegisterSetting)(const char* name, const char* label, const char* help,
-                            int32_t def, int32_t min, int32_t max,
-                            bool is_bool, bool is_dropdown,
-                            const char** dropdown_labels, int dropdown_count);
-
-    void (*SendChat)(const char* message);
-};
+/* Settings */
+extern "C" __declspec(dllexport)int GetSettingInt(const char* name);
+extern "C" __declspec(dllexport)bool GetSettingBool(const char* name);
+extern "C" __declspec(dllexport)void RegisterSetting(const char* name, const char* label, const char* help,
+                        int32_t def, int32_t min, int32_t max,
+                        bool is_bool, bool is_dropdown,
+                        const char** dropdown_labels, int dropdown_count);

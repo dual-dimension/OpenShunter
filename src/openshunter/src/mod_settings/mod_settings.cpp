@@ -18,8 +18,9 @@ void ModSettings::RegisterSetting(const char *name, const char *label, const cha
                                   const char **dropdown_labels, int dropdown_count)
 {
 	ModSettingDef d;
-	d.setting_name = name;
-	d.full_key = name;
+	d.full_key = name; // "ModName.setting_name"
+	auto dot = d.full_key.find('.');
+	d.setting_name = (dot != std::string::npos) ? d.full_key.substr(dot + 1) : d.full_key;
 	d.label = label;
 	d.help = help;
 	d.def = def;
@@ -99,7 +100,9 @@ void ModSettings::SaveToFile()
 	IniFile ini;
 
 	for (const auto &d : all_defs) {
-		IniGroup &group = ini.GetOrCreateGroup(d.mod_name);
+		auto dot = d.full_key.find('.');
+		std::string mod_name = (dot != std::string::npos) ? d.full_key.substr(0, dot) : d.full_key;
+		IniGroup &group = ini.GetOrCreateGroup(mod_name);
 		IniItem &item = group.GetOrCreateItem(d.setting_name);
 		item.SetValue(std::to_string(values[d.full_key]));
 	}
