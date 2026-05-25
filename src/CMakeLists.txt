@@ -351,6 +351,7 @@ add_files(
     openshunter/src/loader.cpp
     openshunter/src/hooks.cpp
     openshunter/src/menu_info_gui.cpp
+    openshunter/src/api/mod_api.cpp
     openshunter/src/api/settings_api.cpp
     openshunter/src/api/chat_api.cpp
     openshunter/src/mod_settings/mod_settings.cpp

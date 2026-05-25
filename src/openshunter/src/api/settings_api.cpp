@@ -4,7 +4,7 @@
 #include <settings_type.h>
 #include <climits>
 
-int64_t GetSettingInt(const char* name)
+int64_t API::GetSettingInt(const char* name)
 {
     std::string key(name);
     if (ModSettings::Has(key)) return ModSettings::Get(key);
@@ -14,7 +14,7 @@ int64_t GetSettingInt(const char* name)
     return static_cast<const IntSettingDesc*>(sd)->Read(&GetGameSettings());
 }
 
-bool GetSettingBool(const char* name)
+bool API::GetSettingBool(const char* name)
 {
     std::string key(name);
     if (ModSettings::Has(key)) return ModSettings::Get(key) != 0;

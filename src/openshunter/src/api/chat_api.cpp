@@ -6,7 +6,7 @@
 #include <network/network_func.h>
 #include <network/network_internal.h>
 
-void SendChat(const char* message)
+void API::SendChat(const char* message)
 {
     if (_networking && _network_server)
     {

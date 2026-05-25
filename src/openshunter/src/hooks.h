@@ -1,5 +1,4 @@
 #pragma once
+#include "api/mod_api.h"
 
-#include "mod_api.h"
-
-void Register(ModInfo* info, const Callbacks callbacks, const Decisions decisions);
+void SetupHooks(ModInfo* info, const Callbacks callbacks, const Decisions decisions);

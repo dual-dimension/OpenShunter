@@ -1,4 +1,4 @@
-#include "hooks.h"
+#include "api/mod_api.h"
 #include "shunter.h"
 #include <debug.h>
 #include <string>
@@ -20,7 +20,7 @@ static std::vector<OnMonthPassedFn>   on_month_passed_hooks;
 static std::vector<OnQuarterPassedFn> on_quarter_passed_hooks;
 static std::vector<OnYearPassedFn>    on_year_passed_hooks;
 
-void Register(ModInfo* info, const Callbacks callbacks, const Decisions decisions)
+void SetupHooks(ModInfo* info, const Callbacks callbacks, const Decisions decisions)
 {
 	Debug(script, 2, "Registering mod name '{}' \nVersion: '{}'\nAuthor: '{}'", std::string(info->name), std::string(info->version), std::string(info->author));
 
