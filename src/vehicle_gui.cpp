@@ -46,6 +46,7 @@
 #include "group_cmd.h"
 
 #include "table/strings.h"
+#include "openshunter/src/shunter.h"
 
 #include "safeguards.h"
 
@@ -2468,7 +2469,7 @@ struct VehicleDetailsWindow : Window {
 		switch (widget) {
 			case WID_VD_TOP_DETAILS: {
 				Dimension dim = { 0, 0 };
-				size.height = 4 * GetCharacterHeight(FS_NORMAL) + padding.height;
+				size.height = (4 + Shunter::GetVehicleInfoExtraLines()) * GetCharacterHeight(FS_NORMAL) + padding.height;
 
 				uint64_t max_value = GetParamMaxValue(INT16_MAX);
 				dim = maxdim(dim, GetStringBoundingBox(GetString(STR_VEHICLE_INFO_MAX_SPEED, max_value)));
@@ -2631,6 +2632,8 @@ struct VehicleDetailsWindow : Window {
 
 				/* Draw breakdown & reliability */
 				DrawString(tr, GetString(STR_VEHICLE_INFO_RELIABILITY_BREAKDOWNS, ToPercent16(v->reliability), v->breakdowns_since_last_service));
+				tr.top += GetCharacterHeight(FS_NORMAL);
+				Shunter::PaintVehicleInfoLines(v->index.base(), tr.left, tr.top, tr.right);
 				break;
 			}
 

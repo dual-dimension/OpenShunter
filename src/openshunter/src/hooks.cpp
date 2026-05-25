@@ -1,5 +1,6 @@
 #include "api/mod_api.h"
 #include "shunter.h"
+
 #include <debug.h>
 #include <string>
 #include <vector>
@@ -12,7 +13,8 @@ static std::vector<OnGameTickFn>  on_game_tick_hooks;
 static std::vector<OnPlayerJoinedFn> on_player_joined_hooks;
 static std::vector<OnMoneyChangedFn> on_money_changed_hooks;
 
-static std::vector<AskCanTrainEnterTileFn> ask_can_train_enter_tile_hooks;
+static std::vector<AskCanTrainEnterTileFn>  ask_can_train_enter_tile_hooks;
+static std::vector<OnVehicleEnterTileFn>    on_vehicle_enter_tile_hooks;
 
 static std::vector<OnDayPassedFn>     on_day_passed_hooks;
 static std::vector<OnWeekPassedFn>    on_week_passed_hooks;

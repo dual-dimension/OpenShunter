@@ -2,9 +2,6 @@
 #include <strings_func.h>
 #include <gfx_func.h>
 #include <table/strings.h>
-#include <format>
-
-#include "safeguards.h"
 
 #include "shunter.h"
 

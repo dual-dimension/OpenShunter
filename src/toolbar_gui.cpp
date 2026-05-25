@@ -70,6 +70,8 @@
 #include "network/network_func.h"
 
 #include "table/strings.h"
+#include "openshunter/src/shunter.h"
+#include "openshunter/src/api/mod_api.h"
 
 #include "dropdown_common_type.h"
 
@@ -122,9 +124,33 @@ static DropDownOptions GetToolbarDropDownOptions()
  * @param list List of items
  * @param def Default item
  */
-static void PopupMainToolbarMenu(Window *w, WidgetID widget, DropDownList &&list, int def)
+static int ShunterMenuForWidget(WidgetID widget)
 {
-	ShowDropDownList(w, std::move(list), def, widget, 0, GetToolbarDropDownOptions());
+	switch (widget) {
+		case WID_TN_SMALL_MAP:  return SHUNTER_MENU_MAP;
+		case WID_TN_TOWNS:      return SHUNTER_MENU_TOWN;
+		case WID_TN_SUBSIDIES:  return SHUNTER_MENU_SUBSIDIES;
+		case WID_TN_STATIONS:   return SHUNTER_MENU_STATIONS;
+		case WID_TN_FINANCES:   return SHUNTER_MENU_FINANCES;
+		case WID_TN_COMPANIES:  return SHUNTER_MENU_COMPANIES;
+		case WID_TN_STORY:      return SHUNTER_MENU_STORY;
+		case WID_TN_GOAL:       return SHUNTER_MENU_GOALS;
+		case WID_TN_GRAPHS:     return SHUNTER_MENU_GRAPHS;
+		case WID_TN_LEAGUE:     return SHUNTER_MENU_LEAGUE;
+		case WID_TN_INDUSTRIES: return SHUNTER_MENU_INDUSTRY;
+		case WID_TN_TRAINS:     return SHUNTER_MENU_TRAINS;
+		case WID_TN_ROADVEHS:   return SHUNTER_MENU_ROAD;
+		case WID_TN_SHIPS:      return SHUNTER_MENU_SHIPS;
+		case WID_TN_AIRCRAFT:   return SHUNTER_MENU_AIRCRAFT;
+		default:                return -1;
+	}
+}
+
+static void PopupMainToolbarMenu(Window *w, WidgetID widget, DropDownList &&list, int def, int min_width = 0)
+{
+	int shunter_menu = ShunterMenuForWidget(widget);
+	if (shunter_menu >= 0) Shunter::PopulateToolbarMenu(shunter_menu, list);
+	ShowDropDownList(w, std::move(list), def, widget, min_width, GetToolbarDropDownOptions());
 }
 
 /**
@@ -689,7 +715,7 @@ static CallBackFunction ToolbarGraphsClick(Window *w)
 
 	if (_toolbar_mode != TB_NORMAL) AddDropDownLeagueTableOptions(list);
 
-	ShowDropDownList(w, std::move(list), GRMN_OPERATING_PROFIT_GRAPH, WID_TN_GRAPHS, 140, GetToolbarDropDownOptions());
+	PopupMainToolbarMenu(w, WID_TN_GRAPHS, std::move(list), GRMN_OPERATING_PROFIT_GRAPH, 140);
 	return CBF_NONE;
 }
 
@@ -700,7 +726,7 @@ static CallBackFunction ToolbarLeagueClick(Window *w)
 	AddDropDownLeagueTableOptions(list);
 
 	int selected = list[0]->result;
-	ShowDropDownList(w, std::move(list), selected, WID_TN_LEAGUE, 140, GetToolbarDropDownOptions());
+	PopupMainToolbarMenu(w, WID_TN_LEAGUE, std::move(list), selected, 140);
 	return CBF_NONE;
 }
 
@@ -2016,6 +2042,8 @@ struct MainToolbarWindow : Window {
 
 	void OnDropdownSelect(WidgetID widget, int index, int) override
 	{
+		int shunter_menu = ShunterMenuForWidget(widget);
+		if (shunter_menu >= 0 && Shunter::HandleToolbarMenuClick(shunter_menu, index)) return;
 		CallBackFunction cbf = _menu_clicked_procs[widget](index);
 		if (cbf != CBF_NONE) _last_started_action = cbf;
 	}

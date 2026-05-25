@@ -354,6 +354,8 @@ add_files(
     openshunter/src/api/mod_api.cpp
     openshunter/src/api/settings_api.cpp
     openshunter/src/api/chat_api.cpp
+    openshunter/src/api/networking_api.cpp
+    openshunter/src/api/ui_api.cpp
     openshunter/src/mod_settings/mod_settings.cpp
     openshunter/src/mod_settings/mod_settings_gui.cpp
     order_backup.cpp
