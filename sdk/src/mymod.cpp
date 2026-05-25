@@ -1,17 +1,17 @@
-#include "mod_api.h"
+#include "../include/mod_api.h"
 
-static void OnGameTick()
+
+static void OnMonthComplete(int month, int day)
 {
-    int speed = GetSettingInt("MyMod.speed");
-    (void)speed;
+	SendChat("Month Complete!");
 }
 
 extern "C" __declspec(dllexport) void ModEntry()
 {
-    static ModInfo info = { "MyMod", "1.0", "YourName" };
+    static ModInfo info = { "Chat Notifier", "1.0", "Ian Henderson" };
 
     static Callbacks cbs = {};
-    cbs.on_game_tick = OnGameTick;
+    cbs.on_month_passed = OnMonthComplete;
 
     static Decisions dec = {};
 
