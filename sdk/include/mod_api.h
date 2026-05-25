@@ -104,6 +104,15 @@ using OnMenuTickFn  = void(*)();
 using OnGameStartFn = void(*)();
 using OnGameTickFn  = void(*)();
 
+/* Vehicle types */
+static const uint8_t SHUNTER_VEH_TRAIN    = 0;
+static const uint8_t SHUNTER_VEH_ROAD     = 1;
+static const uint8_t SHUNTER_VEH_SHIP     = 2;
+static const uint8_t SHUNTER_VEH_AIRCRAFT = 3;
+
+/* Movement */
+using OnVehicleEnterTileFn = void(*)(uint32_t vehicle_id, uint8_t vehicle_type, uint8_t owner, uint32_t tile);
+
 /* Network */
 using OnPlayerJoinedFn = void(*)(uint32_t client_id, const char* client_name);
 
@@ -134,6 +143,8 @@ struct Callbacks
 
     OnGameStartFn on_game_start;
     OnGameTickFn  on_game_tick;
+
+    OnVehicleEnterTileFn on_vehicle_enter_tile;
 
     OnPlayerJoinedFn on_player_joined;
     OnMoneyChangedFn on_money_changed;

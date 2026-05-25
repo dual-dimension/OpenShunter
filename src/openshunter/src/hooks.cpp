@@ -41,7 +41,15 @@ void SetupHooks(ModInfo* info, const Callbacks callbacks, const Decisions decisi
     if (callbacks.on_quarter_passed) on_quarter_passed_hooks.push_back(callbacks.on_quarter_passed);
     if (callbacks.on_year_passed)    on_year_passed_hooks.push_back(callbacks.on_year_passed);
 
+    if (callbacks.on_vehicle_enter_tile) on_vehicle_enter_tile_hooks.push_back(callbacks.on_vehicle_enter_tile);
+
     if (decisions.ask_can_train_enter_tile) ask_can_train_enter_tile_hooks.push_back(decisions.ask_can_train_enter_tile);
+}
+
+/* Movement */
+void Shunter::OnVehicleEnterTile(uint32_t vehicle_id, uint8_t vehicle_type, uint8_t owner, uint32_t tile)
+{
+    for (auto& hook : on_vehicle_enter_tile_hooks) hook(vehicle_id, vehicle_type, owner, tile);
 }
 
 /* Decisions */

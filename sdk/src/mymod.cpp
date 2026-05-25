@@ -6,6 +6,12 @@ static void OnMonthComplete(int month, int year)
     SendChat("Month Complete!");
 }
 
+static void OnVehicleEnteredTile(uint32_t vehicle_id, uint8_t vehicle_type, uint8_t owner, uint32_t tile)
+{
+    if (vehicle_type != SHUNTER_VEH_TRAIN) return;
+    // fires every time a train enters a new tile
+}
+
 static void OnWindowPaint(uint16_t wc, const ShunterDrawContext* ctx)
 {
     if (wc != SHUNTER_WC_TRAINS_LIST) return;
@@ -40,7 +46,8 @@ extern "C" __declspec(dllexport) void ModEntry()
     static ModInfo info = { "Chat Notifier", "1.0", "Ian Henderson" };
 
     static Callbacks cbs = {};
-    cbs.on_month_passed = OnMonthComplete;
+    cbs.on_month_passed       = OnMonthComplete;
+    cbs.on_vehicle_enter_tile = OnVehicleEnteredTile;
 
     static Decisions dec = {};
 
