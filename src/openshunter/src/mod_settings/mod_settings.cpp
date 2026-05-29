@@ -103,6 +103,7 @@ void ModSettings::LoadFromFile()
 			std::string key = group.name + "." + item.name;
 			if (item.value.has_value()) {
 				try {
+					Debug(script, 2, "Loading setting '{}'", key);
 					values[key] = std::stoi(*item.value);
 				} catch (...) {
 					Debug(script, 0, "Failed to parse mod setting value for '{}'", key);
