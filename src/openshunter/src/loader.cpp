@@ -1,8 +1,4 @@
 #include "shunter.h"
-#include "hooks.h"
-#include "api/settings_api.h"
-#include "api/chat_api.h"
-#include "mod_settings/mod_settings.h"
 #include <debug.h>
 
 #if defined(_WIN32) || defined(_WIN64)
@@ -30,32 +26,11 @@
 
 #include <filesystem>
 #include <vector>
-#include <algorithm>
+#include "mod_settings/mod_settings.h"
+
 
 static const char* MOD_LIST_PATH = "mods/";
-static std::vector<ModApi> mod_apis;
-static std::string current_mod_name;
-
-static std::string NormalizeModName(const char* name)
-{
-    std::string result(name);
-    result.erase(std::remove(result.begin(), result.end(), ' '), result.end());
-    return result;
-}
-
-static void ApiRegister(ModInfo* info, const Callbacks callbacks, const Decisions decisions)
-{
-    current_mod_name = NormalizeModName(info->name);
-    ::Register(info, callbacks, decisions);
-}
-
-static void ApiRegisterSetting(const char* name, const char* label, const char* help,
-                               int32_t def, int32_t min, int32_t max,
-                               bool is_bool, bool is_dropdown,
-                               const char** dropdown_labels, int dropdown_count)
-{
-	ModSettings::RegisterSetting(current_mod_name, name, label, help, def, min, max, is_bool, is_dropdown, dropdown_labels, dropdown_count);
-}
+static int mod_count = 0;
 
 static std::vector<std::filesystem::path> GetModList();
 static bool LoadMod(const char* path);
@@ -83,7 +58,6 @@ static std::vector<std::filesystem::path> GetModList()
 static void LoadModsFromFolder()
 {
 	auto mod_list = GetModList();
-	mod_apis.reserve(mod_list.size());
     for (const auto& mod : mod_list)
     {
     	LoadMod(mod.string().c_str());
@@ -92,42 +66,25 @@ static void LoadModsFromFolder()
 
 static bool LoadMod(const char* path)
 {
-	Debug(script,2, "Loading mod: '{}'", path);
-	bool success = false;
-	// TODO: Make handler list and remove this in the shutdown
+	Debug(script, 2, "Loading mod: '{}'", path);
 	auto lib = MOD_OPEN(path);
 
-    mod_object_list.push_back(lib);
+	mod_object_list.push_back(lib);
 
-	if (!lib)
-	{
-		Debug(script,0, "Failed to load mod: '{}'", path);
-		return success;
+	if (!lib) {
+		Debug(script, 0, "Failed to load mod: '{}'", path);
+		return false;
 	}
 
-	auto register_fn = (RegisterMod)MOD_SYM(lib, "RegisterMod");
-	if (!register_fn)
-	{
-		Debug(script,0, "Failed to register mod: '{}'", path);
-		MOD_CLOSE(lib);
-		return success;
+	auto entry = (void(*)())MOD_SYM(lib, "ModEntry");
+	if (!entry) {
+		Debug(script, 0, "Mod '{}' has no ModEntry export, skipping", path);
+		return false;
 	}
 
-	// Hook up the API — stored permanently so mods can safely keep the pointer to the api data they originally passed in
-	// Before: this was nuked when loading another mod
-	ModApi &api = mod_apis.emplace_back();
-	api.Register         = &ApiRegister;
-	api.GetSettingInt    = &GetSettingInt;
-	api.GetSettingBool   = &GetSettingBool;
-	api.RegisterSetting  = &ApiRegisterSetting;
-	api.SendChat         = &SendChat;
-
-	// Call the register function from the mod
-	register_fn(&api);
-
-	success = true;
-
-	return success;
+	entry();
+	mod_count++;
+	return true;
 }
 
 void Shunter::Bootstrap()
@@ -143,7 +100,6 @@ void Shunter::Bootstrap()
 void Shunter::Shutdown()
 {
     Debug(script, 2, "Unloading {} mods", GetModCount());
-    // MOD_CLOSE(lib);
     for (auto lib : mod_object_list) {
         MOD_CLOSE(lib);
     }
@@ -151,5 +107,5 @@ void Shunter::Shutdown()
 
 int Shunter::GetModCount()
 {
-    return mod_apis.size();
+    return mod_count;
 }

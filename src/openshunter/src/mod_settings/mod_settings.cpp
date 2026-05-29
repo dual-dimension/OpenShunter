@@ -5,7 +5,6 @@
 #include <fileio_func.h>
 #include <debug.h>
 
-#include <algorithm>
 #include <set>
 
 static std::vector<ModSettingDef> all_defs;
@@ -13,15 +12,15 @@ static std::unordered_map<std::string, int32_t> values;
 
 static const std::string CONFIG_FILENAME = "openshunter_mods.cfg";
 
-void ModSettings::RegisterSetting(const std::string &mod_name, const char *name, const char *label, const char *help,
+void ModSettings::RegisterSetting(const char *name, const char *label, const char *help,
                                   int32_t def, int32_t min, int32_t max,
                                   bool is_bool, bool is_dropdown,
                                   const char **dropdown_labels, int dropdown_count)
 {
 	ModSettingDef d;
-	d.setting_name = name;
-	d.mod_name = mod_name;
-	d.full_key = name;
+	d.full_key = name; // "ModName.setting_name"
+	auto dot = d.full_key.find('.');
+	d.setting_name = (dot != std::string::npos) ? d.full_key.substr(dot + 1) : d.full_key;
 	d.label = label;
 	d.help = help;
 	d.def = def;
@@ -69,24 +68,6 @@ const std::vector<ModSettingDef> &ModSettings::GetAllDefs()
 	return all_defs;
 }
 
-std::vector<std::string> ModSettings::GetModNames()
-{
-	std::set<std::string> names;
-	for (const auto &d : all_defs) {
-		names.insert(d.mod_name);
-	}
-	return {names.begin(), names.end()};
-}
-
-std::vector<const ModSettingDef*> ModSettings::GetSettingsForMod(const std::string &mod_name)
-{
-	std::vector<const ModSettingDef*> result;
-	for (const auto &d : all_defs) {
-		if (d.mod_name == mod_name) result.push_back(&d);
-	}
-	return result;
-}
-
 void ModSettings::LoadFromFile()
 {
 	std::string path = FioFindDirectory(BASE_DIR) + CONFIG_FILENAME;
@@ -120,7 +101,9 @@ void ModSettings::SaveToFile()
 	IniFile ini;
 
 	for (const auto &d : all_defs) {
-		IniGroup &group = ini.GetOrCreateGroup(d.mod_name);
+		auto dot = d.full_key.find('.');
+		std::string mod_name = (dot != std::string::npos) ? d.full_key.substr(0, dot) : d.full_key;
+		IniGroup &group = ini.GetOrCreateGroup(mod_name);
 		IniItem &item = group.GetOrCreateItem(d.setting_name);
 		item.SetValue(std::to_string(values[d.full_key]));
 	}

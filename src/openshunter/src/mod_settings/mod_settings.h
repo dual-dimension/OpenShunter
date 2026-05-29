@@ -2,14 +2,12 @@
 
 #include <cstdint>
 #include <string>
-#include <unordered_map>
 #include <vector>
 
 struct ModSettingDef
 {
 	std::string full_key;      // "ModName.setting_name"
 	std::string setting_name;  // "setting_name"
-	std::string mod_name;      // "ModName"
 	std::string label;         // Display label
 	std::string help;          // Help/tooltip text
 	int32_t def;               // Default value
@@ -22,7 +20,7 @@ struct ModSettingDef
 
 namespace ModSettings
 {
-	void RegisterSetting(const std::string &mod_name, const char *name, const char *label, const char *help,
+	void RegisterSetting(const char *name, const char *label, const char *help,
 	                     int32_t def, int32_t min, int32_t max,
 	                     bool is_bool, bool is_dropdown,
 	                     const char **dropdown_labels, int dropdown_count);
@@ -32,8 +30,6 @@ namespace ModSettings
 	bool    Has(const std::string &key);
 
 	const std::vector<ModSettingDef> &GetAllDefs();
-	std::vector<std::string> GetModNames();
-	std::vector<const ModSettingDef*> GetSettingsForMod(const std::string &mod_name);
 
 	void LoadFromFile();
 	void SaveToFile();

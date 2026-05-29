@@ -1,3 +1,6 @@
 #pragma once
 
-void SendChat(const char* message);
+namespace API
+{
+	void SendChat(const char* message);
+}

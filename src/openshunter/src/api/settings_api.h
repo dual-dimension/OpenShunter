@@ -2,5 +2,8 @@
 
 #include <cstdint>
 
-int64_t GetSettingInt(const char* name);
-bool    GetSettingBool(const char* name);
+namespace API
+{
+	int64_t GetSettingInt(const char* name);
+	bool    GetSettingBool(const char* name);
+}

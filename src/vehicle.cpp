@@ -62,6 +62,7 @@
 #include "timer/timer_game_tick.h"
 
 #include "table/strings.h"
+#include "openshunter/src/shunter.h"
 
 #include "safeguards.h"
 
@@ -1818,7 +1819,9 @@ Direction GetDirectionTowards(const Vehicle *v, int x, int y)
  */
 VehicleEnterTileStates VehicleEnterTile(Vehicle *v, TileIndex tile, int x, int y)
 {
-	return _tile_type_procs[GetTileType(tile)]->vehicle_enter_tile_proc(v, tile, x, y);
+	auto result = _tile_type_procs[GetTileType(tile)]->vehicle_enter_tile_proc(v, tile, x, y);
+	Shunter::OnVehicleEnterTile(v->index.base(), (uint8_t)v->type, v->owner.base(), tile.base());
+	return result;
 }
 
 /**

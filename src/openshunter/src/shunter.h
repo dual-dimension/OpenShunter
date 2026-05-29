@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cstdint>
+#include <dropdown_type.h>
 
 /* -----------------------------------------------------------------------
  * Public interface for OpenTTD core code.
@@ -40,7 +41,19 @@ namespace Shunter
     /* Decisions */
     bool AskCanTrainEnterTile(uint32_t tile, uint8_t tile_owner, uint8_t train_owner, bool default_result);
 
+    /* Movement */
+    void OnVehicleEnterTile(uint32_t vehicle_id, uint8_t vehicle_type, uint8_t owner, uint32_t tile);
+
     /* GUI */
     void ShowModSettingsWindow();
     void DrawMenuInfo(int width, int height);
+
+    /* UI hooks */
+    void OnWindowPaint(uint16_t window_class, int left, int top, int width, int height);
+    void PopulateToolbarMenu(int menu_id, DropDownList& list);
+    bool HandleToolbarMenuClick(int menu_id, int item_id);
+
+    /* Vehicle info lines */
+    int  GetVehicleInfoExtraLines();
+    void PaintVehicleInfoLines(uint32_t vehicle_id, int left, int& top, int right);
 }

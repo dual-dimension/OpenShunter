@@ -41,6 +41,7 @@
 #include "timer/timer_window.h"
 
 #include "table/strings.h"
+#include "openshunter/src/shunter.h"
 
 #include "safeguards.h"
 
@@ -934,6 +935,7 @@ static void DrawOverlappedWindow(Window *w, int left, int top, int right, int bo
 	dp->dst_ptr = BlitterFactory::GetCurrentBlitter()->MoveTo(_screen.dst_ptr, left, top);
 	dp->zoom = ZoomLevel::Min;
 	w->OnPaint();
+	Shunter::OnWindowPaint((uint16_t)w->window_class, w->left, w->top, w->width, w->height);
 }
 
 /**

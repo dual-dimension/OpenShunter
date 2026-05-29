@@ -87,8 +87,9 @@ struct ModSettingsWindow : Window {
 				                 value > def.min, value < def.max);
 			}
 
-			// Label: "ModName - Label: value"
-			std::string display = def.mod_name + " - " + def.label + ": ";
+			auto dot = def.full_key.find('.');
+			std::string mod_display = (dot != std::string::npos) ? def.full_key.substr(0, dot) : def.full_key;
+			std::string display = mod_display + " - " + def.label + ": ";
 			if (def.is_bool) {
 				display += value ? "On" : "Off";
 			} else if (def.is_dropdown && value >= 0 && static_cast<size_t>(value) < def.dropdown_labels.size()) {

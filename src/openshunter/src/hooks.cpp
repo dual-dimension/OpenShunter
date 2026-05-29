@@ -1,5 +1,6 @@
-#include "hooks.h"
+#include "api/mod_api.h"
 #include "shunter.h"
+
 #include <debug.h>
 #include <string>
 #include <vector>
@@ -12,7 +13,8 @@ static std::vector<OnGameTickFn>  on_game_tick_hooks;
 static std::vector<OnPlayerJoinedFn> on_player_joined_hooks;
 static std::vector<OnMoneyChangedFn> on_money_changed_hooks;
 
-static std::vector<AskCanTrainEnterTileFn> ask_can_train_enter_tile_hooks;
+static std::vector<AskCanTrainEnterTileFn>  ask_can_train_enter_tile_hooks;
+static std::vector<OnVehicleEnterTileFn>    on_vehicle_enter_tile_hooks;
 
 static std::vector<OnDayPassedFn>     on_day_passed_hooks;
 static std::vector<OnWeekPassedFn>    on_week_passed_hooks;
@@ -20,7 +22,7 @@ static std::vector<OnMonthPassedFn>   on_month_passed_hooks;
 static std::vector<OnQuarterPassedFn> on_quarter_passed_hooks;
 static std::vector<OnYearPassedFn>    on_year_passed_hooks;
 
-void Register(ModInfo* info, const Callbacks callbacks, const Decisions decisions)
+void SetupHooks(ModInfo* info, const Callbacks callbacks, const Decisions decisions)
 {
 	Debug(script, 2, "Registering mod name '{}' \nVersion: '{}'\nAuthor: '{}'", std::string(info->name), std::string(info->version), std::string(info->author));
 
@@ -39,7 +41,15 @@ void Register(ModInfo* info, const Callbacks callbacks, const Decisions decision
     if (callbacks.on_quarter_passed) on_quarter_passed_hooks.push_back(callbacks.on_quarter_passed);
     if (callbacks.on_year_passed)    on_year_passed_hooks.push_back(callbacks.on_year_passed);
 
+    if (callbacks.on_vehicle_enter_tile) on_vehicle_enter_tile_hooks.push_back(callbacks.on_vehicle_enter_tile);
+
     if (decisions.ask_can_train_enter_tile) ask_can_train_enter_tile_hooks.push_back(decisions.ask_can_train_enter_tile);
+}
+
+/* Movement */
+void Shunter::OnVehicleEnterTile(uint32_t vehicle_id, uint8_t vehicle_type, uint8_t owner, uint32_t tile)
+{
+    for (auto& hook : on_vehicle_enter_tile_hooks) hook(vehicle_id, vehicle_type, owner, tile);
 }
 
 /* Decisions */

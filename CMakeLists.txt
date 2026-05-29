@@ -238,10 +238,28 @@ include(MSVCFilters)
 
 add_library(openttd_lib OBJECT ${GENERATED_SOURCE_FILES})
 target_include_directories(openttd_lib PUBLIC ${CMAKE_SOURCE_DIR}/src)
+target_compile_definitions(openttd_lib PUBLIC OPENSHUNTER_BUILDING_GAME)
 add_executable(openttd WIN32)
 add_executable(openttd_test)
 set_target_properties(openttd PROPERTIES OUTPUT_NAME "${BINARY_NAME}")
 # All other files are added via target_sources()
+
+if(WIN32)
+    # Generate an import library (.lib) from the exe so mod DLLs can link against it
+    set_target_properties(openttd PROPERTIES ENABLE_EXPORTS TRUE)
+
+    add_custom_command(TARGET openttd POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_SOURCE_DIR}/sdk/lib
+        COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_SOURCE_DIR}/sdk/include
+        COMMAND ${CMAKE_COMMAND} -E copy
+            $<TARGET_LINKER_FILE:openttd>
+            ${CMAKE_SOURCE_DIR}/sdk/lib/openttd.lib
+        COMMAND ${CMAKE_COMMAND} -E copy
+            ${CMAKE_SOURCE_DIR}/src/openshunter/src/api/mod_api.h
+            ${CMAKE_SOURCE_DIR}/sdk/include/mod_api.h
+        COMMENT "Updating mod SDK"
+    )
+endif()
 
 if(MSVC)
     # Add DPI manifest to project; other WIN32 targets get this via ottdres.rc
